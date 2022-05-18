@@ -1,9 +1,11 @@
-﻿using MonoLibUsb;
+using MonoLibUsb;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading;
+using LibUsbDotNet;
+using LibUsbDotNet.Main;
 
 namespace ACNHPokerCore
 {
@@ -30,130 +32,118 @@ namespace ACNHPokerCore
 
         private MonoUsbSessionHandle context;
 
+        private UsbDevice? SwDevice;
+        private UsbEndpointReader? reader;
+        private UsbEndpointWriter? writer;
+
         public bool Connect()
         {
             lock (_sync)
             {
-                if (context != null)
+                // Find and open the usb device.
+                //SwDevice = UsbDevice.OpenUsbDevice(SwFinder);
+                foreach (UsbRegistry ur in UsbDevice.AllDevices)
                 {
-                    if (!context.IsClosed)
-                        context.Close();
-                    context.Dispose();
-                    context = null;
+                    if (ur.Vid == 1406 && ur.Pid == 12288)
+                        SwDevice = ur.Device;
+                }
+                //SwDevice = UsbDevice.OpenUsbDevice(MyUsbFinder);
+
+                // If the device is open and ready
+                if (SwDevice == null)
+                {
+                    throw new Exception("Device Not Found.");
                 }
 
-                context = new MonoUsbSessionHandle();
-                var usbHandle = MonoUsbApi.OpenDeviceWithVidPid(context, 1406, 12288);
-                if (usbHandle != null)
+                if (SwDevice.IsOpen)
+                    SwDevice.Close();
+                SwDevice.Open();
+
+                if (SwDevice is IUsbDevice wholeUsbDevice)
                 {
-                    if (MonoUsbApi.ClaimInterface(usbHandle, 0) == 0)
+                    // This is a "whole" USB device. Before it can be used, 
+                    // the desired configuration and interface must be selected.
+
+                    // Select config #1
+                    wholeUsbDevice.SetConfiguration(1);
+
+                    // Claim interface #0.
+                    bool resagain = wholeUsbDevice.ClaimInterface(0);
+                    if (!resagain)
                     {
-                        MonoUsbApi.ReleaseInterface(usbHandle, 0);
-                        usbHandle.Close();
-                        Connected = true;
-                        return true;
+                        wholeUsbDevice.ReleaseInterface(0);
+                        wholeUsbDevice.ClaimInterface(0);
                     }
-                    usbHandle.Close();
                 }
                 else
                 {
-                    MyMessageBox.Show("Device Not Found!\nPlease also try restarting your Switch if problem persists!", "USB insertion always require at least 3 flips!", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+                    Disconnect();
+                    throw new Exception("Device is using WinUSB driver. Use libusbK and create a filter");
                 }
 
-                Connected = false;
-                return false;
+                // open read write endpoints 1.
+                reader = SwDevice.OpenEndpointReader(ReadEndpointID.Ep01);
+                writer = SwDevice.OpenEndpointWriter(WriteEndpointID.Ep01);
+
+                Connected = true;
+                return true;
             }
         }
 
-        private MonoUsbDeviceHandle getUsableAndOpenUsbHandle()
+        public void Disconnect()
         {
             lock (_sync)
             {
-                if (context != null)
+                if (SwDevice != null)
                 {
-                    if (!context.IsClosed)
-                        context.Close();
-                    context.Dispose();
-                    context = null;
-                }
-
-                context = new MonoUsbSessionHandle();
-                var usbHandle = MonoUsbApi.OpenDeviceWithVidPid(context, 1406, 12288);
-                if (usbHandle != null)
-                {
-                    if (MonoUsbApi.ClaimInterface(usbHandle, 0) == 0)
+                    if (SwDevice.IsOpen)
                     {
-                        return usbHandle;
+                        if (SwDevice is IUsbDevice wholeUsbDevice)
+                            wholeUsbDevice.ReleaseInterface(0);
+                        SwDevice.Close();
                     }
-                    usbHandle.Close();
                 }
 
-                return null;
-            }
-        }
-
-        private void CleanUpHandle(MonoUsbDeviceHandle handle)
-        {
-            MonoUsbApi.ReleaseInterface(handle, 0);
-            handle.Close();
-            Disconnect(false);
-        }
-
-        public void Disconnect(bool setConnectionStatus = true)
-        {
-            lock (_sync)
-            {
-                if (context != null)
-                {
-                    context.Dispose();
-                    context = null;
-                }
-                if (setConnectionStatus)
-                    Connected = false;
+                reader?.Dispose();
+                writer?.Dispose();
+                Connected = false;
             }
         }
 
         private int ReadInternal(byte[] buffer)
         {
-            var handle = getUsableAndOpenUsbHandle();
-            if (handle == null)
-                throw new Exception("USB writer is null, you may have disconnected the device during previous function");
-
             byte[] sizeOfReturn = new byte[4];
 
-            MonoUsbApi.BulkTransfer(handle, READPOINT, sizeOfReturn, 4, out var _, 5000);
+            //read size, no error checking as of yet, should be the required 368 bytes
+            if (reader == null)
+                throw new Exception("USB writer is null, you may have disconnected the device during previous function");
 
-            // read stack
-            MonoUsbApi.BulkTransfer(handle, READPOINT, buffer, buffer.Length, out var len, 5000);
-            CleanUpHandle(handle);
-            return len;
+            reader.Read(sizeOfReturn, 5000, out _);
+
+            //read stack
+            reader.Read(buffer, 5000, out var lenVal);
+            return lenVal;
         }
 
         private int SendInternal(byte[] buffer)
         {
-            var handle = getUsableAndOpenUsbHandle();
-            if (handle == null)
+            if (writer == null)
                 throw new Exception("USB writer is null, you may have disconnected the device during previous function");
 
             uint pack = (uint)buffer.Length + 2;
-            byte[] packed = BitConverter.GetBytes(pack);
-            var ec = MonoUsbApi.BulkTransfer(handle, WRITEPOINT, packed, packed.Length, out var _, 5000);
-            if (ec != 0)
+            var ec = writer.Write(BitConverter.GetBytes(pack), 2000, out _);
+            if (ec != ErrorCode.None)
             {
-                string err = MonoUsbSessionHandle.LastErrorString;
-                CleanUpHandle(handle);
-                throw new Exception(err);
+                Disconnect();
+                throw new Exception(UsbDevice.LastErrorString);
             }
-            ec = MonoUsbApi.BulkTransfer(handle, WRITEPOINT, buffer, buffer.Length, out var len, 5000);
-            if (ec != 0)
+            ec = writer.Write(buffer, 2000, out var l);
+            if (ec != ErrorCode.None)
             {
-                string err = MonoUsbSessionHandle.LastErrorString;
-                CleanUpHandle(handle);
-                throw new Exception(err);
+                Disconnect();
+                throw new Exception(UsbDevice.LastErrorString);
             }
-
-            CleanUpHandle(handle);
-            return len;
+            return l;
         }
 
         public int Read(byte[] buffer)
