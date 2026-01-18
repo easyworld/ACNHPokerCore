@@ -726,7 +726,7 @@ namespace ACNHPokerCore
             catch (Exception ex)
             {
                 MyLog.LogEvent("RoadRoller", "FetchMap: " + ex.Message);
-                MyMessageBox.Show(ex.Message, "Oof");
+                MyMessageBox.Show(ex.Message, "哎哟");
             }
         }
 

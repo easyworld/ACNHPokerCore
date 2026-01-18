@@ -73,7 +73,7 @@ namespace ACNHPokerCore
             this.StartBtn.Name = "StartBtn";
             this.StartBtn.Size = new System.Drawing.Size(99, 34);
             this.StartBtn.TabIndex = 173;
-            this.StartBtn.Text = "Start";
+            this.StartBtn.Text = "开始";
             this.StartBtn.UseVisualStyleBackColor = false;
             this.StartBtn.Click += new System.EventHandler(this.StartBtn_Click);
             // 
@@ -88,7 +88,7 @@ namespace ACNHPokerCore
             this.pauseBtn.Name = "pauseBtn";
             this.pauseBtn.Size = new System.Drawing.Size(99, 34);
             this.pauseBtn.TabIndex = 174;
-            this.pauseBtn.Text = "pause";
+            this.pauseBtn.Text = "暂停";
             this.pauseBtn.UseVisualStyleBackColor = false;
             this.pauseBtn.Click += new System.EventHandler(this.PauseBtn_Click);
             // 
@@ -103,7 +103,7 @@ namespace ACNHPokerCore
             this.restartBtn.Name = "restartBtn";
             this.restartBtn.Size = new System.Drawing.Size(99, 34);
             this.restartBtn.TabIndex = 175;
-            this.restartBtn.Text = "restart";
+            this.restartBtn.Text = "重启";
             this.restartBtn.UseVisualStyleBackColor = false;
             this.restartBtn.Click += new System.EventHandler(this.RestartBtn_Click);
             // 
@@ -118,7 +118,7 @@ namespace ACNHPokerCore
             this.resetBtn.Name = "resetBtn";
             this.resetBtn.Size = new System.Drawing.Size(99, 34);
             this.resetBtn.TabIndex = 176;
-            this.resetBtn.Text = "reset";
+            this.resetBtn.Text = "重置";
             this.resetBtn.UseVisualStyleBackColor = false;
             this.resetBtn.Click += new System.EventHandler(this.ResetBtn_Click);
             // 
@@ -149,7 +149,7 @@ namespace ACNHPokerCore
             this.MinimumSize = new System.Drawing.Size(280, 145);
             this.Name = "MyStopWatch";
             this.ShowInTaskbar = false;
-            this.Text = "PocketCham\'s Timer";
+            this.Text = "PocketCham的计时器";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MyStopWatch_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.StopWatchImageBox)).EndInit();
             this.panel1.ResumeLayout(false);

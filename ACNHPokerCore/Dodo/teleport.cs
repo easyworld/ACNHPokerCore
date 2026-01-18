@@ -80,7 +80,7 @@ namespace ACNHPokerCore
 
             if (anchorByte.Length < 120)
             {
-                MyMessageBox.Show("It seems you are using a smaller \"Anchors.bin\"... \nOr your \"Anchors.bin\" is totally corrupted.", "Bigger is not always better", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MyMessageBox.Show("看起来你正在使用一个较小的“Anchors.bin”...\n或者你的“Anchors.bin”完全损坏了。", "更大的并不总是更好", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 FixAnchorByte();
             }
         }
@@ -157,7 +157,7 @@ namespace ACNHPokerCore
 
             if (!IsValidCoordinate(coordinate))
             {
-                MyMessageBox.Show("Invalid Coordinates!", "3C3C1D119440927", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MyMessageBox.Show("无效坐标！", "3C3C1D119440927", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
 

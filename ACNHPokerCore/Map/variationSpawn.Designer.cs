@@ -319,7 +319,7 @@ namespace ACNHPokerCore
             this.dotdotdot19.Name = "dotdotdot19";
             this.dotdotdot19.Size = new System.Drawing.Size(11, 48);
             this.dotdotdot19.TabIndex = 230;
-            this.dotdotdot19.Text = ".\r\n.\r\n.";
+            this.dotdotdot19.Text = "。\r\n。\r\n。";
             // 
             // dotdotdot17
             // 
@@ -461,7 +461,7 @@ namespace ACNHPokerCore
             this.dotdotdot23.Name = "dotdotdot23";
             this.dotdotdot23.Size = new System.Drawing.Size(11, 48);
             this.dotdotdot23.TabIndex = 231;
-            this.dotdotdot23.Text = ".\r\n.\r\n.";
+            this.dotdotdot23.Text = "。\r\n。\r\n。";
             // 
             // dotdotdot20
             // 
@@ -597,7 +597,7 @@ namespace ACNHPokerCore
             this.SelectionLabel.Name = "SelectionLabel";
             this.SelectionLabel.Size = new System.Drawing.Size(330, 16);
             this.SelectionLabel.TabIndex = 226;
-            this.SelectionLabel.Text = "Which variation type would you like to spawn?";
+            this.SelectionLabel.Text = "你想要生成哪种变体类型？";
             // 
             // mainOnly
             // 
@@ -610,7 +610,7 @@ namespace ACNHPokerCore
             this.mainOnly.Size = new System.Drawing.Size(166, 20);
             this.mainOnly.TabIndex = 227;
             this.mainOnly.TabStop = true;
-            this.mainOnly.Text = "Main variation only :";
+            this.mainOnly.Text = "仅主要变体：";
             this.mainOnly.UseVisualStyleBackColor = true;
             this.mainOnly.CheckedChanged += new System.EventHandler(this.MainOnly_CheckedChanged);
             // 
@@ -623,7 +623,7 @@ namespace ACNHPokerCore
             this.subOnly.Name = "subOnly";
             this.subOnly.Size = new System.Drawing.Size(159, 20);
             this.subOnly.TabIndex = 228;
-            this.subOnly.Text = "Sub variation only :";
+            this.subOnly.Text = "仅子变体：";
             this.subOnly.UseVisualStyleBackColor = true;
             this.subOnly.CheckedChanged += new System.EventHandler(this.SubOnly_CheckedChanged);
             // 
@@ -636,7 +636,7 @@ namespace ACNHPokerCore
             this.all.Name = "all";
             this.all.Size = new System.Drawing.Size(116, 20);
             this.all.TabIndex = 229;
-            this.all.Text = "All variation :";
+            this.all.Text = "所有变体：";
             this.all.UseVisualStyleBackColor = true;
             this.all.CheckedChanged += new System.EventHandler(this.All_CheckedChanged);
             // 
@@ -653,7 +653,7 @@ namespace ACNHPokerCore
             this.okBtn.Name = "okBtn";
             this.okBtn.Size = new System.Drawing.Size(63, 28);
             this.okBtn.TabIndex = 230;
-            this.okBtn.Text = "OK";
+            this.okBtn.Text = "好的";
             this.okBtn.UseVisualStyleBackColor = false;
             this.okBtn.Click += new System.EventHandler(this.OkBtn_Click);
             // 
@@ -666,7 +666,7 @@ namespace ACNHPokerCore
             this.HowManyColumnLabel.Name = "HowManyColumnLabel";
             this.HowManyColumnLabel.Size = new System.Drawing.Size(330, 16);
             this.HowManyColumnLabel.TabIndex = 231;
-            this.HowManyColumnLabel.Text = "How many column(s) would you like to spawn?\r\n";
+            this.HowManyColumnLabel.Text = "你想要生成多少列？\r\n";
             // 
             // columnBox
             // 
@@ -713,7 +713,7 @@ namespace ACNHPokerCore
             this.VerticalSizeLabel.Name = "VerticalSizeLabel";
             this.VerticalSizeLabel.Size = new System.Drawing.Size(128, 16);
             this.VerticalSizeLabel.TabIndex = 236;
-            this.VerticalSizeLabel.Text = "Spawn area size :";
+            this.VerticalSizeLabel.Text = "生成区域大小：";
             // 
             // size
             // 
@@ -760,7 +760,7 @@ namespace ACNHPokerCore
             this.previewBtn.Name = "previewBtn";
             this.previewBtn.Size = new System.Drawing.Size(103, 28);
             this.previewBtn.TabIndex = 238;
-            this.previewBtn.Text = "Preview";
+            this.previewBtn.Text = "预览";
             this.previewBtn.UseVisualStyleBackColor = false;
             this.previewBtn.Click += new System.EventHandler(this.PreviewBtn_Click);
             // 
@@ -795,7 +795,7 @@ namespace ACNHPokerCore
             this.previewHBtn.Name = "previewHBtn";
             this.previewHBtn.Size = new System.Drawing.Size(103, 28);
             this.previewHBtn.TabIndex = 239;
-            this.previewHBtn.Text = "Preview";
+            this.previewHBtn.Text = "预览";
             this.previewHBtn.UseVisualStyleBackColor = false;
             this.previewHBtn.Click += new System.EventHandler(this.PreviewHBtn_Click);
             // 
@@ -810,7 +810,7 @@ namespace ACNHPokerCore
             this.mainHOnly.Size = new System.Drawing.Size(166, 20);
             this.mainHOnly.TabIndex = 227;
             this.mainHOnly.TabStop = true;
-            this.mainHOnly.Text = "Main variation only :";
+            this.mainHOnly.Text = "仅主要变体：";
             this.mainHOnly.UseVisualStyleBackColor = true;
             this.mainHOnly.CheckedChanged += new System.EventHandler(this.MainHOnly_CheckedChanged);
             // 
@@ -958,7 +958,7 @@ namespace ACNHPokerCore
             this.HorizontalSizeLabel.Name = "HorizontalSizeLabel";
             this.HorizontalSizeLabel.Size = new System.Drawing.Size(128, 16);
             this.HorizontalSizeLabel.TabIndex = 236;
-            this.HorizontalSizeLabel.Text = "Spawn area size :";
+            this.HorizontalSizeLabel.Text = "出生区域大小：";
             // 
             // subHPanel
             // 
@@ -995,7 +995,7 @@ namespace ACNHPokerCore
             this.dotdotdot5.Name = "dotdotdot5";
             this.dotdotdot5.Size = new System.Drawing.Size(11, 48);
             this.dotdotdot5.TabIndex = 240;
-            this.dotdotdot5.Text = ".\r\n.\r\n.";
+            this.dotdotdot5.Text = "。\r\n。\r\n。";
             // 
             // timesHLabel2
             // 
@@ -1021,7 +1021,7 @@ namespace ACNHPokerCore
             this.dotdotdot4.Name = "dotdotdot4";
             this.dotdotdot4.Size = new System.Drawing.Size(11, 48);
             this.dotdotdot4.TabIndex = 230;
-            this.dotdotdot4.Text = ".\r\n.\r\n.";
+            this.dotdotdot4.Text = "。\r\n。\r\n。";
             // 
             // subH00
             // 
@@ -1098,7 +1098,7 @@ namespace ACNHPokerCore
             this.HowManyRowLabel.Name = "HowManyRowLabel";
             this.HowManyRowLabel.Size = new System.Drawing.Size(305, 16);
             this.HowManyRowLabel.TabIndex = 231;
-            this.HowManyRowLabel.Text = "How many row(s) would you like to spawn?\r\n";
+            this.HowManyRowLabel.Text = "你想要生成多少行？\r\n";
             // 
             // rowBox
             // 
@@ -1166,7 +1166,7 @@ namespace ACNHPokerCore
             this.dotdotdot11.Name = "dotdotdot11";
             this.dotdotdot11.Size = new System.Drawing.Size(11, 48);
             this.dotdotdot11.TabIndex = 232;
-            this.dotdotdot11.Text = ".\r\n.\r\n.";
+            this.dotdotdot11.Text = "。\r\n。\r\n。";
             // 
             // dotdotdot8
             // 
@@ -1328,7 +1328,7 @@ namespace ACNHPokerCore
             this.okHBtn.Name = "okHBtn";
             this.okHBtn.Size = new System.Drawing.Size(63, 28);
             this.okHBtn.TabIndex = 230;
-            this.okHBtn.Text = "OK";
+            this.okHBtn.Text = "好的";
             this.okHBtn.UseVisualStyleBackColor = false;
             this.okHBtn.Click += new System.EventHandler(this.OkHBtn_Click);
             // 
@@ -1341,7 +1341,7 @@ namespace ACNHPokerCore
             this.subHOnly.Name = "subHOnly";
             this.subHOnly.Size = new System.Drawing.Size(159, 20);
             this.subHOnly.TabIndex = 228;
-            this.subHOnly.Text = "Sub variation only :";
+            this.subHOnly.Text = "仅子变体：";
             this.subHOnly.UseVisualStyleBackColor = true;
             this.subHOnly.CheckedChanged += new System.EventHandler(this.SubHOnly_CheckedChanged);
             // 
@@ -1354,7 +1354,7 @@ namespace ACNHPokerCore
             this.allH.Name = "allH";
             this.allH.Size = new System.Drawing.Size(116, 20);
             this.allH.TabIndex = 229;
-            this.allH.Text = "All variation :";
+            this.allH.Text = "所有变体：";
             this.allH.UseVisualStyleBackColor = true;
             this.allH.CheckedChanged += new System.EventHandler(this.AllH_CheckedChanged);
             // 
@@ -1370,7 +1370,7 @@ namespace ACNHPokerCore
             this.toggleBtn.Size = new System.Drawing.Size(103, 28);
             this.toggleBtn.TabIndex = 238;
             this.toggleBtn.Tag = "Vertical";
-            this.toggleBtn.Text = "Vertical";
+            this.toggleBtn.Text = "垂直的";
             this.toggleBtn.UseVisualStyleBackColor = false;
             this.toggleBtn.Click += new System.EventHandler(this.ToggleBtn_Click);
             // 
@@ -1391,7 +1391,7 @@ namespace ACNHPokerCore
             this.ObeySizeLabel.Name = "ObeySizeLabel";
             this.ObeySizeLabel.Size = new System.Drawing.Size(117, 16);
             this.ObeySizeLabel.TabIndex = 240;
-            this.ObeySizeLabel.Text = "Obey item size :";
+            this.ObeySizeLabel.Text = "遵循物品尺寸：";
             // 
             // ObeySizeToggle
             // 
@@ -1419,7 +1419,7 @@ namespace ACNHPokerCore
             this.ExtraColumnLabel.Name = "ExtraColumnLabel";
             this.ExtraColumnLabel.Size = new System.Drawing.Size(112, 16);
             this.ExtraColumnLabel.TabIndex = 242;
-            this.ExtraColumnLabel.Text = "Extra Column : ";
+            this.ExtraColumnLabel.Text = "额外列：";
             // 
             // ExtraRowLabel
             // 
@@ -1431,7 +1431,7 @@ namespace ACNHPokerCore
             this.ExtraRowLabel.Name = "ExtraRowLabel";
             this.ExtraRowLabel.Size = new System.Drawing.Size(89, 16);
             this.ExtraRowLabel.TabIndex = 243;
-            this.ExtraRowLabel.Text = "Extra Row : ";
+            this.ExtraRowLabel.Text = "额外行：";
             // 
             // ExtraColumnBox
             // 
@@ -1495,7 +1495,7 @@ namespace ACNHPokerCore
             this.Name = "variationSpawn";
             this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Variation Spawn";
+            this.Text = "变体生成";
             this.mainPanel.ResumeLayout(false);
             this.mainPanel.PerformLayout();
             this.subPanel.ResumeLayout(false);

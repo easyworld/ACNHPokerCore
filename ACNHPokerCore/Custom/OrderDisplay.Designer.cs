@@ -77,7 +77,7 @@ namespace ACNHPokerCore
             this.Name = "OrderDisplay";
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.Text = "OrderDisplay";
+            this.Text = "订单显示";
             ((System.ComponentModel.ISupportInitialize)(this.itemImage1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemImage2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemImage3)).EndInit();

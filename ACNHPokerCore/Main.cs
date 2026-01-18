@@ -275,8 +275,8 @@ namespace ACNHPokerCore
             {
                 if (sound)
                     System.Media.SystemSounds.Asterisk.Play();
-                MyMessageBox.Show("[Warning] Missing items.csv file!", "Missing CSV file!\n" +
-                                    "Please make sure you have extracted all the files from the downloaded archive before running the program!"
+                MyMessageBox.Show("[警告] 缺少 items.csv 文件！", "缺少CSV文件！\n" +
+                                    "请确保在运行程序之前，你已经从下载的压缩文件中解压缩了所有文件！"
                                     , MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
@@ -1221,11 +1221,11 @@ namespace ACNHPokerCore
                                     IPAddressInputBackground.BackColor = Color.Red;
                                 });
 
-                                if (MyMessageBox.Show("Sys-botbase not responding. Details?", "Error Code : 5318008 - Missing Sys-botbase Error!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                                if (MyMessageBox.Show("Sys-botbase未响应。详情？", "错误代码 : 5318008 - 缺失 Sys-botbase 错误!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                                 {
-                                    MyMessageBox.Show("You have successfully started a connection!\n" +
-                                                        "However, Sys-botbase is not responding...\n" +
-                                                        " \n" +
+                                    MyMessageBox.Show("你已成功建立连接！\n" +
+                                                        "然而，Sys-botbase 没有响应……\n" +
+                                                        "\n" +
                                                         "1) \n" +
                                                         "Check that your Switch is running in CFW mode.\n" +
                                                         "On your Switch, go to [ System Settings ] -> [ System ]\n" +
@@ -1286,11 +1286,11 @@ namespace ACNHPokerCore
 
                                     MyLog.LogEvent("MainForm", "sys-botbase version : " + sysbotbaseVersion);
 
-                                    if (MyMessageBox.Show("Data validation failed. Details?", "Error Code : 71077345 - Data Validation Error!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                                    if (MyMessageBox.Show("数据验证失败。详情？", "错误代码 : 71077345 - 数据验证错误!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                                     {
-                                        MyMessageBox.Show("You have successfully established a connection!\n" +
-                                                    "However, data validation has failed!\n" +
-                                                    " \n" +
+                                        MyMessageBox.Show("你已成功建立连接！\n" +
+                                                    "然而，数据验证失败了！\n" +
+                                                    "\n" +
                                                     "1) \n" +
                                                     "Check that you have booted the game up.\n" +
                                                     "The best place to start the connection is at the title screen.\n" +
@@ -1339,7 +1339,7 @@ namespace ACNHPokerCore
                                 WrapSelector.SelectedIndex = 0;
 
                                 StartConnectionButton.Tag = @"disconnect";
-                                StartConnectionButton.Text = @"Disconnect";
+                                StartConnectionButton.Text = @"断开连接";
                                 USBConnectionButton.Visible = false;
                                 SettingButton.Visible = false;
                                 MapDropperButton.Visible = true;
@@ -1433,12 +1433,12 @@ namespace ACNHPokerCore
 
                                 if (overrideSetting)
                                 {
-                                    MyMessageBox.Show("[Warning] You have address override activated!" + "\n" + "\n" +
-                                                      AddressResult, "Bytes Saved!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    MyMessageBox.Show("[警告] 您已激活地址覆盖！" + "\n" + "\n" +
+                                                      AddressResult, "数据已保存！", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 }
                                 else
                                 {
-                                    MyMessageBox.Show(AddressResult, "Bytes Saved!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    MyMessageBox.Show(AddressResult, "数据已保存！", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 }
                             }
 
@@ -1453,11 +1453,11 @@ namespace ACNHPokerCore
                             {
                                 IPAddressInputBackground.BackColor = Color.Red;
                             });
-                            MyMessageBox.Show("Unable to connect to the Sys-botbase server.\n" +
-                                            "Please double check your IP address and Sys-botbase installation.\n" +
-                                            " \n" +
-                                            "You might also need to disable your firewall or antivirus temporary to allow outgoing connection."
-                                            , "Unable to establish connection!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            MyMessageBox.Show("无法连接到 Sys-botbase 服务器。\n" +
+                                            "请再次检查你的IP地址和Sys-botbase安装情况。\n" +
+                                            "\n" +
+                                            "你可能还需要暂时禁用你的防火墙或杀毒软件，以允许出站连接。"
+                                            , "无法建立连接！", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         }
                     }).Start();
                 }
@@ -1502,7 +1502,7 @@ namespace ACNHPokerCore
                 offline = true;
 
                 StartConnectionButton.Tag = @"connect";
-                StartConnectionButton.Text = @"Connect";
+                StartConnectionButton.Text = @"连接";
                 USBConnectionButton.Visible = true;
 
                 Text = version;
@@ -1582,7 +1582,7 @@ namespace ACNHPokerCore
             }
             catch (Exception e)
             {
-                MyMessageBox.Show(e.Message, "Todo : this is dumb");
+                MyMessageBox.Show(e.Message, "Todo：这很蠢");
                 return false;
             }
         }
@@ -1708,7 +1708,7 @@ namespace ACNHPokerCore
                 MyLog.LogEvent("MainForm", "RefreshTimer: " + ex.Message);
                 Invoke((MethodInvoker)delegate { InventoryAutoRefreshToggle.Checked = false; });
                 InventoryRefreshTimer.Stop();
-                MyMessageBox.Show("Lost connection to the Switch...\nDid the Switch go to sleep?", "Disconnected", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MyMessageBox.Show("与Switch断开连接...\\nSwitch是否进入睡眠状态？", "断开连接", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -1865,7 +1865,7 @@ namespace ACNHPokerCore
                 MyLog.LogEvent("MainForm", "UpdateInventory: " + ex.Message);
                 Invoke((MethodInvoker)delegate { InventoryAutoRefreshToggle.Checked = false; });
                 InventoryRefreshTimer.Stop();
-                MyMessageBox.Show(ex.Message, "This seems like a bad idea but it's fine for now.");
+                MyMessageBox.Show(ex.Message, "这看起来是个坏主意，但目前还好。");
                 return;
             }
 
@@ -2116,19 +2116,19 @@ namespace ACNHPokerCore
         {
             if (IDTextbox.Text == "")
             {
-                MessageBox.Show(@"Please enter an ID before sending item");
+                MessageBox.Show(@"请在发送物品前输入一个ID");
                 return;
             }
 
             if (AmountOrCountTextbox.Text == "")
             {
-                MessageBox.Show(@"Please enter an amount");
+                MessageBox.Show(@"请输入一个金额");
                 return;
             }
 
             if (selectedButton == null)
             {
-                MessageBox.Show(@"Please select a slot");
+                MessageBox.Show(@"请选择一个格子");
                 return;
             }
 
@@ -2176,7 +2176,7 @@ namespace ACNHPokerCore
             catch (Exception ex)
             {
                 MyLog.LogEvent("MainForm", "SpawnItem: " + ex.Message);
-                MyMessageBox.Show(ex.Message, "FIXME: This doesn't account for children of hierarchy... too bad!");
+                MyMessageBox.Show(ex.Message, "FIXME: 这没有考虑到层级的子项……太糟糕了！");
             }
 
             //this.ShowMessage(IDTextbox.Text);
@@ -2186,13 +2186,13 @@ namespace ACNHPokerCore
         {
             if (RecipeIDTextbox.Text == "")
             {
-                MessageBox.Show(@"Please enter a recipe ID before sending item");
+                MessageBox.Show(@"请在发送物品前输入配方ID");
                 return;
             }
 
             if (selectedButton == null)
             {
-                MessageBox.Show(@"Please select a slot");
+                MessageBox.Show(@"请选择一个槽位");
                 return;
             }
 
@@ -2208,13 +2208,13 @@ namespace ACNHPokerCore
         {
             if (FlowerIDTextbox.Text == "")
             {
-                MessageBox.Show(@"Please select a flower");
+                MessageBox.Show(@"请选择一朵花");
                 return;
             }
 
             if (selectedButton == null)
             {
-                MessageBox.Show(@"Please select a slot");
+                MessageBox.Show(@"请选择一个插槽");
                 return;
             }
 
@@ -2231,7 +2231,7 @@ namespace ACNHPokerCore
         {
             if (selectedButton == null)
             {
-                MessageBox.Show(@"Please select a slot");
+                MessageBox.Show(@"请选择一个槽位");
                 return;
             }
 
@@ -2244,7 +2244,7 @@ namespace ACNHPokerCore
                 catch (Exception ex)
                 {
                     MyLog.LogEvent("MainForm", "DeleteItemKeyBoard: " + ex.Message);
-                    MyMessageBox.Show(ex.Message, "Because nobody could *ever* possible attempt to parse bad data.");
+                    MyMessageBox.Show(ex.Message, "因为没有人会试图解析错误的数据。");
                 }
             }
             selectedButton.Reset();
@@ -2368,7 +2368,7 @@ namespace ACNHPokerCore
                         catch (Exception ex)
                         {
                             MyLog.LogEvent("MainForm", "DeleteItemRightClick: " + ex.Message);
-                            MyMessageBox.Show(ex.Message, "Bizarre vector flip inherited from earlier code, WTF?");
+                            MyMessageBox.Show(ex.Message, "奇怪的向量翻转继承自早期代码，什么鬼？");
                         }
                     }
 
@@ -3104,13 +3104,13 @@ namespace ACNHPokerCore
 
                 if (emptyspace < item.Length)
                 {
-                    DialogResult dialogResult = MyMessageBox.Show("Empty Spaces in your inventory : " + emptyspace + "\n" +
-                                                                "Number of items to Spawn : " + item.Length + "\n" +
+                    DialogResult dialogResult = MyMessageBox.Show("你的物品栏中的空格：" + emptyspace + "\n" +
+                                                                "生成物品数量：" + item.Length + "\n" +
                                                                 "\n" +
-                                                                "Press  [Yes]  to clear your inventory and spawn the items " + "\n" +
-                                                                "or  [No]  to cancel the spawn." + "\n" + "\n" +
-                                                                "[Warning] You will lose your items in your inventory!"
-                                                                , "Not enough inventory spaces!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                                                                "按[是]以清空你的物品栏并生成这些物品" + "\n" +
+                                                                "或者 [No] 取消生成。" + "\n" + "（用户未提供需要翻译的英文文本，无法进行翻译，返回空字符串）" +
+                                                                "[警告] 你将失去背包中的物品！"
+                                                                , "库存空间不足！", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                     if (dialogResult == DialogResult.Yes)
                     {
                         for (int i = 0; i < b1.Length; i++)
@@ -3166,13 +3166,13 @@ namespace ACNHPokerCore
 
                 if (emptyspace < item.Length)
                 {
-                    DialogResult dialogResult = MyMessageBox.Show("Empty Spaces in your inventory : " + emptyspace + "\n" +
-                                                                "Number of items to Spawn : " + item.Length + "\n" +
+                    DialogResult dialogResult = MyMessageBox.Show("你的物品栏中的空位置：" + emptyspace + "\n" +
+                                                                "生成物品数量：" + item.Length + "\n" +
                                                                 "\n" +
-                                                                "Press  [Yes]  to clear your inventory and spawn the new items " + "\n" +
-                                                                "or  [No]  to cancel the spawn." + "\n" + "\n" +
-                                                                "[Warning] You will lose your items in your inventory!"
-                                                                , "Not enough inventory spaces!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                                                                "按[是]以清空你的物品栏并生成新物品" + "\n" +
+                                                                "或  [No] 以取消生成。" + "\n" + "换行符" +
+                                                                "[警告] 你将丢失物品栏中的物品！"
+                                                                , "库存空间不足！", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                     if (dialogResult == DialogResult.Yes)
                     {
                         for (int i = 0; i < b1.Length; i++)
@@ -3378,13 +3378,13 @@ namespace ACNHPokerCore
         {
             if (IDTextbox.Text == "")
             {
-                MessageBox.Show(@"Please enter an ID before sending item");
+                MessageBox.Show(@"请在发送物品前输入一个ID");
                 return;
             }
 
             if (AmountOrCountTextbox.Text == "")
             {
-                MessageBox.Show(@"Please enter an amount");
+                MessageBox.Show(@"请输入一个金额");
                 return;
             }
 
@@ -3481,7 +3481,7 @@ namespace ACNHPokerCore
                     catch (Exception ex)
                     {
                         MyLog.LogEvent("MainForm", "FillRemain: " + ex.Message);
-                        MyMessageBox.Show(ex.Message, "This code didn't port easily. WTF does it do?");
+                        MyMessageBox.Show(ex.Message, "这段代码不容易移植。这到底是干嘛的？");
                     }
                 }
                 else
@@ -3514,13 +3514,13 @@ namespace ACNHPokerCore
         {
             if (IDTextbox.Text == "")
             {
-                MessageBox.Show(@"Please enter an ID before sending item");
+                MessageBox.Show(@"请在发送物品之前输入一个ID");
                 return;
             }
 
             if (AmountOrCountTextbox.Text == "")
             {
-                MessageBox.Show(@"Please enter an amount");
+                MessageBox.Show(@"请输入一个金额");
                 return;
             }
 
@@ -3573,7 +3573,7 @@ namespace ACNHPokerCore
                 catch (Exception ex)
                 {
                     MyLog.LogEvent("MainForm", "SpawnAll: " + ex.Message);
-                    MyMessageBox.Show(ex.Message, "Multithreading badness. This will cause a crash later!");
+                    MyMessageBox.Show(ex.Message, "多线程问题。这之后会导致崩溃！");
                 }
 
                 foreach (InventorySlot btn in InventoryPanel.Controls.OfType<InventorySlot>())
@@ -3680,7 +3680,7 @@ namespace ACNHPokerCore
             catch (Exception ex)
             {
                 MyLog.LogEvent("MainForm", "ClearInventory: " + ex.Message);
-                MyMessageBox.Show(ex.Message, "This is catastrophically bad, don't do this. Someone needs to fix this.");
+                MyMessageBox.Show(ex.Message, "这糟得灾难性，别这么做。得有人来解决这个问题。");
             }
             if (sound)
                 System.Media.SystemSounds.Asterisk.Play();
@@ -4220,7 +4220,7 @@ namespace ACNHPokerCore
 
         private void SetPageLabel()
         {
-            PageLabel.Text = @"Page " + currentPage;
+            PageLabel.Text = @"页面" + currentPage;
         }
 
         private void ShowPagination()
@@ -5151,7 +5151,7 @@ namespace ACNHPokerCore
         {
             string max = "999999999";
             string min = "1";
-            DialogResult dialogResult = MyMessageBox.Show("Are you sure you want to set all the turnip prices to MAX?\n[Warning] All original prices will be overwritten!", "Set all turnip prices", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+            DialogResult dialogResult = MyMessageBox.Show("你确定要把所有大头菜价格设为最高吗？\\n[警告] 所有原始价格都将被覆盖！", "设置所有大头菜价格", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
             if (dialogResult == DialogResult.Yes)
             {
                 UInt32[] prices = [
@@ -5172,7 +5172,7 @@ namespace ACNHPokerCore
                 catch (Exception ex)
                 {
                     MyLog.LogEvent("MainForm", "SetAllTurnip: " + ex.Message);
-                    MyMessageBox.Show(ex.Message, "This is a terrible way of doing this!");
+                    MyMessageBox.Show(ex.Message, "这是一种很糟糕的做法！");
                 }
 
                 if (sound)
@@ -5203,7 +5203,7 @@ namespace ACNHPokerCore
             catch (Exception ex)
             {
                 MyLog.LogEvent("MainForm", "SetAllTurnip: " + ex.Message.ToString());
-                MyMessageBox.Show(ex.Message.ToString(), "This is a terrible way of doing this!");
+                MyMessageBox.Show(ex.Message.ToString(), "这是做这件事的糟糕方式！");
             }
 
             if (sound)
@@ -5220,11 +5220,11 @@ namespace ACNHPokerCore
                 turnipSell5AM.Text == "" || turnipSell5PM.Text == "" ||
                 turnipSell6AM.Text == "" || turnipSell6PM.Text == "")
             {
-                MessageBox.Show(@"Turnip prices cannot be empty");
+                MessageBox.Show(@"大头菜价格不能为空");
                 return;
             }
 
-            DialogResult dialogResult = MyMessageBox.Show("Are you sure you want to set the turnip prices?\n[Warning] All original prices will be overwritten!", "Set turnip prices", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+            DialogResult dialogResult = MyMessageBox.Show("你确定要设置大头菜价格吗？\\n[警告] 所有原始价格都将被覆盖！", "设置大头菜价格", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
             if (dialogResult == DialogResult.Yes)
             {
                 UInt32[] prices = [
@@ -5245,7 +5245,7 @@ namespace ACNHPokerCore
                 catch (Exception ex)
                 {
                     MyLog.LogEvent("MainForm", "SetTurnip: " + ex.Message);
-                    MyMessageBox.Show(ex.Message, "This is a terrible way of doing this!");
+                    MyMessageBox.Show(ex.Message, "这是一种很糟糕的做法！");
                 }
 
                 if (sound)
@@ -5368,7 +5368,7 @@ namespace ACNHPokerCore
         {
             if (source == null)
             {
-                MessageBox.Show(@"Please load the critter data first.", @"Missing critter data!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(@"请先加载生物数据。", @"缺少小动物数据！", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
 
@@ -5410,7 +5410,7 @@ namespace ACNHPokerCore
             }
             catch (Exception e)
             {
-                MyMessageBox.Show(e.Message, "NOTE: This isn't particularly efficient. Too bad!");
+                MyMessageBox.Show(e.Message, "注意：这不是特别高效。太糟糕了！");
             }
         }
         #endregion
@@ -6379,7 +6379,7 @@ namespace ACNHPokerCore
             }
             catch (Exception e)
             {
-                MyMessageBox.Show(e.Message, "This is a stupid fix, but I don't have time to da a cleaner implementation");
+                MyMessageBox.Show(e.Message, "这是个愚蠢的修复，但我没时间做更完善的实现");
             }
 
             if (sound)
@@ -6836,9 +6836,9 @@ namespace ACNHPokerCore
 
                 if (CheckDuplicate(IName))
                 {
-                    DialogResult dialogResult = MyMessageBox.Show(RealName + " is currently living on your island!" +
-                                                                  "                                                   \nAre you sure you want to continue the replacement?" +
-                                                                  "                                                   \nNote that the game will attempt to remove any duplicated villager!", "Villager already exists!", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+                    DialogResult dialogResult = MyMessageBox.Show(RealName + "目前住在你的岛上！" +
+                                                                  "你确定要继续替换吗？" +
+                                                                  "请注意，游戏将会尝试移除任何重复的村民！", "村民已存在！", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
                     if (dialogResult == DialogResult.No)
                     {
                         return;
@@ -6857,7 +6857,7 @@ namespace ACNHPokerCore
                 }
                 else
                 {
-                    MessageBox.Show("Villager files \"" + IName + ".nhv2\" " + "/ \"" + RealName + ".nhv2\" " + "not found!", @"Villager file not found");
+                    MessageBox.Show("村民档案" + IName + ".nhv2" + "/ \"" + RealName + ".nhv2" + "未找到！", @"村民文件未找到");
                     return;
                 }
 
@@ -6875,7 +6875,7 @@ namespace ACNHPokerCore
                 }
                 else
                 {
-                    MessageBox.Show("Villager house files \"" + IName + ".nhvh2\" " + "/ \"" + RealName + ".nhvh2\" " + "not found!", @"House file not found");
+                    MessageBox.Show("村民房屋文件" + IName + ".nhvh2" + "/ \"" + RealName + ".nhvh2" + "未找到！", @"房屋文件未找到");
                     return;
                 }
 
@@ -6890,12 +6890,12 @@ namespace ACNHPokerCore
         {
             if (villager.Length != Utilities.VillagerSize)
             {
-                MessageBox.Show(@"Villager file size incorrect!", @"Villager file invalid");
+                MessageBox.Show(@"村民文件大小不正确！", @"村民文件无效");
                 return;
             }
             if (house.Length != Utilities.VillagerHouseSize)
             {
-                MessageBox.Show(@"House file size incorrect!", @"House file invalid");
+                MessageBox.Show(@"房屋文件大小不正确！", @"房屋文件无效");
                 return;
             }
 
@@ -7109,7 +7109,7 @@ namespace ACNHPokerCore
             {
                 Debug.Print(Utilities.ByteToHexString(checkHeader));
                 Debug.Print(Utilities.ByteToHexString(header));
-                MessageBox.Show(@"Wait something is wrong here!? Header Mismatch!", @"Warning");
+                MessageBox.Show(@"等等，这里出问题了！？头部不匹配！", @"警告");
             }
             if (sound)
                 System.Media.SystemSounds.Asterisk.Play();
@@ -7231,7 +7231,7 @@ namespace ACNHPokerCore
 
             if (data.Length != Utilities.VillagerSize)
             {
-                MessageBox.Show(@"Villager file size incorrect!", @"Villager file invalid");
+                MessageBox.Show(@"村民文件大小不正确！", @"村民文件无效");
                 return;
             }
 
@@ -7334,7 +7334,7 @@ namespace ACNHPokerCore
 
             if (data.Length != Utilities.VillagerHouseSize)
             {
-                MessageBox.Show(@"House file size incorrect!", @"House file invalid");
+                MessageBox.Show(@"房屋文件大小错误!", @"房屋文件无效");
                 return;
             }
 
@@ -7508,7 +7508,7 @@ namespace ACNHPokerCore
         {
             if (ReplaceVilllagerSearchBox.Text == "")
             {
-                ReplaceVilllagerSearchBox.Text = @"Search...";
+                ReplaceVilllagerSearchBox.Text = @"搜索...";
                 ReplaceVilllagerSearchBox.ForeColor = Color.FromArgb(255, 114, 118, 125);
             }
         }
@@ -7517,7 +7517,7 @@ namespace ACNHPokerCore
         {
             if (ReplaceMysVilllagerSearchBox.Text == "")
             {
-                ReplaceMysVilllagerSearchBox.Text = @"Search...";
+                ReplaceMysVilllagerSearchBox.Text = @"搜索...";
                 ReplaceMysVilllagerSearchBox.ForeColor = Color.FromArgb(255, 114, 118, 125);
             }
         }
@@ -7865,9 +7865,9 @@ namespace ACNHPokerCore
         {
             if (HexModeButton.Tag.ToString() == "Normal")
             {
-                AmountOrCountLabel.Text = @"Hex Value";
+                AmountOrCountLabel.Text = @"十六进制值";
                 HexModeButton.Tag = "Hex";
-                HexModeButton.Text = @"Normal Mode";
+                HexModeButton.Text = @"普通模式";
                 if (AmountOrCountTextbox.Text != "")
                 {
                     int decValue = Convert.ToInt32(AmountOrCountTextbox.Text) - 1;
@@ -7881,9 +7881,9 @@ namespace ACNHPokerCore
             }
             else
             {
-                AmountOrCountLabel.Text = @"Amount";
+                AmountOrCountLabel.Text = @"数量";
                 HexModeButton.Tag = "Normal";
-                HexModeButton.Text = @"Hex Mode";
+                HexModeButton.Text = @"十六进制模式";
                 if (AmountOrCountTextbox.Text != "")
                 {
                     string hexValue = AmountOrCountTextbox.Text;
@@ -10129,7 +10129,7 @@ namespace ACNHPokerCore
             catch (Exception ex)
             {
                 MyLog.LogEvent("MainForm", "Convert to Cheat txt: " + ex.Message);
-                MyMessageBox.Show(ex.Message, "Convert to Cheat Crashed");
+                MyMessageBox.Show(ex.Message, "转换为作弊崩溃");
             }
         }
 
@@ -10162,7 +10162,7 @@ namespace ACNHPokerCore
 
                     WrapSelector.SelectedIndex = 0;
 
-                    USBConnectionButton.Text = @"Disconnect";
+                    USBConnectionButton.Text = @"断开连接";
                     USBConnectionButton.Tag = "Disconnect";
                     StartConnectionButton.Visible = false;
                     SettingButton.Visible = false;
@@ -10427,7 +10427,7 @@ namespace ACNHPokerCore
 
         private void VersionButton_Click(object sender, EventArgs e)
         {
-            MyMessageBox.Show(Utilities.CheckSysBotBase(socket, usb), "Sys-botbase Version");
+            MyMessageBox.Show(Utilities.CheckSysBotBase(socket, usb), "Sys-botbase 版本");
         }
 
         private void CheckStateButton_Click(object sender, EventArgs e)
@@ -10551,7 +10551,7 @@ namespace ACNHPokerCore
 
         private void DodoHelperAbortAll()
         {
-            MyMessageBox.Show("Dodo Helper Aborted!\nPlease remember to exit the airport first if you want to restart!", "Slamming on the brakes?", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MyMessageBox.Show("渡渡鸟助手已中止！\\n请记得如果您想要重新开始，请先离开机场！", "猛踩刹车？", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void DodoHelperCloseForm()
@@ -10638,7 +10638,7 @@ namespace ACNHPokerCore
                 M.Show();
             }
 
-            ItemSearchBox.Text = @"Search...";
+            ItemSearchBox.Text = @"搜索...";
         }
 
         private void MapDropperCloseForm()
@@ -10729,7 +10729,7 @@ namespace ACNHPokerCore
             Configuration config = ConfigurationManager.OpenExeConfiguration(Application.ExecutablePath.Replace(".exe", ".dll"));
             if (config.AppSettings.Settings["override"].Value == "true")
             {
-                DialogResult dialogResult = MyMessageBox.Show("Would you like to disable [Address Override] now?", "Please disable [Address Override] before starting chaser!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                DialogResult dialogResult = MyMessageBox.Show("你现在想要禁用[地址覆盖]吗？", "请在启动追踪器之前禁用[地址覆盖]！", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (dialogResult == DialogResult.Yes)
                 {
                     config.AppSettings.Settings["override"].Value = "false";
@@ -10770,10 +10770,10 @@ namespace ACNHPokerCore
                     string IslandName = Utilities.GetString(nameBytes, 4, 10);
                     string CharacterName = Utilities.GetString(nameBytes, 32, 10);
 
-                    DialogResult dialogResult = MyMessageBox.Show("Character Name : [   " + CharacterName + "   ]\n" +
-                                              "Island Name : [   " + IslandName + "   ]\n\n" +
-                                              "Are these correct?"
-                                            , "Character & Island Name Found!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    DialogResult dialogResult = MyMessageBox.Show("角色名称: [" + CharacterName + "]\n" +
+                                              "岛屿名称 : [" + IslandName + "]\n\n" +
+                                              "这些正确吗？"
+                                            , "角色和岛屿名称已找到！", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                     if (dialogResult == DialogResult.Yes)
                     {
@@ -10796,12 +10796,12 @@ namespace ACNHPokerCore
 
                         if (FinalOffset != 0)
                         {
-                            DialogResult dialogResult2 = MyMessageBox.Show("Tree Branch Address : " + fakeAddress.ToString("X") + "\n" +
-                                                                           "Number of Players Before Tree Branch: " + (offsetNumber).ToString() + "\n\n" +
-                                                                           "Final Head Address : " + FinalHeadAddress.ToString("X") + "\n" +
-                                                                           "Offset : " + FinalOffset.ToString("X") + "\n\n" +
-                                                                           "Apply offset ?"
-                                                                         , "Address & Header Found!", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                            DialogResult dialogResult2 = MyMessageBox.Show("树枝地址：" + fakeAddress.ToString("X") + "（此处无原文可翻译，返回空字符串）" +
+                                                                           "树枝之前的玩家数量：" + (offsetNumber).ToString() + "\n\n" +
+                                                                           "最终头部地址：" + FinalHeadAddress.ToString("X") + "\n" +
+                                                                           "偏移量：" + FinalOffset.ToString("X") + "\n\n" +
+                                                                           "应用偏移量？"
+                                                                         , "地址和标题已找到！", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
                             if (dialogResult2 == DialogResult.OK)
                             {
                                 Configuration Config = ConfigurationManager.OpenExeConfiguration(Application.ExecutablePath.Replace(".exe", ".dll"));
@@ -10827,16 +10827,16 @@ namespace ACNHPokerCore
                         }
                         else
                         {
-                            MyMessageBox.Show("Tree Branch Address : " + fakeAddress.ToString("X") + "\n" +
-                                              "Number of Players Before Tree Branch: " + (offsetNumber).ToString() + "\n\n" +
-                                              "Final Head Address : " + FinalHeadAddress.ToString("X") + "\n" +
-                                              "Offset : " + FinalOffset.ToString("X")
-                                            , "No Change Needed!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MyMessageBox.Show("树枝地址：" + fakeAddress.ToString("X") + "\n" +
+                                              "树枝前的玩家数量：" + (offsetNumber).ToString() + "\n\n" +
+                                              "最终总部地址：" + FinalHeadAddress.ToString("X") + "\n" +
+                                              "偏移量：" + FinalOffset.ToString("X")
+                                            , "无需更改！", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                     }
                     else
                     {
-                        MyMessageBox.Show("Tree branch Address : " + fakeAddress.ToString("X"), "Not Found!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MyMessageBox.Show("树枝地址：" + fakeAddress.ToString("X"), "未找到！", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
 
                     Debug.Print(result.ToString("X") + "  " + offset.ToString("X") + " Final : " + fakeAddress.ToString("X") + " Offset : " + (fakeAddress - Utilities.masterAddress).ToString("X"));
@@ -10933,8 +10933,8 @@ namespace ACNHPokerCore
                 Process process;
                 if (processListYuzu.Length <= 0 && processListRyu.Length <= 0)
                 {
-                    MyMessageBox.Show("Unable to locate the process \"yuzu.exe\" or \"ryujinx.exe\" !",
-                        "Piece of shit drill (1) !", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MyMessageBox.Show("无法找到进程“yuzu.exe”或“ryujinx.exe”！",
+                        "狗屎钻头（1）！", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     HideWait();
                     return;
                 }
@@ -11076,8 +11076,8 @@ namespace ACNHPokerCore
 
                 if (!headFound)
                 {
-                    MyMessageBox.Show("Unable to locate the memory head!",
-                      "Piece of shit drill (2) !", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MyMessageBox.Show("无法定位内存头！",
+                      "一坨屎钻头 (2)！", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     HideWait();
                     return;
                 }
@@ -11150,8 +11150,8 @@ namespace ACNHPokerCore
 
                     if (Utilities.EmulatorHeadAddress == 0x0)
                     {
-                        MyMessageBox.Show("Unable to locate the heap offset!",
-                          "Piece of shit drill (3) !", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        MyMessageBox.Show("无法定位堆偏移量！",
+                          "狗屎钻头（3）！", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         HideWait();
                         return;
                     }

@@ -60,7 +60,7 @@
             this.message1.Size = new System.Drawing.Size(678, 24);
             this.message1.TabIndex = 0;
             this.message1.TabStop = false;
-            this.message1.Text = "Flattening terrain might leave your river mouth(s) in a state that is not easily " +
+            this.message1.Text = "平整地形可能会使你的河口处于一种难以恢复的状态。" +
     "recoverable.";
             // 
             // pleaseTypeLabel
@@ -72,7 +72,7 @@
             this.pleaseTypeLabel.Name = "pleaseTypeLabel";
             this.pleaseTypeLabel.Size = new System.Drawing.Size(97, 19);
             this.pleaseTypeLabel.TabIndex = 1;
-            this.pleaseTypeLabel.Text = "Please type";
+            this.pleaseTypeLabel.Text = "请输入";
             // 
             // toConfirmLabel
             // 
@@ -83,7 +83,7 @@
             this.toConfirmLabel.Name = "toConfirmLabel";
             this.toConfirmLabel.Size = new System.Drawing.Size(90, 19);
             this.toConfirmLabel.TabIndex = 2;
-            this.toConfirmLabel.Text = "to confirm.";
+            this.toConfirmLabel.Text = "确认。";
             // 
             // sampleBox
             // 
@@ -99,7 +99,7 @@
             this.sampleBox.Size = new System.Drawing.Size(479, 24);
             this.sampleBox.TabIndex = 3;
             this.sampleBox.TabStop = false;
-            this.sampleBox.Text = "I will not ask for help about fixing river mouth";
+            this.sampleBox.Text = "我不会寻求关于修复河口的帮助";
             // 
             // answerBox
             // 
@@ -126,7 +126,7 @@
             this.confirmBtn.Name = "confirmBtn";
             this.confirmBtn.Size = new System.Drawing.Size(678, 31);
             this.confirmBtn.TabIndex = 244;
-            this.confirmBtn.Text = "I understand, flatten all terrain.";
+            this.confirmBtn.Text = "我明白了，平整所有地形。";
             this.confirmBtn.UseVisualStyleBackColor = false;
             this.confirmBtn.Visible = false;
             this.confirmBtn.Click += new System.EventHandler(this.ConfirmBtn_Click);
@@ -168,7 +168,7 @@
             this.PleaseWaitLabel.Name = "PleaseWaitLabel";
             this.PleaseWaitLabel.Size = new System.Drawing.Size(130, 22);
             this.PleaseWaitLabel.TabIndex = 242;
-            this.PleaseWaitLabel.Text = "Please Wait...";
+            this.PleaseWaitLabel.Text = "请稍等...";
             // 
             // PleaseWaitImage
             // 
@@ -199,7 +199,7 @@
             this.Name = "MyWarning";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "You are about to obliterate your river mouth(s)!";
+            this.Text = "你即将摧毁你的河口！";
             this.TopMost = true;
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MyWarning_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.warningImg1)).EndInit();

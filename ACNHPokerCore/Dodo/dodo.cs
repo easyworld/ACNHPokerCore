@@ -195,7 +195,7 @@ namespace ACNHPokerCore
             }
             else
             {
-                MyMessageBox.Show("One or more anchors have not been setup correctly.", "Skip leg day?", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MyMessageBox.Show("一个或多个锚点未正确设置。", "跳过腿部训练日？", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -248,7 +248,7 @@ namespace ACNHPokerCore
             Anchor0Line3.Visible = true;
             Anchor0TestBtn.Visible = true;
             Anchor0TestBtn.Enabled = true;
-            Anchor0TestBtn.Text = @"Test";
+            Anchor0TestBtn.Text = @"测试";
             Anchor0TestBtn.ForeColor = Color.White;
         }
 
@@ -268,7 +268,7 @@ namespace ACNHPokerCore
             Anchor1Line3.Visible = true;
             Anchor1TestBtn.Visible = true;
             Anchor1TestBtn.Enabled = true;
-            Anchor1TestBtn.Text = @"Test";
+            Anchor1TestBtn.Text = @"测试";
             Anchor1TestBtn.ForeColor = Color.White;
         }
 
@@ -288,7 +288,7 @@ namespace ACNHPokerCore
             Anchor2Line3.Visible = true;
             Anchor2TestBtn.Visible = true;
             Anchor2TestBtn.Enabled = true;
-            Anchor2TestBtn.Text = @"Test";
+            Anchor2TestBtn.Text = @"测试";
             Anchor2TestBtn.ForeColor = Color.White;
         }
 
@@ -308,7 +308,7 @@ namespace ACNHPokerCore
             Anchor3Line3.Visible = true;
             Anchor3TestBtn.Visible = true;
             Anchor3TestBtn.Enabled = true;
-            Anchor3TestBtn.Text = @"Test";
+            Anchor3TestBtn.Text = @"测试";
             Anchor3TestBtn.ForeColor = Color.White;
         }
 
@@ -328,7 +328,7 @@ namespace ACNHPokerCore
             Anchor4Line3.Visible = true;
             Anchor4TestBtn.Visible = true;
             Anchor4TestBtn.Enabled = true;
-            Anchor4TestBtn.Text = @"Test";
+            Anchor4TestBtn.Text = @"测试";
             Anchor4TestBtn.ForeColor = Color.White;
         }
 
@@ -393,7 +393,7 @@ namespace ACNHPokerCore
                 btn.Invoke((MethodInvoker)delegate
                 {
                     btn.Enabled = true;
-                    btn.Text = @"Success";
+                    btn.Text = @"成功";
                     btn.ForeColor = Color.Green;
                 });
             }
@@ -402,7 +402,7 @@ namespace ACNHPokerCore
                 btn.Invoke((MethodInvoker)delegate
                 {
                     btn.Enabled = true;
-                    btn.Text = @"Failed";
+                    btn.Text = @"失败";
                     btn.ForeColor = Color.Red;
                 });
             }
@@ -412,33 +412,33 @@ namespace ACNHPokerCore
         {
             Anchor0SetBtn.ForeColor = Color.White;
             Anchor0TestBtn.Enabled = true;
-            Anchor0TestBtn.Text = @"Test";
+            Anchor0TestBtn.Text = @"测试";
             Anchor0TestBtn.ForeColor = Color.White;
             Anchor1SetBtn.ForeColor = Color.White;
             Anchor1TestBtn.Enabled = true;
-            Anchor1TestBtn.Text = @"Test";
+            Anchor1TestBtn.Text = @"测试";
             Anchor1TestBtn.ForeColor = Color.White;
             Anchor2SetBtn.ForeColor = Color.White;
             Anchor2TestBtn.Enabled = true;
-            Anchor2TestBtn.Text = @"Test";
+            Anchor2TestBtn.Text = @"测试";
             Anchor2TestBtn.ForeColor = Color.White;
             Anchor3SetBtn.ForeColor = Color.White;
             Anchor3TestBtn.Enabled = true;
-            Anchor3TestBtn.Text = @"Test";
+            Anchor3TestBtn.Text = @"测试";
             Anchor3TestBtn.ForeColor = Color.White;
             Anchor4SetBtn.ForeColor = Color.White;
             Anchor4TestBtn.Enabled = true;
-            Anchor4TestBtn.Text = @"Test";
+            Anchor4TestBtn.Text = @"测试";
             Anchor4TestBtn.ForeColor = Color.White;
-            DoneAnchor0TestBtn.Text = @"Test";
+            DoneAnchor0TestBtn.Text = @"测试";
             DoneAnchor0TestBtn.ForeColor = Color.White;
-            DoneAnchor1TestBtn.Text = @"Test";
+            DoneAnchor1TestBtn.Text = @"测试";
             DoneAnchor1TestBtn.ForeColor = Color.White;
-            DoneAnchor2TestBtn.Text = @"Test";
+            DoneAnchor2TestBtn.Text = @"测试";
             DoneAnchor2TestBtn.ForeColor = Color.White;
-            DoneAnchor3TestBtn.Text = @"Test";
+            DoneAnchor3TestBtn.Text = @"测试";
             DoneAnchor3TestBtn.ForeColor = Color.White;
-            DoneAnchor4TestBtn.Text = @"Test";
+            DoneAnchor4TestBtn.Text = @"测试";
             DoneAnchor4TestBtn.ForeColor = Color.White;
         }
 
@@ -506,7 +506,7 @@ namespace ACNHPokerCore
 
             Invoke((MethodInvoker)delegate
             {
-                DoneFullTestBtn.Text = @"Done";
+                DoneFullTestBtn.Text = @"完成";
                 DoneFullTestBtn.ForeColor = Color.Green;
                 DoneAnchor0TestBtn.Enabled = true;
                 DoneAnchor1TestBtn.Enabled = true;
@@ -562,7 +562,7 @@ namespace ACNHPokerCore
             {
                 onlineLabel.Invoke((MethodInvoker)delegate
                 {
-                    onlineLabel.Text = @"ONLINE";
+                    onlineLabel.Text = @"在线";
                     onlineLabel.ForeColor = Color.Green;
                 });
                 return true;
@@ -571,7 +571,7 @@ namespace ACNHPokerCore
             {
                 onlineLabel.Invoke((MethodInvoker)delegate
                 {
-                    onlineLabel.Text = @"ONLINE";
+                    onlineLabel.Text = @"在线";
                     onlineLabel.ForeColor = Color.Lime;
                 });
                 return true;
@@ -580,7 +580,7 @@ namespace ACNHPokerCore
             {
                 onlineLabel.Invoke((MethodInvoker)delegate
                 {
-                    onlineLabel.Text = @"OFFLINE";
+                    onlineLabel.Text = @"离线";
                     onlineLabel.ForeColor = Color.Red;
                 });
                 return false;
@@ -1354,7 +1354,7 @@ namespace ACNHPokerCore
             Configuration config = ConfigurationManager.OpenExeConfiguration(Application.ExecutablePath.Replace(".exe", ".dll"));
             if (maxBellsBox.Checked)
             {
-                DialogResult dialogResult = MyMessageBox.Show("Are you sure you want to set all the turnip prices to MAX?\n[Warning] All original prices will be overwritten!", "Set all turnip prices", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                DialogResult dialogResult = MyMessageBox.Show("你确定要把所有大头菜价格都设为最高吗？\\n[警告] 所有原始价格都将被覆盖！", "设置所有大头菜价格", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
                 if (dialogResult == DialogResult.Yes)
                 {
                     maxBells = true;
@@ -1401,7 +1401,7 @@ namespace ACNHPokerCore
             {
                 cts.Cancel();
 
-                standaloneStart.Text = @"Start";
+                standaloneStart.Text = @"开始";
                 standaloneStart.Tag = "Start";
                 standaloneRunning = false;
                 standaloneThread = null;
@@ -1427,7 +1427,7 @@ namespace ACNHPokerCore
 
             if (TwitchBotUserName.Equals(string.Empty) || TwitchBotOauth.Equals(string.Empty) || TwitchChannelName.Equals(string.Empty) || TwitchChannelAccessToken.Equals(string.Empty))
             {
-                MyMessageBox.Show("Invalid Twitch setting!", "Error Code: 2124-4007", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MyMessageBox.Show("无效的Twitch设置！", "错误代码: 2124-4007", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -1435,7 +1435,7 @@ namespace ACNHPokerCore
 
             if (TwitchChannelid.Equals(string.Empty))
             {
-                MyMessageBox.Show("Unable to retrieve your channel ID!", "Error Code: 2181-4008", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MyMessageBox.Show("无法检索到您的频道ID！", "错误代码: 2181-4008", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -1472,7 +1472,7 @@ namespace ACNHPokerCore
         {
             if (standaloneStart.Tag.ToString().Equals("Start"))
             {
-                standaloneStart.Text = @"Stop";
+                standaloneStart.Text = @"停止";
                 standaloneStart.Tag = "Stop";
                 standaloneRunning = true;
 
@@ -1490,7 +1490,7 @@ namespace ACNHPokerCore
             }
             else
             {
-                standaloneStart.Text = @"Start";
+                standaloneStart.Text = @"开始";
                 standaloneStart.Tag = "Start";
                 standaloneRunning = false;
                 standaloneThread = null;
@@ -2289,7 +2289,7 @@ namespace ACNHPokerCore
 
             if (LoadAnchors.Length != 120)
             {
-                MessageBox.Show(@"Anchors file size incorrect!", @"Anchors file invalid");
+                MessageBox.Show(@"锚点文件大小不正确！", @"锚文件无效");
                 return;
             }
 

@@ -23,7 +23,7 @@ namespace ACNHPokerCore
             {
                 if (e.KeyCode.ToString() == "V")
                 {
-                    MyMessageBox.Show("You are being lazy, aren't you?", "Epic's Easy Anti-Cheat", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MyMessageBox.Show("你很懒呢，不是吗？", "Epic的简易反作弊", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
         }
@@ -37,19 +37,19 @@ namespace ACNHPokerCore
                 answerBox5.Equals(string.Empty) ||
                 answerBox6.Equals(string.Empty))
             {
-                MyMessageBox.Show("Invalid Game Key!", "Arabia Anti-Cheat", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MyMessageBox.Show("无效的游戏密钥！", "阿拉伯反作弊", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
             if (KeyCheck())
             {
                 byte[] buffer = Utilities.StringToByte(hwid);
                 File.WriteAllBytes(Utilities.saveFolder + Utilities.fileName.Replace("F", ""), buffer);
-                MyMessageBox.Show("Thank you for your support!", "Arabia Anti-Cheat", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MyMessageBox.Show("感谢你的支持！", "阿拉伯反作弊", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 Close();
             }
             else
             {
-                MyMessageBox.Show("Invalid Game Key!", "Arabia Anti-Cheat", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MyMessageBox.Show("无效的游戏密钥！", "阿拉伯反作弊", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

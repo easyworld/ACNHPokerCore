@@ -55,7 +55,7 @@ namespace ACNHPokerCore
 
             if (File.Exists(fileName))
             {
-                waitmsg.Text = "Archive Download Complete! \r\nProceed to extract images...";
+                waitmsg.Text = "存档下载完成！\r\n继续提取图片...";
                 waitmsg.Location = new System.Drawing.Point(122, 87);
 
                 progressTimer.Start();
@@ -64,7 +64,7 @@ namespace ACNHPokerCore
             }
             else
             {
-                MessageBox.Show("Downloaded archive seems to be mssing/corrupted");
+                MessageBox.Show("下载的档案似乎丢失/损坏");
             }
         }
 
@@ -133,7 +133,7 @@ namespace ACNHPokerCore
             }
             catch (ZipException e)
             {
-                MessageBox.Show("Downloaded archive seems to be corrupted: " + e.Message);
+                MessageBox.Show("下载的存档似乎已损坏：" + e.Message);
             }
 
             progressTimer.Stop();

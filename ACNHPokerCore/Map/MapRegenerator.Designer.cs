@@ -148,7 +148,7 @@ namespace ACNHPokerCore
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(99, 16);
             this.label29.TabIndex = 215;
-            this.label29.Text = "Please Wait...";
+            this.label29.Text = "请稍等...";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // loadMapBtn
@@ -163,7 +163,7 @@ namespace ACNHPokerCore
             this.loadMapBtn.Name = "loadMapBtn";
             this.loadMapBtn.Size = new System.Drawing.Size(208, 25);
             this.loadMapBtn.TabIndex = 217;
-            this.loadMapBtn.Text = "Load Map Template";
+            this.loadMapBtn.Text = "加载地图模板";
             this.formToolTip.SetToolTip(this.loadMapBtn, "Load a .nhf file and overwrite the whole map. (Layer 1 only)\r\n[WARNING] You will " +
         "lost every item on your map.");
             this.loadMapBtn.UseVisualStyleBackColor = false;
@@ -181,7 +181,7 @@ namespace ACNHPokerCore
             this.saveMapBtn.Name = "saveMapBtn";
             this.saveMapBtn.Size = new System.Drawing.Size(208, 25);
             this.saveMapBtn.TabIndex = 216;
-            this.saveMapBtn.Text = "Create Map Template";
+            this.saveMapBtn.Text = "创建地图模板";
             this.formToolTip.SetToolTip(this.saveMapBtn, "Create a Map template and save it to a .nhf file. (Layer 1 only)");
             this.saveMapBtn.UseVisualStyleBackColor = false;
             this.saveMapBtn.Click += new System.EventHandler(this.SaveMapBtn_Click);
@@ -194,7 +194,7 @@ namespace ACNHPokerCore
             // trayIcon
             // 
             this.trayIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("trayIcon.Icon")));
-            this.trayIcon.Text = "ACNHPoker : Map Regenerator";
+            this.trayIcon.Text = "ACNHPoker：地图再生器";
             this.trayIcon.Visible = true;
             this.trayIcon.DoubleClick += new System.EventHandler(this.TrayIcon_DoubleClick);
             // 
@@ -211,7 +211,7 @@ namespace ACNHPokerCore
             this.startRegen.Size = new System.Drawing.Size(208, 25);
             this.startRegen.TabIndex = 219;
             this.startRegen.Tag = "Start";
-            this.startRegen.Text = "Cast Regen";
+            this.startRegen.Text = "施法再生";
             this.formToolTip.SetToolTip(this.startRegen, "Keep refreshing the map with a saved map template (.nhf). (Layer 1 only)\r\n[WARNIN" +
         "G] This option will delete every item dropped/placed on empty space.\r\n");
             this.startRegen.UseVisualStyleBackColor = false;
@@ -229,7 +229,7 @@ namespace ACNHPokerCore
             this.hideBtn.Name = "hideBtn";
             this.hideBtn.Size = new System.Drawing.Size(65, 25);
             this.hideBtn.TabIndex = 220;
-            this.hideBtn.Text = "Hide";
+            this.hideBtn.Text = "隐藏";
             this.formToolTip.SetToolTip(this.hideBtn, "Hide this window to tray.");
             this.hideBtn.UseVisualStyleBackColor = false;
             this.hideBtn.Click += new System.EventHandler(this.HideBtn_Click);
@@ -246,7 +246,7 @@ namespace ACNHPokerCore
             this.backBtn.Name = "backBtn";
             this.backBtn.Size = new System.Drawing.Size(65, 25);
             this.backBtn.TabIndex = 221;
-            this.backBtn.Text = "Back";
+            this.backBtn.Text = "返回";
             this.backBtn.UseVisualStyleBackColor = false;
             this.backBtn.Click += new System.EventHandler(this.BackBtn_Click);
             // 
@@ -274,7 +274,7 @@ namespace ACNHPokerCore
             this.startRegen2.Size = new System.Drawing.Size(208, 25);
             this.startRegen2.TabIndex = 223;
             this.startRegen2.Tag = "Start";
-            this.startRegen2.Text = "Cast Moogle Regenja";
+            this.startRegen2.Text = "施法莫古力再生";
             this.formToolTip.SetToolTip(this.startRegen2, "Keep refreshing the map with a saved map template (.nhf). (Layer 1 only)\r\n[WARNIN" +
         "G] This option will ignore empty space to preserve dropped item.\r\n");
             this.startRegen2.UseVisualStyleBackColor = false;
@@ -319,7 +319,7 @@ namespace ACNHPokerCore
             this.ms.Name = "ms";
             this.ms.Size = new System.Drawing.Size(27, 16);
             this.ms.TabIndex = 217;
-            this.ms.Text = "ms";
+            this.ms.Text = "毫秒";
             this.ms.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
@@ -331,7 +331,7 @@ namespace ACNHPokerCore
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(113, 16);
             this.label1.TabIndex = 225;
-            this.label1.Text = "Refresh Delay :";
+            this.label1.Text = "刷新延迟：";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
@@ -343,7 +343,7 @@ namespace ACNHPokerCore
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(93, 16);
             this.label2.TabIndex = 227;
-            this.label2.Text = "Last Visitor :";
+            this.label2.Text = "最后访客：";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // visitorNameBox
@@ -383,7 +383,7 @@ namespace ACNHPokerCore
             this.logBtn.Name = "logBtn";
             this.logBtn.Size = new System.Drawing.Size(66, 25);
             this.logBtn.TabIndex = 229;
-            this.logBtn.Text = "Log";
+            this.logBtn.Text = "日志";
             this.formToolTip.SetToolTip(this.logBtn, "Show/Hide the visitor log.");
             this.logBtn.UseVisualStyleBackColor = false;
             this.logBtn.Click += new System.EventHandler(this.LogBtn_Click);
@@ -400,7 +400,7 @@ namespace ACNHPokerCore
             this.newLogBtn.Name = "newLogBtn";
             this.newLogBtn.Size = new System.Drawing.Size(68, 25);
             this.newLogBtn.TabIndex = 231;
-            this.newLogBtn.Text = "New";
+            this.newLogBtn.Text = "新的";
             this.formToolTip.SetToolTip(this.newLogBtn, "Create a new visitor log file.");
             this.newLogBtn.UseVisualStyleBackColor = false;
             this.newLogBtn.Click += new System.EventHandler(this.NewLogBtn_Click);
@@ -417,7 +417,7 @@ namespace ACNHPokerCore
             this.selectLogBtn.Name = "selectLogBtn";
             this.selectLogBtn.Size = new System.Drawing.Size(68, 25);
             this.selectLogBtn.TabIndex = 232;
-            this.selectLogBtn.Text = "Select...";
+            this.selectLogBtn.Text = "选择...";
             this.formToolTip.SetToolTip(this.selectLogBtn, "Select another visitor log file.");
             this.selectLogBtn.UseVisualStyleBackColor = false;
             this.selectLogBtn.Click += new System.EventHandler(this.SelectLogBtn_Click);
@@ -435,7 +435,7 @@ namespace ACNHPokerCore
             this.startBtn.Size = new System.Drawing.Size(86, 25);
             this.startBtn.TabIndex = 236;
             this.startBtn.Tag = "Start";
-            this.startBtn.Text = "Start";
+            this.startBtn.Text = "开始";
             this.formToolTip.SetToolTip(this.startBtn, "Start the regen with only the area selected being ignored.\r\n[WARNING] Item droppe" +
         "d/placed on the empty space outside the area will be deleted.");
             this.startBtn.UseVisualStyleBackColor = false;
@@ -453,7 +453,7 @@ namespace ACNHPokerCore
             this.keepVillagerBox.Name = "keepVillagerBox";
             this.keepVillagerBox.Size = new System.Drawing.Size(154, 20);
             this.keepVillagerBox.TabIndex = 238;
-            this.keepVillagerBox.Text = "Keep Village State";
+            this.keepVillagerBox.Text = "保持村庄状态";
             this.formToolTip.SetToolTip(this.keepVillagerBox, "For keeping villagers in the moving out state (In boxes & sweeping floor).\r\n\r\nPle" +
         "ase set the villager(s) to moving out state BEFORE you start the regenerator.");
             this.keepVillagerBox.UseVisualStyleBackColor = false;
@@ -471,7 +471,7 @@ namespace ACNHPokerCore
             this.dodoSetupBtn.Size = new System.Drawing.Size(208, 25);
             this.dodoSetupBtn.TabIndex = 240;
             this.dodoSetupBtn.Tag = "Enable";
-            this.dodoSetupBtn.Text = "Enable Dodo Helper";
+            this.dodoSetupBtn.Text = "启用渡渡鸟助手";
             this.formToolTip.SetToolTip(this.dodoSetupBtn, resources.GetString("dodoSetupBtn.ToolTip"));
             this.dodoSetupBtn.UseVisualStyleBackColor = false;
             this.dodoSetupBtn.Click += new System.EventHandler(this.DodoHelperBtn_Click);
@@ -489,7 +489,7 @@ namespace ACNHPokerCore
             this.changeDodoBtn.Size = new System.Drawing.Size(208, 25);
             this.changeDodoBtn.TabIndex = 241;
             this.changeDodoBtn.Tag = "";
-            this.changeDodoBtn.Text = "Change Dodo Path";
+            this.changeDodoBtn.Text = "更改渡渡鸟航线";
             this.formToolTip.SetToolTip(this.changeDodoBtn, "Change the path where the dodo code is stored.");
             this.changeDodoBtn.UseVisualStyleBackColor = false;
             this.changeDodoBtn.Click += new System.EventHandler(this.ChangeDodoBtn_Click);
@@ -582,7 +582,7 @@ namespace ACNHPokerCore
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(25, 16);
             this.label4.TabIndex = 238;
-            this.label4.Text = "Y :";
+            this.label4.Text = "Y：";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
@@ -594,7 +594,7 @@ namespace ACNHPokerCore
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(24, 16);
             this.label3.TabIndex = 236;
-            this.label3.Text = "X :";
+            this.label3.Text = "X：";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // yCoordinate
@@ -673,7 +673,7 @@ namespace ACNHPokerCore
             this.Name = "MapRegenerator";
             this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Map Regenerator";
+            this.Text = "地图再生器";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MapRegenerator_FormClosed);
             this.Move += new System.EventHandler(this.MapRegenerator_Move);
             this.PleaseWaitPanel.ResumeLayout(false);

@@ -360,10 +360,10 @@ namespace ACNHPokerCore
                     {
                         if (counter > 5)
                         {
-                            DialogResult result = MyMessageBox.Show("Something seems to be wrong with the autosave detection.\n" +
-                                                            "Would you like to ignore the autosave protection and spawn the item(s) anyway?\n\n" +
-                                                            "Please be noted that spawning item during autosave might crash the game."
-                                                            , "Waiting for autosave to complete...", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                            DialogResult result = MyMessageBox.Show("自动保存检测似乎出了问题。\n" +
+                                                            "你想要忽略自动保存保护并仍然生成物品吗？\n\n" +
+                                                            "请注意，在自动存档期间生成物品可能会导致游戏崩溃。"
+                                                            , "等待自动保存完成...", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                             if (result == DialogResult.Yes)
                             {
                                 break;
@@ -429,7 +429,7 @@ namespace ACNHPokerCore
             catch (Exception ex)
             {
                 MyLog.LogEvent("BulkSpawn", "ConfirmSpawn: " + ex.Message);
-                MyMessageBox.Show(ex.Message, "When I wrote this, only God and I understood what I was doing.");
+                MyMessageBox.Show(ex.Message, "当我写下这个的时候，只有上帝和我明白我在做什么。");
             }
 
             if (!debugging)

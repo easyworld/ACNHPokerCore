@@ -92,7 +92,7 @@
             PlayerSlotLabel.Name = "PlayerSlotLabel";
             PlayerSlotLabel.Size = new System.Drawing.Size(153, 19);
             PlayerSlotLabel.TabIndex = 37;
-            PlayerSlotLabel.Text = "Player 1 Item Slot 1";
+            PlayerSlotLabel.Text = "玩家1物品槽1";
             // 
             // PlayerSlot
             // 
@@ -208,7 +208,7 @@
             PlayerOffsetLabel.Name = "PlayerOffsetLabel";
             PlayerOffsetLabel.Size = new System.Drawing.Size(153, 19);
             PlayerOffsetLabel.TabIndex = 45;
-            PlayerOffsetLabel.Text = "Player Offset (Size)";
+            PlayerOffsetLabel.Text = "玩家偏移量（大小）";
             // 
             // Slot21OffsetLabel
             // 
@@ -219,7 +219,7 @@
             Slot21OffsetLabel.Name = "Slot21OffsetLabel";
             Slot21OffsetLabel.Size = new System.Drawing.Size(211, 19);
             Slot21OffsetLabel.TabIndex = 46;
-            Slot21OffsetLabel.Text = "Player 1 Item Slot 21 Offset";
+            Slot21OffsetLabel.Text = "玩家1 物品栏位21 偏移量";
             // 
             // HomeOffsetLabel
             // 
@@ -230,7 +230,7 @@
             HomeOffsetLabel.Name = "HomeOffsetLabel";
             HomeOffsetLabel.Size = new System.Drawing.Size(232, 19);
             HomeOffsetLabel.TabIndex = 47;
-            HomeOffsetLabel.Text = "Player 1 Home Storage Offset";
+            HomeOffsetLabel.Text = "玩家1 家庭储物偏移量";
             // 
             // ReactionOffsetLabel
             // 
@@ -241,7 +241,7 @@
             ReactionOffsetLabel.Name = "ReactionOffsetLabel";
             ReactionOffsetLabel.Size = new System.Drawing.Size(242, 19);
             ReactionOffsetLabel.TabIndex = 48;
-            ReactionOffsetLabel.Text = "Player 1 Reaction Wheel Offset";
+            ReactionOffsetLabel.Text = "玩家1反应轮偏移量";
             ReactionOffsetLabel.TextChanged += BoxTextChanged;
             // 
             // VillagerLabel
@@ -253,7 +253,7 @@
             VillagerLabel.Name = "VillagerLabel";
             VillagerLabel.Size = new System.Drawing.Size(79, 19);
             VillagerLabel.TabIndex = 49;
-            VillagerLabel.Text = "Villager 1";
+            VillagerLabel.Text = "村民1";
             // 
             // VillagerOffsetLabel
             // 
@@ -264,7 +264,7 @@
             VillagerOffsetLabel.Name = "VillagerOffsetLabel";
             VillagerOffsetLabel.Size = new System.Drawing.Size(162, 19);
             VillagerOffsetLabel.TabIndex = 50;
-            VillagerOffsetLabel.Text = "Villager Offest (Size)";
+            VillagerOffsetLabel.Text = "村民偏移（大小）";
             // 
             // VillagerHouse
             // 
@@ -290,7 +290,7 @@
             VillagerHouseLabel.Name = "VillagerHouseLabel";
             VillagerHouseLabel.Size = new System.Drawing.Size(133, 19);
             VillagerHouseLabel.TabIndex = 52;
-            VillagerHouseLabel.Text = "Villager 1 House";
+            VillagerHouseLabel.Text = "村民1的房子";
             // 
             // VillagerHouseOffsetLabel
             // 
@@ -301,7 +301,7 @@
             VillagerHouseOffsetLabel.Name = "VillagerHouseOffsetLabel";
             VillagerHouseOffsetLabel.Size = new System.Drawing.Size(216, 19);
             VillagerHouseOffsetLabel.TabIndex = 53;
-            VillagerHouseOffsetLabel.Text = "Villager House Offest (Size)";
+            VillagerHouseOffsetLabel.Text = "村民房屋偏移量（大小）";
             // 
             // VillagerHouseOffset
             // 
@@ -327,7 +327,7 @@
             VillagerHouseBufferLabel.Name = "VillagerHouseBufferLabel";
             VillagerHouseBufferLabel.Size = new System.Drawing.Size(220, 19);
             VillagerHouseBufferLabel.TabIndex = 55;
-            VillagerHouseBufferLabel.Text = "Villager House Buffer Offest";
+            VillagerHouseBufferLabel.Text = "村民房屋缓冲偏移量";
             // 
             // VillagerHouseBuffer
             // 
@@ -353,7 +353,7 @@
             StaminaLabel.Name = "StaminaLabel";
             StaminaLabel.Size = new System.Drawing.Size(71, 19);
             StaminaLabel.TabIndex = 57;
-            StaminaLabel.Text = "Stamina";
+            StaminaLabel.Text = "耐力";
             // 
             // Stamina
             // 
@@ -379,7 +379,7 @@
             WalkSpeedLabel.Name = "WalkSpeedLabel";
             WalkSpeedLabel.Size = new System.Drawing.Size(98, 19);
             WalkSpeedLabel.TabIndex = 59;
-            WalkSpeedLabel.Text = "Walk Speed";
+            WalkSpeedLabel.Text = "行走速度";
             // 
             // AnimationSpeedLabel
             // 
@@ -390,7 +390,7 @@
             AnimationSpeedLabel.Name = "AnimationSpeedLabel";
             AnimationSpeedLabel.Size = new System.Drawing.Size(139, 19);
             AnimationSpeedLabel.TabIndex = 60;
-            AnimationSpeedLabel.Text = "Animation Speed";
+            AnimationSpeedLabel.Text = "动画速度";
             // 
             // WalkSpeed
             // 
@@ -431,7 +431,7 @@
             CollisionLabel.Name = "CollisionLabel";
             CollisionLabel.Size = new System.Drawing.Size(76, 19);
             CollisionLabel.TabIndex = 63;
-            CollisionLabel.Text = "Collision";
+            CollisionLabel.Text = "碰撞";
             // 
             // Collision
             // 
@@ -457,7 +457,7 @@
             FreezeTimeLabel.Name = "FreezeTimeLabel";
             FreezeTimeLabel.Size = new System.Drawing.Size(102, 19);
             FreezeTimeLabel.TabIndex = 65;
-            FreezeTimeLabel.Text = "Freeze Time";
+            FreezeTimeLabel.Text = "冻结时间";
             // 
             // FreezeTime
             // 
@@ -483,7 +483,7 @@
             ReadTimeLabel.Name = "ReadTimeLabel";
             ReadTimeLabel.Size = new System.Drawing.Size(90, 19);
             ReadTimeLabel.TabIndex = 67;
-            ReadTimeLabel.Text = "Read Time";
+            ReadTimeLabel.Text = "阅读时间";
             // 
             // ReadTime
             // 
@@ -509,7 +509,7 @@
             RecyclingBinLabel.Name = "RecyclingBinLabel";
             RecyclingBinLabel.Size = new System.Drawing.Size(115, 19);
             RecyclingBinLabel.TabIndex = 71;
-            RecyclingBinLabel.Text = "Recycling Bin";
+            RecyclingBinLabel.Text = "回收箱";
             // 
             // TurnipLabel
             // 
@@ -520,7 +520,7 @@
             TurnipLabel.Name = "TurnipLabel";
             TurnipLabel.Size = new System.Drawing.Size(178, 19);
             TurnipLabel.TabIndex = 72;
-            TurnipLabel.Text = "Turnip Purchase Price";
+            TurnipLabel.Text = "大头菜收购价";
             // 
             // RecyclingBin
             // 
@@ -561,7 +561,7 @@
             WeatherSeedLabel.Name = "WeatherSeedLabel";
             WeatherSeedLabel.Size = new System.Drawing.Size(115, 19);
             WeatherSeedLabel.TabIndex = 77;
-            WeatherSeedLabel.Text = "Weather Seed";
+            WeatherSeedLabel.Text = "天气种子";
             // 
             // WeatherSeed
             // 
@@ -636,7 +636,7 @@
             MapZeroLabel.Name = "MapZeroLabel";
             MapZeroLabel.Size = new System.Drawing.Size(79, 19);
             MapZeroLabel.TabIndex = 101;
-            MapZeroLabel.Text = "Map Zero";
+            MapZeroLabel.Text = "零号地图";
             // 
             // MapZero
             // 
@@ -664,7 +664,7 @@
             SaveBtn.Name = "SaveBtn";
             SaveBtn.Size = new System.Drawing.Size(180, 30);
             SaveBtn.TabIndex = 99;
-            SaveBtn.Text = "Save";
+            SaveBtn.Text = "保存";
             SaveBtn.UseVisualStyleBackColor = false;
             SaveBtn.Click += SaveBtn_Click;
             // 
@@ -679,7 +679,7 @@
             ImageBtn.Name = "ImageBtn";
             ImageBtn.Size = new System.Drawing.Size(180, 30);
             ImageBtn.TabIndex = 100;
-            ImageBtn.Text = "Download Images";
+            ImageBtn.Text = "下载图片";
             ImageBtn.UseVisualStyleBackColor = false;
             ImageBtn.Click += ImageBtn_Click;
             // 
@@ -708,7 +708,7 @@
             AddressOverrideLabel.Name = "AddressOverrideLabel";
             AddressOverrideLabel.Size = new System.Drawing.Size(132, 16);
             AddressOverrideLabel.TabIndex = 102;
-            AddressOverrideLabel.Text = "Address Override";
+            AddressOverrideLabel.Text = "地址覆盖";
             // 
             // ValidationLabel
             // 
@@ -719,7 +719,7 @@
             ValidationLabel.Name = "ValidationLabel";
             ValidationLabel.Size = new System.Drawing.Size(75, 16);
             ValidationLabel.TabIndex = 104;
-            ValidationLabel.Text = "Validation";
+            ValidationLabel.Text = "验证";
             // 
             // ValidationToggle
             // 
@@ -762,7 +762,7 @@
             SoundLabel.Name = "SoundLabel";
             SoundLabel.Size = new System.Drawing.Size(52, 16);
             SoundLabel.TabIndex = 106;
-            SoundLabel.Text = "Sound";
+            SoundLabel.Text = "声音";
             // 
             // CaptureToggle
             // 
@@ -789,7 +789,7 @@
             CaptureLabel.Name = "CaptureLabel";
             CaptureLabel.Size = new System.Drawing.Size(63, 16);
             CaptureLabel.TabIndex = 108;
-            CaptureLabel.Text = "Capture";
+            CaptureLabel.Text = "捕获";
             // 
             // Setting
             // 

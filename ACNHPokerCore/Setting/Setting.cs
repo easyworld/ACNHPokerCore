@@ -226,7 +226,7 @@ namespace ACNHPokerCore
             {
                 if (!allowedChars.Contains(character))
                 {
-                    MessageBox.Show(string.Format("'{0}' is not a hexadecimal character!", character));
+                    MessageBox.Show(string.Format("'{0}'不是一个十六进制字符！", character));
                     e.Cancel = true;
                     break;
                 }
@@ -316,7 +316,7 @@ namespace ACNHPokerCore
 
             if (Config.AppSettings.Settings["override"].Value == "true")
             {
-                DialogResult dialogResult = MyMessageBox.Show("The application will restart and reset all addresses!\n\nAre you sure you want to disable address override?", "Disable Override", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                DialogResult dialogResult = MyMessageBox.Show("应用程序将重新启动并重置所有地址！\\n\\n你确定要禁用地址覆盖吗？", "禁用覆盖", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (dialogResult == DialogResult.Yes)
                 {
                     OverrideSetting = false;
@@ -328,7 +328,7 @@ namespace ACNHPokerCore
             }
             else
             {
-                DialogResult dialogResult = MyMessageBox.Show("Please make sure you have acquired the correct addresses for your game version!\n\nAre you sure you want to enable address override?", "Enable Override", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                DialogResult dialogResult = MyMessageBox.Show("请确保你已获取对应游戏版本的正确地址！\\n\\n你确定要启用地址覆盖吗？", "启用覆盖", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (dialogResult == DialogResult.Yes)
                 {
                     OverrideSetting = true;
@@ -355,7 +355,7 @@ namespace ACNHPokerCore
 
             if (Config.AppSettings.Settings["validation"].Value == "true")
             {
-                DialogResult dialogResult = MyMessageBox.Show("Validation is meant to prevent save file corruption!\nPlease only do so if you know what you are doing.\n\nAre you sure you want to disable validation?", "Disable Validation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                DialogResult dialogResult = MyMessageBox.Show("验证旨在防止存档文件损坏！\\n请只有在你知道自己在做什么的时候才这样做。\\n\\n你确定要禁用验证吗？", "禁用验证", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (dialogResult == DialogResult.Yes)
                 {
                     Validation = false;

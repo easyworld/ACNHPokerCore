@@ -858,7 +858,7 @@ namespace ACNHPokerCore
             ItemSearchBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             ItemSearchBox.Size = new System.Drawing.Size(228, 24);
             ItemSearchBox.TabIndex = 15;
-            ItemSearchBox.Text = "Search...";
+            ItemSearchBox.Text = "搜索...";
             ItemSearchBox.WordWrap = false;
             ItemSearchBox.Click += ItemSearchBox_Click;
             ItemSearchBox.TextChanged += ItemSearchBox_TextChanged;
@@ -1047,7 +1047,7 @@ namespace ACNHPokerCore
             turnipSell6PM.Name = "turnipSell6PM";
             turnipSell6PM.Size = new System.Drawing.Size(155, 38);
             turnipSell6PM.TabIndex = 53;
-            turnipSell6PM.Text = "6PM";
+            turnipSell6PM.Text = "下午6点";
             // 
             // turnipSell5PM
             // 
@@ -1062,7 +1062,7 @@ namespace ACNHPokerCore
             turnipSell5PM.Name = "turnipSell5PM";
             turnipSell5PM.Size = new System.Drawing.Size(155, 38);
             turnipSell5PM.TabIndex = 51;
-            turnipSell5PM.Text = "5PM";
+            turnipSell5PM.Text = "下午5点";
             // 
             // turnipSell4PM
             // 
@@ -1077,7 +1077,7 @@ namespace ACNHPokerCore
             turnipSell4PM.Name = "turnipSell4PM";
             turnipSell4PM.Size = new System.Drawing.Size(155, 38);
             turnipSell4PM.TabIndex = 49;
-            turnipSell4PM.Text = "4PM";
+            turnipSell4PM.Text = "下午4点";
             // 
             // turnipSell3PM
             // 
@@ -1092,7 +1092,7 @@ namespace ACNHPokerCore
             turnipSell3PM.Name = "turnipSell3PM";
             turnipSell3PM.Size = new System.Drawing.Size(155, 38);
             turnipSell3PM.TabIndex = 47;
-            turnipSell3PM.Text = "3PM";
+            turnipSell3PM.Text = "下午3点";
             // 
             // turnipSell2PM
             // 
@@ -1107,7 +1107,7 @@ namespace ACNHPokerCore
             turnipSell2PM.Name = "turnipSell2PM";
             turnipSell2PM.Size = new System.Drawing.Size(155, 38);
             turnipSell2PM.TabIndex = 45;
-            turnipSell2PM.Text = "2PM";
+            turnipSell2PM.Text = "下午两点";
             // 
             // turnipSell1PM
             // 
@@ -1122,7 +1122,7 @@ namespace ACNHPokerCore
             turnipSell1PM.Name = "turnipSell1PM";
             turnipSell1PM.Size = new System.Drawing.Size(155, 38);
             turnipSell1PM.TabIndex = 43;
-            turnipSell1PM.Text = "1PM";
+            turnipSell1PM.Text = "下午1点";
             // 
             // turnipSell6AM
             // 
@@ -1137,7 +1137,7 @@ namespace ACNHPokerCore
             turnipSell6AM.Name = "turnipSell6AM";
             turnipSell6AM.Size = new System.Drawing.Size(155, 38);
             turnipSell6AM.TabIndex = 41;
-            turnipSell6AM.Text = "6AM";
+            turnipSell6AM.Text = "上午6点";
             // 
             // turnipSell5AM
             // 
@@ -1152,7 +1152,7 @@ namespace ACNHPokerCore
             turnipSell5AM.Name = "turnipSell5AM";
             turnipSell5AM.Size = new System.Drawing.Size(155, 38);
             turnipSell5AM.TabIndex = 39;
-            turnipSell5AM.Text = "5AM";
+            turnipSell5AM.Text = "上午5点";
             // 
             // turnipSell4AM
             // 
@@ -1167,7 +1167,7 @@ namespace ACNHPokerCore
             turnipSell4AM.Name = "turnipSell4AM";
             turnipSell4AM.Size = new System.Drawing.Size(155, 38);
             turnipSell4AM.TabIndex = 37;
-            turnipSell4AM.Text = "4AM";
+            turnipSell4AM.Text = "凌晨4点";
             // 
             // turnipSell3AM
             // 
@@ -1182,7 +1182,7 @@ namespace ACNHPokerCore
             turnipSell3AM.Name = "turnipSell3AM";
             turnipSell3AM.Size = new System.Drawing.Size(155, 38);
             turnipSell3AM.TabIndex = 35;
-            turnipSell3AM.Text = "3AM";
+            turnipSell3AM.Text = "凌晨3点";
             // 
             // turnipSell2AM
             // 
@@ -1197,7 +1197,7 @@ namespace ACNHPokerCore
             turnipSell2AM.Name = "turnipSell2AM";
             turnipSell2AM.Size = new System.Drawing.Size(155, 38);
             turnipSell2AM.TabIndex = 33;
-            turnipSell2AM.Text = "2AM";
+            turnipSell2AM.Text = "凌晨2点";
             // 
             // turnipBuyPrice
             // 
@@ -1212,7 +1212,7 @@ namespace ACNHPokerCore
             turnipBuyPrice.Name = "turnipBuyPrice";
             turnipBuyPrice.Size = new System.Drawing.Size(155, 38);
             turnipBuyPrice.TabIndex = 32;
-            turnipBuyPrice.Text = "Buy";
+            turnipBuyPrice.Text = "购买";
             // 
             // turnipSell1AM
             // 
@@ -1227,7 +1227,7 @@ namespace ACNHPokerCore
             turnipSell1AM.Name = "turnipSell1AM";
             turnipSell1AM.Size = new System.Drawing.Size(155, 38);
             turnipSell1AM.TabIndex = 30;
-            turnipSell1AM.Text = "1AM";
+            turnipSell1AM.Text = "凌晨1点";
             // 
             // CritterSearchBox
             // 
@@ -1244,7 +1244,7 @@ namespace ACNHPokerCore
             CritterSearchBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             CritterSearchBox.Size = new System.Drawing.Size(316, 24);
             CritterSearchBox.TabIndex = 27;
-            CritterSearchBox.Text = "Search...";
+            CritterSearchBox.Text = "搜索...";
             CritterSearchBox.WordWrap = false;
             CritterSearchBox.Click += CritterSearchBox_Click;
             CritterSearchBox.TextChanged += CritterSearchBox_TextChanged;
@@ -1435,7 +1435,7 @@ namespace ACNHPokerCore
             ReplaceMysVilllagerSearchBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             ReplaceMysVilllagerSearchBox.Size = new System.Drawing.Size(237, 24);
             ReplaceMysVilllagerSearchBox.TabIndex = 130;
-            ReplaceMysVilllagerSearchBox.Text = "Search...";
+            ReplaceMysVilllagerSearchBox.Text = "搜索...";
             ReplaceMysVilllagerSearchBox.WordWrap = false;
             ReplaceMysVilllagerSearchBox.Click += ReplaceMysVillagerSearchBox_Click;
             ReplaceMysVilllagerSearchBox.TextChanged += ReplaceMysVillagerSearchBox_TextChanged;
@@ -1471,7 +1471,7 @@ namespace ACNHPokerCore
             ReplaceVilllagerSearchBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             ReplaceVilllagerSearchBox.Size = new System.Drawing.Size(197, 26);
             ReplaceVilllagerSearchBox.TabIndex = 111;
-            ReplaceVilllagerSearchBox.Text = "Search...";
+            ReplaceVilllagerSearchBox.Text = "搜索...";
             ReplaceVilllagerSearchBox.WordWrap = false;
             ReplaceVilllagerSearchBox.Click += ReplaceVillagerSearchBox_Click;
             ReplaceVilllagerSearchBox.TextChanged += ReplaceVillagerSearchBox_TextChanged;
@@ -1659,7 +1659,7 @@ namespace ACNHPokerCore
             StartConnectionButton.Size = new System.Drawing.Size(85, 23);
             StartConnectionButton.TabIndex = 0;
             StartConnectionButton.Tag = "connect";
-            StartConnectionButton.Text = "Connect";
+            StartConnectionButton.Text = "连接";
             StartConnectionButton.UseVisualStyleBackColor = false;
             StartConnectionButton.Click += StartConnectionButton_Click;
             // 
@@ -1691,7 +1691,7 @@ namespace ACNHPokerCore
             MapDropperButton.Size = new System.Drawing.Size(100, 23);
             MapDropperButton.TabIndex = 4;
             MapDropperButton.Tag = "";
-            MapDropperButton.Text = "Map Dropper";
+            MapDropperButton.Text = "地图掉落器";
             MapDropperButton.UseVisualStyleBackColor = false;
             MapDropperButton.Visible = false;
             MapDropperButton.Click += MapDropperButton_Click;
@@ -1708,7 +1708,7 @@ namespace ACNHPokerCore
             RegeneratorButton.Size = new System.Drawing.Size(100, 23);
             RegeneratorButton.TabIndex = 5;
             RegeneratorButton.Tag = "";
-            RegeneratorButton.Text = "Regenerator";
+            RegeneratorButton.Text = "再生器";
             RegeneratorButton.UseVisualStyleBackColor = false;
             RegeneratorButton.Visible = false;
             RegeneratorButton.Click += RegeneratorButton_Click;
@@ -1725,7 +1725,7 @@ namespace ACNHPokerCore
             BulldozerButton.Size = new System.Drawing.Size(100, 23);
             BulldozerButton.TabIndex = 6;
             BulldozerButton.Tag = "";
-            BulldozerButton.Text = "Bulldozer";
+            BulldozerButton.Text = "推土机";
             BulldozerButton.UseVisualStyleBackColor = false;
             BulldozerButton.Visible = false;
             BulldozerButton.Click += BulldozerButton_Click;
@@ -1742,7 +1742,7 @@ namespace ACNHPokerCore
             FreezerButton.Size = new System.Drawing.Size(100, 23);
             FreezerButton.TabIndex = 7;
             FreezerButton.Tag = "";
-            FreezerButton.Text = "Freezer";
+            FreezerButton.Text = "冰柜";
             FreezerButton.UseVisualStyleBackColor = false;
             FreezerButton.Visible = false;
             FreezerButton.Click += FreezerButton_Click;
@@ -1759,7 +1759,7 @@ namespace ACNHPokerCore
             DodoHelperButton.Size = new System.Drawing.Size(100, 23);
             DodoHelperButton.TabIndex = 8;
             DodoHelperButton.Tag = "";
-            DodoHelperButton.Text = "Dodo Helper";
+            DodoHelperButton.Text = "渡渡鸟助手";
             DodoHelperButton.UseVisualStyleBackColor = false;
             DodoHelperButton.Visible = false;
             DodoHelperButton.Click += DodoHelperButton_Click;
@@ -1792,7 +1792,7 @@ namespace ACNHPokerCore
             SaveNHIButton.Size = new System.Drawing.Size(60, 23);
             SaveNHIButton.TabIndex = 10;
             SaveNHIButton.Tag = "";
-            SaveNHIButton.Text = "Save";
+            SaveNHIButton.Text = "保存";
             SaveNHIButton.UseVisualStyleBackColor = false;
             SaveNHIButton.Click += SaveNHIButton_Click;
             // 
@@ -1808,7 +1808,7 @@ namespace ACNHPokerCore
             LoadNHIButton.Size = new System.Drawing.Size(60, 23);
             LoadNHIButton.TabIndex = 11;
             LoadNHIButton.Tag = "";
-            LoadNHIButton.Text = "Load";
+            LoadNHIButton.Text = "加载";
             LoadNHIButton.UseVisualStyleBackColor = false;
             LoadNHIButton.Click += LoadNHIButton_Click;
             // 
@@ -1824,7 +1824,7 @@ namespace ACNHPokerCore
             RefreshButton.Size = new System.Drawing.Size(65, 23);
             RefreshButton.TabIndex = 12;
             RefreshButton.Tag = "";
-            RefreshButton.Text = "Refresh";
+            RefreshButton.Text = "刷新";
             RefreshButton.UseVisualStyleBackColor = false;
             RefreshButton.Visible = false;
             RefreshButton.Click += RefreshButton_Click;
@@ -1851,7 +1851,7 @@ namespace ACNHPokerCore
             AutoRefreshLabel.Name = "AutoRefreshLabel";
             AutoRefreshLabel.Size = new System.Drawing.Size(33, 15);
             AutoRefreshLabel.TabIndex = 14;
-            AutoRefreshLabel.Text = "Auto";
+            AutoRefreshLabel.Text = "自动";
             AutoRefreshLabel.Visible = false;
             // 
             // LanguageSelector
@@ -2055,7 +2055,7 @@ namespace ACNHPokerCore
             LoadCheatfromClipBoard.Size = new System.Drawing.Size(141, 22);
             LoadCheatfromClipBoard.TabIndex = 57;
             LoadCheatfromClipBoard.Tag = "";
-            LoadCheatfromClipBoard.Text = "Load Cheat Clipboard";
+            LoadCheatfromClipBoard.Text = "加载作弊剪贴板";
             LoadCheatfromClipBoard.UseVisualStyleBackColor = false;
             LoadCheatfromClipBoard.Click += LoadCheatfromClipBoard_Click;
             // 
@@ -2071,7 +2071,7 @@ namespace ACNHPokerCore
             LoadCheat.Size = new System.Drawing.Size(105, 22);
             LoadCheat.TabIndex = 56;
             LoadCheat.Tag = "";
-            LoadCheat.Text = "Load Cheat Txt";
+            LoadCheat.Text = "加载作弊文本";
             LoadCheat.UseVisualStyleBackColor = false;
             LoadCheat.Click += LoadCheat_Click;
             // 
@@ -2121,7 +2121,7 @@ namespace ACNHPokerCore
             WrappingLabel.Name = "WrappingLabel";
             WrappingLabel.Size = new System.Drawing.Size(74, 16);
             WrappingLabel.TabIndex = 33;
-            WrappingLabel.Text = "Wrapping";
+            WrappingLabel.Text = "包装";
             // 
             // RetainNameLabel
             // 
@@ -2132,7 +2132,7 @@ namespace ACNHPokerCore
             RetainNameLabel.Name = "RetainNameLabel";
             RetainNameLabel.Size = new System.Drawing.Size(79, 15);
             RetainNameLabel.TabIndex = 34;
-            RetainNameLabel.Text = "Retain Name";
+            RetainNameLabel.Text = "保留名称";
             // 
             // webhookBtn
             // 
@@ -2146,7 +2146,7 @@ namespace ACNHPokerCore
             webhookBtn.Size = new System.Drawing.Size(100, 23);
             webhookBtn.TabIndex = 54;
             webhookBtn.Tag = "";
-            webhookBtn.Text = "Webhook";
+            webhookBtn.Text = "网络钩子";
             webhookBtn.UseVisualStyleBackColor = false;
             webhookBtn.Click += WebhookBtn_Click;
             // 
@@ -2172,7 +2172,7 @@ namespace ACNHPokerCore
             ChaseBtn.Size = new System.Drawing.Size(100, 23);
             ChaseBtn.TabIndex = 52;
             ChaseBtn.Tag = "";
-            ChaseBtn.Text = "Chase";
+            ChaseBtn.Text = "追逐";
             ChaseBtn.UseVisualStyleBackColor = false;
             ChaseBtn.Click += ChaseBtn_Click;
             // 
@@ -2197,7 +2197,7 @@ namespace ACNHPokerCore
             AutoRefillLabel.Name = "AutoRefillLabel";
             AutoRefillLabel.Size = new System.Drawing.Size(65, 15);
             AutoRefillLabel.TabIndex = 43;
-            AutoRefillLabel.Text = "Auto-Refill";
+            AutoRefillLabel.Text = "自动填充";
             AutoRefillLabel.Visible = false;
             // 
             // AutoRefill
@@ -2225,7 +2225,7 @@ namespace ACNHPokerCore
             chatButton.Size = new System.Drawing.Size(57, 22);
             chatButton.TabIndex = 40;
             chatButton.Tag = "";
-            chatButton.Text = "Chat";
+            chatButton.Text = "聊天";
             chatButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             chatButton.UseVisualStyleBackColor = false;
             chatButton.Visible = false;
@@ -2243,7 +2243,7 @@ namespace ACNHPokerCore
             RoadRollerButton.Size = new System.Drawing.Size(100, 23);
             RoadRollerButton.TabIndex = 39;
             RoadRollerButton.Tag = "";
-            RoadRollerButton.Text = "Road Roller";
+            RoadRollerButton.Text = "压路机";
             RoadRollerButton.UseVisualStyleBackColor = false;
             RoadRollerButton.Visible = false;
             RoadRollerButton.Click += RoadRollerButton_Click;
@@ -2260,7 +2260,7 @@ namespace ACNHPokerCore
             UnhideButton.Size = new System.Drawing.Size(100, 23);
             UnhideButton.TabIndex = 38;
             UnhideButton.Tag = "";
-            UnhideButton.Text = "Unhide";
+            UnhideButton.Text = "显示";
             UnhideButton.UseVisualStyleBackColor = false;
             UnhideButton.Click += UnhideButton_Click;
             // 
@@ -2276,7 +2276,7 @@ namespace ACNHPokerCore
             ConvertToCheat.Size = new System.Drawing.Size(116, 22);
             ConvertToCheat.TabIndex = 36;
             ConvertToCheat.Tag = "";
-            ConvertToCheat.Text = "Convert to Cheat Txt";
+            ConvertToCheat.Text = "转换为作弊文本";
             ConvertToCheat.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             ConvertToCheat.UseVisualStyleBackColor = false;
             ConvertToCheat.Click += Converttocheat_Click;
@@ -2290,7 +2290,7 @@ namespace ACNHPokerCore
             SelectedItemName.Name = "SelectedItemName";
             SelectedItemName.Size = new System.Drawing.Size(80, 16);
             SelectedItemName.TabIndex = 24;
-            SelectedItemName.Text = "Item Name";
+            SelectedItemName.Text = "物品名称";
             // 
             // VersionButton
             // 
@@ -2304,7 +2304,7 @@ namespace ACNHPokerCore
             VersionButton.Size = new System.Drawing.Size(100, 23);
             VersionButton.TabIndex = 37;
             VersionButton.Tag = "";
-            VersionButton.Text = "Version";
+            VersionButton.Text = "版本";
             VersionButton.UseVisualStyleBackColor = false;
             VersionButton.Click += VersionButton_Click;
             // 
@@ -2320,7 +2320,7 @@ namespace ACNHPokerCore
             CheckStateButton.Size = new System.Drawing.Size(100, 23);
             CheckStateButton.TabIndex = 36;
             CheckStateButton.Tag = "";
-            CheckStateButton.Text = "State";
+            CheckStateButton.Text = "状态";
             CheckStateButton.UseVisualStyleBackColor = false;
             CheckStateButton.Click += CheckStateButton_Click;
             // 
@@ -2390,7 +2390,7 @@ namespace ACNHPokerCore
             PageLabel.Name = "PageLabel";
             PageLabel.Size = new System.Drawing.Size(80, 30);
             PageLabel.TabIndex = 37;
-            PageLabel.Text = "Page 1";
+            PageLabel.Text = "第1页";
             PageLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FastBackButton
@@ -2439,7 +2439,7 @@ namespace ACNHPokerCore
             ClearAllButton.Size = new System.Drawing.Size(100, 23);
             ClearAllButton.TabIndex = 34;
             ClearAllButton.Tag = "";
-            ClearAllButton.Text = "Clear All";
+            ClearAllButton.Text = "全部清除";
             ClearAllButton.UseVisualStyleBackColor = false;
             ClearAllButton.Click += ClearAllButton_Click;
             // 
@@ -2452,7 +2452,7 @@ namespace ACNHPokerCore
             selectedFlag1.Name = "selectedFlag1";
             selectedFlag1.Size = new System.Drawing.Size(79, 16);
             selectedFlag1.TabIndex = 30;
-            selectedFlag1.Text = "Item Flag1";
+            selectedFlag1.Text = "物品标志1";
             // 
             // selectedFlag0
             // 
@@ -2463,7 +2463,7 @@ namespace ACNHPokerCore
             selectedFlag0.Name = "selectedFlag0";
             selectedFlag0.Size = new System.Drawing.Size(79, 16);
             selectedFlag0.TabIndex = 29;
-            selectedFlag0.Text = "Item Flag0";
+            selectedFlag0.Text = "物品标记0";
             // 
             // selectedData
             // 
@@ -2474,7 +2474,7 @@ namespace ACNHPokerCore
             selectedData.Name = "selectedData";
             selectedData.Size = new System.Drawing.Size(72, 16);
             selectedData.TabIndex = 28;
-            selectedData.Text = "Item Data";
+            selectedData.Text = "物品数据";
             // 
             // selectedID
             // 
@@ -2485,7 +2485,7 @@ namespace ACNHPokerCore
             selectedID.Name = "selectedID";
             selectedID.Size = new System.Drawing.Size(55, 16);
             selectedID.TabIndex = 27;
-            selectedID.Text = "Item ID";
+            selectedID.Text = "物品ID";
             // 
             // LoadingPanel
             // 
@@ -2506,7 +2506,7 @@ namespace ACNHPokerCore
             NowLoadingMessage.Name = "NowLoadingMessage";
             NowLoadingMessage.Size = new System.Drawing.Size(109, 16);
             NowLoadingMessage.TabIndex = 33;
-            NowLoadingMessage.Text = "Now Loading...";
+            NowLoadingMessage.Text = "正在加载...";
             // 
             // NowLoadingImage
             // 
@@ -2550,7 +2550,7 @@ namespace ACNHPokerCore
             FavoriteModeButton.Size = new System.Drawing.Size(80, 23);
             FavoriteModeButton.TabIndex = 28;
             FavoriteModeButton.Tag = "";
-            FavoriteModeButton.Text = "Favorite";
+            FavoriteModeButton.Text = "最喜欢的";
             FavoriteModeButton.UseVisualStyleBackColor = false;
             FavoriteModeButton.Click += FavoriteModeButton_Click;
             // 
@@ -2566,7 +2566,7 @@ namespace ACNHPokerCore
             FlowerModeButton.Size = new System.Drawing.Size(60, 23);
             FlowerModeButton.TabIndex = 27;
             FlowerModeButton.Tag = "";
-            FlowerModeButton.Text = "Flower";
+            FlowerModeButton.Text = "花";
             FlowerModeButton.UseVisualStyleBackColor = false;
             FlowerModeButton.Click += FlowerModeButton_Click;
             // 
@@ -2582,7 +2582,7 @@ namespace ACNHPokerCore
             RecipeModeButton.Size = new System.Drawing.Size(60, 23);
             RecipeModeButton.TabIndex = 26;
             RecipeModeButton.Tag = "";
-            RecipeModeButton.Text = "Recipe";
+            RecipeModeButton.Text = "配方";
             RecipeModeButton.UseVisualStyleBackColor = false;
             RecipeModeButton.Click += RecipeModeButton_Click;
             // 
@@ -2598,7 +2598,7 @@ namespace ACNHPokerCore
             ItemModeButton.Size = new System.Drawing.Size(60, 23);
             ItemModeButton.TabIndex = 25;
             ItemModeButton.Tag = "";
-            ItemModeButton.Text = "Item";
+            ItemModeButton.Text = "物品";
             ItemModeButton.UseVisualStyleBackColor = false;
             ItemModeButton.Click += ItemModeButton_Click;
             // 
@@ -2614,7 +2614,7 @@ namespace ACNHPokerCore
             VariationButton.Size = new System.Drawing.Size(80, 23);
             VariationButton.TabIndex = 24;
             VariationButton.Tag = "";
-            VariationButton.Text = "Variation";
+            VariationButton.Text = "变体";
             VariationButton.UseVisualStyleBackColor = false;
             VariationButton.Click += VariationButton_Click;
             // 
@@ -2732,7 +2732,7 @@ namespace ACNHPokerCore
             copyItemToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             copyItemToolStripMenuItem.Name = "copyItemToolStripMenuItem";
             copyItemToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
-            copyItemToolStripMenuItem.Text = "Copy Item";
+            copyItemToolStripMenuItem.Text = "复制物品";
             copyItemToolStripMenuItem.Click += CopyItemToolStripMenuItem_Click;
             // 
             // deleteItemToolStripMenuItem
@@ -2741,7 +2741,7 @@ namespace ACNHPokerCore
             deleteItemToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             deleteItemToolStripMenuItem.Name = "deleteItemToolStripMenuItem";
             deleteItemToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
-            deleteItemToolStripMenuItem.Text = "Delete Item";
+            deleteItemToolStripMenuItem.Text = "删除物品";
             deleteItemToolStripMenuItem.Click += DeleteItemToolStripMenuItem_Click;
             // 
             // wrapItemToolStripMenuItem
@@ -2750,7 +2750,7 @@ namespace ACNHPokerCore
             wrapItemToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             wrapItemToolStripMenuItem.Name = "wrapItemToolStripMenuItem";
             wrapItemToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
-            wrapItemToolStripMenuItem.Text = "Wrap Item [ ! ]";
+            wrapItemToolStripMenuItem.Text = "包装物品 [ ! ]";
             wrapItemToolStripMenuItem.Click += WrapItemToolStripMenuItem_Click;
             // 
             // wrapAllItemsToolStripMenuItem
@@ -2759,7 +2759,7 @@ namespace ACNHPokerCore
             wrapAllItemsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             wrapAllItemsToolStripMenuItem.Name = "wrapAllItemsToolStripMenuItem";
             wrapAllItemsToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
-            wrapAllItemsToolStripMenuItem.Text = "Wrap All Items [ ! ]";
+            wrapAllItemsToolStripMenuItem.Text = "包裹所有物品 [ ! ]";
             wrapAllItemsToolStripMenuItem.Click += WrapAllItemsToolStripMenuItem_Click;
             // 
             // addToFavoriteToolStripMenuItem
@@ -2768,7 +2768,7 @@ namespace ACNHPokerCore
             addToFavoriteToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             addToFavoriteToolStripMenuItem.Name = "addToFavoriteToolStripMenuItem";
             addToFavoriteToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
-            addToFavoriteToolStripMenuItem.Text = "Add To Favorite";
+            addToFavoriteToolStripMenuItem.Text = "添加到收藏夹";
             addToFavoriteToolStripMenuItem.Click += AddToFavoriteToolStripMenuItem_Click;
             // 
             // unwrapAllItemsToolStripMenuItem
@@ -2777,7 +2777,7 @@ namespace ACNHPokerCore
             unwrapAllItemsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             unwrapAllItemsToolStripMenuItem.Name = "unwrapAllItemsToolStripMenuItem";
             unwrapAllItemsToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
-            unwrapAllItemsToolStripMenuItem.Text = "Unwrap All Items";
+            unwrapAllItemsToolStripMenuItem.Text = "全部拆包";
             unwrapAllItemsToolStripMenuItem.Click += UnwrapAllItemsToolStripMenuItem_Click;
             // 
             // inventorySlot39
@@ -3535,7 +3535,7 @@ namespace ACNHPokerCore
             deletedSelectedToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             deletedSelectedToolStripMenuItem.Name = "deletedSelectedToolStripMenuItem";
             deletedSelectedToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
-            deletedSelectedToolStripMenuItem.Text = "Deleted Selected";
+            deletedSelectedToolStripMenuItem.Text = "删除选中项";
             deletedSelectedToolStripMenuItem.Click += DeletedSelectedToolStripMenuItem_Click;
             // 
             // RecipeGridView
@@ -3599,7 +3599,7 @@ namespace ACNHPokerCore
             WallMountMsg.Name = "WallMountMsg";
             WallMountMsg.Size = new System.Drawing.Size(349, 16);
             WallMountMsg.TabIndex = 34;
-            WallMountMsg.Text = "[Right Click] an item to mount it on to the display.";
+            WallMountMsg.Text = "[右键点击]一个物品，将它安装到展示架上。";
             WallMountMsg.Visible = false;
             // 
             // GenePanel
@@ -3686,7 +3686,7 @@ namespace ACNHPokerCore
             SpawnAllButton.Size = new System.Drawing.Size(100, 23);
             SpawnAllButton.TabIndex = 32;
             SpawnAllButton.Tag = "";
-            SpawnAllButton.Text = "Spawn All";
+            SpawnAllButton.Text = "生成全部";
             SpawnAllButton.UseVisualStyleBackColor = false;
             SpawnAllButton.Click += SpawnAllButton_Click;
             // 
@@ -3702,7 +3702,7 @@ namespace ACNHPokerCore
             FillRemainButton.Size = new System.Drawing.Size(100, 23);
             FillRemainButton.TabIndex = 31;
             FillRemainButton.Tag = "";
-            FillRemainButton.Text = "Fill Remain";
+            FillRemainButton.Text = "填充剩余";
             FillRemainButton.UseVisualStyleBackColor = false;
             FillRemainButton.Click += FillRemainButton_Click;
             // 
@@ -3715,7 +3715,7 @@ namespace ACNHPokerCore
             AmountOrCountLabel.Name = "AmountOrCountLabel";
             AmountOrCountLabel.Size = new System.Drawing.Size(60, 16);
             AmountOrCountLabel.TabIndex = 28;
-            AmountOrCountLabel.Text = "Amount";
+            AmountOrCountLabel.Text = "数量";
             // 
             // ItemIDLabel
             // 
@@ -3726,7 +3726,7 @@ namespace ACNHPokerCore
             ItemIDLabel.Name = "ItemIDLabel";
             ItemIDLabel.Size = new System.Drawing.Size(55, 16);
             ItemIDLabel.TabIndex = 27;
-            ItemIDLabel.Text = "Item ID";
+            ItemIDLabel.Text = "物品ID";
             // 
             // HexModeButton
             // 
@@ -3740,7 +3740,7 @@ namespace ACNHPokerCore
             HexModeButton.Size = new System.Drawing.Size(80, 26);
             HexModeButton.TabIndex = 30;
             HexModeButton.Tag = "Normal";
-            HexModeButton.Text = "Hex Mode";
+            HexModeButton.Text = "十六进制模式";
             HexModeButton.UseVisualStyleBackColor = false;
             HexModeButton.Click += HexModeButton_Click;
             // 
@@ -3763,7 +3763,7 @@ namespace ACNHPokerCore
             FlowerIDLabel.Name = "FlowerIDLabel";
             FlowerIDLabel.Size = new System.Drawing.Size(73, 16);
             FlowerIDLabel.TabIndex = 27;
-            FlowerIDLabel.Text = "Flower ID";
+            FlowerIDLabel.Text = "花ID";
             // 
             // RecipeModePanel
             // 
@@ -3783,7 +3783,7 @@ namespace ACNHPokerCore
             RecipeIDLabel.Name = "RecipeIDLabel";
             RecipeIDLabel.Size = new System.Drawing.Size(74, 16);
             RecipeIDLabel.TabIndex = 27;
-            RecipeIDLabel.Text = "Recipe ID";
+            RecipeIDLabel.Text = "食谱ID";
             // 
             // AlwaysOnTab
             // 
@@ -3845,7 +3845,7 @@ namespace ACNHPokerCore
             SetAirportColorBtn.Size = new System.Drawing.Size(73, 23);
             SetAirportColorBtn.TabIndex = 96;
             SetAirportColorBtn.Tag = "";
-            SetAirportColorBtn.Text = "Set";
+            SetAirportColorBtn.Text = "设置";
             SetAirportColorBtn.UseVisualStyleBackColor = false;
             SetAirportColorBtn.Click += SetAirportColorBtn_Click;
             // 
@@ -3873,7 +3873,7 @@ namespace ACNHPokerCore
             AirportColorLabel.Name = "AirportColorLabel";
             AirportColorLabel.Size = new System.Drawing.Size(142, 22);
             AirportColorLabel.TabIndex = 97;
-            AirportColorLabel.Text = "Airport Color :";
+            AirportColorLabel.Text = "机场颜色：";
             // 
             // DateAndTimeControlPanel
             // 
@@ -3940,7 +3940,7 @@ namespace ACNHPokerCore
             SetDateAndTimeButton.Size = new System.Drawing.Size(175, 23);
             SetDateAndTimeButton.TabIndex = 94;
             SetDateAndTimeButton.Tag = "";
-            SetDateAndTimeButton.Text = "Set Date && Time";
+            SetDateAndTimeButton.Text = "设置日期和时间";
             SetDateAndTimeButton.UseVisualStyleBackColor = false;
             SetDateAndTimeButton.Click += SetDateAndTimeButton_Click;
             // 
@@ -3953,7 +3953,7 @@ namespace ACNHPokerCore
             MinuteLabel.Name = "MinuteLabel";
             MinuteLabel.Size = new System.Drawing.Size(56, 16);
             MinuteLabel.TabIndex = 101;
-            MinuteLabel.Text = "Minute";
+            MinuteLabel.Text = "分钟";
             // 
             // HourLabel
             // 
@@ -3964,7 +3964,7 @@ namespace ACNHPokerCore
             HourLabel.Name = "HourLabel";
             HourLabel.Size = new System.Drawing.Size(41, 16);
             HourLabel.TabIndex = 100;
-            HourLabel.Text = "Hour";
+            HourLabel.Text = "小时";
             // 
             // DayLabel
             // 
@@ -3975,7 +3975,7 @@ namespace ACNHPokerCore
             DayLabel.Name = "DayLabel";
             DayLabel.Size = new System.Drawing.Size(32, 16);
             DayLabel.TabIndex = 99;
-            DayLabel.Text = "Day";
+            DayLabel.Text = "天";
             // 
             // MonthLabel
             // 
@@ -3986,7 +3986,7 @@ namespace ACNHPokerCore
             MonthLabel.Name = "MonthLabel";
             MonthLabel.Size = new System.Drawing.Size(52, 16);
             MonthLabel.TabIndex = 98;
-            MonthLabel.Text = "Month";
+            MonthLabel.Text = "月";
             // 
             // YearLabel
             // 
@@ -3997,7 +3997,7 @@ namespace ACNHPokerCore
             YearLabel.Name = "YearLabel";
             YearLabel.Size = new System.Drawing.Size(39, 16);
             YearLabel.TabIndex = 97;
-            YearLabel.Text = "Year";
+            YearLabel.Text = "年";
             // 
             // UnFreezeTimeButton
             // 
@@ -4012,7 +4012,7 @@ namespace ACNHPokerCore
             UnFreezeTimeButton.Size = new System.Drawing.Size(175, 23);
             UnFreezeTimeButton.TabIndex = 95;
             UnFreezeTimeButton.Tag = "";
-            UnFreezeTimeButton.Text = "10 Seconds Have Passed";
+            UnFreezeTimeButton.Text = "10秒已过";
             UnFreezeTimeButton.UseVisualStyleBackColor = false;
             UnFreezeTimeButton.Click += UnFreezeTimeButton_Click;
             // 
@@ -4025,7 +4025,7 @@ namespace ACNHPokerCore
             FreezeTimeLabel.Name = "FreezeTimeLabel";
             FreezeTimeLabel.Size = new System.Drawing.Size(181, 22);
             FreezeTimeLabel.TabIndex = 94;
-            FreezeTimeLabel.Text = "Freeze / Set Time :";
+            FreezeTimeLabel.Text = "冻结 / 设置时间：";
             // 
             // FreezeTimeButton
             // 
@@ -4040,7 +4040,7 @@ namespace ACNHPokerCore
             FreezeTimeButton.Size = new System.Drawing.Size(175, 23);
             FreezeTimeButton.TabIndex = 94;
             FreezeTimeButton.Tag = "";
-            FreezeTimeButton.Text = "Za Wārudo";
+            FreezeTimeButton.Text = "世界";
             FreezeTimeButton.UseVisualStyleBackColor = false;
             FreezeTimeButton.Click += FreezeTimeButton_Click;
             // 
@@ -4053,7 +4053,7 @@ namespace ACNHPokerCore
             WeatherSeedLabel.Name = "WeatherSeedLabel";
             WeatherSeedLabel.Size = new System.Drawing.Size(150, 22);
             WeatherSeedLabel.TabIndex = 94;
-            WeatherSeedLabel.Text = "Weather Seed :";
+            WeatherSeedLabel.Text = "天气种子：";
             // 
             // CheatPanel
             // 
@@ -4106,7 +4106,7 @@ namespace ACNHPokerCore
             SwimClubModeLabel.Name = "SwimClubModeLabel";
             SwimClubModeLabel.Size = new System.Drawing.Size(177, 22);
             SwimClubModeLabel.TabIndex = 94;
-            SwimClubModeLabel.Text = "Swim Club Mode :";
+            SwimClubModeLabel.Text = "游泳俱乐部模式：";
             // 
             // DisableCollisionToggle
             // 
@@ -4172,7 +4172,7 @@ namespace ACNHPokerCore
             animationSpeedx2.Size = new System.Drawing.Size(65, 23);
             animationSpeedx2.TabIndex = 90;
             animationSpeedx2.Tag = "";
-            animationSpeedx2.Text = "x2";
+            animationSpeedx2.Text = "2倍";
             animationSpeedx2.UseVisualStyleBackColor = false;
             animationSpeedx2.Click += AnimationSpeedx2_Click;
             // 
@@ -4189,7 +4189,7 @@ namespace ACNHPokerCore
             animationSpeedx5.Size = new System.Drawing.Size(65, 23);
             animationSpeedx5.TabIndex = 89;
             animationSpeedx5.Tag = "";
-            animationSpeedx5.Text = "x5";
+            animationSpeedx5.Text = "5倍";
             animationSpeedx5.UseVisualStyleBackColor = false;
             animationSpeedx5.Click += AnimationSpeedx5_Click;
             // 
@@ -4206,7 +4206,7 @@ namespace ACNHPokerCore
             animationSpeedx50.Size = new System.Drawing.Size(65, 23);
             animationSpeedx50.TabIndex = 88;
             animationSpeedx50.Tag = "";
-            animationSpeedx50.Text = "x50";
+            animationSpeedx50.Text = "50个";
             animationSpeedx50.UseVisualStyleBackColor = false;
             animationSpeedx50.Click += AnimationSpeedx50_Click;
             // 
@@ -4238,7 +4238,7 @@ namespace ACNHPokerCore
             maxSpeedX2Btn.Size = new System.Drawing.Size(65, 23);
             maxSpeedX2Btn.TabIndex = 86;
             maxSpeedX2Btn.Tag = "";
-            maxSpeedX2Btn.Text = "x2";
+            maxSpeedX2Btn.Text = "两倍";
             maxSpeedX2Btn.UseVisualStyleBackColor = false;
             maxSpeedX2Btn.Click += MaxSpeedX2Btn_Click;
             // 
@@ -4254,7 +4254,7 @@ namespace ACNHPokerCore
             maxSpeedX3Btn.Size = new System.Drawing.Size(65, 23);
             maxSpeedX3Btn.TabIndex = 85;
             maxSpeedX3Btn.Tag = "";
-            maxSpeedX3Btn.Text = "x3";
+            maxSpeedX3Btn.Text = "三倍";
             maxSpeedX3Btn.UseVisualStyleBackColor = false;
             maxSpeedX3Btn.Click += MaxSpeedX3Btn_Click;
             // 
@@ -4286,7 +4286,7 @@ namespace ACNHPokerCore
             maxSpeedX100Btn.Size = new System.Drawing.Size(65, 23);
             maxSpeedX100Btn.TabIndex = 83;
             maxSpeedX100Btn.Tag = "";
-            maxSpeedX100Btn.Text = "x100";
+            maxSpeedX100Btn.Text = "100个";
             maxSpeedX100Btn.UseVisualStyleBackColor = false;
             maxSpeedX100Btn.Click += MaxSpeedX100Btn_Click;
             // 
@@ -4302,7 +4302,7 @@ namespace ACNHPokerCore
             PoopButton.Size = new System.Drawing.Size(170, 23);
             PoopButton.TabIndex = 82;
             PoopButton.Tag = "";
-            PoopButton.Text = "Phantom pooping";
+            PoopButton.Text = "幽灵排便";
             PoopButton.UseVisualStyleBackColor = false;
             PoopButton.Click += PoopButton_Click;
             // 
@@ -4318,7 +4318,7 @@ namespace ACNHPokerCore
             EatButton.Size = new System.Drawing.Size(170, 23);
             EatButton.TabIndex = 81;
             EatButton.Tag = "";
-            EatButton.Text = "Eat";
+            EatButton.Text = "吃";
             EatButton.UseVisualStyleBackColor = false;
             EatButton.Click += EatButton_Click;
             // 
@@ -4331,7 +4331,7 @@ namespace ACNHPokerCore
             AnimationSpeedLabel.Name = "AnimationSpeedLabel";
             AnimationSpeedLabel.Size = new System.Drawing.Size(179, 22);
             AnimationSpeedLabel.TabIndex = 80;
-            AnimationSpeedLabel.Text = "Animation Speed :";
+            AnimationSpeedLabel.Text = "动画速度：";
             // 
             // DisableCollisionLabel
             // 
@@ -4342,7 +4342,7 @@ namespace ACNHPokerCore
             DisableCollisionLabel.Name = "DisableCollisionLabel";
             DisableCollisionLabel.Size = new System.Drawing.Size(177, 22);
             DisableCollisionLabel.TabIndex = 79;
-            DisableCollisionLabel.Text = "Disable Collision :";
+            DisableCollisionLabel.Text = "禁用碰撞：";
             // 
             // MaxWalkSpeedLabel
             // 
@@ -4353,7 +4353,7 @@ namespace ACNHPokerCore
             MaxWalkSpeedLabel.Name = "MaxWalkSpeedLabel";
             MaxWalkSpeedLabel.Size = new System.Drawing.Size(224, 22);
             MaxWalkSpeedLabel.TabIndex = 78;
-            MaxWalkSpeedLabel.Text = "Maximum Walk Speed :";
+            MaxWalkSpeedLabel.Text = "最大行走速度：";
             // 
             // StaminaLabel
             // 
@@ -4364,7 +4364,7 @@ namespace ACNHPokerCore
             StaminaLabel.Name = "StaminaLabel";
             StaminaLabel.Size = new System.Drawing.Size(97, 22);
             StaminaLabel.TabIndex = 77;
-            StaminaLabel.Text = "Stamina :";
+            StaminaLabel.Text = "耐力：";
             // 
             // ReactionPanel
             // 
@@ -4396,7 +4396,7 @@ namespace ACNHPokerCore
             SetReactionWheelButton.Size = new System.Drawing.Size(175, 23);
             SetReactionWheelButton.TabIndex = 94;
             SetReactionWheelButton.Tag = "";
-            SetReactionWheelButton.Text = "Set Reaction Wheel";
+            SetReactionWheelButton.Text = "设置反应轮";
             SetReactionWheelButton.UseVisualStyleBackColor = false;
             SetReactionWheelButton.Click += SetReactionWheelButton_Click;
             // 
@@ -4536,7 +4536,7 @@ namespace ACNHPokerCore
             ReactionWheelLabel.Name = "ReactionWheelLabel";
             ReactionWheelLabel.Size = new System.Drawing.Size(164, 22);
             ReactionWheelLabel.TabIndex = 67;
-            ReactionWheelLabel.Text = "Reaction Wheel :";
+            ReactionWheelLabel.Text = "反应轮：";
             // 
             // TurnipPanel
             // 
@@ -4597,7 +4597,7 @@ namespace ACNHPokerCore
             SetTurnipPriceButton.Size = new System.Drawing.Size(155, 23);
             SetTurnipPriceButton.TabIndex = 83;
             SetTurnipPriceButton.Tag = "";
-            SetTurnipPriceButton.Text = "Set Turnip Price";
+            SetTurnipPriceButton.Text = "设置大头菜价格";
             SetTurnipPriceButton.UseVisualStyleBackColor = false;
             SetTurnipPriceButton.Click += SetTurnipPriceButton_Click;
             // 
@@ -4613,7 +4613,7 @@ namespace ACNHPokerCore
             SetTurnipPriceMaxButton.Size = new System.Drawing.Size(155, 23);
             SetTurnipPriceMaxButton.TabIndex = 82;
             SetTurnipPriceMaxButton.Tag = "";
-            SetTurnipPriceMaxButton.Text = "Set All to MAX";
+            SetTurnipPriceMaxButton.Text = "设置全部为最大";
             SetTurnipPriceMaxButton.UseVisualStyleBackColor = false;
             SetTurnipPriceMaxButton.Click += SetTurnipPriceMaxButton_Click;
             // 
@@ -4626,7 +4626,7 @@ namespace ACNHPokerCore
             SaturdayPMLabel.Name = "SaturdayPMLabel";
             SaturdayPMLabel.Size = new System.Drawing.Size(106, 19);
             SaturdayPMLabel.TabIndex = 54;
-            SaturdayPMLabel.Text = "Saturday PM";
+            SaturdayPMLabel.Text = "周六下午";
             // 
             // FridayPMLabel
             // 
@@ -4637,7 +4637,7 @@ namespace ACNHPokerCore
             FridayPMLabel.Name = "FridayPMLabel";
             FridayPMLabel.Size = new System.Drawing.Size(85, 19);
             FridayPMLabel.TabIndex = 52;
-            FridayPMLabel.Text = "Friday PM";
+            FridayPMLabel.Text = "星期五下午";
             // 
             // ThursdayPMLabel
             // 
@@ -4648,7 +4648,7 @@ namespace ACNHPokerCore
             ThursdayPMLabel.Name = "ThursdayPMLabel";
             ThursdayPMLabel.Size = new System.Drawing.Size(110, 19);
             ThursdayPMLabel.TabIndex = 50;
-            ThursdayPMLabel.Text = "Thursday PM";
+            ThursdayPMLabel.Text = "星期四下午";
             // 
             // WednesdayPMLabel
             // 
@@ -4659,7 +4659,7 @@ namespace ACNHPokerCore
             WednesdayPMLabel.Name = "WednesdayPMLabel";
             WednesdayPMLabel.Size = new System.Drawing.Size(127, 19);
             WednesdayPMLabel.TabIndex = 48;
-            WednesdayPMLabel.Text = "Wednesday PM";
+            WednesdayPMLabel.Text = "周三下午";
             // 
             // TuesdayPMLabel
             // 
@@ -4670,7 +4670,7 @@ namespace ACNHPokerCore
             TuesdayPMLabel.Name = "TuesdayPMLabel";
             TuesdayPMLabel.Size = new System.Drawing.Size(102, 19);
             TuesdayPMLabel.TabIndex = 46;
-            TuesdayPMLabel.Text = "Tuesday PM";
+            TuesdayPMLabel.Text = "周二下午";
             // 
             // MondayPMLabel
             // 
@@ -4681,7 +4681,7 @@ namespace ACNHPokerCore
             MondayPMLabel.Name = "MondayPMLabel";
             MondayPMLabel.Size = new System.Drawing.Size(98, 19);
             MondayPMLabel.TabIndex = 44;
-            MondayPMLabel.Text = "Monday PM";
+            MondayPMLabel.Text = "星期一下午";
             // 
             // SaturdayAMLabel
             // 
@@ -4692,7 +4692,7 @@ namespace ACNHPokerCore
             SaturdayAMLabel.Name = "SaturdayAMLabel";
             SaturdayAMLabel.Size = new System.Drawing.Size(105, 19);
             SaturdayAMLabel.TabIndex = 42;
-            SaturdayAMLabel.Text = "Saturday AM";
+            SaturdayAMLabel.Text = "星期六上午";
             // 
             // FridayAMLabel
             // 
@@ -4703,7 +4703,7 @@ namespace ACNHPokerCore
             FridayAMLabel.Name = "FridayAMLabel";
             FridayAMLabel.Size = new System.Drawing.Size(84, 19);
             FridayAMLabel.TabIndex = 40;
-            FridayAMLabel.Text = "Friday AM";
+            FridayAMLabel.Text = "星期五上午";
             // 
             // ThursdayAMLabel
             // 
@@ -4714,7 +4714,7 @@ namespace ACNHPokerCore
             ThursdayAMLabel.Name = "ThursdayAMLabel";
             ThursdayAMLabel.Size = new System.Drawing.Size(109, 19);
             ThursdayAMLabel.TabIndex = 38;
-            ThursdayAMLabel.Text = "Thursday AM";
+            ThursdayAMLabel.Text = "星期四上午";
             // 
             // WednesdayAMLabel
             // 
@@ -4725,7 +4725,7 @@ namespace ACNHPokerCore
             WednesdayAMLabel.Name = "WednesdayAMLabel";
             WednesdayAMLabel.Size = new System.Drawing.Size(126, 19);
             WednesdayAMLabel.TabIndex = 36;
-            WednesdayAMLabel.Text = "Wednesday AM";
+            WednesdayAMLabel.Text = "星期三上午";
             // 
             // TuesdayAMLabel
             // 
@@ -4736,7 +4736,7 @@ namespace ACNHPokerCore
             TuesdayAMLabel.Name = "TuesdayAMLabel";
             TuesdayAMLabel.Size = new System.Drawing.Size(101, 19);
             TuesdayAMLabel.TabIndex = 34;
-            TuesdayAMLabel.Text = "Tuesday AM";
+            TuesdayAMLabel.Text = "星期二上午";
             // 
             // MondayAMLabel
             // 
@@ -4747,7 +4747,7 @@ namespace ACNHPokerCore
             MondayAMLabel.Name = "MondayAMLabel";
             MondayAMLabel.Size = new System.Drawing.Size(97, 19);
             MondayAMLabel.TabIndex = 31;
-            MondayAMLabel.Text = "Monday AM";
+            MondayAMLabel.Text = "星期一上午";
             // 
             // TurnipBuyPriceLabel
             // 
@@ -4758,7 +4758,7 @@ namespace ACNHPokerCore
             TurnipBuyPriceLabel.Name = "TurnipBuyPriceLabel";
             TurnipBuyPriceLabel.Size = new System.Drawing.Size(178, 22);
             TurnipBuyPriceLabel.TabIndex = 29;
-            TurnipBuyPriceLabel.Text = "Turnip Buy Price :";
+            TurnipBuyPriceLabel.Text = "大头菜买入价格：";
             // 
             // saturdayPMStar
             // 
@@ -4921,7 +4921,7 @@ namespace ACNHPokerCore
             ResetAllButton.Size = new System.Drawing.Size(100, 24);
             ResetAllButton.TabIndex = 32;
             ResetAllButton.Tag = "";
-            ResetAllButton.Text = "Reset All";
+            ResetAllButton.Text = "全部重置";
             ResetAllButton.UseVisualStyleBackColor = false;
             ResetAllButton.Click += ResetAllButton_Click;
             // 
@@ -4937,7 +4937,7 @@ namespace ACNHPokerCore
             DisableAllButton.Size = new System.Drawing.Size(100, 24);
             DisableAllButton.TabIndex = 31;
             DisableAllButton.Tag = "";
-            DisableAllButton.Text = "Disable All";
+            DisableAllButton.Text = "全部禁用";
             DisableAllButton.UseVisualStyleBackColor = false;
             DisableAllButton.Click += DisableAllButton_Click;
             // 
@@ -4971,7 +4971,7 @@ namespace ACNHPokerCore
             SeaFishButton.Size = new System.Drawing.Size(130, 24);
             SeaFishButton.TabIndex = 30;
             SeaFishButton.Tag = "";
-            SeaFishButton.Text = "Sea Fish";
+            SeaFishButton.Text = "海鱼";
             SeaFishButton.UseVisualStyleBackColor = false;
             SeaFishButton.Click += SeaFishButton_Click;
             // 
@@ -4987,7 +4987,7 @@ namespace ACNHPokerCore
             SeaCreatureButton.Size = new System.Drawing.Size(130, 24);
             SeaCreatureButton.TabIndex = 29;
             SeaCreatureButton.Tag = "";
-            SeaCreatureButton.Text = "Sea Creature";
+            SeaCreatureButton.Text = "海洋生物";
             SeaCreatureButton.UseVisualStyleBackColor = false;
             SeaCreatureButton.Click += SeaCreatureButton_Click;
             // 
@@ -5003,7 +5003,7 @@ namespace ACNHPokerCore
             InsectButton.Size = new System.Drawing.Size(130, 24);
             InsectButton.TabIndex = 28;
             InsectButton.Tag = "";
-            InsectButton.Text = "Insect";
+            InsectButton.Text = "昆虫";
             InsectButton.UseVisualStyleBackColor = false;
             InsectButton.Click += InsectButton_Click;
             // 
@@ -5019,7 +5019,7 @@ namespace ACNHPokerCore
             RiverFishButton.Size = new System.Drawing.Size(130, 24);
             RiverFishButton.TabIndex = 27;
             RiverFishButton.Tag = "";
-            RiverFishButton.Text = "River Fish";
+            RiverFishButton.Text = "河鱼";
             RiverFishButton.UseVisualStyleBackColor = false;
             RiverFishButton.Click += RiverFishButton_Click;
             // 
@@ -5042,7 +5042,7 @@ namespace ACNHPokerCore
             CritterNowLoadingMessage.Name = "CritterNowLoadingMessage";
             CritterNowLoadingMessage.Size = new System.Drawing.Size(109, 16);
             CritterNowLoadingMessage.TabIndex = 33;
-            CritterNowLoadingMessage.Text = "Now Loading...";
+            CritterNowLoadingMessage.Text = "正在加载...";
             // 
             // CritterNowLoadingImage
             // 
@@ -5065,7 +5065,7 @@ namespace ACNHPokerCore
             ReadCritterDataButton.Size = new System.Drawing.Size(136, 24);
             ReadCritterDataButton.TabIndex = 26;
             ReadCritterDataButton.Tag = "";
-            ReadCritterDataButton.Text = "Read Critter Data";
+            ReadCritterDataButton.Text = "读取生物数据";
             ReadCritterDataButton.UseVisualStyleBackColor = false;
             ReadCritterDataButton.Click += ReadCritterDataButton_Click;
             // 
@@ -5215,7 +5215,7 @@ namespace ACNHPokerCore
             VillagerNowLoadingMessage.Name = "VillagerNowLoadingMessage";
             VillagerNowLoadingMessage.Size = new System.Drawing.Size(109, 16);
             VillagerNowLoadingMessage.TabIndex = 33;
-            VillagerNowLoadingMessage.Text = "Now Loading...";
+            VillagerNowLoadingMessage.Text = "正在加载...";
             // 
             // VillagerNowLoadingImage
             // 
@@ -5235,7 +5235,7 @@ namespace ACNHPokerCore
             VillagerMysIslandLabel.Name = "VillagerMysIslandLabel";
             VillagerMysIslandLabel.Size = new System.Drawing.Size(218, 22);
             VillagerMysIslandLabel.TabIndex = 125;
-            VillagerMysIslandLabel.Text = "Mystery Island Tours :";
+            VillagerMysIslandLabel.Text = "神秘岛游览：";
             // 
             // VillagerCatchphraseLabel
             // 
@@ -5246,7 +5246,7 @@ namespace ACNHPokerCore
             VillagerCatchphraseLabel.Name = "VillagerCatchphraseLabel";
             VillagerCatchphraseLabel.Size = new System.Drawing.Size(141, 22);
             VillagerCatchphraseLabel.TabIndex = 107;
-            VillagerCatchphraseLabel.Text = "Catchphrase :";
+            VillagerCatchphraseLabel.Text = "口头禅：";
             // 
             // VillagerHeaderIgnore
             // 
@@ -5273,7 +5273,7 @@ namespace ACNHPokerCore
             VillagerHouseIndexLabel.Name = "VillagerHouseIndexLabel";
             VillagerHouseIndexLabel.Size = new System.Drawing.Size(137, 22);
             VillagerHouseIndexLabel.TabIndex = 101;
-            VillagerHouseIndexLabel.Text = "House Index :";
+            VillagerHouseIndexLabel.Text = "房屋索引：";
             // 
             // VillagerFriendshipLabel
             // 
@@ -5284,7 +5284,7 @@ namespace ACNHPokerCore
             VillagerFriendshipLabel.Name = "VillagerFriendshipLabel";
             VillagerFriendshipLabel.Size = new System.Drawing.Size(122, 22);
             VillagerFriendshipLabel.TabIndex = 100;
-            VillagerFriendshipLabel.Text = "Friendship :";
+            VillagerFriendshipLabel.Text = "友谊：";
             // 
             // VillagerIndexLabel
             // 
@@ -5295,7 +5295,7 @@ namespace ACNHPokerCore
             VillagerIndexLabel.Name = "VillagerIndexLabel";
             VillagerIndexLabel.Size = new System.Drawing.Size(148, 22);
             VillagerIndexLabel.TabIndex = 99;
-            VillagerIndexLabel.Text = "Villager Index :";
+            VillagerIndexLabel.Text = "村民索引：";
             // 
             // VillagerPersonalityLabel
             // 
@@ -5306,7 +5306,7 @@ namespace ACNHPokerCore
             VillagerPersonalityLabel.Name = "VillagerPersonalityLabel";
             VillagerPersonalityLabel.Size = new System.Drawing.Size(127, 22);
             VillagerPersonalityLabel.TabIndex = 98;
-            VillagerPersonalityLabel.Text = "Personality :";
+            VillagerPersonalityLabel.Text = "性格：";
             // 
             // VillagerINameLabel
             // 
@@ -5317,7 +5317,7 @@ namespace ACNHPokerCore
             VillagerINameLabel.Name = "VillagerINameLabel";
             VillagerINameLabel.Size = new System.Drawing.Size(149, 22);
             VillagerINameLabel.TabIndex = 97;
-            VillagerINameLabel.Text = "Internal Name :";
+            VillagerINameLabel.Text = "内部名称：";
             // 
             // VillagerNameLabel
             // 
@@ -5328,7 +5328,7 @@ namespace ACNHPokerCore
             VillagerNameLabel.Name = "VillagerNameLabel";
             VillagerNameLabel.Size = new System.Drawing.Size(74, 22);
             VillagerNameLabel.TabIndex = 78;
-            VillagerNameLabel.Text = "Name :";
+            VillagerNameLabel.Text = "名字：";
             // 
             // VillagerControlPanel
             // 
@@ -5376,7 +5376,7 @@ namespace ACNHPokerCore
             VillagerRefreshButton.Size = new System.Drawing.Size(80, 23);
             VillagerRefreshButton.TabIndex = 79;
             VillagerRefreshButton.Tag = "";
-            VillagerRefreshButton.Text = "Refresh";
+            VillagerRefreshButton.Text = "刷新";
             VillagerRefreshButton.UseVisualStyleBackColor = false;
             VillagerRefreshButton.Click += VillagerRefreshButton_Click;
             // 
@@ -5392,7 +5392,7 @@ namespace ACNHPokerCore
             ReplaceMysVillagerButton.Size = new System.Drawing.Size(237, 23);
             ReplaceMysVillagerButton.TabIndex = 129;
             ReplaceMysVillagerButton.Tag = "";
-            ReplaceMysVillagerButton.Text = "Replace Villager";
+            ReplaceMysVillagerButton.Text = "替换村民";
             ReplaceMysVillagerButton.UseVisualStyleBackColor = false;
             ReplaceMysVillagerButton.Click += ReplaceMysVillagerButton_Click;
             // 
@@ -5459,7 +5459,7 @@ namespace ACNHPokerCore
             ReplaceVillagerButton.Size = new System.Drawing.Size(80, 66);
             ReplaceVillagerButton.TabIndex = 110;
             ReplaceVillagerButton.Tag = "";
-            ReplaceVillagerButton.Text = "Replace Villager";
+            ReplaceVillagerButton.Text = "替换村民";
             ReplaceVillagerButton.UseVisualStyleBackColor = false;
             ReplaceVillagerButton.Click += ReplaceVillagerButton_Click;
             // 
@@ -5475,7 +5475,7 @@ namespace ACNHPokerCore
             ReadMysVillagerButton.Size = new System.Drawing.Size(106, 74);
             ReadMysVillagerButton.TabIndex = 126;
             ReadMysVillagerButton.Tag = "";
-            ReadMysVillagerButton.Text = "Read Mystery Island Villager";
+            ReadMysVillagerButton.Text = "阅读神秘岛村民";
             ReadMysVillagerButton.UseVisualStyleBackColor = false;
             ReadMysVillagerButton.Click += ReadMysVillagerButton_Click;
             // 
@@ -5491,7 +5491,7 @@ namespace ACNHPokerCore
             ForcedMoveoutButton.Size = new System.Drawing.Size(80, 41);
             ForcedMoveoutButton.TabIndex = 112;
             ForcedMoveoutButton.Tag = "";
-            ForcedMoveoutButton.Text = "Forced Move out";
+            ForcedMoveoutButton.Text = "被迫搬离";
             ForcedMoveoutButton.UseVisualStyleBackColor = false;
             ForcedMoveoutButton.Click += ForcedMoveoutButton_Click;
             // 
@@ -5507,7 +5507,7 @@ namespace ACNHPokerCore
             LoadHouseButton.Size = new System.Drawing.Size(80, 56);
             LoadHouseButton.TabIndex = 124;
             LoadHouseButton.Tag = "";
-            LoadHouseButton.Text = "Load House";
+            LoadHouseButton.Text = "加载房屋";
             LoadHouseButton.UseVisualStyleBackColor = false;
             LoadHouseButton.Click += LoadHouseButton_Click;
             // 
@@ -5523,7 +5523,7 @@ namespace ACNHPokerCore
             IrregularMoveoutButton.Size = new System.Drawing.Size(80, 41);
             IrregularMoveoutButton.TabIndex = 113;
             IrregularMoveoutButton.Tag = "";
-            IrregularMoveoutButton.Text = "Irregular Move out";
+            IrregularMoveoutButton.Text = "不规则搬离";
             IrregularMoveoutButton.UseVisualStyleBackColor = false;
             IrregularMoveoutButton.Click += IrregularMoveoutButton_Click;
             // 
@@ -5539,7 +5539,7 @@ namespace ACNHPokerCore
             LoadVillagerButton.Size = new System.Drawing.Size(80, 56);
             LoadVillagerButton.TabIndex = 123;
             LoadVillagerButton.Tag = "";
-            LoadVillagerButton.Text = "Load Villager";
+            LoadVillagerButton.Text = "加载村民";
             LoadVillagerButton.UseVisualStyleBackColor = false;
             LoadVillagerButton.Click += LoadVillagerButton_Click;
             // 
@@ -5555,7 +5555,7 @@ namespace ACNHPokerCore
             CancelMoveoutButton.Size = new System.Drawing.Size(80, 41);
             CancelMoveoutButton.TabIndex = 114;
             CancelMoveoutButton.Tag = "";
-            CancelMoveoutButton.Text = "Cancel Move out";
+            CancelMoveoutButton.Text = "取消搬离";
             CancelMoveoutButton.UseVisualStyleBackColor = false;
             CancelMoveoutButton.Click += CancelMoveoutButton_Click;
             // 
@@ -5571,7 +5571,7 @@ namespace ACNHPokerCore
             SaveHouseButton.Size = new System.Drawing.Size(80, 56);
             SaveHouseButton.TabIndex = 122;
             SaveHouseButton.Tag = "";
-            SaveHouseButton.Text = "Save House";
+            SaveHouseButton.Text = "保存房子";
             SaveHouseButton.UseVisualStyleBackColor = false;
             SaveHouseButton.Click += SaveHouseButton_Click;
             // 
@@ -5587,7 +5587,7 @@ namespace ACNHPokerCore
             ForcedMoveoutAllButton.Size = new System.Drawing.Size(80, 26);
             ForcedMoveoutAllButton.TabIndex = 115;
             ForcedMoveoutAllButton.Tag = "";
-            ForcedMoveoutAllButton.Text = "All";
+            ForcedMoveoutAllButton.Text = "全部";
             ForcedMoveoutAllButton.UseVisualStyleBackColor = false;
             ForcedMoveoutAllButton.Click += ForcedMoveoutAllButton_Click;
             // 
@@ -5603,7 +5603,7 @@ namespace ACNHPokerCore
             SaveVillagerButton.Size = new System.Drawing.Size(80, 56);
             SaveVillagerButton.TabIndex = 121;
             SaveVillagerButton.Tag = "";
-            SaveVillagerButton.Text = "Save Villager";
+            SaveVillagerButton.Text = "保存村民";
             SaveVillagerButton.UseVisualStyleBackColor = false;
             SaveVillagerButton.Click += SaveVillagerButton_Click;
             // 
@@ -5619,7 +5619,7 @@ namespace ACNHPokerCore
             IrregularMoveoutAllButton.Size = new System.Drawing.Size(80, 26);
             IrregularMoveoutAllButton.TabIndex = 116;
             IrregularMoveoutAllButton.Tag = "";
-            IrregularMoveoutAllButton.Text = "All";
+            IrregularMoveoutAllButton.Text = "所有";
             IrregularMoveoutAllButton.UseVisualStyleBackColor = false;
             IrregularMoveoutAllButton.Click += IrregularMoveoutAllButton_Click;
             // 
@@ -5635,7 +5635,7 @@ namespace ACNHPokerCore
             VillagerCatchphraseClearButton.Size = new System.Drawing.Size(55, 28);
             VillagerCatchphraseClearButton.TabIndex = 120;
             VillagerCatchphraseClearButton.Tag = "";
-            VillagerCatchphraseClearButton.Text = "Clear";
+            VillagerCatchphraseClearButton.Text = "清除";
             VillagerCatchphraseClearButton.UseVisualStyleBackColor = false;
             VillagerCatchphraseClearButton.Click += VillagerCatchphraseClearButton_Click;
             // 
@@ -5651,7 +5651,7 @@ namespace ACNHPokerCore
             CancelMoveoutAllButton.Size = new System.Drawing.Size(80, 26);
             CancelMoveoutAllButton.TabIndex = 117;
             CancelMoveoutAllButton.Tag = "";
-            CancelMoveoutAllButton.Text = "All";
+            CancelMoveoutAllButton.Text = "全部";
             CancelMoveoutAllButton.UseVisualStyleBackColor = false;
             CancelMoveoutAllButton.Click += CancelMoveoutAllButton_Click;
             // 
@@ -5667,7 +5667,7 @@ namespace ACNHPokerCore
             VillagerCatchphraseSetButton.Size = new System.Drawing.Size(55, 28);
             VillagerCatchphraseSetButton.TabIndex = 119;
             VillagerCatchphraseSetButton.Tag = "";
-            VillagerCatchphraseSetButton.Text = "Set";
+            VillagerCatchphraseSetButton.Text = "设置";
             VillagerCatchphraseSetButton.UseVisualStyleBackColor = false;
             VillagerCatchphraseSetButton.Click += VillagerCatchphraseSetButton_Click;
             // 
@@ -5683,7 +5683,7 @@ namespace ACNHPokerCore
             FriendshipButton.Size = new System.Drawing.Size(102, 28);
             FriendshipButton.TabIndex = 118;
             FriendshipButton.Tag = "";
-            FriendshipButton.Text = "Friendship ...";
+            FriendshipButton.Text = "友谊……";
             FriendshipButton.UseVisualStyleBackColor = false;
             FriendshipButton.Click += FriendshipButton_Click;
             // 
@@ -5704,7 +5704,7 @@ namespace ACNHPokerCore
             PeekButton.Size = new System.Drawing.Size(55, 55);
             PeekButton.TabIndex = 38;
             PeekButton.Tag = "";
-            PeekButton.Text = "Peek";
+            PeekButton.Text = "读取";
             PeekButton.UseVisualStyleBackColor = false;
             PeekButton.Click += PeekButton_Click;
             // 
@@ -5720,7 +5720,7 @@ namespace ACNHPokerCore
             PokeButton.Size = new System.Drawing.Size(55, 55);
             PokeButton.TabIndex = 39;
             PokeButton.Tag = "";
-            PokeButton.Text = "Poke";
+            PokeButton.Text = "写入";
             PokeButton.UseVisualStyleBackColor = false;
             PokeButton.Click += PokeButton_Click;
             // 
@@ -5736,7 +5736,7 @@ namespace ACNHPokerCore
             FillButton.Size = new System.Drawing.Size(79, 55);
             FillButton.TabIndex = 50;
             FillButton.Tag = "";
-            FillButton.Text = "Fill";
+            FillButton.Text = "填充";
             FillButton.UseVisualStyleBackColor = false;
             FillButton.Click += FillButton_Click;
             // 
@@ -5757,7 +5757,7 @@ namespace ACNHPokerCore
             CacheButton.Size = new System.Drawing.Size(55, 55);
             CacheButton.TabIndex = 51;
             CacheButton.Tag = "";
-            CacheButton.Text = "Cache";
+            CacheButton.Text = "缓存";
             CacheButton.UseVisualStyleBackColor = false;
             CacheButton.Click += CacheButton_Click;
             // 
@@ -5781,7 +5781,7 @@ namespace ACNHPokerCore
             PokeMButton.Size = new System.Drawing.Size(55, 55);
             PokeMButton.TabIndex = 54;
             PokeMButton.Tag = "";
-            PokeMButton.Text = "PokeM";
+            PokeMButton.Text = "写入main";
             PokeMButton.UseVisualStyleBackColor = false;
             PokeMButton.Click += PokeMButton_Click;
             // 
@@ -5797,7 +5797,7 @@ namespace ACNHPokerCore
             PeekMButton.Size = new System.Drawing.Size(55, 55);
             PeekMButton.TabIndex = 53;
             PeekMButton.Tag = "";
-            PeekMButton.Text = "PeekM";
+            PeekMButton.Text = "读取main";
             PeekMButton.UseVisualStyleBackColor = false;
             PeekMButton.Click += PeekMButton_Click;
             // 
@@ -5813,7 +5813,7 @@ namespace ACNHPokerCore
             Chase2Btn.Size = new System.Drawing.Size(79, 23);
             Chase2Btn.TabIndex = 58;
             Chase2Btn.Tag = "";
-            Chase2Btn.Text = "Chase";
+            Chase2Btn.Text = "追逐";
             Chase2Btn.UseVisualStyleBackColor = false;
             Chase2Btn.Click += Chase2Btn_Click;
             // 

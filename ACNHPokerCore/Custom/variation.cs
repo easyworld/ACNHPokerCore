@@ -341,11 +341,11 @@ namespace ACNHPokerCore
                 if (MaxVariation >= 0 && MaxSubxVariation >= 0)
                     ShowVariation(name, itemID, FindMaxVariation(iName), FindMaxSubVariation(iName), iName, value);
                 else
-                    infoLabel.Text = @"Did you forget the image pack?";
+                    infoLabel.Text = @"你忘记图像包了吗？";
             }
             else
             {
-                infoLabel.Text = @"No variation found.";
+                infoLabel.Text = @"未发现变异。";
             }
         }
 

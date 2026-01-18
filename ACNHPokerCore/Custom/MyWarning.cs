@@ -92,7 +92,7 @@ namespace ACNHPokerCore
             {
                 if (e.KeyCode.ToString() == "C" || e.KeyCode.ToString() == "V")
                 {
-                    MyMessageBox.Show("You are being lazy, aren't you?", "Epic's Easy Anti-Cheat", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MyMessageBox.Show("你很懒呢，不是吗？", "Epic的Easy反作弊", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else if (e.KeyCode.ToString() == "F1")
                 {

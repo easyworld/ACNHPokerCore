@@ -84,15 +84,15 @@ namespace ACNHPokerCore
                 {
                     if (deviceList.Equals(""))
                     {
-                        MyMessageBox.Show("NO USB DEVICES FOUND!", "List of USB devices", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Warning);
+                        MyMessageBox.Show("未找到USB设备！", "USB设备列表", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Warning);
                     }
                     else
-                        MyMessageBox.Show(deviceList, "List of USB devices", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Information);
+                        MyMessageBox.Show(deviceList, "USB设备列表", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Information);
                 }
 
                 if (!CorrectIDFound && NormalIDFound)
                 {
-                    MyMessageBox.Show("Please double check your USB-botbase and libusbK driver installation!", "USB-botbase Error!", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+                    MyMessageBox.Show("请再次检查您的USB-botbase和libusbK驱动程序的安装！", "USB-botbase 错误！", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
                     Connected = false;
                     return false;
                 }
@@ -114,12 +114,12 @@ namespace ACNHPokerCore
                     }
                     else
                     {
-                        MyMessageBox.Show("Device Not Found!\nPlease try restarting your Switch if problem persists!", "USB insertion always require at least 3 flips!", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+                        MyMessageBox.Show("设备未找到！\\n请尝试重启您的Switch，如果问题仍然存在！", "插入USB总是需要至少3次翻转！", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
                     }
                 }
                 else
                 {
-                    MyMessageBox.Show("Device Not Found!\nPlease try restarting your Switch if problem persists!", "USB insertion always require at least 3 flips!", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+                    MyMessageBox.Show("未找到设备！\\n请尝试重启你的Switch，如果问题仍然存在！", "插入USB总是需要至少翻转3次！", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
                 }
 
                 Connected = false;

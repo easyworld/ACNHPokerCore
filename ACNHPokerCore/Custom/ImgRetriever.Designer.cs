@@ -59,7 +59,7 @@
             yesBtn.Name = "yesBtn";
             yesBtn.Size = new System.Drawing.Size(116, 32);
             yesBtn.TabIndex = 4;
-            yesBtn.Text = "Yes";
+            yesBtn.Text = "是";
             yesBtn.UseVisualStyleBackColor = false;
             yesBtn.Click += YesBtn_Click;
             // 
@@ -74,7 +74,7 @@
             noBtn.Name = "noBtn";
             noBtn.Size = new System.Drawing.Size(116, 32);
             noBtn.TabIndex = 3;
-            noBtn.Text = "No";
+            noBtn.Text = "不";
             noBtn.UseVisualStyleBackColor = false;
             noBtn.Click += NoBtn_Click;
             // 
@@ -87,7 +87,7 @@
             msg.Name = "msg";
             msg.Size = new System.Drawing.Size(387, 57);
             msg.TabIndex = 2;
-            msg.Text = "Would you like to download the item sprites now?\r\n\r\n(You can find this dialog in           again if needed.)";
+            msg.Text = "你现在想要下载物品精灵吗？\r\n\r\n(你可以在           再次找到这个对话框，如果需要的话。)";
             msg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // waitmsg
@@ -99,7 +99,7 @@
             waitmsg.Name = "waitmsg";
             waitmsg.Size = new System.Drawing.Size(213, 16);
             waitmsg.TabIndex = 1;
-            waitmsg.Text = "Downloading Image Archive...";
+            waitmsg.Text = "正在下载图像存档...";
             waitmsg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             waitmsg.Visible = false;
             // 

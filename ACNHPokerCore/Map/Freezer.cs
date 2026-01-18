@@ -116,7 +116,7 @@ namespace ACNHPokerCore
             Invoke((MethodInvoker)delegate
             {
                 FinMsg.Visible = true;
-                FinMsg.Text = "Template Saved!";
+                FinMsg.Text = "模板已保存！";
             });
         }
 
@@ -180,7 +180,7 @@ namespace ACNHPokerCore
             Invoke((MethodInvoker)delegate
             {
                 FinMsg.Visible = true;
-                FinMsg.Text = "Build a snowman?";
+                FinMsg.Text = "堆雪人吗？";
                 UpdateFreezeCountLabel(freezeCount);
             });
 
@@ -201,7 +201,7 @@ namespace ACNHPokerCore
             Invoke((MethodInvoker)delegate
             {
                 FinMsg.Visible = true;
-                FinMsg.Text = "Delay Updated! " + value + " ms";
+                FinMsg.Text = "延迟已更新！" + value + " ms";
             });
 
             if (sound)
@@ -220,7 +220,7 @@ namespace ACNHPokerCore
             Invoke((MethodInvoker)delegate
             {
                 FinMsg.Visible = true;
-                FinMsg.Text = "Instant Text Activated!";
+                FinMsg.Text = "即时文字已激活！";
                 UpdateFreezeCountLabel(freezeCount);
             });
 
@@ -240,7 +240,7 @@ namespace ACNHPokerCore
             Invoke((MethodInvoker)delegate
             {
                 FinMsg.Visible = true;
-                FinMsg.Text = "Instant Text Deactivated!";
+                FinMsg.Text = "即时文本已停用！";
                 UpdateFreezeCountLabel(freezeCount);
             });
 
@@ -266,7 +266,7 @@ namespace ACNHPokerCore
             Invoke((MethodInvoker)delegate
             {
                 FinMsg.Visible = true;
-                FinMsg.Text = "Inventory Freeze Activated!";
+                FinMsg.Text = "物品栏冻结已激活！";
                 UpdateFreezeCountLabel(freezeCount);
             });
 
@@ -284,7 +284,7 @@ namespace ACNHPokerCore
             Invoke((MethodInvoker)delegate
             {
                 FinMsg.Visible = true;
-                FinMsg.Text = "Inventory Freeze Deactivated!";
+                FinMsg.Text = "物品栏冻结已停用！";
                 UpdateFreezeCountLabel(freezeCount);
             });
 
@@ -332,7 +332,7 @@ namespace ACNHPokerCore
 
             if (data.Length != Utilities.mapSize * 2)
             {
-                MyMessageBox.Show("Invalid File Size!", "Your map file size is invalid!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MyMessageBox.Show("无效的文件大小！", "你的地图文件大小无效！", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -372,7 +372,7 @@ namespace ACNHPokerCore
             Invoke((MethodInvoker)delegate
             {
                 FinMsg.Visible = true;
-                FinMsg.Text = "Let it go!";
+                FinMsg.Text = "随它吧！";
                 UpdateFreezeCountLabel(freezeCount);
             });
 
@@ -412,7 +412,7 @@ namespace ACNHPokerCore
             Invoke((MethodInvoker)delegate
             {
                 FinMsg.Visible = true;
-                FinMsg.Text = "Build a snowman?";
+                FinMsg.Text = "要堆雪人吗？";
                 UpdateFreezeCountLabel(freezeCount);
             });
 
@@ -476,7 +476,7 @@ namespace ACNHPokerCore
 
             if (data.Length != Utilities.mapSize * 2)
             {
-                MyMessageBox.Show("Invalid File Size!", "Your map file size is invalid!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MyMessageBox.Show("无效的文件大小！", "你的地图文件大小无效！", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -523,7 +523,7 @@ namespace ACNHPokerCore
             catch (Exception ex)
             {
                 MyLog.LogEvent("Regen", "getCoordinate: " + ex.Message);
-                MyMessageBox.Show("Something doesn't feel right at all. You should restart the program...\n\n" + ex.Message, "!!! THIS SHIT DOESN'T WORK!! WHY? HAS I EVER?", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MyMessageBox.Show("感觉一点都不对劲。你应该重新启动程序...\n\n" + ex.Message, "!!! 这他妈根本没用！！！为什么？我有没有试过？", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
 
@@ -601,7 +601,7 @@ namespace ACNHPokerCore
         {
             if (tempData.Length != Utilities.mapSize * 2)
             {
-                MyMessageBox.Show("Invalid File Size!", "Your map file size is invalid!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MyMessageBox.Show("无效的文件大小！", "你的地图文件大小无效！", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -656,7 +656,7 @@ namespace ACNHPokerCore
             Invoke((MethodInvoker)delegate
             {
                 FinMsg.Visible = true;
-                FinMsg.Text = "Let it go!";
+                FinMsg.Text = "随它去吧！";
                 UpdateFreezeCountLabel(freezeCount);
             });
 
@@ -843,7 +843,7 @@ namespace ACNHPokerCore
             Invoke((MethodInvoker)delegate
             {
                 FinMsg.Visible = true;
-                FinMsg.Text = "Stay!";
+                FinMsg.Text = "留下！";
                 UpdateFreezeCountLabel(freezeCount);
             });
 
@@ -866,7 +866,7 @@ namespace ACNHPokerCore
             Invoke((MethodInvoker)delegate
             {
                 FinMsg.Visible = true;
-                FinMsg.Text = "Go!";
+                FinMsg.Text = "走！";
                 UpdateFreezeCountLabel(freezeCount);
             });
 
@@ -975,7 +975,7 @@ namespace ACNHPokerCore
             Invoke((MethodInvoker)delegate
             {
                 FinMsg.Visible = true;
-                FinMsg.Text = "Limbo!";
+                FinMsg.Text = "林波！";
                 UpdateFreezeCountLabel(freezeCount);
             });
 

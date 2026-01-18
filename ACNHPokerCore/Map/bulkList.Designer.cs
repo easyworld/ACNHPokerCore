@@ -80,7 +80,7 @@
             DeleteBtn.Name = "DeleteBtn";
             DeleteBtn.Size = new System.Drawing.Size(50, 50);
             DeleteBtn.TabIndex = 149;
-            DeleteBtn.Text = "Del Item";
+            DeleteBtn.Text = "删除物品";
             DeleteBtn.UseVisualStyleBackColor = false;
             DeleteBtn.Click += DeleteBtn_Click;
             // 
@@ -97,7 +97,7 @@
             SaveBtn.Name = "SaveBtn";
             SaveBtn.Size = new System.Drawing.Size(50, 50);
             SaveBtn.TabIndex = 150;
-            SaveBtn.Text = "Save";
+            SaveBtn.Text = "保存";
             SaveBtn.UseVisualStyleBackColor = false;
             SaveBtn.Click += SaveBtn_Click;
             // 
@@ -113,7 +113,7 @@
             ClearBtn.Name = "ClearBtn";
             ClearBtn.Size = new System.Drawing.Size(50, 50);
             ClearBtn.TabIndex = 151;
-            ClearBtn.Text = "Clear All";
+            ClearBtn.Text = "全部清除";
             ClearBtn.UseVisualStyleBackColor = false;
             ClearBtn.Click += ClearBtn_Click;
             // 
@@ -142,7 +142,7 @@
             RetainNameLabel.Name = "RetainNameLabel";
             RetainNameLabel.Size = new System.Drawing.Size(79, 15);
             RetainNameLabel.TabIndex = 155;
-            RetainNameLabel.Text = "Retain Name";
+            RetainNameLabel.Text = "保留名称";
             // 
             // RetainNameToggle
             // 
@@ -166,7 +166,7 @@
             WrappingLabel.Name = "WrappingLabel";
             WrappingLabel.Size = new System.Drawing.Size(62, 15);
             WrappingLabel.TabIndex = 153;
-            WrappingLabel.Text = "Wrapping";
+            WrappingLabel.Text = "包装";
             // 
             // LoadBtn
             // 
@@ -181,7 +181,7 @@
             LoadBtn.Name = "LoadBtn";
             LoadBtn.Size = new System.Drawing.Size(50, 50);
             LoadBtn.TabIndex = 156;
-            LoadBtn.Text = "Load";
+            LoadBtn.Text = "加载";
             LoadBtn.UseVisualStyleBackColor = false;
             LoadBtn.Click += LoadBtn_Click;
             // 
@@ -198,7 +198,7 @@
             ShuffleBtn.Name = "ShuffleBtn";
             ShuffleBtn.Size = new System.Drawing.Size(60, 50);
             ShuffleBtn.TabIndex = 157;
-            ShuffleBtn.Text = "Shuffle";
+            ShuffleBtn.Text = "洗牌";
             ShuffleBtn.UseVisualStyleBackColor = false;
             ShuffleBtn.Click += ShuffleBtn_Click;
             // 

@@ -244,7 +244,7 @@ namespace ACNHPokerCore
 
         private void ClearBtn_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MyMessageBox.Show("Are you sure?", "Slay them all!", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            DialogResult dialogResult = MyMessageBox.Show("你确定吗？", "杀了他们所有人！", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (dialogResult == DialogResult.Yes)
             {
                 items.Clear();
@@ -258,7 +258,7 @@ namespace ACNHPokerCore
 
         private void BulkList_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DialogResult dialogResult = MyMessageBox.Show("Are you sure? Closing the form will lose all unsaved changes.", "Let them burn!", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            DialogResult dialogResult = MyMessageBox.Show("你确定吗？关闭表单将会丢失所有未保存的更改。", "让他们烧起来！", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (dialogResult == DialogResult.No)
             {
                 CancelFormClose = true;
@@ -438,7 +438,7 @@ namespace ACNHPokerCore
             catch (Exception ex)
             {
                 MyLog.LogEvent("BulkList", "Load " + ex.Message);
-                MyMessageBox.Show(ex.Message, "How CPUs use Multiple Cores?");
+                MyMessageBox.Show(ex.Message, "CPU如何使用多核？");
             }
         }
 

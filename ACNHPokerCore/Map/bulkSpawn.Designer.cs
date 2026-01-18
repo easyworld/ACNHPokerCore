@@ -98,7 +98,7 @@ namespace ACNHPokerCore
             this.LeftBtn.Name = "LeftBtn";
             this.LeftBtn.Size = new System.Drawing.Size(49, 20);
             this.LeftBtn.TabIndex = 76;
-            this.LeftBtn.Text = "Left";
+            this.LeftBtn.Text = "左";
             this.LeftBtn.UseVisualStyleBackColor = true;
             this.LeftBtn.CheckedChanged += new System.EventHandler(this.LeftBtn_CheckedChanged);
             // 
@@ -114,7 +114,7 @@ namespace ACNHPokerCore
             this.RightBtn.Size = new System.Drawing.Size(58, 20);
             this.RightBtn.TabIndex = 77;
             this.RightBtn.TabStop = true;
-            this.RightBtn.Text = "Right";
+            this.RightBtn.Text = "右";
             this.RightBtn.UseVisualStyleBackColor = true;
             this.RightBtn.CheckedChanged += new System.EventHandler(this.RightBtn_CheckedChanged);
             // 
@@ -139,7 +139,7 @@ namespace ACNHPokerCore
             this.selectBtn.Name = "selectBtn";
             this.selectBtn.Size = new System.Drawing.Size(188, 26);
             this.selectBtn.TabIndex = 0;
-            this.selectBtn.Text = "Select File";
+            this.selectBtn.Text = "选择文件";
             this.selectBtn.UseVisualStyleBackColor = false;
             this.selectBtn.Click += new System.EventHandler(this.SelectBtn_Click);
             // 
@@ -155,7 +155,7 @@ namespace ACNHPokerCore
             this.SpawnBtn.Name = "SpawnBtn";
             this.SpawnBtn.Size = new System.Drawing.Size(188, 28);
             this.SpawnBtn.TabIndex = 222;
-            this.SpawnBtn.Text = "Spawn";
+            this.SpawnBtn.Text = "生成";
             this.SpawnBtn.UseVisualStyleBackColor = false;
             this.SpawnBtn.Click += new System.EventHandler(this.SpawnBtn_Click);
             // 
@@ -184,7 +184,7 @@ namespace ACNHPokerCore
             this.numOfItemLabel.Name = "numOfItemLabel";
             this.numOfItemLabel.Size = new System.Drawing.Size(106, 16);
             this.numOfItemLabel.TabIndex = 228;
-            this.numOfItemLabel.Text = "Num of Items :";
+            this.numOfItemLabel.Text = "物品数量：";
             this.numOfItemLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // VertHeightImageBox
@@ -206,7 +206,7 @@ namespace ACNHPokerCore
             this.VertHeightLabel.Name = "VertHeightLabel";
             this.VertHeightLabel.Size = new System.Drawing.Size(61, 16);
             this.VertHeightLabel.TabIndex = 230;
-            this.VertHeightLabel.Text = "Height :";
+            this.VertHeightLabel.Text = "高度：";
             this.VertHeightLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // VertDirectionImageBox
@@ -228,7 +228,7 @@ namespace ACNHPokerCore
             this.VertDirectionLabel.Name = "VertDirectionLabel";
             this.VertDirectionLabel.Size = new System.Drawing.Size(79, 16);
             this.VertDirectionLabel.TabIndex = 232;
-            this.VertDirectionLabel.Text = "Direction :";
+            this.VertDirectionLabel.Text = "方向：";
             this.VertDirectionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // XLabel
@@ -252,7 +252,7 @@ namespace ACNHPokerCore
             this.YLabel.Name = "YLabel";
             this.YLabel.Size = new System.Drawing.Size(25, 16);
             this.YLabel.TabIndex = 234;
-            this.YLabel.Text = "Y :";
+            this.YLabel.Text = "Y：";
             this.YLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // VertSettingPanel
@@ -322,7 +322,7 @@ namespace ACNHPokerCore
             this.VertWidthLabel.Name = "VertWidthLabel";
             this.VertWidthLabel.Size = new System.Drawing.Size(55, 16);
             this.VertWidthLabel.TabIndex = 234;
-            this.VertWidthLabel.Text = "Width :";
+            this.VertWidthLabel.Text = "宽度：";
             this.VertWidthLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.VertWidthLabel.Visible = false;
             // 
@@ -335,7 +335,7 @@ namespace ACNHPokerCore
             this.IgnoreSpaceLabel.Name = "IgnoreSpaceLabel";
             this.IgnoreSpaceLabel.Size = new System.Drawing.Size(108, 16);
             this.IgnoreSpaceLabel.TabIndex = 237;
-            this.IgnoreSpaceLabel.Text = "Ignore Space :";
+            this.IgnoreSpaceLabel.Text = "忽略空格：";
             this.IgnoreSpaceLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // IgnoreSpaceToggle
@@ -363,7 +363,7 @@ namespace ACNHPokerCore
             this.WarningMessage.ReadOnly = true;
             this.WarningMessage.Size = new System.Drawing.Size(186, 18);
             this.WarningMessage.TabIndex = 235;
-            this.WarningMessage.Text = "Spawn area out of bounds!";
+            this.WarningMessage.Text = "出生区域超出边界！";
             this.WarningMessage.Visible = false;
             // 
             // PleaseWaitPanel
@@ -420,7 +420,7 @@ namespace ACNHPokerCore
             this.PleaseWaitLabel.Name = "PleaseWaitLabel";
             this.PleaseWaitLabel.Size = new System.Drawing.Size(99, 16);
             this.PleaseWaitLabel.TabIndex = 215;
-            this.PleaseWaitLabel.Text = "Please Wait...";
+            this.PleaseWaitLabel.Text = "请稍等...";
             this.PleaseWaitLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ProgressTimer
@@ -437,7 +437,7 @@ namespace ACNHPokerCore
             this.numOfSpaceLabel.Name = "numOfSpaceLabel";
             this.numOfSpaceLabel.Size = new System.Drawing.Size(111, 16);
             this.numOfSpaceLabel.TabIndex = 237;
-            this.numOfSpaceLabel.Text = "Num of Space :";
+            this.numOfSpaceLabel.Text = "空格数量 :";
             this.numOfSpaceLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // numOfSpaceBox
@@ -559,7 +559,7 @@ namespace ACNHPokerCore
             this.HoriHeightLabel.Name = "HoriHeightLabel";
             this.HoriHeightLabel.Size = new System.Drawing.Size(61, 16);
             this.HoriHeightLabel.TabIndex = 234;
-            this.HoriHeightLabel.Text = "Height :";
+            this.HoriHeightLabel.Text = "高度：";
             this.HoriHeightLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.HoriHeightLabel.Visible = false;
             // 
@@ -582,7 +582,7 @@ namespace ACNHPokerCore
             this.HoriWidthLabel.Name = "HoriWidthLabel";
             this.HoriWidthLabel.Size = new System.Drawing.Size(55, 16);
             this.HoriWidthLabel.TabIndex = 230;
-            this.HoriWidthLabel.Text = "Width :";
+            this.HoriWidthLabel.Text = "宽度：";
             this.HoriWidthLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // VertThenHoriz
@@ -597,7 +597,7 @@ namespace ACNHPokerCore
             this.VertThenHoriz.Size = new System.Drawing.Size(156, 20);
             this.VertThenHoriz.TabIndex = 244;
             this.VertThenHoriz.TabStop = true;
-            this.VertThenHoriz.Text = "Vertical ➤ Horizontal";
+            this.VertThenHoriz.Text = "垂直 ➤ 水平";
             this.VertThenHoriz.UseVisualStyleBackColor = true;
             this.VertThenHoriz.Visible = false;
             this.VertThenHoriz.CheckedChanged += new System.EventHandler(this.VertThenHoriz_CheckedChanged);
@@ -612,7 +612,7 @@ namespace ACNHPokerCore
             this.HorizThenVert.Name = "HorizThenVert";
             this.HorizThenVert.Size = new System.Drawing.Size(156, 20);
             this.HorizThenVert.TabIndex = 243;
-            this.HorizThenVert.Text = "Horizontal ➤ Vertical";
+            this.HorizThenVert.Text = "水平 ➤ 垂直";
             this.HorizThenVert.UseVisualStyleBackColor = true;
             this.HorizThenVert.Visible = false;
             // 
@@ -650,7 +650,7 @@ namespace ACNHPokerCore
             this.FlagLabel.Name = "FlagLabel";
             this.FlagLabel.Size = new System.Drawing.Size(45, 16);
             this.FlagLabel.TabIndex = 246;
-            this.FlagLabel.Text = "Flag :";
+            this.FlagLabel.Text = "旗帜：";
             this.FlagLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // OtherSettingPanel
@@ -702,7 +702,7 @@ namespace ACNHPokerCore
             this.Name = "BulkSpawn";
             this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Bulk Spawn";
+            this.Text = "批量生成";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.BulkSpawn_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.miniMapBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.VertHeightImageBox)).EndInit();

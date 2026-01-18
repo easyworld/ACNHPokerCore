@@ -201,7 +201,7 @@ namespace ACNHPokerCore
                 File.WriteAllBytes(@"Your\YourBuilding.nhb", Building);
                 File.WriteAllBytes(@"Your\YourTerrain.nht", Terrain);
                 File.WriteAllBytes(@"Your\YourCustomDesignMap.nhdm", MapCustomDesgin);
-                MyMessageBox.Show("File saved!", "Nanomachines, Son!", MessageBoxButtons.OK,
+                MyMessageBox.Show("文件已保存！", "纳米机器，儿子！", MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
             }
 
@@ -1168,8 +1168,8 @@ namespace ACNHPokerCore
 
                 if (data.Length != 0x90)
                 {
-                    MyMessageBox.Show("Incorrect file size!" + " (0x" + data.Length.ToString("X") + ")\n" +
-                                        "Correct file size should be (0x90)", "Who gave you that file?", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MyMessageBox.Show("文件大小不正确！" + "(0x" + data.Length.ToString("X") + "）\n" +
+                                        "正确的文件大小应该是 (0x90)", "谁给你的那个文件？", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
@@ -1441,8 +1441,8 @@ namespace ACNHPokerCore
 
                 if (data.Length != 0x398)
                 {
-                    MyMessageBox.Show("Incorrect file size!" + " (0x" + data.Length.ToString("X") + ")\n" +
-                                        "Correct file size should be (0x398)", "Who gave you that file?", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MyMessageBox.Show("文件大小不正确！" + "(0x" + data.Length.ToString("X") + "）\n" +
+                                        "正确的文件大小应该是 (0x398)", "谁给了你那个文件？", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
@@ -1847,7 +1847,7 @@ namespace ACNHPokerCore
 
         private void RemoveAllRoadsBtn_Click(object sender, EventArgs e)
         {
-            if (MyMessageBox.Show("Are you sure you would like to remove ALL roads on your island?", "Long road ahead...", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            if (MyMessageBox.Show("你确定要移除你岛上的所有道路吗？", "前路漫漫...", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 LoadingPanel.Visible = true;
                 AcreBtn.Visible = false;
@@ -1910,7 +1910,7 @@ namespace ACNHPokerCore
 
         private void RemoveAllDesignBtn_Click(object sender, EventArgs e)
         {
-            if (MyMessageBox.Show("Are you sure you would like to remove ALL custom designs on your island?", "Deep Cleansing Scrub...", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            if (MyMessageBox.Show("你确定要移除你岛上的所有自定义设计吗？", "深层清洁磨砂膏...", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 LoadingPanel.Visible = true;
                 AcreBtn.Visible = false;
@@ -2042,7 +2042,7 @@ namespace ACNHPokerCore
             catch (Exception ex)
             {
                 MyLog.LogEvent("Bulldozer", "SaveTerrain: " + ex.Message);
-                MyMessageBox.Show(ex.Message, "drunk, fix later");
+                MyMessageBox.Show(ex.Message, "喝醉了，稍后处理");
             }
 
             if (sound)
@@ -2091,8 +2091,8 @@ namespace ACNHPokerCore
 
                 if (data.Length != Utilities.AllTerrainSize)
                 {
-                    MyMessageBox.Show("Incorrect file size!" + " (0x" + data.Length.ToString("X") + ")\n" +
-                                        "Correct file size should be (0x" + Utilities.AllTerrainSize.ToString("X") + ")", "Who gave you that file?", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MyMessageBox.Show("文件大小不正确！" + "(0x" + data.Length.ToString("X") + "\")\n\"" +
+                                        "正确的文件大小应为(0x" + Utilities.AllTerrainSize.ToString("X") + ")", "谁给了你那个文件？", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
@@ -2144,7 +2144,7 @@ namespace ACNHPokerCore
             catch (Exception ex)
             {
                 MyLog.LogEvent("Bulldozer", "LoadTerrain: " + ex.Message);
-                MyMessageBox.Show(ex.Message, "drunk, fix later");
+                MyMessageBox.Show(ex.Message, "喝醉了，稍后处理");
             }
 
             if (sound)

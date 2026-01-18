@@ -54,7 +54,7 @@
             hwidLabel.Size = new System.Drawing.Size(300, 24);
             hwidLabel.TabIndex = 0;
             hwidLabel.TabStop = false;
-            hwidLabel.Text = "Your Hardware ID : ";
+            hwidLabel.Text = "你的硬件ID：";
             // 
             // answerBox3
             // 
@@ -81,7 +81,7 @@
             SubmitButton.Name = "SubmitButton";
             SubmitButton.Size = new System.Drawing.Size(300, 31);
             SubmitButton.TabIndex = 10;
-            SubmitButton.Text = "Submit";
+            SubmitButton.Text = "提交";
             SubmitButton.UseVisualStyleBackColor = false;
             SubmitButton.Click += SubmitButton_Click;
             // 
@@ -142,7 +142,7 @@
             answerBox2.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             answerBox2.Size = new System.Drawing.Size(0, 0);
             answerBox2.TabIndex = 249;
-            answerBox2.Text = "enter";
+            answerBox2.Text = "输入";
             answerBox2.Visible = false;
             // 
             // answerBox1
@@ -158,7 +158,7 @@
             answerBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             answerBox1.Size = new System.Drawing.Size(0, 0);
             answerBox1.TabIndex = 248;
-            answerBox1.Text = "Please";
+            answerBox1.Text = "请";
             answerBox1.Visible = false;
             // 
             // answerBox6

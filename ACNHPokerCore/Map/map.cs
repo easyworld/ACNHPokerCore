@@ -421,7 +421,7 @@ namespace ACNHPokerCore
 
             if ((s == null || s.Connected == false) && usb == null && !Utilities.isEmulator)
             {
-                MessageBox.Show(@"Please connect to the Switch first!");
+                MessageBox.Show(@"请先连接到Switch！");
                 return;
             }
 
@@ -438,7 +438,7 @@ namespace ACNHPokerCore
             }
             catch (Exception ex)
             {
-                MyMessageBox.Show("An error occurred: " + ex.Message);
+                MyMessageBox.Show("发生了一个错误：" + ex.Message);
             }
         }
 
@@ -470,7 +470,7 @@ namespace ACNHPokerCore
                     File.WriteAllBytes(@"Your\YourActivateLayer1.nhal", ActivateLayer1);
                     File.WriteAllBytes(@"Your\YourActivateLayer2.nhal", ActivateLayer2);
                     File.WriteAllBytes(@"Your\YourCustomDesignMap.nhdm", MapCustomDesgin);
-                    MyMessageBox.Show("File saved!", "Nanomachines, Son!", MessageBoxButtons.OK,
+                    MyMessageBox.Show("文件已保存！", "纳米机器，小子！", MessageBoxButtons.OK,
                         MessageBoxIcon.Information);
                 }
 
@@ -526,7 +526,7 @@ namespace ACNHPokerCore
             {
                 MyLog.LogEvent("Map", "FetchMap: " + ex.Message);
                 NextSaveTimer.Stop();
-                MyMessageBox.Show(ex.Message, "!!! THIS SHIT DOESN'T WORK!! WHY? HAS I EVER?");
+                MyMessageBox.Show(ex.Message, "!!! 这破玩意儿不好使！！为什么？我有没有过？");
             }
         }
 
@@ -2448,7 +2448,7 @@ namespace ACNHPokerCore
             {
                 if (Corner1X < 0 || Corner1Y < 0 || Corner2X < 0 || Corner2Y < 0)
                 {
-                    MyMessageBox.Show("Selection area Invalid!", "Do You Know Da Wae ?", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    MyMessageBox.Show("选择区域无效！", "你知道路吗？", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                     return;
                 }
 
@@ -2459,7 +2459,7 @@ namespace ACNHPokerCore
 
             if (selectedButton == null)
             {
-                MessageBox.Show(@"Please select a slot!");
+                MessageBox.Show(@"请选择一个槽位！");
                 return;
             }
 
@@ -2844,7 +2844,7 @@ namespace ACNHPokerCore
                 {
                     MyLog.LogEvent("Map", "areaSpawn: " + ex.Message);
                     NextSaveTimer.Stop();
-                    MyMessageBox.Show(ex.Message, "I'm sorry.");
+                    MyMessageBox.Show(ex.Message, "对不起。");
                 }
 
                 if (SpawnArea.Length > 2)
@@ -3046,7 +3046,7 @@ namespace ACNHPokerCore
         {
             if (Corner1X < 0 || Corner1Y < 0 || Corner2X < 0 || Corner2Y < 0 || Corner1X > 111 || Corner1Y > 95 || Corner2X > 111 || Corner2Y > 95)
             {
-                MyMessageBox.Show("Selected Area Out of Bounds!", "Please use your brain, My Master.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MyMessageBox.Show("所选区域超出边界！", "请动动脑筋，我的主人。", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -3173,7 +3173,7 @@ namespace ACNHPokerCore
             catch (Exception ex)
             {
                 MyLog.LogEvent("Map", "PasteArea: " + ex.Message);
-                MyMessageBox.Show(ex.Message, "Dafuq?");
+                MyMessageBox.Show(ex.Message, "啥？");
             }
 
             Thread.Sleep(5000);
@@ -3696,7 +3696,7 @@ namespace ACNHPokerCore
             {
                 MyLog.LogEvent("Map", "RefreshMap: " + ex.Message);
                 NextSaveTimer.Stop();
-                MyMessageBox.Show(ex.Message, "For the brave souls who get this far: You are the chosen ones.");
+                MyMessageBox.Show(ex.Message, "致那些勇敢走到这一步的人：你们是被选中的人。");
             }
 
             HideMapWait();
@@ -3814,7 +3814,7 @@ namespace ACNHPokerCore
             {
                 MyLog.LogEvent("Map", "ClearingGrid: " + ex.Message);
                 NextSaveTimer.Stop();
-                MyMessageBox.Show(ex.Message, "You are not meant to understand this.");
+                MyMessageBox.Show(ex.Message, "你本不该理解这个。");
             }
 
             HideMapWait();
@@ -4000,7 +4000,7 @@ namespace ACNHPokerCore
             {
                 MyLog.LogEvent("Map", "FillRemain: " + ex.Message);
                 NextSaveTimer.Stop();
-                MyMessageBox.Show(ex.Message, " The valiant knights of programming who toil away, without rest,");
+                MyMessageBox.Show(ex.Message, "编程界的英勇骑士们，他们辛勤劳作，永不停歇，");
             }
 
             HideMapWait();
@@ -4141,7 +4141,7 @@ namespace ACNHPokerCore
 
                 if (nhi && data.Length > 320)
                 {
-                    MyMessageBox.Show("Your file seems to contain more than 40 items.\nPlease use the [Bulk Spawn] option under [Remove Items...] to spawn your items.", "It's too big to fit in here!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MyMessageBox.Show("你的文件似乎包含超过40个物品。\n请使用[移除物品...]下的[批量生成]选项来生成你的物品。", "它太大了，放不进这里！", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     return;
                 }
 
@@ -4229,13 +4229,13 @@ namespace ACNHPokerCore
 
                     if (emptyspace < item.Length)
                     {
-                        DialogResult dialogResult = MyMessageBox.Show("Empty tiles around anchor : " + emptyspace + "\n" +
-                                                                    "Number of items to Spawn : " + item.Length + "\n" +
+                        DialogResult dialogResult = MyMessageBox.Show("锚点周围的空方块：" + emptyspace + "\n" +
+                                                                    "生成物品数量：" + item.Length + "\n" +
                                                                     "\n" +
-                                                                    "Press  [Yes]  to clear the floor and spawn the items " + "\n" +
-                                                                    "or  [No]  to cancel the spawn." + "\n" + "\n" +
-                                                                    "[Warning] You will lose your items on the ground!"
-                                                                    , "Not enough empty tiles!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                                                                    "按 [Yes] 以清理地面并生成物品" + "（此处因未提供需翻译的英文文本，无法生成翻译结果）" +
+                                                                    "或者  [No] 以取消生成。" + "将以下文本翻译成中文（保留所有转义字符如 \n \r \t 的字符串形式）：\n" + "" +
+                                                                    "[警告] 你将丢失地上的物品！"
+                                                                    , "空格子不够！", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                         if (dialogResult == DialogResult.Yes)
                         {
                             FillFloor(ref b, item);
@@ -4334,7 +4334,7 @@ namespace ACNHPokerCore
             {
                 MyLog.LogEvent("Map", "LoadFloor: " + ex.Message);
                 NextSaveTimer.Stop();
-                MyMessageBox.Show(ex.Message, "I say this: never gonna give you up, never gonna let you down.");
+                MyMessageBox.Show(ex.Message, "我要说的是：永远不会放弃你，永远不会让你失望。");
             }
 
             HideMapWait();
@@ -5107,7 +5107,7 @@ namespace ACNHPokerCore
                 catch (Exception ex)
                 {
                     // Handle or log the exception
-                    MyMessageBox.Show("UI update error: " + ex.Message);
+                    MyMessageBox.Show("UI更新错误：" + ex.Message);
                 }
             }));
         }
@@ -5179,7 +5179,7 @@ namespace ACNHPokerCore
             catch (Exception ex)
             {
                 MyLog.LogEvent("Map", "getCoordinate: " + ex.Message);
-                MyMessageBox.Show(ex.Message, "Weed Effect !");
+                MyMessageBox.Show(ex.Message, "杂草效果！");
 
                 anchorX = 56;
                 anchorY = 48;
@@ -5221,7 +5221,7 @@ namespace ACNHPokerCore
 
         private void WeedsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MyMessageBox.Show("Are you sure you want to remove all weeds on your island (Layer 1 only)?", "Oh No! Not the Weeds!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult dialogResult = MyMessageBox.Show("你确定要移除你岛屿上的所有杂草（仅第1层）吗？", "哦不！不是杂草！", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialogResult == DialogResult.No)
                 return;
 
@@ -5266,7 +5266,7 @@ namespace ACNHPokerCore
 
         private void FlowersToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MyMessageBox.Show("Are you sure you want to remove all flowers on your island (Layer 1 only)?", "Photoshop Flowey", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult dialogResult = MyMessageBox.Show("你确定要移除你岛上的所有花朵（仅第1层）吗？", "Photoshop 小花", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialogResult == DialogResult.No)
                 return;
 
@@ -5311,7 +5311,7 @@ namespace ACNHPokerCore
 
         private void TreesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MyMessageBox.Show("Are you sure you want to remove all trees on your island (Layer 1 only)?", "Team Trees is stupid!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult dialogResult = MyMessageBox.Show("你确定要移除你岛上的所有树木（仅第1层）吗？", "Team Trees 很愚蠢！", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialogResult == DialogResult.No)
                 return;
 
@@ -5356,7 +5356,7 @@ namespace ACNHPokerCore
 
         private void BushesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MyMessageBox.Show("Are you sure you want to remove all bushes on your island (Layer 1 only)?", "Have you ever seen an elephant hiding in the bushes?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult dialogResult = MyMessageBox.Show("你确定要移除你岛上的所有灌木丛（仅限第一层）吗？", "你有没有见过大象藏在灌木丛里？", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialogResult == DialogResult.No)
                 return;
 
@@ -5401,7 +5401,7 @@ namespace ACNHPokerCore
 
         private void FencesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MyMessageBox.Show("Are you sure you want to remove all fences on your island (Layer 1 only)?", "I said to my mate Noah: \"You should change your surname to Fence...\"", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult dialogResult = MyMessageBox.Show("你确定要移除你岛上的所有围栏（仅第1层）吗？", "我对我的伙伴诺亚说：“你应该把你的姓氏改成栅栏……”", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialogResult == DialogResult.No)
                 return;
 
@@ -5446,7 +5446,7 @@ namespace ACNHPokerCore
 
         private void ShellsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MyMessageBox.Show("Are you sure you want to remove all shells on your island (Layer 1 only)?", "You would think that a snail without a shell would move a bit faster...", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult dialogResult = MyMessageBox.Show("你确定要移除你岛上的所有贝壳（仅第1层）吗？", "你会觉得，没有壳的蜗牛应该能爬得快一点……", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialogResult == DialogResult.No)
                 return;
 
@@ -5491,7 +5491,7 @@ namespace ACNHPokerCore
 
         private void DiysToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MyMessageBox.Show("Are you sure you want to remove all DIYs on your island (Layer 1 only)?", "DiWHY - Reddit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult dialogResult = MyMessageBox.Show("你确定要移除你岛上的所有DIY物品（仅第一层）吗？", "DiWHY - 红迪网", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialogResult == DialogResult.No)
                 return;
 
@@ -5536,7 +5536,7 @@ namespace ACNHPokerCore
 
         private void RocksToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MyMessageBox.Show("Are you sure you want to remove all ore/bell rocks on your island (Layer 1 only)?", "Girls are like rocks, the flat ones get skipped...", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult dialogResult = MyMessageBox.Show("你确定要移除你岛上所有的矿石/铃铛岩石（仅第一层）吗？", "女孩就像石头，扁平的会被跳过……", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialogResult == DialogResult.No)
                 return;
 
@@ -5584,7 +5584,7 @@ namespace ACNHPokerCore
             DialogResult dialogResult;
             if (layer1Btn.Checked)
             {
-                dialogResult = MyMessageBox.Show("Are you sure you want to remove all dropped/placed item on your island (Layer 1 only)?", "Is everything a joke to you ?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                dialogResult = MyMessageBox.Show("你确定要移除岛上所有掉落/放置的物品（仅第一层）吗？", "对你来说一切都是玩笑吗？", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dialogResult == DialogResult.No)
                     return;
 
@@ -5594,7 +5594,7 @@ namespace ACNHPokerCore
             }
             else
             {
-                dialogResult = MyMessageBox.Show("Are you sure you want to remove all dropped/placed item on your island (Layer 2 only)?", "Is everything a joke to you ?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                dialogResult = MyMessageBox.Show("你确定要移除你岛上所有掉落/放置的物品吗（仅第2层）？", "一切对你来说都是笑话吗？", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dialogResult == DialogResult.No)
                     return;
 
@@ -5706,7 +5706,7 @@ namespace ACNHPokerCore
             {
                 MyLog.LogEvent("Map", "Renew: " + ex.Message);
                 NextSaveTimer.Stop();
-                MyMessageBox.Show(ex.Message, "Fixing our most awful code. To you, true saviors, kings of men.");
+                MyMessageBox.Show(ex.Message, "修复我们最糟糕的代码。致你们，真正的救世主，人类之王。");
             }
 
             HideMapWait();
@@ -5788,7 +5788,7 @@ namespace ACNHPokerCore
             {
                 MyLog.LogEvent("Map", "Renew: " + ex.Message);
                 NextSaveTimer.Stop();
-                MyMessageBox.Show(ex.Message, "Fixing our most awful code. To you, true saviors, kings of men.");
+                MyMessageBox.Show(ex.Message, "修复我们最糟糕的代码。致你们，真正的救世主，人类之王。");
             }
 
             HideMapWait();
@@ -5828,7 +5828,7 @@ namespace ACNHPokerCore
             {
                 MyLog.LogEvent("Map", "NextAutoSave: " + ex.Message);
                 NextSaveTimer.Stop();
-                MyMessageBox.Show(ex.Message + "\nThe connection to the Switch ended.\n\nDid the Switch enter sleep mode?", "Ugandan Knuckles: \"Oh No!\"", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MyMessageBox.Show(ex.Message + "与Switch的连接已断开。\\n\\nSwitch是否进入了睡眠模式？", "乌干达指节：“哦不！”", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return 69;
             }
         }
@@ -5841,13 +5841,13 @@ namespace ACNHPokerCore
                 if (!keepProtection)
                 {
                     NextSaveTimer.Stop();
-                    DialogResult result = MyMessageBox.Show("It seems autosave have been paused.\n" +
-                                                    "You might have a visitor on your island, or your inventory stay open.\n" +
-                                                    "Or you are at the title screen waiting to \"Press A\".\n" +
-                                                    "Or you are still listening to Isabelle's useless announcement...\n\n" +
-                                                    "Anyhow, would you like the Map Dropper to ignore the autosave protection at the moment?\n\n" +
-                                                    "Note that spawning item during autosave might crash the game."
-                                                    , "Waiting for autosave to complete...", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    DialogResult result = MyMessageBox.Show("似乎自动保存已经被暂停。\n" +
+                                                    "你可能在岛上有访客，或者你的物品栏保持打开状态。\n" +
+                                                    "或者你在标题界面等待按“Press A”。\n" +
+                                                    "或者你还在听伊莎贝拉那没用的公告……\n\n" +
+                                                    "不管怎样，你希望地图投放器现在忽略自动保存保护吗？\n\n" +
+                                                    "请注意，在自动保存期间生成物品可能会导致游戏崩溃。"
+                                                    , "等待自动保存完成...", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (result == DialogResult.Yes)
                     {
                         ignore = true;
@@ -6143,7 +6143,7 @@ namespace ACNHPokerCore
             {
                 MyLog.LogEvent("Map", "ReplaceItem: " + ex.Message);
                 NextSaveTimer.Stop();
-                MyMessageBox.Show(ex.Message, "I say this: Never gonna run around and desert you.");
+                MyMessageBox.Show(ex.Message, "我要说的是：永远不会到处乱跑然后抛弃你。");
             }
 
             HideMapWait();
@@ -6194,7 +6194,7 @@ namespace ACNHPokerCore
             {
                 if (Corner1X < 0 || Corner1Y < 0 || Corner2X < 0 || Corner2Y < 0 || Corner1X > 111 || Corner1Y > 95 || Corner2X > 111 || Corner2Y > 95)
                 {
-                    MyMessageBox.Show("Selected Area Out of Bounds!", "Please use your brain, My Master.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MyMessageBox.Show("所选区域超出边界！", "请动动脑筋，我的主人。", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
@@ -6348,7 +6348,7 @@ namespace ACNHPokerCore
             {
                 if (Corner1X < 0 || Corner1Y < 0 || Corner2X < 0 || Corner2Y < 0 || Corner1X > 111 || Corner1Y > 95 || Corner2X > 111 || Corner2Y > 95)
                 {
-                    MyMessageBox.Show("Selected Area Out of Bounds!", "Please use your brain, My Master.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MyMessageBox.Show("所选区域越界！", "请动动脑筋，我的主人。", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
@@ -6500,7 +6500,7 @@ namespace ACNHPokerCore
             {
                 if (Corner1X < 0 || Corner1Y < 0 || Corner2X < 0 || Corner2Y < 0 || Corner1X > 111 || Corner1Y > 95 || Corner2X > 111 || Corner2Y > 95)
                 {
-                    MyMessageBox.Show("Selected Area Out of Bounds!", "Please use your brain, My Master.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MyMessageBox.Show("所选区域超出边界！", "请动动脑筋，我的主人。", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
@@ -6663,13 +6663,13 @@ namespace ACNHPokerCore
         {
             if (IdTextbox.Text == "" || HexTextbox.Text == "" || FlagTextbox.Text == "")
             {
-                MessageBox.Show(@"Please select an item!");
+                MessageBox.Show(@"请选择一个物品！");
                 return;
             }
 
             if (selectedButton == null)
             {
-                MessageBox.Show(@"Please select a slot!");
+                MessageBox.Show(@"请选择一个槽位！");
                 return;
             }
 
@@ -6798,7 +6798,7 @@ namespace ACNHPokerCore
             }
             else
             {
-                MyMessageBox.Show("No variation found for the selected item!", "Error 404", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MyMessageBox.Show("所选物品没有找到变体！", "404错误", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
@@ -7227,7 +7227,7 @@ namespace ACNHPokerCore
                 FieldGridView.Columns[languageSetting].Visible = true;
             }
 
-            itemSearchBox.Text = "Search...";
+            itemSearchBox.Text = "搜索...";
         }
 
         private void HideAllLanguage()
@@ -7405,10 +7405,10 @@ namespace ACNHPokerCore
 
         private bool IgnoreAutosave()
         {
-            DialogResult result = MyMessageBox.Show("Something seems to be wrong with the autosave detection.\n" +
-                                            "Would you like to ignore the autosave protection and spawn the item(s) anyway?\n\n" +
-                                            "Please be noted that spawning item during autosave might crash the game."
-                                            , "Waiting for autosave to complete...", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult result = MyMessageBox.Show("自动存档检测似乎出了问题。\n" +
+                                            "你是否愿意忽略自动保存保护并仍然生成该物品？\n\n" +
+                                            "请注意，在自动存档期间生成物品可能会导致游戏崩溃。"
+                                            , "等待自动保存完成...", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
                 UpdateUI(() =>

@@ -48,7 +48,7 @@
             this.chatButton.Size = new System.Drawing.Size(68, 25);
             this.chatButton.TabIndex = 41;
             this.chatButton.Tag = "";
-            this.chatButton.Text = "Send";
+            this.chatButton.Text = "发送";
             this.chatButton.UseVisualStyleBackColor = false;
             this.chatButton.Click += new System.EventHandler(this.ChatButton_Click);
             // 
@@ -61,7 +61,7 @@
             this.RetainChat.Name = "RetainChat";
             this.RetainChat.Size = new System.Drawing.Size(62, 19);
             this.RetainChat.TabIndex = 42;
-            this.RetainChat.Text = "Retain";
+            this.RetainChat.Text = "保留";
             this.RetainChat.UseVisualStyleBackColor = true;
             // 
             // SafetyCheck
@@ -75,7 +75,7 @@
             this.SafetyCheck.Name = "SafetyCheck";
             this.SafetyCheck.Size = new System.Drawing.Size(62, 19);
             this.SafetyCheck.TabIndex = 43;
-            this.SafetyCheck.Text = "Safety";
+            this.SafetyCheck.Text = "安全";
             this.SafetyCheck.UseVisualStyleBackColor = true;
             this.SafetyCheck.CheckedChanged += new System.EventHandler(this.SafetyCheck_CheckedChanged);
             // 
@@ -91,7 +91,7 @@
             this.ConnectButton.Size = new System.Drawing.Size(68, 25);
             this.ConnectButton.TabIndex = 44;
             this.ConnectButton.Tag = "";
-            this.ConnectButton.Text = "Connect";
+            this.ConnectButton.Text = "连接";
             this.ConnectButton.UseVisualStyleBackColor = false;
             this.ConnectButton.Click += new System.EventHandler(this.ConnectButton_Click);
             // 
@@ -132,7 +132,7 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.Text = "Chat";
+            this.Text = "聊天";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Chat_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();

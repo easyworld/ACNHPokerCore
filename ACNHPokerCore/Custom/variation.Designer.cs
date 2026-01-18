@@ -84,7 +84,7 @@
             this.itemIDLabel.Name = "itemIDLabel";
             this.itemIDLabel.Size = new System.Drawing.Size(55, 16);
             this.itemIDLabel.TabIndex = 37;
-            this.itemIDLabel.Text = "Item ID";
+            this.itemIDLabel.Text = "物品ID";
             this.itemIDLabel.Visible = false;
             // 
             // infoLabel
@@ -115,7 +115,7 @@
             this.Opacity = 0.9D;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "variation";
+            this.Text = "变体";
             this.Load += new System.EventHandler(this.Variation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.furnitureGridView)).EndInit();
             this.ResumeLayout(false);

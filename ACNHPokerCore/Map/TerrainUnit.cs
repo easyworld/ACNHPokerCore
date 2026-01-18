@@ -1586,7 +1586,7 @@ namespace ACNHPokerCore
             }
             else
             {
-                MyMessageBox.Show("No Solution!", "Wait? WTF?", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MyMessageBox.Show("无解！", "等等？我靠？", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         public void SetRoad(ushort road, string type, ushort direction)
@@ -2462,7 +2462,7 @@ namespace ACNHPokerCore
             }
             else
             {
-                MyMessageBox.Show("No Solution!", "Wait? WTF?", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MyMessageBox.Show("无解！", "等等？什么鬼？", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         public void SetCliff(string type, ushort elevation, ushort direction)
@@ -2875,7 +2875,7 @@ namespace ACNHPokerCore
             }
             else
             {
-                MyMessageBox.Show("No Solution!", "Wait? WTF?", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MyMessageBox.Show("无解！", "等等？什么鬼？", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         public void SetRiver(string type, ushort elevation, ushort direction)
@@ -3011,7 +3011,7 @@ namespace ACNHPokerCore
                 }
                 else
                 {
-                    MyMessageBox.Show("No Solution!", "Wait? WTF?", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MyMessageBox.Show("无解！", "等等？什么鬼？", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else if (left && !right) //20x
@@ -3072,7 +3072,7 @@ namespace ACNHPokerCore
                 }
                 else
                 {
-                    MyMessageBox.Show("No Solution!", "Wait? WTF?", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MyMessageBox.Show("无解！", "等等？什么鬼？", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else if (!left && right) //30x
@@ -3133,7 +3133,7 @@ namespace ACNHPokerCore
                 }
                 else
                 {
-                    MyMessageBox.Show("No Solution!", "Wait? WTF?", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MyMessageBox.Show("无解！", "等等？什么鬼？", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else if (right && left) //40x
@@ -3290,7 +3290,7 @@ namespace ACNHPokerCore
                 }
                 else
                 {
-                    MyMessageBox.Show("No Solution!", "Wait? WTF?", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MyMessageBox.Show("无解！", "等等？什么鬼？", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }

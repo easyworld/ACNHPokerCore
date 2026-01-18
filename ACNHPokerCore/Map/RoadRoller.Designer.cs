@@ -277,7 +277,7 @@
             DisplayCustomDesignLabel.Name = "DisplayCustomDesignLabel";
             DisplayCustomDesignLabel.Size = new System.Drawing.Size(179, 16);
             DisplayCustomDesignLabel.TabIndex = 243;
-            DisplayCustomDesignLabel.Text = "Display Custom Design : ";
+            DisplayCustomDesignLabel.Text = "显示自定义设计：";
             DisplayCustomDesignLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // DisplayBuildingLabel
@@ -289,7 +289,7 @@
             DisplayBuildingLabel.Name = "DisplayBuildingLabel";
             DisplayBuildingLabel.Size = new System.Drawing.Size(131, 16);
             DisplayBuildingLabel.TabIndex = 242;
-            DisplayBuildingLabel.Text = "Display Building : ";
+            DisplayBuildingLabel.Text = "展示建筑：";
             DisplayBuildingLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // DisplayBuildingToggle
@@ -314,7 +314,7 @@
             HighlightCornerLabel.Name = "HighlightCornerLabel";
             HighlightCornerLabel.Size = new System.Drawing.Size(131, 16);
             HighlightCornerLabel.TabIndex = 240;
-            HighlightCornerLabel.Text = "Highlight Corner :";
+            HighlightCornerLabel.Text = "高亮角落：";
             HighlightCornerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // HighlightCornerToggle
@@ -349,7 +349,7 @@
             DisplayInfoLabel.Name = "DisplayInfoLabel";
             DisplayInfoLabel.Size = new System.Drawing.Size(100, 16);
             DisplayInfoLabel.TabIndex = 217;
-            DisplayInfoLabel.Text = "Display Info : ";
+            DisplayInfoLabel.Text = "显示信息：";
             DisplayInfoLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // DisplayRoadLabel
@@ -361,7 +361,7 @@
             DisplayRoadLabel.Name = "DisplayRoadLabel";
             DisplayRoadLabel.Size = new System.Drawing.Size(109, 16);
             DisplayRoadLabel.TabIndex = 238;
-            DisplayRoadLabel.Text = "Display Road : ";
+            DisplayRoadLabel.Text = "显示道路：";
             DisplayRoadLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // DisplayRoadToggle
@@ -406,7 +406,7 @@
             CustomModeButton.Size = new System.Drawing.Size(70, 23);
             CustomModeButton.TabIndex = 245;
             CustomModeButton.Tag = "";
-            CustomModeButton.Text = "Custom";
+            CustomModeButton.Text = "定制";
             CustomModeButton.UseVisualStyleBackColor = false;
             CustomModeButton.Click += CustomModeButton_Click;
             // 
@@ -423,7 +423,7 @@
             ConfirmBtn.Name = "ConfirmBtn";
             ConfirmBtn.Size = new System.Drawing.Size(217, 30);
             ConfirmBtn.TabIndex = 243;
-            ConfirmBtn.Text = "Confirm";
+            ConfirmBtn.Text = "确认";
             ConfirmBtn.UseVisualStyleBackColor = false;
             ConfirmBtn.Visible = false;
             ConfirmBtn.Click += ConfirmBtn_Click;
@@ -440,7 +440,7 @@
             ManualModeButton.Size = new System.Drawing.Size(70, 23);
             ManualModeButton.TabIndex = 239;
             ManualModeButton.Tag = "";
-            ManualModeButton.Text = "Manual";
+            ManualModeButton.Text = "手册";
             ManualModeButton.UseVisualStyleBackColor = false;
             ManualModeButton.Click += ManualModeButton_Click;
             // 
@@ -456,7 +456,7 @@
             AutoModeButton.Size = new System.Drawing.Size(70, 23);
             AutoModeButton.TabIndex = 238;
             AutoModeButton.Tag = "";
-            AutoModeButton.Text = "Auto";
+            AutoModeButton.Text = "自动";
             AutoModeButton.UseVisualStyleBackColor = false;
             AutoModeButton.Click += AutoModeButton_Click;
             // 
@@ -524,7 +524,7 @@
             FixRiverMouthLabel.Name = "FixRiverMouthLabel";
             FixRiverMouthLabel.Size = new System.Drawing.Size(97, 14);
             FixRiverMouthLabel.TabIndex = 243;
-            FixRiverMouthLabel.Text = "Fix River Mouth :";
+            FixRiverMouthLabel.Text = "修复河口：";
             FixRiverMouthLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ArchBtn
@@ -582,7 +582,7 @@
             ElevationLabel.Name = "ElevationLabel";
             ElevationLabel.Size = new System.Drawing.Size(62, 14);
             ElevationLabel.TabIndex = 239;
-            ElevationLabel.Text = "Elevation :";
+            ElevationLabel.Text = "海拔：";
             ElevationLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Elevation2Label
@@ -1309,7 +1309,7 @@
             ManualTerrainElevationLabel.Name = "ManualTerrainElevationLabel";
             ManualTerrainElevationLabel.Size = new System.Drawing.Size(62, 14);
             ManualTerrainElevationLabel.TabIndex = 270;
-            ManualTerrainElevationLabel.Text = "Elevation :";
+            ManualTerrainElevationLabel.Text = "海拔：";
             ManualTerrainElevationLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ManualTerrainElevation2Label
@@ -1743,7 +1743,7 @@
             ManualRiverElevationLabel.Name = "ManualRiverElevationLabel";
             ManualRiverElevationLabel.Size = new System.Drawing.Size(62, 14);
             ManualRiverElevationLabel.TabIndex = 292;
-            ManualRiverElevationLabel.Text = "Elevation :";
+            ManualRiverElevationLabel.Text = "海拔：";
             ManualRiverElevationLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ManualRiverElevationBar
@@ -2133,7 +2133,7 @@
             PleaseWaitLabel.Name = "PleaseWaitLabel";
             PleaseWaitLabel.Size = new System.Drawing.Size(99, 16);
             PleaseWaitLabel.TabIndex = 215;
-            PleaseWaitLabel.Text = "Please Wait...";
+            PleaseWaitLabel.Text = "请稍等...";
             PleaseWaitLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ProgressTimer

@@ -138,7 +138,7 @@ namespace ACNHPokerCore
                 Invoke((MethodInvoker)delegate
                 {
                     FinMsg.Visible = true;
-                    FinMsg.Text = "Template Saved!";
+                    FinMsg.Text = "模板已保存！";
                 });
             }
         }
@@ -226,7 +226,7 @@ namespace ACNHPokerCore
                 Invoke((MethodInvoker)delegate
                 {
                     FinMsg.Visible = true;
-                    FinMsg.Text = "Template Loaded!";
+                    FinMsg.Text = "模板已加载！";
                 });
             }
         }
@@ -279,7 +279,7 @@ namespace ACNHPokerCore
                 loop = true;
                 startRegen.Tag = "Stop";
                 startRegen.BackColor = Color.Orange;
-                startRegen.Text = "Stop Regen";
+                startRegen.Text = "停止再生";
                 saveMapBtn.Enabled = false;
                 loadMapBtn.Enabled = false;
                 backBtn.Enabled = false;
@@ -316,11 +316,11 @@ namespace ACNHPokerCore
             {
                 MyLog.LogEvent("Regen", "Regen1 Stopped");
                 cts.Cancel();
-                WaitMessagebox.Text = "Stopping Regen...";
+                WaitMessagebox.Text = "停止再生...";
                 loop = false;
                 startRegen.Tag = "Start";
                 startRegen.BackColor = Color.FromArgb(114, 137, 218);
-                startRegen.Text = "Cast Regen";
+                startRegen.Text = "施法再生";
                 saveMapBtn.Enabled = true;
                 loadMapBtn.Enabled = true;
                 backBtn.Enabled = true;
@@ -380,9 +380,9 @@ namespace ACNHPokerCore
 
                 uint address = Utilities.mapZero;
 
-                DialogResult dialogResult = MyMessageBox.Show("Would you like to limit the \"ignore empty tiles\" area?" + "\n\n" +
-                                                            "This would allow you to pick a 7 x 7 area which the regenerator would only ignore."
-                                                            , "Choose an area ?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult dialogResult = MyMessageBox.Show("你想要限制“忽略空方块”区域吗？" + "\n\n" +
+                                                            "这将允许你选择一个7×7的区域，而再生器只会忽略这个区域。"
+                                                            , "选择一个区域？", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dialogResult == DialogResult.Yes)
                 {
                     mapPanel.Visible = true;
@@ -430,7 +430,7 @@ namespace ACNHPokerCore
                     catch (Exception ex)
                     {
                         MyLog.LogEvent("Regen", "getCoordinate: " + ex.Message);
-                        MyMessageBox.Show("Something doesn't feel right at all. You should restart the program...\n\n" + ex.Message, "!!! THIS SHIT DOESN'T WORK!! WHY? HAS I EVER?", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MyMessageBox.Show("感觉完全不对劲。你应该重新启动程序...\n\n" + ex.Message, "!!! 这破玩意儿根本不好使！！！为什么？我以前试过吗？", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 else
@@ -438,7 +438,7 @@ namespace ACNHPokerCore
                     loop = true;
                     startRegen2.Tag = "Stop";
                     startRegen2.BackColor = Color.Orange;
-                    startRegen2.Text = "Stop Moogle Regenja";
+                    startRegen2.Text = "停止莫古力Regenja";
                     saveMapBtn.Enabled = false;
                     loadMapBtn.Enabled = false;
                     backBtn.Enabled = false;
@@ -475,11 +475,11 @@ namespace ACNHPokerCore
             {
                 MyLog.LogEvent("Regen", "Regen2 Stopped");
                 cts.Cancel();
-                WaitMessagebox.Text = "Stopping Regen...";
+                WaitMessagebox.Text = "停止再生...";
                 loop = false;
                 startRegen2.Tag = "Start";
                 startRegen2.BackColor = Color.FromArgb(114, 137, 218);
-                startRegen2.Text = "Cast Moogle Regenja";
+                startRegen2.Text = "莫古力施展再生术";
                 saveMapBtn.Enabled = true;
                 loadMapBtn.Enabled = true;
                 backBtn.Enabled = true;
@@ -502,7 +502,7 @@ namespace ACNHPokerCore
             loop = true;
             startRegen2.Tag = "Stop";
             startRegen2.BackColor = Color.Orange;
-            startRegen2.Text = "Stop Moogle Regenja";
+            startRegen2.Text = "停止莫古力雷根贾";
             saveMapBtn.Enabled = false;
             loadMapBtn.Enabled = false;
             backBtn.Enabled = false;
@@ -663,7 +663,7 @@ namespace ACNHPokerCore
                             Invoke((MethodInvoker)delegate
                             {
                                 visitorNameBox.Text = visitor;
-                                WaitMessagebox.Text = "Paused. " + visitor + " arriving!";
+                                WaitMessagebox.Text = "已暂停。" + visitor + " arriving!";
                                 CreateLog(visitor, island, "In");
                                 PauseTimeLabel.Visible = true;
                                 PauseTimer.Start();
@@ -767,7 +767,7 @@ namespace ACNHPokerCore
                             runCount++;
                             if (PauseCount > 0)
                             {
-                                WaitMessagebox.Text = "Regen idling...";
+                                WaitMessagebox.Text = "再生空转...";
                             }
                             else
                             {
@@ -785,7 +785,7 @@ namespace ACNHPokerCore
                         {
                             MyLog.LogEvent("Regen", "Regen1: " + ex.Message);
                             //DateTime localDate = DateTime.Now;
-                            MyMessageBox.Show("Connection to the Switch has been lost.", "Yeeted", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MyMessageBox.Show("与Switch的连接已断开。", "扔了", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             CreateLog("Connection to the Switch has been lost.");
                             Close();
                         });
@@ -798,7 +798,7 @@ namespace ACNHPokerCore
             {
                 MyLog.LogEvent("Regen", "Regen1: Cancelled");
                 if (dodoSetup != null)
-                    MyMessageBox.Show("Dodo Helper & Regen Aborted!\nPlease remember to exit the airport first if you want to restart!", "Airbag deployment!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MyMessageBox.Show("渡渡鸟助手 & 重生已中止！\\n如果您想重启，请记得先离开机场！", "安全气囊展开！", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 if (!FormIsClosing)
                 {
                     Invoke((MethodInvoker)delegate
@@ -809,7 +809,7 @@ namespace ACNHPokerCore
                         loop = false;
                         startRegen.Tag = "Start";
                         startRegen.BackColor = Color.FromArgb(114, 137, 218);
-                        startRegen.Text = "Cast Regen";
+                        startRegen.Text = "施法再生";
                         saveMapBtn.Enabled = true;
                         loadMapBtn.Enabled = true;
                         backBtn.Enabled = true;
@@ -902,7 +902,7 @@ namespace ACNHPokerCore
                             Invoke((MethodInvoker)delegate
                             {
                                 visitorNameBox.Text = visitor;
-                                WaitMessagebox.Text = "Paused. " + visitor + " arriving!";
+                                WaitMessagebox.Text = "已暂停。" + visitor + " arriving!";
                                 CreateLog(visitor, island, "In");
                                 PauseTimeLabel.Visible = true;
                                 PauseTimer.Start();
@@ -1017,7 +1017,7 @@ namespace ACNHPokerCore
                             runCount++;
                             if (PauseCount > 0)
                             {
-                                WaitMessagebox.Text = "Regen idling...";
+                                WaitMessagebox.Text = "再生闲置中...";
                             }
                             else
                             {
@@ -1035,7 +1035,7 @@ namespace ACNHPokerCore
                         {
                             MyLog.LogEvent("Regen", "Regen2: " + ex.Message);
                             //DateTime localDate = DateTime.Now;
-                            MyMessageBox.Show("Connection to the Switch has been lost.", "Yeeted", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MyMessageBox.Show("与Switch的连接已丢失。", "扔飞", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             CreateLog("Connection to the Switch has been lost.");
                             Close();
                         });
@@ -1048,7 +1048,7 @@ namespace ACNHPokerCore
             {
                 MyLog.LogEvent("Regen", "Regen2: Cancelled");
                 if (dodoSetup != null)
-                    MyMessageBox.Show("Dodo Helper & Regen Aborted!\nPlease remember to exit the airport first if you want to restart!", "Slamming on the brakes?", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MyMessageBox.Show("渡渡鸟助手 & 再生已中止！\\n请记住，如果你想重新开始，首先要离开机场！", "猛踩刹车？", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 if (!FormIsClosing)
                 {
                     Invoke((MethodInvoker)delegate
@@ -1059,7 +1059,7 @@ namespace ACNHPokerCore
                         loop = false;
                         startRegen2.Tag = "Start";
                         startRegen2.BackColor = Color.FromArgb(114, 137, 218);
-                        startRegen2.Text = "Cast Moogle Regenja";
+                        startRegen2.Text = "施法莫古利再生术";
                         saveMapBtn.Enabled = true;
                         loadMapBtn.Enabled = true;
                         backBtn.Enabled = true;
@@ -1428,9 +1428,9 @@ namespace ACNHPokerCore
                         sw.WriteLine(logheader);
                     }
 
-                    MyMessageBox.Show("An error was encountered while loading the visitor log file.\n\n" +
-                                      "But don't worry! A new visitor log file have been created.\n" +
-                                      "Your existing visitor log file has been renamed to \"OldVisitorLog.csv\".", "Error loading existing visitor log file!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MyMessageBox.Show("在加载访客日志文件时遇到错误。\n\n" +
+                                      "但是别担心！一个新的访客日志文件已经被创建。\n" +
+                                      "您现有的访客日志文件已被重命名为\"OldVisitorLog.csv\"。", "加载现有访客日志文件时出错！", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                     logGridView.DataSource = LoadCSV(Utilities.VisitorLogPath);
                     logGridView.Columns["Timestamp"].Width = 140;
@@ -1767,7 +1767,7 @@ namespace ACNHPokerCore
             var btn = (Button)sender;
             if (btn.Tag.ToString().Equals("Enable"))
             {
-                btn.Text = "Disable Dodo Helper";
+                btn.Text = "禁用渡渡鸟助手";
                 btn.Tag = "Disable";
                 btn.BackColor = Color.Orange;
 
@@ -1789,7 +1789,7 @@ namespace ACNHPokerCore
             }
             else
             {
-                btn.Text = "Enable Dodo Helper";
+                btn.Text = "启用渡渡鸟助手";
                 btn.Tag = "Enable";
                 btn.BackColor = Color.FromArgb(114, 137, 218);
                 dodoSetup.Close();
@@ -1809,7 +1809,7 @@ namespace ACNHPokerCore
 
         private void DodoSetup_closeForm()
         {
-            dodoSetupBtn.Text = "Enable Dodo Helper";
+            dodoSetupBtn.Text = "启用渡渡鸟助手";
             dodoSetupBtn.Tag = "Enable";
             dodoSetupBtn.BackColor = Color.FromArgb(114, 137, 218);
             dodoSetup = null;

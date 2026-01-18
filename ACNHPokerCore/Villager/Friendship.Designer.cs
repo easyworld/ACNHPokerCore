@@ -414,7 +414,7 @@ namespace ACNHPokerCore
             this.SaveBtn.Name = "SaveBtn";
             this.SaveBtn.Size = new System.Drawing.Size(74, 30);
             this.SaveBtn.TabIndex = 202;
-            this.SaveBtn.Text = "Save";
+            this.SaveBtn.Text = "保存";
             this.SaveBtn.UseVisualStyleBackColor = false;
             this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
             // 
@@ -465,7 +465,7 @@ namespace ACNHPokerCore
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Friendship";
+            this.Text = "友谊";
             ((System.ComponentModel.ISupportInitialize)(this.FriendshipBar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.FriendshipBar2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.FriendshipBar3)).EndInit();

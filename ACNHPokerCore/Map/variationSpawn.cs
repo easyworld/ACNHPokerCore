@@ -432,7 +432,7 @@ namespace ACNHPokerCore
             if (toggleBtn.Tag.ToString().Equals("Vertical"))
             {
                 toggleBtn.Tag = "Horizontal";
-                toggleBtn.Text = "Horizontal";
+                toggleBtn.Text = "水平的";
                 toggleBtn.BackColor = Color.Orange;
                 horiPanel.Visible = true;
                 vertPanel.Visible = false;
@@ -441,7 +441,7 @@ namespace ACNHPokerCore
             else
             {
                 toggleBtn.Tag = "Vertical";
-                toggleBtn.Text = "Vertical";
+                toggleBtn.Text = "垂直的";
                 toggleBtn.BackColor = Color.FromArgb(114, 137, 218);
                 horiPanel.Visible = false;
                 vertPanel.Visible = true;
@@ -487,7 +487,7 @@ namespace ACNHPokerCore
                 width = 1;
                 wallmount = false;
                 //rug = false;
-                MyMessageBox.Show("Missing Size data", "Sadge", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                MyMessageBox.Show("缺少尺寸数据", "难过", MessageBoxButtons.OK, MessageBoxIcon.Question);
             }
             else if (size == "")
             {
@@ -495,7 +495,7 @@ namespace ACNHPokerCore
                 width = 1;
                 wallmount = false;
                 //rug = false;
-                MyMessageBox.Show("Missing Size data", "Sadge", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                MyMessageBox.Show("缺失尺寸数据", "惨了", MessageBoxButtons.OK, MessageBoxIcon.Question);
             }
 
             if (size.Contains("_Wall"))

@@ -229,7 +229,7 @@ namespace ACNHPokerCore
                 button1.Name = "button1";
                 button1.Size = new Size(75, 24);
                 button1.TabIndex = 2;
-                button1.Text = "OK";
+                button1.Text = "好的";
                 button1.UseVisualStyleBackColor = true;
                 button1.Visible = false;
                 // 
@@ -250,7 +250,7 @@ namespace ACNHPokerCore
                 richTextBoxMessage.Size = new Size(200, 20);
                 richTextBoxMessage.TabIndex = 0;
                 richTextBoxMessage.TabStop = false;
-                richTextBoxMessage.Text = "<Message>";
+                richTextBoxMessage.Text = "<消息>";
                 richTextBoxMessage.LinkClicked += RichTextBoxMessage_LinkClicked;
                 // 
                 // panel1
@@ -284,7 +284,7 @@ namespace ACNHPokerCore
                 button2.Name = "button2";
                 button2.Size = new Size(75, 24);
                 button2.TabIndex = 3;
-                button2.Text = "OK";
+                button2.Text = "好的";
                 button2.UseVisualStyleBackColor = true;
                 button2.Visible = false;
                 // 
@@ -298,7 +298,7 @@ namespace ACNHPokerCore
                 button3.Name = "button3";
                 button3.Size = new Size(75, 24);
                 button3.TabIndex = 0;
-                button3.Text = "OK";
+                button3.Text = "好的";
                 button3.UseVisualStyleBackColor = true;
                 button3.Visible = false;
                 // 

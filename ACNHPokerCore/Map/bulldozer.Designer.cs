@@ -150,7 +150,7 @@ namespace ACNHPokerCore
             realYLabel.Name = "realYLabel";
             realYLabel.Size = new System.Drawing.Size(25, 16);
             realYLabel.TabIndex = 226;
-            realYLabel.Text = "Y :";
+            realYLabel.Text = "Y：";
             // 
             // realXLabel
             // 
@@ -161,7 +161,7 @@ namespace ACNHPokerCore
             realXLabel.Name = "realXLabel";
             realXLabel.Size = new System.Drawing.Size(24, 16);
             realXLabel.TabIndex = 225;
-            realXLabel.Text = "X :";
+            realXLabel.Text = "X：";
             // 
             // RealYCoordinate
             // 
@@ -275,7 +275,7 @@ namespace ACNHPokerCore
             sendBtn.Name = "sendBtn";
             sendBtn.Size = new System.Drawing.Size(86, 30);
             sendBtn.TabIndex = 232;
-            sendBtn.Text = "Confirm";
+            sendBtn.Text = "确认";
             sendBtn.UseVisualStyleBackColor = false;
             sendBtn.Click += SendBtn_Click;
             // 
@@ -320,7 +320,7 @@ namespace ACNHPokerCore
             replaceBtn.Name = "replaceBtn";
             replaceBtn.Size = new System.Drawing.Size(86, 30);
             replaceBtn.TabIndex = 235;
-            replaceBtn.Text = "◀ Replace";
+            replaceBtn.Text = "替换";
             replaceBtn.UseVisualStyleBackColor = false;
             replaceBtn.Click += ReplaceBtn_Click;
             // 
@@ -335,7 +335,7 @@ namespace ACNHPokerCore
             AcreBtn.Name = "AcreBtn";
             AcreBtn.Size = new System.Drawing.Size(86, 30);
             AcreBtn.TabIndex = 236;
-            AcreBtn.Text = "Acre";
+            AcreBtn.Text = "英亩";
             AcreBtn.UseVisualStyleBackColor = false;
             AcreBtn.Visible = false;
             AcreBtn.Click += AcreBtn_Click;
@@ -351,7 +351,7 @@ namespace ACNHPokerCore
             BuildingBtn.Name = "BuildingBtn";
             BuildingBtn.Size = new System.Drawing.Size(86, 30);
             BuildingBtn.TabIndex = 237;
-            BuildingBtn.Text = "Building";
+            BuildingBtn.Text = "建筑";
             BuildingBtn.UseVisualStyleBackColor = false;
             BuildingBtn.Visible = false;
             BuildingBtn.Click += BuildingBtn_Click;
@@ -381,7 +381,7 @@ namespace ACNHPokerCore
             saveAcreBtn.Name = "saveAcreBtn";
             saveAcreBtn.Size = new System.Drawing.Size(86, 30);
             saveAcreBtn.TabIndex = 238;
-            saveAcreBtn.Text = "Save";
+            saveAcreBtn.Text = "保存";
             saveAcreBtn.UseVisualStyleBackColor = false;
             saveAcreBtn.Click += SaveAcreBtn_Click;
             // 
@@ -396,7 +396,7 @@ namespace ACNHPokerCore
             loadAcreBtn.Name = "loadAcreBtn";
             loadAcreBtn.Size = new System.Drawing.Size(86, 30);
             loadAcreBtn.TabIndex = 237;
-            loadAcreBtn.Text = "Load";
+            loadAcreBtn.Text = "加载";
             loadAcreBtn.UseVisualStyleBackColor = false;
             loadAcreBtn.Click += LoadAcreBtn_Click;
             // 
@@ -411,7 +411,7 @@ namespace ACNHPokerCore
             allFlatBtn.Name = "allFlatBtn";
             allFlatBtn.Size = new System.Drawing.Size(125, 30);
             allFlatBtn.TabIndex = 236;
-            allFlatBtn.Text = "◀ All Flat Acres";
+            allFlatBtn.Text = "◀ 平田";
             allFlatBtn.UseVisualStyleBackColor = false;
             allFlatBtn.Click += AllFlatBtn_Click;
             // 
@@ -426,7 +426,7 @@ namespace ACNHPokerCore
             TerrainBtn.Name = "TerrainBtn";
             TerrainBtn.Size = new System.Drawing.Size(86, 30);
             TerrainBtn.TabIndex = 239;
-            TerrainBtn.Text = "Terrain";
+            TerrainBtn.Text = "地形";
             TerrainBtn.UseVisualStyleBackColor = false;
             TerrainBtn.Visible = false;
             TerrainBtn.Click += TerrainBtn_Click;
@@ -502,7 +502,7 @@ namespace ACNHPokerCore
             RemoveBuildingBtn.Name = "RemoveBuildingBtn";
             RemoveBuildingBtn.Size = new System.Drawing.Size(67, 23);
             RemoveBuildingBtn.TabIndex = 243;
-            RemoveBuildingBtn.Text = "Remove";
+            RemoveBuildingBtn.Text = "移除";
             RemoveBuildingBtn.UseVisualStyleBackColor = false;
             RemoveBuildingBtn.Click += RemoveBuildingBtn_Click;
             // 
@@ -517,7 +517,7 @@ namespace ACNHPokerCore
             saveBuildingBtn.Name = "saveBuildingBtn";
             saveBuildingBtn.Size = new System.Drawing.Size(86, 30);
             saveBuildingBtn.TabIndex = 241;
-            saveBuildingBtn.Text = "Save";
+            saveBuildingBtn.Text = "保存";
             saveBuildingBtn.UseVisualStyleBackColor = false;
             saveBuildingBtn.Click += SaveBuildingBtn_Click;
             // 
@@ -532,7 +532,7 @@ namespace ACNHPokerCore
             loadBuildingBtn.Name = "loadBuildingBtn";
             loadBuildingBtn.Size = new System.Drawing.Size(86, 30);
             loadBuildingBtn.TabIndex = 240;
-            loadBuildingBtn.Text = "Load";
+            loadBuildingBtn.Text = "加载";
             loadBuildingBtn.UseVisualStyleBackColor = false;
             loadBuildingBtn.Click += LoadBuildingBtn_Click;
             // 
@@ -545,7 +545,7 @@ namespace ACNHPokerCore
             BuildingTypeLabel.Name = "BuildingTypeLabel";
             BuildingTypeLabel.Size = new System.Drawing.Size(150, 22);
             BuildingTypeLabel.TabIndex = 39;
-            BuildingTypeLabel.Text = "Building Type :";
+            BuildingTypeLabel.Text = "建筑类型：";
             // 
             // updateBtn
             // 
@@ -558,7 +558,7 @@ namespace ACNHPokerCore
             updateBtn.Name = "updateBtn";
             updateBtn.Size = new System.Drawing.Size(86, 30);
             updateBtn.TabIndex = 238;
-            updateBtn.Text = "◀ Update";
+            updateBtn.Text = "← 更新";
             updateBtn.UseVisualStyleBackColor = false;
             updateBtn.Click += UpdateBtn_Click;
             // 
@@ -573,7 +573,7 @@ namespace ACNHPokerCore
             buildingConfirmBtn.Name = "buildingConfirmBtn";
             buildingConfirmBtn.Size = new System.Drawing.Size(86, 30);
             buildingConfirmBtn.TabIndex = 237;
-            buildingConfirmBtn.Text = "Confirm";
+            buildingConfirmBtn.Text = "确认";
             buildingConfirmBtn.UseVisualStyleBackColor = false;
             buildingConfirmBtn.Click += BuildingConfirmBtn_Click;
             // 
@@ -605,7 +605,7 @@ namespace ACNHPokerCore
             LargeXLabel.Name = "LargeXLabel";
             LargeXLabel.Size = new System.Drawing.Size(35, 22);
             LargeXLabel.TabIndex = 32;
-            LargeXLabel.Text = "X :";
+            LargeXLabel.Text = "X：";
             // 
             // XUpDown
             // 
@@ -631,7 +631,7 @@ namespace ACNHPokerCore
             LargeYLabel.Name = "LargeYLabel";
             LargeYLabel.Size = new System.Drawing.Size(35, 22);
             LargeYLabel.TabIndex = 34;
-            LargeYLabel.Text = "Y :";
+            LargeYLabel.Text = "Y：";
             // 
             // YUpDown
             // 
@@ -705,7 +705,7 @@ namespace ACNHPokerCore
             BridgeDiagonalLabel.Name = "BridgeDiagonalLabel";
             BridgeDiagonalLabel.Size = new System.Drawing.Size(76, 16);
             BridgeDiagonalLabel.TabIndex = 249;
-            BridgeDiagonalLabel.Text = "Diagonal :";
+            BridgeDiagonalLabel.Text = "对角线：";
             // 
             // BridgeLengthLabel
             // 
@@ -716,7 +716,7 @@ namespace ACNHPokerCore
             BridgeLengthLabel.Name = "BridgeLengthLabel";
             BridgeLengthLabel.Size = new System.Drawing.Size(64, 16);
             BridgeLengthLabel.TabIndex = 248;
-            BridgeLengthLabel.Text = "Length :";
+            BridgeLengthLabel.Text = "长度:";
             // 
             // BridgeAngleSelect
             // 
@@ -746,7 +746,7 @@ namespace ACNHPokerCore
             BridgeAngleLabel.Name = "BridgeAngleLabel";
             BridgeAngleLabel.Size = new System.Drawing.Size(55, 16);
             BridgeAngleLabel.TabIndex = 246;
-            BridgeAngleLabel.Text = "Angle :";
+            BridgeAngleLabel.Text = "角度：";
             // 
             // BridgeTypeSelect
             // 
@@ -776,7 +776,7 @@ namespace ACNHPokerCore
             BridgeTypeLabel.Name = "BridgeTypeLabel";
             BridgeTypeLabel.Size = new System.Drawing.Size(47, 16);
             BridgeTypeLabel.TabIndex = 243;
-            BridgeTypeLabel.Text = "Type :";
+            BridgeTypeLabel.Text = "类型：";
             // 
             // inclinePanel
             // 
@@ -837,7 +837,7 @@ namespace ACNHPokerCore
             InclineTypeLabel.Name = "InclineTypeLabel";
             InclineTypeLabel.Size = new System.Drawing.Size(68, 22);
             InclineTypeLabel.TabIndex = 242;
-            InclineTypeLabel.Text = "Type :";
+            InclineTypeLabel.Text = "类型：";
             // 
             // InclineAngleLabel
             // 
@@ -848,7 +848,7 @@ namespace ACNHPokerCore
             InclineAngleLabel.Name = "InclineAngleLabel";
             InclineAngleLabel.Size = new System.Drawing.Size(75, 22);
             InclineAngleLabel.TabIndex = 242;
-            InclineAngleLabel.Text = "Angle :";
+            InclineAngleLabel.Text = "角度：";
             // 
             // TUpDown
             // 
@@ -873,7 +873,7 @@ namespace ACNHPokerCore
             typeLabel.Name = "typeLabel";
             typeLabel.Size = new System.Drawing.Size(68, 22);
             typeLabel.TabIndex = 38;
-            typeLabel.Text = "Type :";
+            typeLabel.Text = "类型：";
             // 
             // AUpDown
             // 
@@ -898,7 +898,7 @@ namespace ACNHPokerCore
             angleLabel.Name = "angleLabel";
             angleLabel.Size = new System.Drawing.Size(75, 22);
             angleLabel.TabIndex = 36;
-            angleLabel.Text = "Angle :";
+            angleLabel.Text = "角度：";
             // 
             // PreviewBtn
             // 
@@ -911,7 +911,7 @@ namespace ACNHPokerCore
             PreviewBtn.Name = "PreviewBtn";
             PreviewBtn.Size = new System.Drawing.Size(86, 30);
             PreviewBtn.TabIndex = 239;
-            PreviewBtn.Text = "Preview";
+            PreviewBtn.Text = "预览";
             PreviewBtn.UseVisualStyleBackColor = false;
             PreviewBtn.Visible = false;
             // 
@@ -933,7 +933,7 @@ namespace ACNHPokerCore
             NowLoadingLabel.Name = "NowLoadingLabel";
             NowLoadingLabel.Size = new System.Drawing.Size(146, 22);
             NowLoadingLabel.TabIndex = 242;
-            NowLoadingLabel.Text = "Now Loading...";
+            NowLoadingLabel.Text = "正在加载...";
             // 
             // NowLoading
             // 
@@ -977,7 +977,7 @@ namespace ACNHPokerCore
             removeAllCustomBtn.Name = "removeAllCustomBtn";
             removeAllCustomBtn.Size = new System.Drawing.Size(201, 30);
             removeAllCustomBtn.TabIndex = 245;
-            removeAllCustomBtn.Text = "Remove All Custom Designs";
+            removeAllCustomBtn.Text = "移除所有自定义设计";
             removeAllCustomBtn.UseVisualStyleBackColor = false;
             removeAllCustomBtn.Click += RemoveAllDesignBtn_Click;
             // 
@@ -992,7 +992,7 @@ namespace ACNHPokerCore
             removeAllRoadsBtn.Name = "removeAllRoadsBtn";
             removeAllRoadsBtn.Size = new System.Drawing.Size(178, 30);
             removeAllRoadsBtn.TabIndex = 244;
-            removeAllRoadsBtn.Text = "Remove All Roads";
+            removeAllRoadsBtn.Text = "移除所有道路";
             removeAllRoadsBtn.UseVisualStyleBackColor = false;
             removeAllRoadsBtn.Click += RemoveAllRoadsBtn_Click;
             // 
@@ -1007,7 +1007,7 @@ namespace ACNHPokerCore
             flattenAllTerrainBtn.Name = "flattenAllTerrainBtn";
             flattenAllTerrainBtn.Size = new System.Drawing.Size(178, 30);
             flattenAllTerrainBtn.TabIndex = 243;
-            flattenAllTerrainBtn.Text = "Flatten All Terrrain";
+            flattenAllTerrainBtn.Text = "平整所有地形";
             flattenAllTerrainBtn.UseVisualStyleBackColor = false;
             flattenAllTerrainBtn.Click += FlattenAllBtn_Click;
             // 
@@ -1022,7 +1022,7 @@ namespace ACNHPokerCore
             saveTerrianBtn.Name = "saveTerrianBtn";
             saveTerrianBtn.Size = new System.Drawing.Size(86, 30);
             saveTerrianBtn.TabIndex = 238;
-            saveTerrianBtn.Text = "Save";
+            saveTerrianBtn.Text = "保存";
             saveTerrianBtn.UseVisualStyleBackColor = false;
             saveTerrianBtn.Click += SaveTerrianBtn_Click;
             // 
@@ -1037,7 +1037,7 @@ namespace ACNHPokerCore
             loadTerrianBtn.Name = "loadTerrianBtn";
             loadTerrianBtn.Size = new System.Drawing.Size(86, 30);
             loadTerrianBtn.TabIndex = 237;
-            loadTerrianBtn.Text = "Load";
+            loadTerrianBtn.Text = "加载";
             loadTerrianBtn.UseVisualStyleBackColor = false;
             loadTerrianBtn.Click += LoadTerrianBtn_Click;
             // 
@@ -1060,7 +1060,7 @@ namespace ACNHPokerCore
             PleaseWaitLabel.Name = "PleaseWaitLabel";
             PleaseWaitLabel.Size = new System.Drawing.Size(130, 22);
             PleaseWaitLabel.TabIndex = 242;
-            PleaseWaitLabel.Text = "Please Wait...";
+            PleaseWaitLabel.Text = "请稍等...";
             // 
             // PleaseWaitImage
             // 

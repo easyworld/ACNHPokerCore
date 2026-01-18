@@ -82,7 +82,7 @@ namespace ACNHPokerCore
             this.saveMapBtn.Name = "saveMapBtn";
             this.saveMapBtn.Size = new System.Drawing.Size(208, 25);
             this.saveMapBtn.TabIndex = 218;
-            this.saveMapBtn.Text = "Create Map Template";
+            this.saveMapBtn.Text = "创建地图模板";
             this.formToolTip.SetToolTip(this.saveMapBtn, "Create a Map template and save it to a .nhf2 file. (Layer 1 & 2)\r\n");
             this.saveMapBtn.UseVisualStyleBackColor = false;
             this.saveMapBtn.Click += new System.EventHandler(this.SaveMapBtn_Click);
@@ -110,7 +110,7 @@ namespace ACNHPokerCore
             this.changeRateBtn.Name = "changeRateBtn";
             this.changeRateBtn.Size = new System.Drawing.Size(208, 25);
             this.changeRateBtn.TabIndex = 229;
-            this.changeRateBtn.Text = "Change Refresh Delay";
+            this.changeRateBtn.Text = "更改刷新延迟";
             this.formToolTip.SetToolTip(this.changeRateBtn, "Change the refresh rate. \r\nLower number means it refresh more frequently.\r\nYou sh" +
         "ould keep this as high as possible to reduce the load.");
             this.changeRateBtn.UseVisualStyleBackColor = false;
@@ -129,7 +129,7 @@ namespace ACNHPokerCore
             this.startBtn.Size = new System.Drawing.Size(86, 25);
             this.startBtn.TabIndex = 236;
             this.startBtn.Tag = "Start";
-            this.startBtn.Text = "Start";
+            this.startBtn.Text = "开始";
             this.formToolTip.SetToolTip(this.startBtn, "Start the regen with only the area selected being ignored.\r\n[WARNING] Item droppe" +
         "d/placed on the empty space outside the area will be deleted.");
             this.startBtn.UseVisualStyleBackColor = false;
@@ -147,7 +147,7 @@ namespace ACNHPokerCore
             this.UnFreezeAllBtn.Name = "UnFreezeAllBtn";
             this.UnFreezeAllBtn.Size = new System.Drawing.Size(208, 25);
             this.UnFreezeAllBtn.TabIndex = 237;
-            this.UnFreezeAllBtn.Text = "UnFreeze Everything";
+            this.UnFreezeAllBtn.Text = "解冻一切";
             this.UnFreezeAllBtn.UseVisualStyleBackColor = false;
             this.UnFreezeAllBtn.Click += new System.EventHandler(this.UnFreezeAllBtn_Click);
             // 
@@ -172,7 +172,7 @@ namespace ACNHPokerCore
             this.SlotLabel.Name = "SlotLabel";
             this.SlotLabel.Size = new System.Drawing.Size(42, 16);
             this.SlotLabel.TabIndex = 227;
-            this.SlotLabel.Text = "Slot :";
+            this.SlotLabel.Text = "插槽：";
             this.SlotLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // RateBar
@@ -199,7 +199,7 @@ namespace ACNHPokerCore
             this.RateValue.Name = "RateValue";
             this.RateValue.Size = new System.Drawing.Size(55, 16);
             this.RateValue.TabIndex = 230;
-            this.RateValue.Text = "100 ms";
+            this.RateValue.Text = "100 毫秒";
             this.RateValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // EnableTextBtn
@@ -214,7 +214,7 @@ namespace ACNHPokerCore
             this.EnableTextBtn.Name = "EnableTextBtn";
             this.EnableTextBtn.Size = new System.Drawing.Size(100, 38);
             this.EnableTextBtn.TabIndex = 231;
-            this.EnableTextBtn.Text = "Enable Instant Text";
+            this.EnableTextBtn.Text = "启用即时文本";
             this.EnableTextBtn.UseVisualStyleBackColor = false;
             this.EnableTextBtn.Click += new System.EventHandler(this.EnableTextBtn_Click);
             // 
@@ -230,7 +230,7 @@ namespace ACNHPokerCore
             this.DisableTextBtn.Name = "DisableTextBtn";
             this.DisableTextBtn.Size = new System.Drawing.Size(100, 38);
             this.DisableTextBtn.TabIndex = 232;
-            this.DisableTextBtn.Text = "Disable Instant Text";
+            this.DisableTextBtn.Text = "禁用即时文本";
             this.DisableTextBtn.UseVisualStyleBackColor = false;
             this.DisableTextBtn.Click += new System.EventHandler(this.DisableTextBtn_Click);
             // 
@@ -246,7 +246,7 @@ namespace ACNHPokerCore
             this.UnFreezeInvBtn.Name = "UnFreezeInvBtn";
             this.UnFreezeInvBtn.Size = new System.Drawing.Size(100, 38);
             this.UnFreezeInvBtn.TabIndex = 234;
-            this.UnFreezeInvBtn.Text = "UnFreeze Inventory";
+            this.UnFreezeInvBtn.Text = "解冻库存";
             this.UnFreezeInvBtn.UseVisualStyleBackColor = false;
             this.UnFreezeInvBtn.Click += new System.EventHandler(this.UnFreezeInvBtn_Click);
             // 
@@ -262,7 +262,7 @@ namespace ACNHPokerCore
             this.FreezeInvBtn.Name = "FreezeInvBtn";
             this.FreezeInvBtn.Size = new System.Drawing.Size(100, 38);
             this.FreezeInvBtn.TabIndex = 233;
-            this.FreezeInvBtn.Text = "Freeze Inventory";
+            this.FreezeInvBtn.Text = "冻结库存";
             this.FreezeInvBtn.UseVisualStyleBackColor = false;
             this.FreezeInvBtn.Click += new System.EventHandler(this.FreezeInvBtn_Click);
             // 
@@ -278,7 +278,7 @@ namespace ACNHPokerCore
             this.FreezeMapBtn.Name = "FreezeMapBtn";
             this.FreezeMapBtn.Size = new System.Drawing.Size(100, 38);
             this.FreezeMapBtn.TabIndex = 235;
-            this.FreezeMapBtn.Text = "Freeze Map";
+            this.FreezeMapBtn.Text = "冻结地图";
             this.FreezeMapBtn.UseVisualStyleBackColor = false;
             this.FreezeMapBtn.Click += new System.EventHandler(this.FreezeMapBtn_Click);
             // 
@@ -294,7 +294,7 @@ namespace ACNHPokerCore
             this.UnFreezeMapBtn.Name = "UnFreezeMapBtn";
             this.UnFreezeMapBtn.Size = new System.Drawing.Size(100, 38);
             this.UnFreezeMapBtn.TabIndex = 236;
-            this.UnFreezeMapBtn.Text = "UnFreeze Map";
+            this.UnFreezeMapBtn.Text = "解冻地图";
             this.UnFreezeMapBtn.UseVisualStyleBackColor = false;
             this.UnFreezeMapBtn.Click += new System.EventHandler(this.UnFreezeMapBtn_Click);
             // 
@@ -318,7 +318,7 @@ namespace ACNHPokerCore
             this.WaitMessagebox.Name = "WaitMessagebox";
             this.WaitMessagebox.Size = new System.Drawing.Size(56, 16);
             this.WaitMessagebox.TabIndex = 240;
-            this.WaitMessagebox.Text = "testing";
+            this.WaitMessagebox.Text = "测试";
             this.WaitMessagebox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MapProgressBar
@@ -380,7 +380,7 @@ namespace ACNHPokerCore
             this.unfreezeAllVillagerBtn.Name = "unfreezeAllVillagerBtn";
             this.unfreezeAllVillagerBtn.Size = new System.Drawing.Size(100, 38);
             this.unfreezeAllVillagerBtn.TabIndex = 246;
-            this.unfreezeAllVillagerBtn.Text = "UnFreeze All Villager";
+            this.unfreezeAllVillagerBtn.Text = "解冻所有村民";
             this.unfreezeAllVillagerBtn.UseVisualStyleBackColor = false;
             this.unfreezeAllVillagerBtn.Click += new System.EventHandler(this.UnfreezeAllVillagerBtn_Click);
             // 
@@ -396,7 +396,7 @@ namespace ACNHPokerCore
             this.freezeAllVillagerBtn.Name = "freezeAllVillagerBtn";
             this.freezeAllVillagerBtn.Size = new System.Drawing.Size(100, 38);
             this.freezeAllVillagerBtn.TabIndex = 245;
-            this.freezeAllVillagerBtn.Text = "Freeze All Villager";
+            this.freezeAllVillagerBtn.Text = "冻结所有村民";
             this.freezeAllVillagerBtn.UseVisualStyleBackColor = false;
             this.freezeAllVillagerBtn.Click += new System.EventHandler(this.FreezeAllVillagerBtn_Click);
             // 
@@ -441,7 +441,7 @@ namespace ACNHPokerCore
             this.FreezeMap2Btn.Name = "FreezeMap2Btn";
             this.FreezeMap2Btn.Size = new System.Drawing.Size(132, 25);
             this.FreezeMap2Btn.TabIndex = 242;
-            this.FreezeMap2Btn.Text = "Freeze Map";
+            this.FreezeMap2Btn.Text = "冻结地图";
             this.FreezeMap2Btn.UseVisualStyleBackColor = false;
             this.FreezeMap2Btn.Click += new System.EventHandler(this.FreezeMap2Btn_Click);
             // 
@@ -454,7 +454,7 @@ namespace ACNHPokerCore
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(25, 16);
             this.label4.TabIndex = 238;
-            this.label4.Text = "Y :";
+            this.label4.Text = "Y：";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
@@ -528,7 +528,7 @@ namespace ACNHPokerCore
             this.Name = "Freezer";
             this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Freezer";
+            this.Text = "冰柜";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Freezer_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.RateBar)).EndInit();
             this.PleaseWaitPanel.ResumeLayout(false);
