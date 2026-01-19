@@ -39,13 +39,27 @@ jobs:
       
     - name: Show Github infos
       run:  echo 'Workspace path ${{ github.workspace }} - runner.temp ${{ runner.temp }}'     
+
+    - name: Copy CSV files to publish directory
+      run: |
+        $sourcePath = "${{ github.workspace }}\ACNHPokerCore\csv"
+        $destinationPath = "${{ github.workspace }}\ACNHPokerCore\bin\Release\net9.0-windows10.0.17763.0\win-x64\publish\csv"
+        
+        if (Test-Path $sourcePath) {
+          New-Item -ItemType Directory -Force -Path $destinationPath
+          Copy-Item -Path "$sourcePath\*" -Destination $destinationPath -Recurse -Force
+          echo "CSV files copied successfully"
+        } else {
+          echo "Warning: Source CSV directory not found at $sourcePath"
+        }
+      shell: pwsh
       
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
       id: upload
       with:
         name: Release
-        path: ${{ github.workspace }}\ACNHPokerCore\bin\Release\net7.0-windows\win-x64\publish\*
+        path: ${{ github.workspace }}\ACNHPokerCore\bin\Release\net9.0-windows10.0.17763.0\win-x64\publish\*
         overwrite: true
         retention-days: 1
 
