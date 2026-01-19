@@ -353,13 +353,15 @@ namespace ACNHPokerCore
 
                     Debug.Print("Length :" + SpawnArea.Length + " Time : " + time);
 
-                    /*
-                    int counter = 0;
+                    int c = 0;
+                    int timeNeeded = time + 10;
 
-                    while (Utilities.IsAboutToSave(s, bot, time + 10, 0, ignore))
+                    while (Utilities.IsAboutToSave(s, bot, timeNeeded, 0, ignore))
                     {
-                        if (counter > 5)
+                        if (c > timeNeeded + 5)
                         {
+                            break;
+                            /*
                             DialogResult result = MyMessageBox.Show("自动保存检测似乎出了问题。\n" +
                                                             "你想要忽略自动保存保护并仍然生成物品吗？\n\n" +
                                                             "请注意，在自动存档期间生成物品可能会导致游戏崩溃。"
@@ -384,11 +386,11 @@ namespace ACNHPokerCore
                                 });
                                 return;
                             }
+                            */
                         }
-                        counter++;
-                        Thread.Sleep(5000);
+                        c++;
+                        Thread.Sleep(1000);
                     }
-                    */
                 }
 
                 if (right)
