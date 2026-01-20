@@ -170,7 +170,6 @@ namespace ACNHPokerCore
             SlotLabel.Name = "SlotLabel";
             SlotLabel.Size = new System.Drawing.Size(42, 16);
             SlotLabel.TabIndex = 227;
-            SlotLabel.Text = "插槽：";
             SlotLabel.Text = "插槽:";
             SlotLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 

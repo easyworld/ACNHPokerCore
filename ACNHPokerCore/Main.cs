@@ -1227,8 +1227,6 @@ namespace ACNHPokerCore
                                                         "然而，Sys-botbase 没有响应……\n" +
                                                         "\n" +
                                                         "1) \n" +
-                                                        "Check that your Switch is running in CFW mode.\n" +
-                                                        "On your Switch, go to [ System Settings ] -> [ System ]\n" +
                                                         "检查你的 Switch 是否运行在 CFW 模式下。\n" +
                                                         "在你的 Switch 上，进入【系统设置】->【主机】\n" +
                                                         "在【系统更新】下，检查【当前版本:】并确保其中包含【AMS】。\n" +
