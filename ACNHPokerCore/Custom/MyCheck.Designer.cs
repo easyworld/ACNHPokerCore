@@ -197,7 +197,7 @@
             Name = "MyCheck";
             SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            Text = "Please enter your AC:NH Key!";
+            Text = "请输入你的《集合啦！动物森友会》密钥！";
             TopMost = true;
             KeyDown += MyWarning_KeyDown;
             ResumeLayout(false);

@@ -1399,10 +1399,10 @@ namespace ACNHPokerCore
             this.ObeySizeToggle.Name = "ObeySizeToggle";
             this.ObeySizeToggle.OffFont = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ObeySizeToggle.OffForeColor = System.Drawing.Color.White;
-            this.ObeySizeToggle.OffText = "No";
+            this.ObeySizeToggle.OffText = "否";
             this.ObeySizeToggle.OnFont = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ObeySizeToggle.OnForeColor = System.Drawing.Color.White;
-            this.ObeySizeToggle.OnText = "Yes";
+            this.ObeySizeToggle.OnText = "是";
             this.ObeySizeToggle.Size = new System.Drawing.Size(53, 16);
             this.ObeySizeToggle.Style = JCS.ToggleSwitch.ToggleSwitchStyle.Carbon;
             this.ObeySizeToggle.TabIndex = 241;

@@ -1284,7 +1284,7 @@
             CliffButton8A.Size = new System.Drawing.Size(36, 36);
             CliffButton8A.TabIndex = 274;
             CliffButton8A.Tag = "8A";
-            ButtonToolTip.SetToolTip(CliffButton8A, "Invisible Support");
+            ButtonToolTip.SetToolTip(CliffButton8A, "隐形支撑");
             CliffButton8A.UseVisualStyleBackColor = false;
             CliffButton8A.Click += ManualCliffButton_Click;
             // 

@@ -1400,21 +1400,21 @@ namespace ACNHPokerCore
                 string CoordinateText = "( " + (Xcoordinate + anchorX) + " , " + (Ycoordinate + anchorY) + " )";
                 string NameText = "";
                 if (terrainUnits[Xcoordinate + anchorX][Ycoordinate + anchorY].HasRoadWood())
-                    NameText = "Wooden";
+                    NameText = "木板";
                 else if (terrainUnits[Xcoordinate + anchorX][Ycoordinate + anchorY].HasRoadTile())
-                    NameText = "Terra-cotta";
+                    NameText = "赤陶砖";
                 else if (terrainUnits[Xcoordinate + anchorX][Ycoordinate + anchorY].HasRoadSand())
-                    NameText = "Sand";
+                    NameText = "沙地";
                 else if (terrainUnits[Xcoordinate + anchorX][Ycoordinate + anchorY].HasRoadPattern())
-                    NameText = "Arched tile";
+                    NameText = "拱形砖";
                 else if (terrainUnits[Xcoordinate + anchorX][Ycoordinate + anchorY].HasRoadDarkSoil())
-                    NameText = "Dark dirt";
+                    NameText = "深色土";
                 else if (terrainUnits[Xcoordinate + anchorX][Ycoordinate + anchorY].HasRoadBrick())
-                    NameText = "Brick";
+                    NameText = "砖块";
                 else if (terrainUnits[Xcoordinate + anchorX][Ycoordinate + anchorY].HasRoadStone())
-                    NameText = "Stone";
+                    NameText = "石板";
                 else if (terrainUnits[Xcoordinate + anchorX][Ycoordinate + anchorY].HasRoadSoil())
-                    NameText = "Dirt";
+                    NameText = "土壤";
 
                 MapToolTip.Show(CoordinateText + " " + NameText + "\n" + terrainUnits[Xcoordinate + anchorX][Ycoordinate + anchorY].DisplayData(), MainMap, Xcoordinate * GridSize + GridSize, Ycoordinate * GridSize + GridSize);
             }

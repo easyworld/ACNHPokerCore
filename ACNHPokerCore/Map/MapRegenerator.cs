@@ -663,7 +663,7 @@ namespace ACNHPokerCore
                             Invoke((MethodInvoker)delegate
                             {
                                 visitorNameBox.Text = visitor;
-                                WaitMessagebox.Text = "已暂停。" + visitor + " arriving!";
+                                WaitMessagebox.Text = "已暂停。" + visitor + " 到达!";
                                 CreateLog(visitor, island, "In");
                                 PauseTimeLabel.Visible = true;
                                 PauseTimer.Start();
@@ -902,7 +902,7 @@ namespace ACNHPokerCore
                             Invoke((MethodInvoker)delegate
                             {
                                 visitorNameBox.Text = visitor;
-                                WaitMessagebox.Text = "已暂停。" + visitor + " arriving!";
+                                WaitMessagebox.Text = "已暂停。" + visitor + " 到达!";
                                 CreateLog(visitor, island, "In");
                                 PauseTimeLabel.Visible = true;
                                 PauseTimer.Start();

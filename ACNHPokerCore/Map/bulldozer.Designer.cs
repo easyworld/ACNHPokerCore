@@ -335,7 +335,7 @@ namespace ACNHPokerCore
             AcreBtn.Name = "AcreBtn";
             AcreBtn.Size = new System.Drawing.Size(86, 30);
             AcreBtn.TabIndex = 236;
-            AcreBtn.Text = "英亩";
+            AcreBtn.Text = "土地";
             AcreBtn.UseVisualStyleBackColor = false;
             AcreBtn.Visible = false;
             AcreBtn.Click += AcreBtn_Click;
@@ -1107,7 +1107,7 @@ namespace ACNHPokerCore
             Name = "Bulldozer";
             Opacity = 0.95D;
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            Text = "Bulldozer";
+            Text = "推土机";
             FormClosed += Bulldozer_FormClosed;
             ((System.ComponentModel.ISupportInitialize)miniMapBox).EndInit();
             acrePanel.ResumeLayout(false);

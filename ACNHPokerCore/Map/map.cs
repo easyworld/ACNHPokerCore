@@ -212,7 +212,7 @@ namespace ACNHPokerCore
                     DataGridViewImageColumn imageColumn = new()
                     {
                         Name = "Image",
-                        HeaderText = "Image",
+                        HeaderText = "图片",
                         ImageLayout = DataGridViewImageCellLayout.Zoom
                     };
                     FieldGridView.Columns.Insert(13, imageColumn);
@@ -231,17 +231,17 @@ namespace ACNHPokerCore
                     FieldGridView.Columns["rus"].Width = 195;
                     FieldGridView.Columns["Image"].Width = 128;
 
-                    FieldGridView.Columns["eng"].HeaderText = "Name";
-                    FieldGridView.Columns["jpn"].HeaderText = "Name";
-                    FieldGridView.Columns["tchi"].HeaderText = "Name";
-                    FieldGridView.Columns["schi"].HeaderText = "Name";
-                    FieldGridView.Columns["kor"].HeaderText = "Name";
-                    FieldGridView.Columns["fre"].HeaderText = "Name";
-                    FieldGridView.Columns["ger"].HeaderText = "Name";
-                    FieldGridView.Columns["spa"].HeaderText = "Name";
-                    FieldGridView.Columns["ita"].HeaderText = "Name";
-                    FieldGridView.Columns["dut"].HeaderText = "Name";
-                    FieldGridView.Columns["rus"].HeaderText = "Name";
+                    FieldGridView.Columns["eng"].HeaderText = "名称";
+                    FieldGridView.Columns["jpn"].HeaderText = "名称";
+                    FieldGridView.Columns["tchi"].HeaderText = "名称";
+                    FieldGridView.Columns["schi"].HeaderText = "名称";
+                    FieldGridView.Columns["kor"].HeaderText = "名称";
+                    FieldGridView.Columns["fre"].HeaderText = "名称";
+                    FieldGridView.Columns["ger"].HeaderText = "名称";
+                    FieldGridView.Columns["spa"].HeaderText = "名称";
+                    FieldGridView.Columns["ita"].HeaderText = "名称";
+                    FieldGridView.Columns["dut"].HeaderText = "名称";
+                    FieldGridView.Columns["rus"].HeaderText = "名称";
 
                     currentDataTable = source;
 
@@ -447,7 +447,7 @@ namespace ACNHPokerCore
         {
             try
             {
-                ShowMapWait((42 + 2) * 2, "Fetching Map...");
+                ShowMapWait((42 + 2) * 2, "读取地图...");
 
                 Layer1 = Utilities.GetMapLayer(s, usb, layer1Address, ref counter);
                 Layer2 = Utilities.GetMapLayer(s, usb, layer2Address, ref counter);
@@ -1689,7 +1689,7 @@ namespace ACNHPokerCore
                 DataGridViewImageColumn imageColumn = new()
                 {
                     Name = "Image",
-                    HeaderText = "Image",
+                    HeaderText = "图片",
                     ImageLayout = DataGridViewImageCellLayout.Zoom
                 };
                 FieldGridView.Columns.Insert(13, imageColumn);
@@ -1708,17 +1708,17 @@ namespace ACNHPokerCore
                 FieldGridView.Columns["rus"].Width = 195;
                 FieldGridView.Columns["Image"].Width = 128;
 
-                FieldGridView.Columns["eng"].HeaderText = "Name";
-                FieldGridView.Columns["jpn"].HeaderText = "Name";
-                FieldGridView.Columns["tchi"].HeaderText = "Name";
-                FieldGridView.Columns["schi"].HeaderText = "Name";
-                FieldGridView.Columns["kor"].HeaderText = "Name";
-                FieldGridView.Columns["fre"].HeaderText = "Name";
-                FieldGridView.Columns["ger"].HeaderText = "Name";
-                FieldGridView.Columns["spa"].HeaderText = "Name";
-                FieldGridView.Columns["ita"].HeaderText = "Name";
-                FieldGridView.Columns["dut"].HeaderText = "Name";
-                FieldGridView.Columns["rus"].HeaderText = "Name";
+                FieldGridView.Columns["eng"].HeaderText = "名称";
+                FieldGridView.Columns["jpn"].HeaderText = "名称";
+                FieldGridView.Columns["tchi"].HeaderText = "名称";
+                FieldGridView.Columns["schi"].HeaderText = "名称";
+                FieldGridView.Columns["kor"].HeaderText = "名称";
+                FieldGridView.Columns["fre"].HeaderText = "名称";
+                FieldGridView.Columns["ger"].HeaderText = "名称";
+                FieldGridView.Columns["spa"].HeaderText = "名称";
+                FieldGridView.Columns["ita"].HeaderText = "名称";
+                FieldGridView.Columns["dut"].HeaderText = "名称";
+                FieldGridView.Columns["rus"].HeaderText = "名称";
 
                 currentDataTable = source;
             }
@@ -1761,7 +1761,7 @@ namespace ACNHPokerCore
                 DataGridViewImageColumn imageColumn = new()
                 {
                     Name = "Image",
-                    HeaderText = "Image",
+                    HeaderText = "图片",
                     ImageLayout = DataGridViewImageCellLayout.Zoom
                 };
                 FieldGridView.Columns.Insert(13, imageColumn);
@@ -1780,17 +1780,17 @@ namespace ACNHPokerCore
                 FieldGridView.Columns["rus"].Width = 195;
                 FieldGridView.Columns["Image"].Width = 128;
 
-                FieldGridView.Columns["eng"].HeaderText = "Name";
-                FieldGridView.Columns["jpn"].HeaderText = "Name";
-                FieldGridView.Columns["tchi"].HeaderText = "Name";
-                FieldGridView.Columns["schi"].HeaderText = "Name";
-                FieldGridView.Columns["kor"].HeaderText = "Name";
-                FieldGridView.Columns["fre"].HeaderText = "Name";
-                FieldGridView.Columns["ger"].HeaderText = "Name";
-                FieldGridView.Columns["spa"].HeaderText = "Name";
-                FieldGridView.Columns["ita"].HeaderText = "Name";
-                FieldGridView.Columns["dut"].HeaderText = "Name";
-                FieldGridView.Columns["rus"].HeaderText = "Name";
+                FieldGridView.Columns["eng"].HeaderText = "名称";
+                FieldGridView.Columns["jpn"].HeaderText = "名称";
+                FieldGridView.Columns["tchi"].HeaderText = "名称";
+                FieldGridView.Columns["schi"].HeaderText = "名称";
+                FieldGridView.Columns["kor"].HeaderText = "名称";
+                FieldGridView.Columns["fre"].HeaderText = "名称";
+                FieldGridView.Columns["ger"].HeaderText = "名称";
+                FieldGridView.Columns["spa"].HeaderText = "名称";
+                FieldGridView.Columns["ita"].HeaderText = "名称";
+                FieldGridView.Columns["dut"].HeaderText = "名称";
+                FieldGridView.Columns["rus"].HeaderText = "名称";
 
                 currentDataTable = recipeSource;
             }
@@ -1834,7 +1834,7 @@ namespace ACNHPokerCore
                 DataGridViewImageColumn imageColumn = new()
                 {
                     Name = "Image",
-                    HeaderText = "Image",
+                    HeaderText = "图片",
                     ImageLayout = DataGridViewImageCellLayout.Zoom
                 };
                 FieldGridView.Columns.Insert(13, imageColumn);
@@ -1853,17 +1853,17 @@ namespace ACNHPokerCore
                 FieldGridView.Columns["rus"].Width = 195;
                 FieldGridView.Columns["Image"].Width = 128;
 
-                FieldGridView.Columns["eng"].HeaderText = "Name";
-                FieldGridView.Columns["jpn"].HeaderText = "Name";
-                FieldGridView.Columns["tchi"].HeaderText = "Name";
-                FieldGridView.Columns["schi"].HeaderText = "Name";
-                FieldGridView.Columns["kor"].HeaderText = "Name";
-                FieldGridView.Columns["fre"].HeaderText = "Name";
-                FieldGridView.Columns["ger"].HeaderText = "Name";
-                FieldGridView.Columns["spa"].HeaderText = "Name";
-                FieldGridView.Columns["ita"].HeaderText = "Name";
-                FieldGridView.Columns["dut"].HeaderText = "Name";
-                FieldGridView.Columns["rus"].HeaderText = "Name";
+                FieldGridView.Columns["eng"].HeaderText = "名称";
+                FieldGridView.Columns["jpn"].HeaderText = "名称";
+                FieldGridView.Columns["tchi"].HeaderText = "名称";
+                FieldGridView.Columns["schi"].HeaderText = "名称";
+                FieldGridView.Columns["kor"].HeaderText = "名称";
+                FieldGridView.Columns["fre"].HeaderText = "名称";
+                FieldGridView.Columns["ger"].HeaderText = "名称";
+                FieldGridView.Columns["spa"].HeaderText = "名称";
+                FieldGridView.Columns["ita"].HeaderText = "名称";
+                FieldGridView.Columns["dut"].HeaderText = "名称";
+                FieldGridView.Columns["rus"].HeaderText = "名称";
 
                 currentDataTable = flowerSource;
             }
@@ -1903,7 +1903,7 @@ namespace ACNHPokerCore
                 DataGridViewImageColumn imageColumn = new()
                 {
                     Name = "Image",
-                    HeaderText = "Image",
+                    HeaderText = "图片",
                     ImageLayout = DataGridViewImageCellLayout.Zoom
                 };
                 FieldGridView.Columns.Insert(4, imageColumn);
@@ -1951,7 +1951,7 @@ namespace ACNHPokerCore
                 DataGridViewImageColumn imageColumn = new()
                 {
                     Name = "Image",
-                    HeaderText = "Image",
+                    HeaderText = "图片",
                     ImageLayout = DataGridViewImageCellLayout.Zoom
                 };
                 FieldGridView.Columns.Insert(3, imageColumn);
@@ -1960,7 +1960,7 @@ namespace ACNHPokerCore
                 FieldGridView.Columns["name"].Width = 195;
                 FieldGridView.Columns["Image"].Width = 128;
 
-                FieldGridView.Columns["name"].HeaderText = "Name";
+                FieldGridView.Columns["name"].HeaderText = "名称";
 
                 currentDataTable = fieldSource;
             }
@@ -3672,7 +3672,7 @@ namespace ACNHPokerCore
 
         private void RefreshMap(UInt32 layer1Address, UInt32 layer2Address)
         {
-            ShowMapWait((42 + 2) * 2, "Fetching Map...");
+            ShowMapWait((42 + 2) * 2, "读取地图...");
 
             try
             {

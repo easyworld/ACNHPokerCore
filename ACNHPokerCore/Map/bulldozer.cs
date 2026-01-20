@@ -261,11 +261,11 @@ namespace ACNHPokerCore
             BuildingY.Name = "Y-Coordinate";
             BuildingY.SortMode = DataGridViewColumnSortMode.NotSortable;
             BuildingY.Width = 60;
-            BuildingA.HeaderText = "Angle";
+            BuildingA.HeaderText = "角度";
             BuildingA.Name = "Angle";
             BuildingA.SortMode = DataGridViewColumnSortMode.NotSortable;
             BuildingA.Width = 60;
-            BuildingT.HeaderText = "Type";
+            BuildingT.HeaderText = "类型";
             BuildingT.Name = "Type";
             BuildingT.SortMode = DataGridViewColumnSortMode.NotSortable;
             BuildingT.Width = 60;
@@ -1041,37 +1041,37 @@ namespace ACNHPokerCore
 
         public readonly static Dictionary<byte, string> BuildingName = new()
         {
-            {0x0, "Empty"},
-            {0x1, "Player House 1"},
-            {0x2, "Player House 2"},
-            {0x3, "Player House 3"},
-            {0x4, "Player House 4"},
-            {0x5, "Player House 5"},
-            {0x6, "Player House 6"},
-            {0x7, "Player House 7"},
-            {0x8, "Player House 8"},
-            {0x9, "Villager House 1"},
-            {0xA, "Villager House 2"},
-            {0xB, "Villager House 3"},
-            {0xC, "Villager House 4"},
-            {0xD, "Villager House 5"},
-            {0xE, "Villager House 6"},
-            {0xF, "Villager House 7"},
-            {0x10, "Villager House 8"},
-            {0x11, "Villager House 9"},
-            {0x12, "Villager House 10"},
-            {0x13, "Nook's Cranny"},
-            {0x14, "Resident Services (Building)"},
-            {0x15, "Museum"},
-            {0x16, "Airport"},
-            {0x17, "Resident Services (Tent)"},
-            {0x18, "Able Sisters"},
-            {0x19, "Campsite"},
-            {0x1A, "Bridge"},
-            {0x1B, "Incline"},
-            {0x1C, "Redd's Treasure Trawler"},
-            {0x1D, "Studio"},
-            {0x2A, "Hotel"},
+            {0x0, "空"},
+            {0x1, "玩家房屋 1"},
+            {0x2, "玩家房屋 2"},
+            {0x3, "玩家房屋 3"},
+            {0x4, "玩家房屋 4"},
+            {0x5, "玩家房屋 5"},
+            {0x6, "玩家房屋 6"},
+            {0x7, "玩家房屋 7"},
+            {0x8, "玩家房屋 8"},
+            {0x9, "村民房屋 1"},
+            {0xA, "村民房屋 2"},
+            {0xB, "村民房屋 3"},
+            {0xC, "村民房屋 4"},
+            {0xD, "村民房屋 5"},
+            {0xE, "村民房屋 6"},
+            {0xF, "村民房屋 7"},
+            {0x10, "村民房屋 8"},
+            {0x11, "村民房屋 9"},
+            {0x12, "村民房屋 10"},
+            {0x13, "商店"},
+            {0x14, "居民服务处 (建筑)"},
+            {0x15, "博物馆"},
+            {0x16, "机场"},
+            {0x17, "居民服务处 (帐篷)"},
+            {0x18, "服饰店"},
+            {0x19, "露营地"},
+            {0x1A, "桥"},
+            {0x1B, "坡道"},
+            {0x1C, "狐利的船"},
+            {0x1D, "摄影棚"},
+            {0x2A, "酒店"},
         };
 
         private void SaveAcreBtn_Click(object sender, EventArgs e)

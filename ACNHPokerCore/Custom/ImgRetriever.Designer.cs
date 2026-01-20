@@ -74,7 +74,7 @@
             noBtn.Name = "noBtn";
             noBtn.Size = new System.Drawing.Size(116, 32);
             noBtn.TabIndex = 3;
-            noBtn.Text = "不";
+            noBtn.Text = "否";
             noBtn.UseVisualStyleBackColor = false;
             noBtn.Click += NoBtn_Click;
             // 
@@ -151,7 +151,7 @@
             Opacity = 0.95D;
             ShowInTaskbar = false;
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            Text = "Golden Image Retriever";
+            Text = "动森图片下载器";
             TopMost = true;
             ((System.ComponentModel.ISupportInitialize)NowLoadingImage).EndInit();
             ResumeLayout(false);

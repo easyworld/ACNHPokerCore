@@ -145,7 +145,7 @@ namespace ACNHPokerCore
             UnFreezeAllBtn.Name = "UnFreezeAllBtn";
             UnFreezeAllBtn.Size = new System.Drawing.Size(208, 25);
             UnFreezeAllBtn.TabIndex = 237;
-            UnFreezeAllBtn.Text = "UnFreeze Everything";
+            UnFreezeAllBtn.Text = "解冻所有";
             UnFreezeAllBtn.UseVisualStyleBackColor = false;
             UnFreezeAllBtn.Click += UnFreezeAllBtn_Click;
             // 
@@ -244,7 +244,7 @@ namespace ACNHPokerCore
             UnFreezeInvBtn.Name = "UnFreezeInvBtn";
             UnFreezeInvBtn.Size = new System.Drawing.Size(100, 38);
             UnFreezeInvBtn.TabIndex = 234;
-            UnFreezeInvBtn.Text = "UnFreeze Inventory";
+            UnFreezeInvBtn.Text = "解冻背包";
             UnFreezeInvBtn.UseVisualStyleBackColor = false;
             UnFreezeInvBtn.Click += UnFreezeInvBtn_Click;
             // 
@@ -260,7 +260,7 @@ namespace ACNHPokerCore
             FreezeInvBtn.Name = "FreezeInvBtn";
             FreezeInvBtn.Size = new System.Drawing.Size(100, 38);
             FreezeInvBtn.TabIndex = 233;
-            FreezeInvBtn.Text = "Freeze Inventory";
+            FreezeInvBtn.Text = "冻结背包";
             FreezeInvBtn.UseVisualStyleBackColor = false;
             FreezeInvBtn.Click += FreezeInvBtn_Click;
             // 
@@ -276,7 +276,7 @@ namespace ACNHPokerCore
             FreezeMapBtn.Name = "FreezeMapBtn";
             FreezeMapBtn.Size = new System.Drawing.Size(100, 38);
             FreezeMapBtn.TabIndex = 235;
-            FreezeMapBtn.Text = "Freeze Map";
+            FreezeMapBtn.Text = "冻结地图";
             FreezeMapBtn.UseVisualStyleBackColor = false;
             FreezeMapBtn.Click += FreezeMapBtn_Click;
             // 
@@ -292,7 +292,7 @@ namespace ACNHPokerCore
             UnFreezeMapBtn.Name = "UnFreezeMapBtn";
             UnFreezeMapBtn.Size = new System.Drawing.Size(100, 38);
             UnFreezeMapBtn.TabIndex = 236;
-            UnFreezeMapBtn.Text = "UnFreeze Map";
+            UnFreezeMapBtn.Text = "解冻地图";
             UnFreezeMapBtn.UseVisualStyleBackColor = false;
             UnFreezeMapBtn.Click += UnFreezeMapBtn_Click;
             // 

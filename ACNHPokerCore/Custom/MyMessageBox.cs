@@ -319,7 +319,7 @@ namespace ACNHPokerCore
                 ShowIcon = false;
                 SizeGripStyle = SizeGripStyle.Show;
                 StartPosition = FormStartPosition.CenterParent;
-                Text = "<Caption>";
+                Text = "<捕获>";
                 Shown += FlexibleMessageBoxForm_Shown;
                 ((System.ComponentModel.ISupportInitialize)(FlexibleMessageBoxFormBindingSource)).EndInit();
                 panel1.ResumeLayout(false);

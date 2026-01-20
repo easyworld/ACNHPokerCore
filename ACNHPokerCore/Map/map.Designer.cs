@@ -1867,7 +1867,7 @@ namespace ACNHPokerCore
             fetchMapBtn.Size = new System.Drawing.Size(138, 28);
             fetchMapBtn.TabIndex = 0;
             fetchMapBtn.Text = "获取地图";
-            formToolTip.SetToolTip(fetchMapBtn, "Fetch the map data. (Both Layer 1 & 2)");
+            formToolTip.SetToolTip(fetchMapBtn, "获取地图数据。（第1层和第2层）");
             fetchMapBtn.UseVisualStyleBackColor = false;
             fetchMapBtn.Click += FetchMapBtn_Click;
             // 

@@ -257,17 +257,17 @@ namespace ACNHPokerCore
                 ItemGridView.Columns["rus"]!.Width = 195;
                 ItemGridView.Columns["Image"]!.Width = 128;
 
-                ItemGridView.Columns["eng"].HeaderText = @"Name";
-                ItemGridView.Columns["jpn"].HeaderText = @"Name";
-                ItemGridView.Columns["tchi"].HeaderText = @"Name";
-                ItemGridView.Columns["schi"].HeaderText = @"Name";
-                ItemGridView.Columns["kor"].HeaderText = @"Name";
-                ItemGridView.Columns["fre"].HeaderText = @"Name";
-                ItemGridView.Columns["ger"].HeaderText = @"Name";
-                ItemGridView.Columns["spa"].HeaderText = @"Name";
-                ItemGridView.Columns["ita"].HeaderText = @"Name";
-                ItemGridView.Columns["dut"].HeaderText = @"Name";
-                ItemGridView.Columns["rus"].HeaderText = @"Name";
+                ItemGridView.Columns["eng"].HeaderText = @"名称";
+                ItemGridView.Columns["jpn"].HeaderText = @"名称";
+                ItemGridView.Columns["tchi"].HeaderText = @"名称";
+                ItemGridView.Columns["schi"].HeaderText = @"名称";
+                ItemGridView.Columns["kor"].HeaderText = @"名称";
+                ItemGridView.Columns["fre"].HeaderText = @"名称";
+                ItemGridView.Columns["ger"].HeaderText = @"名称";
+                ItemGridView.Columns["spa"].HeaderText = @"名称";
+                ItemGridView.Columns["ita"].HeaderText = @"名称";
+                ItemGridView.Columns["dut"].HeaderText = @"名称";
+                ItemGridView.Columns["rus"].HeaderText = @"名称";
 
                 ItemGridView.DefaultCellStyle.Font = new Font("Microsoft JhengHei UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
             }
@@ -1145,7 +1145,7 @@ namespace ACNHPokerCore
             Brush brush = new SolidBrush(Color.White);
             e.Graphics.TranslateTransform(21, 7);
             e.Graphics.RotateTransform(90);
-            e.Graphics.DrawString("Inventory", font, brush, 0, 0);
+            e.Graphics.DrawString("背包", font, brush, 0, 0);
         }
 
         private void OtherTabButton_Paint(object sender, PaintEventArgs e)
@@ -1154,7 +1154,7 @@ namespace ACNHPokerCore
             Brush brush = new SolidBrush(Color.White);
             e.Graphics.TranslateTransform(21, 14);
             e.Graphics.RotateTransform(90);
-            e.Graphics.DrawString("Other", font, brush, 0, 0);
+            e.Graphics.DrawString("其他", font, brush, 0, 0);
         }
 
         private void CritterTabButton_Paint(object sender, PaintEventArgs e)
@@ -1163,7 +1163,7 @@ namespace ACNHPokerCore
             Brush brush = new SolidBrush(Color.White);
             e.Graphics.TranslateTransform(21, 14);
             e.Graphics.RotateTransform(90);
-            e.Graphics.DrawString("Critter", font, brush, 0, 0);
+            e.Graphics.DrawString("生物", font, brush, 0, 0);
         }
 
         private void VillagerTabButton_Paint(object sender, PaintEventArgs e)
@@ -1172,7 +1172,7 @@ namespace ACNHPokerCore
             Brush brush = new SolidBrush(Color.White);
             e.Graphics.TranslateTransform(21, 14);
             e.Graphics.RotateTransform(90);
-            e.Graphics.DrawString("Villager", font, brush, 0, 0);
+            e.Graphics.DrawString("村民", font, brush, 0, 0);
         }
         #endregion
 
@@ -4493,13 +4493,13 @@ namespace ACNHPokerCore
 
             EatButton.Text = dice switch
             {
-                1 => "Eat 10 Apples",
-                2 => "Eat 10 Oranges",
-                3 => "Eat 10 Cherries",
-                4 => "Eat 10 Pears",
-                5 => "Eat 10 Peaches",
-                6 => "Eat 10 Coconuts",
-                _ => "Eat 10 Turnips",
+                1 => "吃 10 个苹果",
+                2 => "吃 10 个橙子",
+                3 => "吃 10 个樱桃",
+                4 => "吃 10 个梨",
+                5 => "吃 10 个桃子",
+                6 => "吃 10 个椰子",
+                _ => "吃 10 个大头菜",
             };
         }
 
@@ -5646,7 +5646,7 @@ namespace ACNHPokerCore
                     FlatStyle = FlatStyle.Popup,
                     DefaultCellStyle = btnStyle,
                     Width = 100,
-                    Text = "Disable Spawn",
+                    Text = "关闭刷新",
                     UseColumnTextForButtonValue = true,
                     Resizable = DataGridViewTriState.False,
                 };
@@ -5667,7 +5667,7 @@ namespace ACNHPokerCore
                     FlatStyle = FlatStyle.Popup,
                     DefaultCellStyle = selectedbtnStyle,
                     Width = 100,
-                    Text = "Default",
+                    Text = "默认",
                     UseColumnTextForButtonValue = true,
                     Resizable = DataGridViewTriState.False,
                 };
@@ -5688,7 +5688,7 @@ namespace ACNHPokerCore
                     FlatStyle = FlatStyle.Popup,
                     DefaultCellStyle = btnStyle,
                     Width = 100,
-                    Text = "Max Spawn",
+                    Text = "最大生成数量",
                     UseColumnTextForButtonValue = true,
                     Resizable = DataGridViewTriState.False,
                 };
@@ -5746,250 +5746,250 @@ namespace ACNHPokerCore
         {
             return ID switch
             {
-                //Common butterfly
-                ("0272") => ("Except on rainy days"),
-                //Yellow butterfly
-                ("0271") => ("Except on rainy days"),
-                //Tiger butterfly
-                ("0247") => ("Except on rainy days"),
-                //Peacock butterfly
-                ("0262") => ("Catch 20 or more bugs to spawn\nExcept on rainy days"),
-                //Common bluebottle
-                ("0D95") => ("Except on rainy days"),
-                //Paper kite butterfly
-                ("0D96") => ("Except on rainy days"),
-                //Great purple emperor
-                ("0D97") => ("Catch 50 or more bugs to spawn\nExcept on rainy days"),
-                //Monarch butterfly
-                ("027C") => ("Except on rainy days"),
-                //Emperor butterfly
-                ("0273") => ("Catch 20 or more bugs to spawn\nExcept on rainy days"),
-                //Agrias butterfly
-                ("026C") => ("Catch 20 or more bugs to spawn\nExcept on rainy days"),
-                //Rajah brooke's birdwing
-                ("0248") => ("Catch 20 or more bugs to spawn\nExcept on rainy days"),
-                //Queen Alexandra's birdwing
-                ("024A") => ("Catch 50 or more bugs to spawn\nExcept on rainy days"),
-                //Moth
-                ("0250") => ("Except on rainy days"),
-                //Atlas moth
-                ("028C") => ("Catch 20 or more bugs to spawn"),
-                //Madagascan sunset moth
-                ("0D9C") => ("Catch 20 or more bugs to spawn\nExcept on rainy days"),
-                //Long locust
+                //粉蝶
+                ("0272") => ("雨天除外"),
+                //黄蝶
+                ("0271") => ("雨天除外"),
+                //凤蝶
+                ("0247") => ("雨天除外"),
+                //孔雀蝶
+                ("0262") => ("捕捉 20 只或以上昆虫后出现\n雨天除外"),
+                //青凤蝶
+                ("0D95") => ("雨天除外"),
+                //大白斑蝶
+                ("0D96") => ("雨天除外"),
+                //大紫蛱蝶
+                ("0D97") => ("捕捉 50 只或以上昆虫后出现\n雨天除外"),
+                //帝王蝶
+                ("027C") => ("雨天除外"),
+                //皇蛾阴阳蝶
+                ("0273") => ("捕捉 20 只或以上昆虫后出现\n雨天除外"),
+                //摩尔福蝶
+                ("026C") => ("捕捉 20 只或以上昆虫后出现\n雨天除外"),
+                //红颈鸟翼凤蝶
+                ("0248") => ("捕捉 20 只或以上昆虫后出现\n雨天除外"),
+                //亚历山大凤蝶
+                ("024A") => ("捕捉 50 只或以上昆虫后出现\n雨天除外"),
+                //蛾
+                ("0250") => ("雨天除外"),
+                //皇蛾
+                ("028C") => ("捕捉 20 只或以上昆虫后出现"),
+                //马达加斯加彩蛾
+                ("0D9C") => ("捕捉 20 只或以上昆虫后出现\n雨天除外"),
+                //稻蝗
                 ("0284") => (""),
-                //Migratory Locust
-                ("0288") => ("Catch 20 or more bugs to spawn"),
-                //Rice grasshopper
+                //飞蝗
+                ("0288") => ("捕捉 20 只或以上昆虫后出现"),
+                //负蝗
                 ("025D") => (""),
-                //Grasshopper
-                ("0265") => ("Except on rainy days"),
-                //Cricket
-                ("0269") => ("Except on rainy days"),
-                //Bell cricket
-                ("0282") => ("Except on rainy days"),
-                //Mantis
-                ("025F") => ("Except on rainy days"),
-                //Orchid mantis
-                ("0256") => ("Catch 20 or more bugs to spawn\nExcept on rainy days"),
-                //Honeybee
-                ("026F") => ("Except on rainy days"),
-                //Wasp
-                ("0283") => ("✶ Spawn rate seems to have no effect\nSpawn when nest falls from tree"),
-                //Brown cicada
+                //蚱蜢
+                ("0265") => ("雨天除外"),
+                //蟋蟀
+                ("0269") => ("雨天除外"),
+                //铃虫
+                ("0282") => ("雨天除外"),
+                //螳螂
+                ("025F") => ("雨天除外"),
+                //兰花螳螂
+                ("0256") => ("捕捉 20 只或以上昆虫后出现\n雨天除外"),
+                //蜜蜂
+                ("026F") => ("雨天除外"),
+                //黄蜂
+                ("0283") => ("✶ 出现率调整似乎无效\n摇树掉落蜂巢时出现"),
+                //蟪蛄
                 ("0246") => (""),
-                //Robust cicada
+                //熊蝉
                 ("026D") => (""),
-                //Giant cicada
-                ("026A") => ("Catch 20 or more bugs to spawn"),
-                //Walker cicada
+                //晚蝉
+                ("026A") => ("捕捉 20 只或以上昆虫后出现"),
+                //寒蝉
                 ("0289") => (""),
-                //Evening cicada
+                //暮蝉
                 ("0259") => (""),
-                //Cicada shell
-                ("0281") => ("Catch 50 or more bugs to spawn"),
-                //Red dragonfly
-                ("0249") => ("Except on rainy days"),
-                //Darner dragonfly
-                ("0253") => ("Except on rainy days"),
-                //Banded dragonfly
-                ("027B") => ("Catch 50 or more bugs to spawn\nExcept on rainy days"),
-                //Damselfly
-                ("14DB") => ("Except on rainy days"),
-                //Firefly
-                ("025B") => ("Except on rainy days"),
-                //Mole cricket
+                //蝉壳
+                ("0281") => ("捕捉 50 只或以上昆虫后出现"),
+                //红蜻蜓
+                ("0249") => ("雨天除外"),
+                //大蜻蜓
+                ("0253") => ("雨天除外"),
+                //樱桃红蜻蜓
+                ("027B") => ("捕捉 50 只或以上昆虫后出现\n雨天除外"),
+                //豆娘
+                ("14DB") => ("雨天除外"),
+                //萤火虫
+                ("025B") => ("雨天除外"),
+                //蝼蛄
                 ("027A") => (""),
-                //Pondskater
+                //田鳖
                 ("024B") => (""),
-                //Diving beetle
+                //龙虱
                 ("0252") => (""),
-                //Giant water bug
-                ("1425") => ("Catch 50 or more bugs to spawn"),
-                //Stinkbug
-                ("0260") => ("Except on rainy days"),
-                //Man-faced stink bug
-                ("0D9B") => ("Catch 20 or more bugs to spawn\nExcept on rainy days"),
-                //Ladybug
-                ("0287") => ("Except on rainy days"),
-                //Tiger beetle
-                ("0257") => ("Catch 20 or more bugs to spawn\nExcept on rainy days"),
-                //Jewel beetle
-                ("0285") => ("Catch 20 or more bugs to spawn\nExcept on rainy days"),
-                //Violin beetle
-                ("028A") => ("Except on rainy days"),
-                //Citrus long-horned beetle
-                ("0261") => ("Except on rainy days"),
-                //Rosalia batesi beetle
-                ("0D9F") => ("Catch 20 or more bugs to spawn\nExcept on rainy days"),
-                //Blue weevil beetle
+                //大田鳖
+                ("1425") => ("捕捉 50 只或以上昆虫后出现"),
+                //蝽
+                ("0260") => ("雨天除外"),
+                //人面椿象
+                ("0D9B") => ("捕捉 20 只或以上昆虫后出现\n雨天除外"),
+                //瓢虫
+                ("0287") => ("雨天除外"),
+                //虎甲虫
+                ("0257") => ("捕捉 20 只或以上昆虫后出现\n雨天除外"),
+                //吉丁虫
+                ("0285") => ("捕捉 20 只或以上昆虫后出现\n雨天除外"),
+                //琴虫
+                ("028A") => ("雨天除外"),
+                //天牛
+                ("0261") => ("雨天除外"),
+                //琉璃星天牛
+                ("0D9F") => ("捕捉 20 只或以上昆虫后出现\n雨天除外"),
+                //蓝凤象鼻虫
                 ("0D9D") => (""),
-                //Dung beetle
-                ("025C") => ("Spawn when there is snowball on the ground"),
-                //Earth-boring dung beetle
+                //糞金龟
+                ("025C") => ("地上有雪球时出现"),
+                //粪堆虫
                 ("0266") => (""),
-                //Scarab beetle
-                ("027F") => ("Catch 50 or more bugs to spawn"),
-                //Drone beetle
+                //金龟子
+                ("027F") => ("捕捉 50 只或以上昆虫后出现"),
+                //白条锹甲
                 ("0D98") => (""),
-                //Goliath beetle
-                ("0254") => ("Catch 100 or more bugs to spawn"),
-                //Saw stag
+                //歌利亚角金龟
+                ("0254") => ("捕捉 100 只或以上昆虫后出现"),
+                //锯锹形虫
                 ("0278") => (""),
-                //Miyama stag
+                //深山锹形虫
                 ("0270") => (""),
-                //Giant stag
-                ("027D") => ("Catch 50 or more bugs to spawn"),
-                //Rainbow stag
-                ("0277") => ("Catch 50 or more bugs to spawn"),
-                //Cyclommatus stag
-                ("025A") => ("Catch 100 or more bugs to spawn"),
-                //Golden stag
-                ("027E") => ("Catch 100 or more bugs to spawn"),
-                //Giraffe stag
-                ("0D9A") => ("Catch 100 or more bugs to spawn"),
-                //Horned dynastid
+                //大锹形虫
+                ("027D") => ("捕捉 50 只或以上昆虫后出现"),
+                //彩虹锹形虫
+                ("0277") => ("捕捉 50 只或以上昆虫后出现"),
+                //长颚锹形虫
+                ("025A") => ("捕捉 100 只或以上昆虫后出现"),
+                //黄金鬼锹形虫
+                ("027E") => ("捕捉 100 只或以上昆虫后出现"),
+                //长颈鹿锯锹形虫
+                ("0D9A") => ("捕捉 100 只或以上昆虫后出现"),
+                //独角仙
                 ("0264") => (""),
-                //Horned atlas
-                ("0267") => ("Catch 100 or more bugs to spawn"),
-                //Horned elephant
-                ("028D") => ("Catch 100 or more bugs to spawn"),
-                //Horned hercules
-                ("0258") => ("Catch 100 or more bugs to spawn"),
-                //Walking stick
-                ("0276") => ("Catch 20 or more bugs to spawn"),
-                //Walking leaf
-                ("0268") => ("Catch 20 or more bugs to spawn"),
-                //Bagworm
-                ("026E") => ("✶ Spawn rate seems to have no effect\nSpawn when shaking tree"),
-                //Ant
-                ("024C") => ("✶ Spawn rate seems to have no effect\nSpawn when there is rotten turnip"),
-                //Hermit crab
-                ("028B") => ("Spawn on beach"),
-                //Wharf roach
-                ("024F") => ("Spawn on rocky formations at beach"),
-                //Fly
-                ("0255") => ("✶ Spawn rate seems to have no effect\nSpawn when there is trash item"),
-                //Mosquito
-                ("025E") => ("Except on rainy days"),
-                //Flea
-                ("0279") => ("Spawn on villagers"),
-                //Snail
-                ("0263") => ("Rainy days only"),
-                //Pill bug
-                ("024E") => ("Spawn underneath rocks"),
-                //Centipede
-                ("0274") => ("Spawn underneath rocks"),
-                //Spider
-                ("026B") => ("✶ Spawn rate seems to have no effect\nSpawn when shaking tree"),
-                //Tarantula
+                //南洋大兜虫
+                ("0267") => ("捕捉 100 只或以上昆虫后出现"),
+                //象兜虫
+                ("028D") => ("捕捉 100 只或以上昆虫后出现"),
+                //长戟大兜虫
+                ("0258") => ("捕捉 100 只或以上昆虫后出现"),
+                //竹节虫
+                ("0276") => ("捕捉 20 只或以上昆虫后出现"),
+                //叶䗛
+                ("0268") => ("捕捉 20 只或以上昆虫后出现"),
+                //蓑衣虫
+                ("026E") => ("✶ 出现率调整似乎无效\n摇树时出现"),
+                //蚂蚁
+                ("024C") => ("✶ 出现率调整似乎无效\n地上有腐烂大头菜时出现"),
+                //寄居蟹
+                ("028B") => ("在沙滩上出现"),
+                //滨虱
+                ("024F") => ("在沙滩岩石上出现"),
+                //苍蝇
+                ("0255") => ("✶ 出现率调整似乎无效\n地上有垃圾物品时出现"),
+                //蚊子
+                ("025E") => ("雨天除外"),
+                //跳蚤
+                ("0279") => ("在村民身上出现"),
+                //蜗牛
+                ("0263") => ("仅雨天出现"),
+                //鼠妇
+                ("024E") => ("在石头下方出现"),
+                //蜈蚣
+                ("0274") => ("在石头下方出现"),
+                //狼蛛
+                ("026B") => ("✶ 出现率调整似乎无效\n摇树时出现"),
+                //狼蛛
                 ("0286") => (""),
-                //Scorpion
+                //蝎子
                 ("0280") => (""),
-                //Snowflake
-                ("0DD3") => ("Spawn when in season/time"),
-                //Cherry-blossom petal
-                ("16E3") => ("Spawn when in season/time"),
-                //Maple leaf
-                ("1CCE") => ("Spawn when in season/time"),
-                //Koi
-                ("08AC") => ("Catch 20 or more fishes to spawn"),
-                //Ranchu Goldfish
-                ("1486") => ("Catch 20 or more fishes to spawn"),
-                //Soft-shelled Turtle
-                ("08B0") => ("Catch 20 or more fishes to spawn"),
-                //Giant Snakehead
-                ("08B7") => ("Catch 50 or more fishes to spawn"),
-                //Pike
-                ("08BB") => ("Catch 20 or more fishes to spawn"),
-                //Char
-                ("08BF") => ("Catch 20 or more fishes to spawn"),
-                //Golden Trout
-                ("1061") => ("Catch 100 or more fishes to spawn"),
-                //Stringfish
-                ("08C1") => ("Catch 100 or more fishes to spawn"),
-                //King Salmon
-                ("08C3") => ("Catch 20 or more fishes to spawn"),
-                //Mitten Crab
-                ("08C4") => ("Catch 20 or more fishes to spawn"),
-                //Nibble Fish
-                ("08C6") => ("Catch 20 or more fishes to spawn"),
-                //Angelfish
-                ("08C7") => ("Catch 20 or more fishes to spawn"),
-                //Betta
-                ("105F") => ("Catch 20 or more fishes to spawn"),
-                //Piranha
-                ("08C9") => ("Catch 20 or more fishes to spawn"),
-                //Arowana
-                ("08CA") => ("Catch 50 or more fishes to spawn"),
-                //Dorado
-                ("08CB") => ("Catch 100 or more fishes to spawn"),
-                //Gar
-                ("08CC") => ("Catch 50 or more fishes to spawn"),
-                //Arapaima
-                ("08CD") => ("Catch 50 or more fishes to spawn"),
-                //Saddled Bichir
-                ("08CE") => ("Catch 20 or more fishes to spawn"),
-                //Sturgeon
-                ("105D") => ("Catch 20 or more fishes to spawn"),
-                //Napoleonfish
-                ("08D4") => ("Catch 50 or more fishes to spawn"),
-                //Blowfish
-                ("08D6") => ("Catch 20 or more fishes to spawn"),
-                //Barred Knifejaw
-                ("08D9") => ("Catch 20 or more fishes to spawn"),
-                //Moray Eel
-                ("08DF") => ("Catch 20 or more fishes to spawn"),
-                //Tuna
-                ("08E2") => ("Catch 50 or more fishes to spawn"),
-                //Blue Marlin
-                ("08E3") => ("Catch 50 or more fishes to spawn"),
-                //Giant Trevally
-                ("08E4") => ("Catch 20 or more fishes to spawn"),
-                //Mahi-mahi
-                ("106A") => ("Catch 50 or more fishes to spawn"),
-                //Ocean Sunfish
-                ("08E6") => ("Catch 20 or more fishes to spawn"),
-                //Ray
-                ("08E5") => ("Catch 20 or more fishes to spawn"),
-                //Saw Shark
-                ("08E9") => ("Catch 50 or more fishes to spawn"),
-                //Hammerhead Shark
-                ("08E7") => ("Catch 20 or more fishes to spawn"),
-                //Great White Shark
-                ("08E8") => ("Catch 50 or more fishes to spawn"),
-                //Whale Shark
-                ("08EA") => ("Catch 50 or more fishes to spawn"),
-                //Suckerfish
-                ("106B") => ("Catch 20 or more fishes to spawn"),
-                //Football Fish
-                ("08E1") => ("Catch 20 or more fishes to spawn"),
-                //Oarfish
-                ("08EB") => ("Catch 50 or more fishes to spawn"),
-                //Barreleye
-                ("106C") => ("Catch 100 or more fishes to spawn"),
-                //Coelacanth
-                ("08EC") => ("Catch 100 or more fishes to spawn\nRainy days only"),
+                //雪花
+                ("0DD3") => ("在对应季节/时间出现"),
+                //樱花花瓣
+                ("16E3") => ("在对应季节/时间出现"),
+                //枫叶
+                ("1CCE") => ("在对应季节/时间出现"),
+                //锦鲤
+                ("08AC") => ("钓到 20 条或以上鱼类后出现"),
+                //兰寿金鱼
+                ("1486") => ("钓到 20 条或以上鱼类后出现"),
+                //鳖
+                ("08B0") => ("钓到 20 条或以上鱼类后出现"),
+                //雷鱼
+                ("08B7") => ("钓到 50 条或以上鱼类后出现"),
+                //狗鱼
+                ("08BB") => ("钓到 20 条或以上鱼类后出现"),
+                //远东红点鲑
+                ("08BF") => ("钓到 20 条或以上鱼类后出现"),
+                //金鳟
+                ("1061") => ("钓到 100 条或以上鱼类后出现"),
+                //细鳞鲑
+                ("08C1") => ("钓到 100 条或以上鱼类后出现"),
+                //樱鲑
+                ("08C3") => ("钓到 20 条或以上鱼类后出现"),
+                //大闸蟹
+                ("08C4") => ("钓到 20 条或以上鱼类后出现"),
+                //亲亲鱼
+                ("08C6") => ("钓到 20 条或以上鱼类后出现"),
+                //神仙鱼
+                ("08C7") => ("钓到 20 条或以上鱼类后出现"),
+                //斗鱼
+                ("105F") => ("钓到 20 条或以上鱼类后出现"),
+                //食人鱼
+                ("08C9") => ("钓到 20 条或以上鱼类后出现"),
+                //龙鱼
+                ("08CA") => ("钓到 50 条或以上鱼类后出现"),
+                //黄金河虎
+                ("08CB") => ("钓到 100 条或以上鱼类后出现"),
+                //雀鳝
+                ("08CC") => ("钓到 50 条或以上鱼类后出现"),
+                //巨骨舌鱼
+                ("08CD") => ("钓到 50 条或以上鱼类后出现"),
+                //恐龙鱼
+                ("08CE") => ("钓到 20 条或以上鱼类后出现"),
+                //鲟鱼
+                ("105D") => ("钓到 20 条或以上鱼类后出现"),
+                //苏眉鱼
+                ("08D4") => ("钓到 50 条或以上鱼类后出现"),
+                //河豚
+                ("08D6") => ("钓到 20 条或以上鱼类后出现"),
+                //石鲷
+                ("08D9") => ("钓到 20 条或以上鱼类后出现"),
+                //海鳗
+                ("08DF") => ("钓到 20 条或以上鱼类后出现"),
+                //金枪鱼
+                ("08E2") => ("钓到 50 条或以上鱼类后出现"),
+                //蓝色枪鱼
+                ("08E3") => ("钓到 50 条或以上鱼类后出现"),
+                //浪人鲹
+                ("08E4") => ("钓到 20 条或以上鱼类后出现"),
+                //鲯鳅
+                ("106A") => ("钓到 50 条或以上鱼类后出现"),
+                //翻车鱼
+                ("08E6") => ("钓到 20 条或以上鱼类后出现"),
+                //魔鬼鱼
+                ("08E5") => ("钓到 20 条或以上鱼类后出现"),
+                //锯鲨
+                ("08E9") => ("钓到 50 条或以上鱼类后出现"),
+                //双髻鲨
+                ("08E7") => ("钓到 20 条或以上鱼类后出现"),
+                //大白鲨
+                ("08E8") => ("钓到 50 条或以上鱼类后出现"),
+                //鲸鲨
+                ("08EA") => ("钓到 50 条或以上鱼类后出现"),
+                //䲟鱼
+                ("106B") => ("钓到 20 条或以上鱼类后出现"),
+                //灯笼鱼
+                ("08E1") => ("钓到 20 条或以上鱼类后出现"),
+                //皇带鱼
+                ("08EB") => ("钓到 50 条或以上鱼类后出现"),
+                //管眼鱼
+                ("106C") => ("钓到 100 条或以上鱼类后出现"),
+                //腔棘鱼
+                ("08EC") => ("钓到 100 条或以上鱼类后出现\n仅雨天出现"),
                 _ => "",
             };
         }
@@ -6399,9 +6399,9 @@ namespace ACNHPokerCore
             lock (villagerLock)
             {
                 if (usb == null)
-                    ShowVillagerWait(25000, "Acquiring villager data...");
+                    ShowVillagerWait(25000, "获取村民信息...");
                 else
-                    ShowVillagerWait(15000, "Acquiring villager data...");
+                    ShowVillagerWait(15000, "获取村民信息...");
 
                 if ((socket == null || socket.Connected == false) && usb == null && !Utilities.isEmulator)
                 {
@@ -7883,7 +7883,7 @@ namespace ACNHPokerCore
             {
                 AmountOrCountLabel.Text = @"数量";
                 HexModeButton.Tag = "Normal";
-                HexModeButton.Text = @"十六进制模式";
+                HexModeButton.Text = @"十六进制";
                 if (AmountOrCountTextbox.Text != "")
                 {
                     string hexValue = AmountOrCountTextbox.Text;

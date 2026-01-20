@@ -395,7 +395,7 @@ namespace ACNHPokerCore
             injectVillagerBox.Name = "injectVillagerBox";
             injectVillagerBox.Size = new System.Drawing.Size(154, 19);
             injectVillagerBox.TabIndex = 340;
-            injectVillagerBox.Text = "注射村民";
+            injectVillagerBox.Text = "注入村民";
             HoverToolTip.SetToolTip(injectVillagerBox, "Control whether the bot will process villager order from Twitch.\r\n*Require you to have Twitch properly set up and connected.\r\n\r\nYou can toggle this on and off without stopping the process.");
             injectVillagerBox.UseVisualStyleBackColor = false;
             injectVillagerBox.CheckedChanged += InjectVillagerBox_CheckedChanged;
@@ -424,7 +424,7 @@ namespace ACNHPokerCore
             maxBellsBox.Name = "maxBellsBox";
             maxBellsBox.Size = new System.Drawing.Size(138, 19);
             maxBellsBox.TabIndex = 356;
-            maxBellsBox.Text = "马克斯铃钱";
+            maxBellsBox.Text = "铃钱最大";
             HoverToolTip.SetToolTip(maxBellsBox, "Enable or Disable auto max bells.\r\nYou can toggle this on and off without stopping the process.");
             maxBellsBox.UseVisualStyleBackColor = false;
             maxBellsBox.CheckedChanged += MaxBellsBox_CheckedChanged;
@@ -2036,7 +2036,7 @@ namespace ACNHPokerCore
             Anchor1PreviousBtn.Name = "Anchor1PreviousBtn";
             Anchor1PreviousBtn.Size = new System.Drawing.Size(80, 25);
             Anchor1PreviousBtn.TabIndex = 245;
-            Anchor1PreviousBtn.Text = "Previous";
+            Anchor1PreviousBtn.Text = "上一个";
             Anchor1PreviousBtn.UseVisualStyleBackColor = false;
             Anchor1PreviousBtn.Click += Anchor1PreviousBtn_Click;
             // 
@@ -2677,7 +2677,7 @@ namespace ACNHPokerCore
             Name = "Dodo";
             Opacity = 0.95D;
             ShowInTaskbar = false;
-            Text = "Dutch Sailors            -> Click here to allow keyboard control <-";
+            Text = "荷兰水手            -> 点此启用键盘操作 <-";
             FormClosed += Dodo_FormClosed;
             KeyDown += Dodo_KeyDown;
             KeyUp += Dodo_KeyUp;
