@@ -439,7 +439,7 @@ namespace ACNHPokerCore
             }
             catch (Exception ex)
             {
-                MyMessageBox.Show("发生了一个错误：" + ex.Message);
+                MyMessageBox.Show("发生了一个错误:" + ex.Message);
             }
         }
 
@@ -3711,7 +3711,7 @@ namespace ACNHPokerCore
             {
                 MyLog.LogEvent("Map", "RefreshMap: " + ex.Message);
                 NextSaveTimer.Stop();
-                MyMessageBox.Show(ex.Message, "致那些勇敢走到这一步的人：你们是被选中的人。");
+                MyMessageBox.Show(ex.Message, "致那些勇敢走到这一步的人:你们是被选中的人。");
             }
 
             HideMapWait();
@@ -4250,11 +4250,11 @@ namespace ACNHPokerCore
 
                     if (emptyspace < item.Length)
                     {
-                        DialogResult dialogResult = MyMessageBox.Show("锚点周围的空方块：" + emptyspace + "\n" +
-                                                                    "生成物品数量：" + item.Length + "\n" +
+                        DialogResult dialogResult = MyMessageBox.Show("锚点周围的空方块:" + emptyspace + "\n" +
+                                                                    "生成物品数量:" + item.Length + "\n" +
                                                                     "\n" +
-                                                                    "按 [Yes] 以清理地面并生成物品" + "（此处因未提供需翻译的英文文本，无法生成翻译结果）" +
-                                                                    "或者  [No] 以取消生成。" + "将以下文本翻译成中文（保留所有转义字符如 \n \r \t 的字符串形式）：\n" + "" +
+                                                                    "按 [Yes] 以清理地面并生成物品" + "\n" +
+                                                                    "或者  [No] 以取消生成。" + "\n" + "\n" +
                                                                     "[警告] 你将丢失地上的物品！"
                                                                     , "空格子不够！", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                         if (dialogResult == DialogResult.Yes)
@@ -4355,7 +4355,7 @@ namespace ACNHPokerCore
             {
                 MyLog.LogEvent("Map", "LoadFloor: " + ex.Message);
                 NextSaveTimer.Stop();
-                MyMessageBox.Show(ex.Message, "我要说的是：永远不会放弃你，永远不会让你失望。");
+                MyMessageBox.Show(ex.Message, "我要说的是:永远不会放弃你，永远不会让你失望。");
             }
 
             HideMapWait();
@@ -5115,7 +5115,7 @@ namespace ACNHPokerCore
                 catch (Exception ex)
                 {
                     // Handle or log the exception
-                    MyMessageBox.Show("UI更新错误：" + ex.Message);
+                    MyMessageBox.Show("用户界面更新错误:" + ex.Message);
                 }
             }));
         }
@@ -5409,7 +5409,7 @@ namespace ACNHPokerCore
 
         private void FencesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MyMessageBox.Show("你确定要移除你岛上的所有围栏（仅第1层）吗？", "我对我的伙伴诺亚说：“你应该把你的姓氏改成栅栏……”", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult dialogResult = MyMessageBox.Show("你确定要移除你岛上的所有围栏（仅第1层）吗？", "我对我的伙伴诺亚说:“你应该把你的姓氏改成栅栏……”", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialogResult == DialogResult.No)
                 return;
 
@@ -5838,7 +5838,7 @@ namespace ACNHPokerCore
             {
                 MyLog.LogEvent("Map", "NextAutoSave: " + ex.Message);
                 NextSaveTimer.Stop();
-                MyMessageBox.Show(ex.Message + "与Switch的连接已断开。\\n\\nSwitch是否进入了睡眠模式？", "乌干达指节：“哦不！”", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MyMessageBox.Show(ex.Message + "与Switch的连接已断开。\\n\\nSwitch是否进入了睡眠模式？", "乌干达指节:“哦不！”", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return 69;
             }
         }
@@ -5854,7 +5854,7 @@ namespace ACNHPokerCore
                     NextSaveTimer.Stop();
                     DialogResult result = MyMessageBox.Show("似乎自动保存已经被暂停。\n" +
                                                     "你可能在岛上有访客，或者你的物品栏保持打开状态。\n" +
-                                                    "或者你在标题界面等待按“Press A”。\n" +
+                                                    "或者你在标题界面等待按“按A键”。\n" +
                                                     "或者你还在听伊莎贝拉那没用的公告……\n\n" +
                                                     "不管怎样，你希望地图投放器现在忽略自动保存保护吗？\n\n" +
                                                     "请注意，在自动保存期间生成物品可能会导致游戏崩溃。"
@@ -6162,7 +6162,7 @@ namespace ACNHPokerCore
             {
                 MyLog.LogEvent("Map", "ReplaceItem: " + ex.Message);
                 NextSaveTimer.Stop();
-                MyMessageBox.Show(ex.Message, "我要说的是：永远不会到处乱跑然后抛弃你。");
+                MyMessageBox.Show(ex.Message, "我要说的是:永远不会到处乱跑然后抛弃你。");
             }
 
             HideMapWait();

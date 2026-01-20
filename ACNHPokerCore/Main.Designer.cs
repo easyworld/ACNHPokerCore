@@ -3871,7 +3871,7 @@ namespace ACNHPokerCore
             AirportColorLabel.Name = "AirportColorLabel";
             AirportColorLabel.Size = new System.Drawing.Size(142, 22);
             AirportColorLabel.TabIndex = 97;
-            AirportColorLabel.Text = "机场颜色：";
+            AirportColorLabel.Text = "机场颜色:";
             // 
             // DateAndTimeControlPanel
             // 
@@ -4022,7 +4022,7 @@ namespace ACNHPokerCore
             FreezeTimeLabel.Name = "FreezeTimeLabel";
             FreezeTimeLabel.Size = new System.Drawing.Size(181, 22);
             FreezeTimeLabel.TabIndex = 94;
-            FreezeTimeLabel.Text = "冻结 / 设置时间：";
+            FreezeTimeLabel.Text = "冻结 / 设置时间:";
             // 
             // FreezeTimeButton
             // 
@@ -4049,7 +4049,7 @@ namespace ACNHPokerCore
             WeatherSeedLabel.Name = "WeatherSeedLabel";
             WeatherSeedLabel.Size = new System.Drawing.Size(150, 22);
             WeatherSeedLabel.TabIndex = 94;
-            WeatherSeedLabel.Text = "天气种子：";
+            WeatherSeedLabel.Text = "天气种子:";
             // 
             // CheatPanel
             // 
@@ -4102,7 +4102,7 @@ namespace ACNHPokerCore
             SwimClubModeLabel.Name = "SwimClubModeLabel";
             SwimClubModeLabel.Size = new System.Drawing.Size(177, 22);
             SwimClubModeLabel.TabIndex = 94;
-            SwimClubModeLabel.Text = "游泳俱乐部模式：";
+            SwimClubModeLabel.Text = "游泳俱乐部模式:";
             // 
             // DisableCollisionToggle
             // 
@@ -4326,7 +4326,7 @@ namespace ACNHPokerCore
             AnimationSpeedLabel.Name = "AnimationSpeedLabel";
             AnimationSpeedLabel.Size = new System.Drawing.Size(179, 22);
             AnimationSpeedLabel.TabIndex = 80;
-            AnimationSpeedLabel.Text = "动画速度：";
+            AnimationSpeedLabel.Text = "动画速度:";
             // 
             // DisableCollisionLabel
             // 
@@ -4337,7 +4337,7 @@ namespace ACNHPokerCore
             DisableCollisionLabel.Name = "DisableCollisionLabel";
             DisableCollisionLabel.Size = new System.Drawing.Size(177, 22);
             DisableCollisionLabel.TabIndex = 79;
-            DisableCollisionLabel.Text = "禁用碰撞：";
+            DisableCollisionLabel.Text = "禁用碰撞:";
             // 
             // MaxWalkSpeedLabel
             // 
@@ -4348,7 +4348,7 @@ namespace ACNHPokerCore
             MaxWalkSpeedLabel.Name = "MaxWalkSpeedLabel";
             MaxWalkSpeedLabel.Size = new System.Drawing.Size(224, 22);
             MaxWalkSpeedLabel.TabIndex = 78;
-            MaxWalkSpeedLabel.Text = "最大行走速度：";
+            MaxWalkSpeedLabel.Text = "最大行走速度:";
             // 
             // StaminaLabel
             // 
@@ -4359,7 +4359,7 @@ namespace ACNHPokerCore
             StaminaLabel.Name = "StaminaLabel";
             StaminaLabel.Size = new System.Drawing.Size(97, 22);
             StaminaLabel.TabIndex = 77;
-            StaminaLabel.Text = "耐力：";
+            StaminaLabel.Text = "耐力:";
             // 
             // ReactionPanel
             // 
@@ -4531,7 +4531,7 @@ namespace ACNHPokerCore
             ReactionWheelLabel.Name = "ReactionWheelLabel";
             ReactionWheelLabel.Size = new System.Drawing.Size(164, 22);
             ReactionWheelLabel.TabIndex = 67;
-            ReactionWheelLabel.Text = "反应轮：";
+            ReactionWheelLabel.Text = "反应轮:";
             // 
             // TurnipPanel
             // 
@@ -4753,7 +4753,7 @@ namespace ACNHPokerCore
             TurnipBuyPriceLabel.Name = "TurnipBuyPriceLabel";
             TurnipBuyPriceLabel.Size = new System.Drawing.Size(178, 22);
             TurnipBuyPriceLabel.TabIndex = 29;
-            TurnipBuyPriceLabel.Text = "大头菜买入价格：";
+            TurnipBuyPriceLabel.Text = "大头菜买入价格:";
             // 
             // saturdayPMStar
             // 
@@ -5230,7 +5230,7 @@ namespace ACNHPokerCore
             VillagerMysIslandLabel.Name = "VillagerMysIslandLabel";
             VillagerMysIslandLabel.Size = new System.Drawing.Size(218, 22);
             VillagerMysIslandLabel.TabIndex = 125;
-            VillagerMysIslandLabel.Text = "神秘岛游览：";
+            VillagerMysIslandLabel.Text = "神秘岛游览:";
             // 
             // VillagerCatchphraseLabel
             // 
@@ -5241,7 +5241,7 @@ namespace ACNHPokerCore
             VillagerCatchphraseLabel.Name = "VillagerCatchphraseLabel";
             VillagerCatchphraseLabel.Size = new System.Drawing.Size(141, 22);
             VillagerCatchphraseLabel.TabIndex = 107;
-            VillagerCatchphraseLabel.Text = "口头禅：";
+            VillagerCatchphraseLabel.Text = "口头禅:";
             // 
             // VillagerHeaderIgnore
             // 
@@ -5268,7 +5268,7 @@ namespace ACNHPokerCore
             VillagerHouseIndexLabel.Name = "VillagerHouseIndexLabel";
             VillagerHouseIndexLabel.Size = new System.Drawing.Size(137, 22);
             VillagerHouseIndexLabel.TabIndex = 101;
-            VillagerHouseIndexLabel.Text = "房屋索引：";
+            VillagerHouseIndexLabel.Text = "房屋索引:";
             // 
             // VillagerFriendshipLabel
             // 
@@ -5279,7 +5279,7 @@ namespace ACNHPokerCore
             VillagerFriendshipLabel.Name = "VillagerFriendshipLabel";
             VillagerFriendshipLabel.Size = new System.Drawing.Size(122, 22);
             VillagerFriendshipLabel.TabIndex = 100;
-            VillagerFriendshipLabel.Text = "友谊：";
+            VillagerFriendshipLabel.Text = "友谊:";
             // 
             // VillagerIndexLabel
             // 
@@ -5290,7 +5290,7 @@ namespace ACNHPokerCore
             VillagerIndexLabel.Name = "VillagerIndexLabel";
             VillagerIndexLabel.Size = new System.Drawing.Size(148, 22);
             VillagerIndexLabel.TabIndex = 99;
-            VillagerIndexLabel.Text = "村民索引：";
+            VillagerIndexLabel.Text = "村民索引:";
             // 
             // VillagerPersonalityLabel
             // 
@@ -5301,7 +5301,7 @@ namespace ACNHPokerCore
             VillagerPersonalityLabel.Name = "VillagerPersonalityLabel";
             VillagerPersonalityLabel.Size = new System.Drawing.Size(127, 22);
             VillagerPersonalityLabel.TabIndex = 98;
-            VillagerPersonalityLabel.Text = "性格：";
+            VillagerPersonalityLabel.Text = "性格:";
             // 
             // VillagerINameLabel
             // 
@@ -5312,7 +5312,7 @@ namespace ACNHPokerCore
             VillagerINameLabel.Name = "VillagerINameLabel";
             VillagerINameLabel.Size = new System.Drawing.Size(149, 22);
             VillagerINameLabel.TabIndex = 97;
-            VillagerINameLabel.Text = "内部名称：";
+            VillagerINameLabel.Text = "内部名称:";
             // 
             // VillagerNameLabel
             // 
@@ -5323,7 +5323,7 @@ namespace ACNHPokerCore
             VillagerNameLabel.Name = "VillagerNameLabel";
             VillagerNameLabel.Size = new System.Drawing.Size(74, 22);
             VillagerNameLabel.TabIndex = 78;
-            VillagerNameLabel.Text = "名字：";
+            VillagerNameLabel.Text = "名字:";
             // 
             // VillagerControlPanel
             // 

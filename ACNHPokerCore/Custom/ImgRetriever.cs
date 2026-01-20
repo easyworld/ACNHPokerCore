@@ -133,7 +133,7 @@ namespace ACNHPokerCore
             }
             catch (ZipException e)
             {
-                MessageBox.Show("下载的存档似乎已损坏：" + e.Message);
+                MessageBox.Show("下载的存档似乎已损坏:" + e.Message);
             }
 
             progressTimer.Stop();

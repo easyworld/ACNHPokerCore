@@ -610,7 +610,7 @@ namespace ACNHPokerCore
             this.mainOnly.Size = new System.Drawing.Size(166, 20);
             this.mainOnly.TabIndex = 227;
             this.mainOnly.TabStop = true;
-            this.mainOnly.Text = "仅主要变体：";
+            this.mainOnly.Text = "仅主要变体:";
             this.mainOnly.UseVisualStyleBackColor = true;
             this.mainOnly.CheckedChanged += new System.EventHandler(this.MainOnly_CheckedChanged);
             // 
@@ -623,7 +623,7 @@ namespace ACNHPokerCore
             this.subOnly.Name = "subOnly";
             this.subOnly.Size = new System.Drawing.Size(159, 20);
             this.subOnly.TabIndex = 228;
-            this.subOnly.Text = "仅子变体：";
+            this.subOnly.Text = "仅子变体:";
             this.subOnly.UseVisualStyleBackColor = true;
             this.subOnly.CheckedChanged += new System.EventHandler(this.SubOnly_CheckedChanged);
             // 
@@ -636,7 +636,7 @@ namespace ACNHPokerCore
             this.all.Name = "all";
             this.all.Size = new System.Drawing.Size(116, 20);
             this.all.TabIndex = 229;
-            this.all.Text = "所有变体：";
+            this.all.Text = "所有变体:";
             this.all.UseVisualStyleBackColor = true;
             this.all.CheckedChanged += new System.EventHandler(this.All_CheckedChanged);
             // 
@@ -713,7 +713,7 @@ namespace ACNHPokerCore
             this.VerticalSizeLabel.Name = "VerticalSizeLabel";
             this.VerticalSizeLabel.Size = new System.Drawing.Size(128, 16);
             this.VerticalSizeLabel.TabIndex = 236;
-            this.VerticalSizeLabel.Text = "生成区域大小：";
+            this.VerticalSizeLabel.Text = "生成区域大小:";
             // 
             // size
             // 
@@ -810,7 +810,7 @@ namespace ACNHPokerCore
             this.mainHOnly.Size = new System.Drawing.Size(166, 20);
             this.mainHOnly.TabIndex = 227;
             this.mainHOnly.TabStop = true;
-            this.mainHOnly.Text = "仅主要变体：";
+            this.mainHOnly.Text = "仅主要变体:";
             this.mainHOnly.UseVisualStyleBackColor = true;
             this.mainHOnly.CheckedChanged += new System.EventHandler(this.MainHOnly_CheckedChanged);
             // 
@@ -958,7 +958,7 @@ namespace ACNHPokerCore
             this.HorizontalSizeLabel.Name = "HorizontalSizeLabel";
             this.HorizontalSizeLabel.Size = new System.Drawing.Size(128, 16);
             this.HorizontalSizeLabel.TabIndex = 236;
-            this.HorizontalSizeLabel.Text = "出生区域大小：";
+            this.HorizontalSizeLabel.Text = "出生区域大小:";
             // 
             // subHPanel
             // 
@@ -1341,7 +1341,7 @@ namespace ACNHPokerCore
             this.subHOnly.Name = "subHOnly";
             this.subHOnly.Size = new System.Drawing.Size(159, 20);
             this.subHOnly.TabIndex = 228;
-            this.subHOnly.Text = "仅子变体：";
+            this.subHOnly.Text = "仅子变体:";
             this.subHOnly.UseVisualStyleBackColor = true;
             this.subHOnly.CheckedChanged += new System.EventHandler(this.SubHOnly_CheckedChanged);
             // 
@@ -1354,7 +1354,7 @@ namespace ACNHPokerCore
             this.allH.Name = "allH";
             this.allH.Size = new System.Drawing.Size(116, 20);
             this.allH.TabIndex = 229;
-            this.allH.Text = "所有变体：";
+            this.allH.Text = "所有变体:";
             this.allH.UseVisualStyleBackColor = true;
             this.allH.CheckedChanged += new System.EventHandler(this.AllH_CheckedChanged);
             // 
@@ -1391,7 +1391,7 @@ namespace ACNHPokerCore
             this.ObeySizeLabel.Name = "ObeySizeLabel";
             this.ObeySizeLabel.Size = new System.Drawing.Size(117, 16);
             this.ObeySizeLabel.TabIndex = 240;
-            this.ObeySizeLabel.Text = "遵循物品尺寸：";
+            this.ObeySizeLabel.Text = "遵循物品尺寸:";
             // 
             // ObeySizeToggle
             // 
@@ -1419,7 +1419,7 @@ namespace ACNHPokerCore
             this.ExtraColumnLabel.Name = "ExtraColumnLabel";
             this.ExtraColumnLabel.Size = new System.Drawing.Size(112, 16);
             this.ExtraColumnLabel.TabIndex = 242;
-            this.ExtraColumnLabel.Text = "额外列：";
+            this.ExtraColumnLabel.Text = "额外列:";
             // 
             // ExtraRowLabel
             // 
@@ -1431,7 +1431,7 @@ namespace ACNHPokerCore
             this.ExtraRowLabel.Name = "ExtraRowLabel";
             this.ExtraRowLabel.Size = new System.Drawing.Size(89, 16);
             this.ExtraRowLabel.TabIndex = 243;
-            this.ExtraRowLabel.Text = "额外行：";
+            this.ExtraRowLabel.Text = "额外行:";
             // 
             // ExtraColumnBox
             // 

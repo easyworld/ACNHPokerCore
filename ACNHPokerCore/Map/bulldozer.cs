@@ -2090,7 +2090,7 @@ namespace ACNHPokerCore
 
                 if (data.Length != Utilities.AllTerrainSize)
                 {
-                    MyMessageBox.Show("文件大小不正确！" + "(0x" + data.Length.ToString("X") + "\")\n\"" +
+                    MyMessageBox.Show("文件大小不正确！" + " (0x" + data.Length.ToString("X") + ")\n" +
                                         "正确的文件大小应为(0x" + Utilities.AllTerrainSize.ToString("X") + ")", "谁给了你那个文件？", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }

@@ -184,7 +184,7 @@ namespace ACNHPokerCore
             this.numOfItemLabel.Name = "numOfItemLabel";
             this.numOfItemLabel.Size = new System.Drawing.Size(106, 16);
             this.numOfItemLabel.TabIndex = 228;
-            this.numOfItemLabel.Text = "物品数量：";
+            this.numOfItemLabel.Text = "物品数量:";
             this.numOfItemLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // VertHeightImageBox
@@ -206,7 +206,7 @@ namespace ACNHPokerCore
             this.VertHeightLabel.Name = "VertHeightLabel";
             this.VertHeightLabel.Size = new System.Drawing.Size(61, 16);
             this.VertHeightLabel.TabIndex = 230;
-            this.VertHeightLabel.Text = "高度：";
+            this.VertHeightLabel.Text = "高度:";
             this.VertHeightLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // VertDirectionImageBox
@@ -228,7 +228,7 @@ namespace ACNHPokerCore
             this.VertDirectionLabel.Name = "VertDirectionLabel";
             this.VertDirectionLabel.Size = new System.Drawing.Size(79, 16);
             this.VertDirectionLabel.TabIndex = 232;
-            this.VertDirectionLabel.Text = "方向：";
+            this.VertDirectionLabel.Text = "方向:";
             this.VertDirectionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // XLabel
@@ -240,7 +240,7 @@ namespace ACNHPokerCore
             this.XLabel.Name = "XLabel";
             this.XLabel.Size = new System.Drawing.Size(24, 16);
             this.XLabel.TabIndex = 233;
-            this.XLabel.Text = "X :";
+            this.XLabel.Text = "X:";
             this.XLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // YLabel
@@ -252,7 +252,7 @@ namespace ACNHPokerCore
             this.YLabel.Name = "YLabel";
             this.YLabel.Size = new System.Drawing.Size(25, 16);
             this.YLabel.TabIndex = 234;
-            this.YLabel.Text = "Y：";
+            this.YLabel.Text = "Y:";
             this.YLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // VertSettingPanel
@@ -322,7 +322,7 @@ namespace ACNHPokerCore
             this.VertWidthLabel.Name = "VertWidthLabel";
             this.VertWidthLabel.Size = new System.Drawing.Size(55, 16);
             this.VertWidthLabel.TabIndex = 234;
-            this.VertWidthLabel.Text = "宽度：";
+            this.VertWidthLabel.Text = "宽度:";
             this.VertWidthLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.VertWidthLabel.Visible = false;
             // 
@@ -335,7 +335,7 @@ namespace ACNHPokerCore
             this.IgnoreSpaceLabel.Name = "IgnoreSpaceLabel";
             this.IgnoreSpaceLabel.Size = new System.Drawing.Size(108, 16);
             this.IgnoreSpaceLabel.TabIndex = 237;
-            this.IgnoreSpaceLabel.Text = "忽略空格：";
+            this.IgnoreSpaceLabel.Text = "忽略空格:";
             this.IgnoreSpaceLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // IgnoreSpaceToggle
@@ -559,7 +559,7 @@ namespace ACNHPokerCore
             this.HoriHeightLabel.Name = "HoriHeightLabel";
             this.HoriHeightLabel.Size = new System.Drawing.Size(61, 16);
             this.HoriHeightLabel.TabIndex = 234;
-            this.HoriHeightLabel.Text = "高度：";
+            this.HoriHeightLabel.Text = "高度:";
             this.HoriHeightLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.HoriHeightLabel.Visible = false;
             // 
@@ -582,7 +582,7 @@ namespace ACNHPokerCore
             this.HoriWidthLabel.Name = "HoriWidthLabel";
             this.HoriWidthLabel.Size = new System.Drawing.Size(55, 16);
             this.HoriWidthLabel.TabIndex = 230;
-            this.HoriWidthLabel.Text = "宽度：";
+            this.HoriWidthLabel.Text = "宽度:";
             this.HoriWidthLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // VertThenHoriz
@@ -650,7 +650,7 @@ namespace ACNHPokerCore
             this.FlagLabel.Name = "FlagLabel";
             this.FlagLabel.Size = new System.Drawing.Size(45, 16);
             this.FlagLabel.TabIndex = 246;
-            this.FlagLabel.Text = "旗帜：";
+            this.FlagLabel.Text = "旗帜:";
             this.FlagLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // OtherSettingPanel

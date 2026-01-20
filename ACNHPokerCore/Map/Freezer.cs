@@ -332,12 +332,12 @@ namespace ACNHPokerCore
 
             if (data.Length == Utilities.OldMapSize || data.Length == Utilities.OldMapSize * 2)
             {
-                DialogResult dialogResult = MyMessageBox.Show("As of game version v3.0.0, " + "\n" +
-                                                            "The size of the map layer has changed!" + "\n" +
+                DialogResult dialogResult = MyMessageBox.Show("截至游戏版本v3.0.0，" + "\n" +
+                                                            "地图图层的大小已改变！" + "\n" +
                                                             "\n" +
-                                                            "Press  [Yes]  to convert it to the new format (.nhf3)." + "\n" +
-                                                            "or  [No]  to cancel." + "\n" + "\n"
-                                                            , "Looks like you are using an old map layer!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                                                            "按 [Yes] 键将其转换为新格式 (.nhf3)。" + "\n" +
+                                                            "或者 [No] 以取消。" + "\n" + "\n"
+                                                            , "看起来你正在使用一个旧的地图图层！", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (dialogResult == DialogResult.Yes)
                 {
                     UpdateMapLayer(data);

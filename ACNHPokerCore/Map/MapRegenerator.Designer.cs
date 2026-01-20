@@ -182,7 +182,7 @@ namespace ACNHPokerCore
             this.saveMapBtn.Size = new System.Drawing.Size(208, 25);
             this.saveMapBtn.TabIndex = 216;
             this.saveMapBtn.Text = "创建地图模板";
-            this.formToolTip.SetToolTip(this.saveMapBtn, "Create a Map template and save it to a .nhf file. (Layer 1 only)");
+            this.formToolTip.SetToolTip(this.saveMapBtn, "创建一个地图模板并将其保存为.nhf文件。（仅图层1）");
             this.saveMapBtn.UseVisualStyleBackColor = false;
             this.saveMapBtn.Click += new System.EventHandler(this.SaveMapBtn_Click);
             // 
@@ -194,7 +194,7 @@ namespace ACNHPokerCore
             // trayIcon
             // 
             this.trayIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("trayIcon.Icon")));
-            this.trayIcon.Text = "ACNHPoker：地图再生器";
+            this.trayIcon.Text = "ACNHPoker:地图再生器";
             this.trayIcon.Visible = true;
             this.trayIcon.DoubleClick += new System.EventHandler(this.TrayIcon_DoubleClick);
             // 
@@ -230,7 +230,7 @@ namespace ACNHPokerCore
             this.hideBtn.Size = new System.Drawing.Size(65, 25);
             this.hideBtn.TabIndex = 220;
             this.hideBtn.Text = "隐藏";
-            this.formToolTip.SetToolTip(this.hideBtn, "Hide this window to tray.");
+            this.formToolTip.SetToolTip(this.hideBtn, "将此窗口隐藏到托盘。");
             this.hideBtn.UseVisualStyleBackColor = false;
             this.hideBtn.Click += new System.EventHandler(this.HideBtn_Click);
             // 
@@ -331,7 +331,7 @@ namespace ACNHPokerCore
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(113, 16);
             this.label1.TabIndex = 225;
-            this.label1.Text = "刷新延迟：";
+            this.label1.Text = "刷新延迟:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
@@ -343,7 +343,7 @@ namespace ACNHPokerCore
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(93, 16);
             this.label2.TabIndex = 227;
-            this.label2.Text = "最后访客：";
+            this.label2.Text = "最后访客:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // visitorNameBox
@@ -384,7 +384,7 @@ namespace ACNHPokerCore
             this.logBtn.Size = new System.Drawing.Size(66, 25);
             this.logBtn.TabIndex = 229;
             this.logBtn.Text = "日志";
-            this.formToolTip.SetToolTip(this.logBtn, "Show/Hide the visitor log.");
+            this.formToolTip.SetToolTip(this.logBtn, "显示/隐藏访客记录。");
             this.logBtn.UseVisualStyleBackColor = false;
             this.logBtn.Click += new System.EventHandler(this.LogBtn_Click);
             // 
@@ -401,7 +401,7 @@ namespace ACNHPokerCore
             this.newLogBtn.Size = new System.Drawing.Size(68, 25);
             this.newLogBtn.TabIndex = 231;
             this.newLogBtn.Text = "新的";
-            this.formToolTip.SetToolTip(this.newLogBtn, "Create a new visitor log file.");
+            this.formToolTip.SetToolTip(this.newLogBtn, "创建一个新的访客日志文件。");
             this.newLogBtn.UseVisualStyleBackColor = false;
             this.newLogBtn.Click += new System.EventHandler(this.NewLogBtn_Click);
             // 
@@ -418,7 +418,7 @@ namespace ACNHPokerCore
             this.selectLogBtn.Size = new System.Drawing.Size(68, 25);
             this.selectLogBtn.TabIndex = 232;
             this.selectLogBtn.Text = "选择...";
-            this.formToolTip.SetToolTip(this.selectLogBtn, "Select another visitor log file.");
+            this.formToolTip.SetToolTip(this.selectLogBtn, "选择另一个访客日志文件。");
             this.selectLogBtn.UseVisualStyleBackColor = false;
             this.selectLogBtn.Click += new System.EventHandler(this.SelectLogBtn_Click);
             // 
@@ -490,7 +490,7 @@ namespace ACNHPokerCore
             this.changeDodoBtn.TabIndex = 241;
             this.changeDodoBtn.Tag = "";
             this.changeDodoBtn.Text = "更改渡渡鸟航线";
-            this.formToolTip.SetToolTip(this.changeDodoBtn, "Change the path where the dodo code is stored.");
+            this.formToolTip.SetToolTip(this.changeDodoBtn, "更改存放渡渡鸟代码的路径。");
             this.changeDodoBtn.UseVisualStyleBackColor = false;
             this.changeDodoBtn.Click += new System.EventHandler(this.ChangeDodoBtn_Click);
             // 
@@ -582,7 +582,7 @@ namespace ACNHPokerCore
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(25, 16);
             this.label4.TabIndex = 238;
-            this.label4.Text = "Y：";
+            this.label4.Text = "Y:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
@@ -594,7 +594,7 @@ namespace ACNHPokerCore
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(24, 16);
             this.label3.TabIndex = 236;
-            this.label3.Text = "X：";
+            this.label3.Text = "X:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // yCoordinate

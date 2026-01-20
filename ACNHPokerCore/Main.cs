@@ -1229,28 +1229,30 @@ namespace ACNHPokerCore
                                                         "1) \n" +
                                                         "Check that your Switch is running in CFW mode.\n" +
                                                         "On your Switch, go to [ System Settings ] -> [ System ]\n" +
-                                                        "Under [ System Update ], check [ Current version: ] and make sure you have [ AMS ] in it.\n" +
+                                                        "检查你的 Switch 是否运行在 CFW 模式下。\n" +
+                                                        "在你的 Switch 上，进入【系统设置】->【主机】\n" +
+                                                        "在【系统更新】下，检查【当前版本:】并确保其中包含【AMS】。\n" +
                                                         " \n" +
                                                         "2) \n" +
-                                                        "Check that you are connecting to the correct IP address.\n" +
-                                                        "On your Switch, go to [ System Settings ] -> [ Internet ]\n" +
-                                                        "Check the [ IP Address ] under [ Connection Status ]\n" +
+                                                        "检查你连接的 IP 地址是否正确。\n" +
+                                                        "在你的 Switch 上，进入【系统设置】->【互联网】\n" +
+                                                        "在【连接状态】下检查【IP 地址】\n" +
                                                         " \n" +
                                                         "3) \n" +
-                                                        "Sys-botbase might have crashed.\n" +
-                                                        "Please try holding down the power button and restart your Switch.\n" +
+                                                        "Sys-botbase 可能已经崩溃。\n" +
+                                                        "请尝试长按电源键并重启你的 Switch。\n" +
                                                         " \n" +
                                                         "4) \n" +
-                                                        "Check that you have the latest version of Sys-botbase installed.\n" +
-                                                        "You can get the latest version at \n        https://github.com/olliz0r/sys-botbase/releases \n" +
-                                                        "Double-check your installation and make sure that the folder \n [ 430000000000000B ] can be located at [ SD: \\ atmosphere \\ contents \\ ] .\n" +
+                                                        "检查你是否安装了最新版本的 Sys-botbase。\n" +
+                                                        "你可以在以下地址获取最新版本:\n        https://github.com/olliz0r/sys-botbase/releases \n" +
+                                                        "仔细检查你的安装，确保文件夹\n【430000000000000B】位于【SD卡:\\atmosphere\\contents\\】。\n" +
                                                         " \n" +
                                                         "5) \n" +
-                                                        "When your Switch is booting up, \n" +
-                                                        "Check that the LED of the [🏠 Home button] on your Joy-Con is lighting up.\n" +
+                                                        "当你的 Switch 启动时，\n" +
+                                                        "检查你 Joy-Con 上【🏠 Home 按钮】的 LED 灯是否亮起。\n" +
                                                         " \n" +
                                                         "https://github.com/MyShiLingStar/ACNHPokerCore/wiki/Connection-Troubleshooting#where-are-you-my-socket-6000"
-                                                        , "Where are you, my socket 6000?", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                                        , "我的 socket 6000 在哪里？", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                                 }
 
                                 connecting = false;
@@ -1289,31 +1291,31 @@ namespace ACNHPokerCore
                                     if (MyMessageBox.Show("数据验证失败。详情？", "错误代码 : 71077345 - 数据验证错误!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                                     {
                                         MyMessageBox.Show("你已成功建立连接！\n" +
-                                                    "然而，数据验证失败了！\n" +
-                                                    "\n" +
-                                                    "1) \n" +
-                                                    "Check that you have booted the game up.\n" +
-                                                    "The best place to start the connection is at the title screen.\n" +
-                                                    " \n" +
-                                                    "2) \n" +
-                                                    "Check that you have the correct matching version.\n" +
-                                                    "You are using [ " + version + " ] right now.\n" +
-                                                    "You can find the latest version at : \n        https://github.com/MyShiLingStar/ACNHPokerCore \n" +
-                                                    "Please update the game if your game version is below [ " + gameVersion + " ].\n" +
-                                                    "You can find your game version at the top-right corner of the title screen.\n" +
-                                                    " \n" +
-                                                    "3) \n" +
-                                                    "Please try holding down the power button and restart your Switch.\n" +
-                                                    "Then press and HOLD the [ L button ] while you are selecting the game to boot up.\n" +
-                                                    "Keep holding the [ L button ] and release it once you can see the title screen.\n" +
-                                                    "Then retry the connection.\n" +
-                                                    " \n" +
-                                                    "4) \n" +
-                                                    "Some installed Mods or sys-modules might conflict with Sys-botbase.\n" +
-                                                    "Please try to remove or disable any unnecessary Mods.\n" +
-                                                    " \n" +
-                                                    "https://github.com/MyShiLingStar/ACNHPokerCore/wiki/Connection-Troubleshooting#sys-botbase-validation"
-                                                    , "Sys-botbase Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                                            "然而，数据验证失败了！\n" +
+                                                            "\n" +
+                                                            "1) \n" +
+                                                            "检查你是否已经启动了游戏。\n" +
+                                                            "开始连接的最佳位置是在标题画面。\n" +
+                                                            " \n" +
+                                                            "2) \n" +
+                                                            "检查你的版本是否匹配。\n" +
+                                                            "你当前使用的是【" + version + "】。\n" +
+                                                            "你可以在以下地址找到最新版本:\n        https://github.com/MyShiLingStar/ACNHPokerCore \n" +
+                                                            "如果你的游戏版本低于【" + gameVersion + "】，请更新游戏。\n" +
+                                                            "你可以在标题画面的右上角找到游戏版本。\n" +
+                                                            " \n" +
+                                                            "3) \n" +
+                                                            "请尝试长按电源键并重启你的 Switch。\n" +
+                                                            "然后在选择游戏启动时按住【L 键】。\n" +
+                                                            "持续按住【L 键】，直到看到标题画面后再松开。\n" +
+                                                            "然后重试连接。\n" +
+                                                            " \n" +
+                                                            "4) \n" +
+                                                            "某些已安装的 Mod 或 sys-module 可能与 Sys-botbase 冲突。\n" +
+                                                            "请尝试移除或禁用任何不必要的 Mod。\n" +
+                                                            " \n" +
+                                                            "https://github.com/MyShiLingStar/ACNHPokerCore/wiki/Connection-Troubleshooting#sys-botbase-validation"
+                                                            , "Sys-botbase 验证", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                                     }
 
                                     socket.Close();
@@ -1582,7 +1584,7 @@ namespace ACNHPokerCore
             }
             catch (Exception e)
             {
-                MyMessageBox.Show(e.Message, "Todo：这很蠢");
+                MyMessageBox.Show(e.Message, "Todo:这很蠢");
                 return false;
             }
         }
@@ -1708,7 +1710,7 @@ namespace ACNHPokerCore
                 MyLog.LogEvent("MainForm", "RefreshTimer: " + ex.Message);
                 Invoke((MethodInvoker)delegate { InventoryAutoRefreshToggle.Checked = false; });
                 InventoryRefreshTimer.Stop();
-                MyMessageBox.Show("与Switch断开连接...\\nSwitch是否进入睡眠状态？", "断开连接", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MyMessageBox.Show("与Switch断开连接...\nSwitch是否进入睡眠状态？", "断开连接", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -3104,11 +3106,11 @@ namespace ACNHPokerCore
 
                 if (emptyspace < item.Length)
                 {
-                    DialogResult dialogResult = MyMessageBox.Show("你的物品栏中的空格：" + emptyspace + "\n" +
-                                                                "生成物品数量：" + item.Length + "\n" +
+                    DialogResult dialogResult = MyMessageBox.Show("你的物品栏中的空格:" + emptyspace + "\n" +
+                                                                "生成物品数量:" + item.Length + "\n" +
                                                                 "\n" +
                                                                 "按[是]以清空你的物品栏并生成这些物品" + "\n" +
-                                                                "或者 [No] 取消生成。" + "\n" + "（用户未提供需要翻译的英文文本，无法进行翻译，返回空字符串）" +
+                                                                "或者 [No] 取消生成。" + "\n" + "\n" +
                                                                 "[警告] 你将失去背包中的物品！"
                                                                 , "库存空间不足！", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                     if (dialogResult == DialogResult.Yes)
@@ -3166,8 +3168,8 @@ namespace ACNHPokerCore
 
                 if (emptyspace < item.Length)
                 {
-                    DialogResult dialogResult = MyMessageBox.Show("你的物品栏中的空位置：" + emptyspace + "\n" +
-                                                                "生成物品数量：" + item.Length + "\n" +
+                    DialogResult dialogResult = MyMessageBox.Show("你的物品栏中的空位置:" + emptyspace + "\n" +
+                                                                "生成物品数量:" + item.Length + "\n" +
                                                                 "\n" +
                                                                 "按[是]以清空你的物品栏并生成新物品" + "\n" +
                                                                 "或  [No] 以取消生成。" + "\n" + "换行符" +
@@ -5151,7 +5153,7 @@ namespace ACNHPokerCore
         {
             string max = "999999999";
             string min = "1";
-            DialogResult dialogResult = MyMessageBox.Show("你确定要把所有大头菜价格设为最高吗？\\n[警告] 所有原始价格都将被覆盖！", "设置所有大头菜价格", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+            DialogResult dialogResult = MyMessageBox.Show("你确定要把所有大头菜价格设为最高吗？\n[警告] 所有原始价格都将被覆盖！", "设置所有大头菜价格", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
             if (dialogResult == DialogResult.Yes)
             {
                 UInt32[] prices = [
@@ -5224,7 +5226,7 @@ namespace ACNHPokerCore
                 return;
             }
 
-            DialogResult dialogResult = MyMessageBox.Show("你确定要设置大头菜价格吗？\\n[警告] 所有原始价格都将被覆盖！", "设置大头菜价格", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+            DialogResult dialogResult = MyMessageBox.Show("你确定要设置大头菜价格吗？\n[警告] 所有原始价格都将被覆盖！", "设置大头菜价格", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
             if (dialogResult == DialogResult.Yes)
             {
                 UInt32[] prices = [
@@ -5410,7 +5412,7 @@ namespace ACNHPokerCore
             }
             catch (Exception e)
             {
-                MyMessageBox.Show(e.Message, "注意：这不是特别高效。太糟糕了！");
+                MyMessageBox.Show(e.Message, "注意:这不是特别高效。太糟糕了！");
             }
         }
         #endregion
@@ -10796,10 +10798,10 @@ namespace ACNHPokerCore
 
                         if (FinalOffset != 0)
                         {
-                            DialogResult dialogResult2 = MyMessageBox.Show("树枝地址：" + fakeAddress.ToString("X") + "（此处无原文可翻译，返回空字符串）" +
-                                                                           "树枝之前的玩家数量：" + (offsetNumber).ToString() + "\n\n" +
-                                                                           "最终头部地址：" + FinalHeadAddress.ToString("X") + "\n" +
-                                                                           "偏移量：" + FinalOffset.ToString("X") + "\n\n" +
+                            DialogResult dialogResult2 = MyMessageBox.Show("树枝地址:" + fakeAddress.ToString("X") + "\n" +
+                                                                           "树枝之前的玩家数量:" + (offsetNumber).ToString() + "\n\n" +
+                                                                           "最终头部地址:" + FinalHeadAddress.ToString("X") + "\n" +
+                                                                           "偏移量:" + FinalOffset.ToString("X") + "\n\n" +
                                                                            "应用偏移量？"
                                                                          , "地址和标题已找到！", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
                             if (dialogResult2 == DialogResult.OK)
@@ -10827,16 +10829,16 @@ namespace ACNHPokerCore
                         }
                         else
                         {
-                            MyMessageBox.Show("树枝地址：" + fakeAddress.ToString("X") + "\n" +
-                                              "树枝前的玩家数量：" + (offsetNumber).ToString() + "\n\n" +
-                                              "最终总部地址：" + FinalHeadAddress.ToString("X") + "\n" +
-                                              "偏移量：" + FinalOffset.ToString("X")
+                            MyMessageBox.Show("树枝地址:" + fakeAddress.ToString("X") + "\n" +
+                                              "树枝前的玩家数量:" + (offsetNumber).ToString() + "\n\n" +
+                                              "最终总部地址:" + FinalHeadAddress.ToString("X") + "\n" +
+                                              "偏移量:" + FinalOffset.ToString("X")
                                             , "无需更改！", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                     }
                     else
                     {
-                        MyMessageBox.Show("树枝地址：" + fakeAddress.ToString("X"), "未找到！", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MyMessageBox.Show("树枝地址:" + fakeAddress.ToString("X"), "未找到！", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
 
                     Debug.Print(result.ToString("X") + "  " + offset.ToString("X") + " Final : " + fakeAddress.ToString("X") + " Offset : " + (fakeAddress - Utilities.masterAddress).ToString("X"));

@@ -114,12 +114,12 @@ namespace ACNHPokerCore
                     }
                     else
                     {
-                        MyMessageBox.Show("设备未找到！\\n请尝试重启您的Switch，如果问题仍然存在！", "插入USB总是需要至少3次翻转！", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+                        MyMessageBox.Show("设备未找到！\n请尝试重启您的Switch，如果问题仍然存在！", "插入USB总是需要至少3次翻转！", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
                     }
                 }
                 else
                 {
-                    MyMessageBox.Show("未找到设备！\\n请尝试重启你的Switch，如果问题仍然存在！", "插入USB总是需要至少翻转3次！", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+                    MyMessageBox.Show("未找到设备！\n请尝试重启你的Switch，如果问题仍然存在！", "插入USB总是需要至少翻转3次！", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
                 }
 
                 Connected = false;

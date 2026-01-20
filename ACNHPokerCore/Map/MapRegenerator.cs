@@ -798,7 +798,7 @@ namespace ACNHPokerCore
             {
                 MyLog.LogEvent("Regen", "Regen1: Cancelled");
                 if (dodoSetup != null)
-                    MyMessageBox.Show("渡渡鸟助手 & 重生已中止！\\n如果您想重启，请记得先离开机场！", "安全气囊展开！", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MyMessageBox.Show("渡渡鸟助手 & 重生已中止！\n如果您想重启，请记得先离开机场！", "安全气囊展开！", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 if (!FormIsClosing)
                 {
                     Invoke((MethodInvoker)delegate
@@ -1048,7 +1048,7 @@ namespace ACNHPokerCore
             {
                 MyLog.LogEvent("Regen", "Regen2: Cancelled");
                 if (dodoSetup != null)
-                    MyMessageBox.Show("渡渡鸟助手 & 再生已中止！\\n请记住，如果你想重新开始，首先要离开机场！", "猛踩刹车？", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MyMessageBox.Show("渡渡鸟助手 & 再生已中止！\n请记住，如果你想重新开始，首先要离开机场！", "猛踩刹车？", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 if (!FormIsClosing)
                 {
                     Invoke((MethodInvoker)delegate
@@ -1430,7 +1430,7 @@ namespace ACNHPokerCore
 
                     MyMessageBox.Show("在加载访客日志文件时遇到错误。\n\n" +
                                       "但是别担心！一个新的访客日志文件已经被创建。\n" +
-                                      "您现有的访客日志文件已被重命名为\"OldVisitorLog.csv\"。", "加载现有访客日志文件时出错！", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                      "您现有的访客日志文件已被重命名为“OldVisitorLog.csv”。", "加载现有访客日志文件时出错！", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                     logGridView.DataSource = LoadCSV(Utilities.VisitorLogPath);
                     logGridView.Columns["Timestamp"].Width = 140;

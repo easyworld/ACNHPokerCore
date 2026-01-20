@@ -171,6 +171,7 @@ namespace ACNHPokerCore
             SlotLabel.Size = new System.Drawing.Size(42, 16);
             SlotLabel.TabIndex = 227;
             SlotLabel.Text = "插槽：";
+            SlotLabel.Text = "插槽:";
             SlotLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // RateBar
@@ -452,7 +453,7 @@ namespace ACNHPokerCore
             label4.Name = "label4";
             label4.Size = new System.Drawing.Size(25, 16);
             label4.TabIndex = 238;
-            label4.Text = "Y :";
+            label4.Text = "Y:";
             label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
@@ -464,7 +465,7 @@ namespace ACNHPokerCore
             label3.Name = "label3";
             label3.Size = new System.Drawing.Size(24, 16);
             label3.TabIndex = 236;
-            label3.Text = "X :";
+            label3.Text = "X:";
             label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // yCoordinate

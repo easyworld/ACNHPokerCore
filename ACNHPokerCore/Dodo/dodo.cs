@@ -1389,7 +1389,7 @@ namespace ACNHPokerCore
             Configuration config = ConfigurationManager.OpenExeConfiguration(Application.ExecutablePath.Replace(".exe", ".dll"));
             if (maxBellsBox.Checked)
             {
-                DialogResult dialogResult = MyMessageBox.Show("你确定要把所有大头菜价格都设为最高吗？\\n[警告] 所有原始价格都将被覆盖！", "设置所有大头菜价格", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                DialogResult dialogResult = MyMessageBox.Show("你确定要把所有大头菜价格都设为最高吗？\n[警告] 所有原始价格都将被覆盖！", "设置所有大头菜价格", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
                 if (dialogResult == DialogResult.Yes)
                 {
                     maxBells = true;

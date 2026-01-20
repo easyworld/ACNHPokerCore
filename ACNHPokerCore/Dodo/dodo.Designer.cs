@@ -322,7 +322,7 @@ namespace ACNHPokerCore
             AbortBtn.Size = new System.Drawing.Size(74, 24);
             AbortBtn.TabIndex = 334;
             AbortBtn.Text = "中止";
-            HoverToolTip.SetToolTip(AbortBtn, "Stop the regen and dodo restore sequence.\r\n\r\n[Warning]Only use it if you see something goes wrong.\r\nFor example :\r\nVirtual controller not responding.\r\nYour character got teleported to the ocean.");
+            HoverToolTip.SetToolTip(AbortBtn, "停止再生和渡渡鸟恢复序列。\r\n\r\n[警告]只有在你发现出现问题时才使用它。\r\n例如:\r\n虚拟控制器无响应。\r\n你的角色被传送到了海里。");
             AbortBtn.UseVisualStyleBackColor = false;
             AbortBtn.Visible = false;
             AbortBtn.Click += AbortBtn_Click;
@@ -381,7 +381,7 @@ namespace ACNHPokerCore
             restoreDodobox.Size = new System.Drawing.Size(122, 19);
             restoreDodobox.TabIndex = 337;
             restoreDodobox.Text = "恢复渡渡鸟";
-            HoverToolTip.SetToolTip(restoreDodobox, "Control whether the bot will try to restore the Dodo code\r\nwhen the island is disconnected.\r\n\r\nYou can toggle this on and off without stopping the process.");
+            HoverToolTip.SetToolTip(restoreDodobox, "控制机器人是否会尝试恢复渡渡鸟代码\r\n当岛屿断开连接时。\r\n\r\n您可以在不停止进程的情况下开启或关闭此功能。");
             restoreDodobox.UseVisualStyleBackColor = false;
             restoreDodobox.CheckedChanged += RestoreDodobox_CheckedChanged;
             // 
@@ -396,7 +396,7 @@ namespace ACNHPokerCore
             injectVillagerBox.Size = new System.Drawing.Size(154, 19);
             injectVillagerBox.TabIndex = 340;
             injectVillagerBox.Text = "注入村民";
-            HoverToolTip.SetToolTip(injectVillagerBox, "Control whether the bot will process villager order from Twitch.\r\n*Require you to have Twitch properly set up and connected.\r\n\r\nYou can toggle this on and off without stopping the process.");
+            HoverToolTip.SetToolTip(injectVillagerBox, "控制机器人是否处理来自Twitch的村民订单。\r\n*要求你已正确设置并连接Twitch。\r\n\r\n你可以在不停止进程的情况下切换此功能的开启和关闭。");
             injectVillagerBox.UseVisualStyleBackColor = false;
             injectVillagerBox.CheckedChanged += InjectVillagerBox_CheckedChanged;
             // 
@@ -411,7 +411,7 @@ namespace ACNHPokerCore
             dropItemBox.Size = new System.Drawing.Size(106, 19);
             dropItemBox.TabIndex = 339;
             dropItemBox.Text = "放下物品";
-            HoverToolTip.SetToolTip(dropItemBox, "Control whether the bot will drop the item order from Twitch.\r\n*Require you to have Twitch properly set up and connected.\r\n\r\nYou can toggle this on and off without stopping the process.");
+            HoverToolTip.SetToolTip(dropItemBox, "控制机器人是否会从Twitch掉落物品订单。\r\n*要求你正确设置并连接Twitch。\r\n\r\n你可以在不停止进程的情况下切换此功能的开启和关闭。");
             dropItemBox.UseVisualStyleBackColor = false;
             dropItemBox.CheckedChanged += DropItemBox_CheckedChanged;
             // 
@@ -425,7 +425,7 @@ namespace ACNHPokerCore
             maxBellsBox.Size = new System.Drawing.Size(138, 19);
             maxBellsBox.TabIndex = 356;
             maxBellsBox.Text = "铃钱最大";
-            HoverToolTip.SetToolTip(maxBellsBox, "Enable or Disable auto max bells.\r\nYou can toggle this on and off without stopping the process.");
+            HoverToolTip.SetToolTip(maxBellsBox, "启用或禁用自动最大铃钱。\r\n你可以在不停止当前进程的情况下切换此功能的开启和关闭。");
             maxBellsBox.UseVisualStyleBackColor = false;
             maxBellsBox.CheckedChanged += MaxBellsBox_CheckedChanged;
             // 
@@ -443,7 +443,7 @@ namespace ACNHPokerCore
             standaloneStart.TabIndex = 338;
             standaloneStart.Tag = "Start";
             standaloneStart.Text = "开始";
-            HoverToolTip.SetToolTip(standaloneStart, "Start standalone mode");
+            HoverToolTip.SetToolTip(standaloneStart, "启动独立模式");
             standaloneStart.UseVisualStyleBackColor = false;
             standaloneStart.Visible = false;
             standaloneStart.Click += StandaloneStart_Click;
@@ -462,7 +462,7 @@ namespace ACNHPokerCore
             itemDisplayBtn.Size = new System.Drawing.Size(112, 22);
             itemDisplayBtn.TabIndex = 336;
             itemDisplayBtn.Text = "物品展示";
-            HoverToolTip.SetToolTip(itemDisplayBtn, "Open the ordering display.\r\nA display for the last three ordered items.\r\nUse chroma-key if you want to display it on stream.");
+            HoverToolTip.SetToolTip(itemDisplayBtn, "打开订单展示。\r\n用于显示最近三个已订购物品的展示。\r\n如果想要在直播中显示它，请使用绿幕抠像。");
             itemDisplayBtn.UseVisualStyleBackColor = false;
             itemDisplayBtn.Visible = false;
             itemDisplayBtn.Click += ItemDisplayBtn_Click;
@@ -480,7 +480,7 @@ namespace ACNHPokerCore
             TwitchBtn.Size = new System.Drawing.Size(112, 22);
             TwitchBtn.TabIndex = 335;
             TwitchBtn.Text = "Twitch";
-            HoverToolTip.SetToolTip(TwitchBtn, "Connect the chatbot and pubsub server.\r\nRequired if you want to use Twitch drop and villager inject.\r\n\r\nNeed \"twitch.json\" file in /save folder configure properly.");
+            HoverToolTip.SetToolTip(TwitchBtn, "连接聊天机器人和pubsub服务器。\r\n如果您想使用Twitch掉落和村民注入，这是必需的。\r\n\r\n需要在/save文件夹中有一个配置正确的“twitch.json”文件。");
             TwitchBtn.UseVisualStyleBackColor = false;
             TwitchBtn.Visible = false;
             TwitchBtn.Click += TwitchBtn_Click;
@@ -497,7 +497,7 @@ namespace ACNHPokerCore
             skipDialogCheckBox.Size = new System.Drawing.Size(114, 19);
             skipDialogCheckBox.TabIndex = 334;
             skipDialogCheckBox.Text = "跳过对话";
-            HoverToolTip.SetToolTip(skipDialogCheckBox, "Skip unnecessary Orville to speed up getting the dodo code.\r\n\r\nOnly save a few seconds though...");
+            HoverToolTip.SetToolTip(skipDialogCheckBox, "跳过不必要的奥维尔以加快获取渡渡鸟代码。\r\n\r\n不过，只节省了几秒钟。");
             skipDialogCheckBox.UseVisualStyleBackColor = false;
             // 
             // emoteBottomLeftBtn
@@ -650,7 +650,7 @@ namespace ACNHPokerCore
             idleEmoteCheckBox.Size = new System.Drawing.Size(114, 19);
             idleEmoteCheckBox.TabIndex = 333;
             idleEmoteCheckBox.Text = "空闲表情动作";
-            HoverToolTip.SetToolTip(idleEmoteCheckBox, "Control whether the bot will do a random emote if\r\nit is idle for some time.\r\n\r\n*Might interrupt other action like item dropping.");
+            HoverToolTip.SetToolTip(idleEmoteCheckBox, "控制机器人在闲置一段时间后是否会随机做出一个表情动作。\r\n\r\n*可能会打断其他操作，比如物品掉落。");
             idleEmoteCheckBox.UseVisualStyleBackColor = false;
             idleEmoteCheckBox.CheckedChanged += IdleEmoteCheckBox_CheckedChanged;
             // 
@@ -703,7 +703,7 @@ namespace ACNHPokerCore
             clearSlotBtn.Size = new System.Drawing.Size(69, 20);
             clearSlotBtn.TabIndex = 340;
             clearSlotBtn.Text = "清除插槽1";
-            HoverToolTip.SetToolTip(clearSlotBtn, "Clear the first inventory slot.\r\nUseful if you have something in there which might interrupt the drop bot.");
+            HoverToolTip.SetToolTip(clearSlotBtn, "清空第一个物品栏格子。\r\n如果那个格子里有东西可能会干扰自动掉落机器人的话，这样做会很有用。");
             clearSlotBtn.UseVisualStyleBackColor = false;
             clearSlotBtn.Click += ClearInvBtn_Click;
             // 
@@ -720,7 +720,7 @@ namespace ACNHPokerCore
             TimerBtn.Size = new System.Drawing.Size(69, 20);
             TimerBtn.TabIndex = 339;
             TimerBtn.Text = "计时器";
-            HoverToolTip.SetToolTip(TimerBtn, "Open the countdown timer.\r\nA useful tool if you don't want to use the in-game one.\r\nUse chroma-key if you want to display it on stream.");
+            HoverToolTip.SetToolTip(TimerBtn, "打开倒计时器。\r\n如果你不想使用游戏内的（倒计时器），这是个有用的工具。\r\n如果想在直播中显示它，使用色键。");
             TimerBtn.UseVisualStyleBackColor = false;
             TimerBtn.Click += StopWatchBtn_Click;
             // 
@@ -769,7 +769,7 @@ namespace ACNHPokerCore
             plusBtn.Size = new System.Drawing.Size(20, 20);
             plusBtn.TabIndex = 336;
             plusBtn.Text = "➕";
-            HoverToolTip.SetToolTip(plusBtn, "Keyboard : Y");
+            HoverToolTip.SetToolTip(plusBtn, "键盘:Y");
             plusBtn.UseVisualStyleBackColor = false;
             plusBtn.Click += PlusBtn_Click;
             // 
@@ -786,7 +786,7 @@ namespace ACNHPokerCore
             minusBtn.Size = new System.Drawing.Size(20, 20);
             minusBtn.TabIndex = 335;
             minusBtn.Text = "➖";
-            HoverToolTip.SetToolTip(minusBtn, "Keyboard : R");
+            HoverToolTip.SetToolTip(minusBtn, "键盘:R");
             minusBtn.UseVisualStyleBackColor = false;
             minusBtn.Click += MinusBtn_Click;
             // 
@@ -836,7 +836,7 @@ namespace ACNHPokerCore
             ZLBtn.TabIndex = 332;
             ZLBtn.Text = "ZL";
             ZLBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            HoverToolTip.SetToolTip(ZLBtn, "Keyboard : Q");
+            HoverToolTip.SetToolTip(ZLBtn, "键盘 : Q");
             ZLBtn.UseVisualStyleBackColor = false;
             ZLBtn.Click += ZLBtn_Click;
             // 
@@ -853,7 +853,7 @@ namespace ACNHPokerCore
             DetachBtn.Size = new System.Drawing.Size(69, 20);
             DetachBtn.TabIndex = 325;
             DetachBtn.Text = "分离";
-            HoverToolTip.SetToolTip(DetachBtn, "Detach the virtual controller.\r\nPress this first if other buttons are not responding.");
+            HoverToolTip.SetToolTip(DetachBtn, "卸下虚拟控制器。\r\n如果其他按钮没有响应，请先按下这个。");
             DetachBtn.UseVisualStyleBackColor = false;
             DetachBtn.Click += DetachBtn_Click;
             // 
@@ -870,7 +870,7 @@ namespace ACNHPokerCore
             ZRBtn.Size = new System.Drawing.Size(30, 20);
             ZRBtn.TabIndex = 331;
             ZRBtn.Text = "ZR";
-            HoverToolTip.SetToolTip(ZRBtn, "Keyboard : O");
+            HoverToolTip.SetToolTip(ZRBtn, "键盘:O");
             ZRBtn.UseVisualStyleBackColor = false;
             ZRBtn.Click += ZRBtn_Click;
             // 
@@ -1050,8 +1050,8 @@ namespace ACNHPokerCore
             ABtn.Name = "ABtn";
             ABtn.Size = new System.Drawing.Size(20, 20);
             ABtn.TabIndex = 320;
-            ABtn.Text = "阿";
-            HoverToolTip.SetToolTip(ABtn, "Keyboard : L");
+            ABtn.Text = "A";
+            HoverToolTip.SetToolTip(ABtn, "键盘:L");
             ABtn.UseVisualStyleBackColor = false;
             ABtn.Click += ABtn_Click;
             // 
@@ -1068,7 +1068,7 @@ namespace ACNHPokerCore
             YBtn.Size = new System.Drawing.Size(20, 20);
             YBtn.TabIndex = 319;
             YBtn.Text = "Y";
-            HoverToolTip.SetToolTip(YBtn, "Keyboard : J");
+            HoverToolTip.SetToolTip(YBtn, "键盘:J");
             YBtn.UseVisualStyleBackColor = false;
             YBtn.Click += YBtn_Click;
             // 
@@ -1085,7 +1085,7 @@ namespace ACNHPokerCore
             BBtn.Size = new System.Drawing.Size(20, 20);
             BBtn.TabIndex = 318;
             BBtn.Text = "B";
-            HoverToolTip.SetToolTip(BBtn, "Keyboard : K");
+            HoverToolTip.SetToolTip(BBtn, "键盘:K");
             BBtn.UseVisualStyleBackColor = false;
             BBtn.Click += BBtn_Click;
             // 
@@ -1102,7 +1102,7 @@ namespace ACNHPokerCore
             XBtn.Size = new System.Drawing.Size(20, 20);
             XBtn.TabIndex = 317;
             XBtn.Text = "X";
-            HoverToolTip.SetToolTip(XBtn, "Keyboard : I");
+            HoverToolTip.SetToolTip(XBtn, "键盘:我");
             XBtn.UseVisualStyleBackColor = false;
             XBtn.Click += XBtn_Click;
             // 
@@ -1119,7 +1119,7 @@ namespace ACNHPokerCore
             LstickRIGHTBtn.Size = new System.Drawing.Size(20, 20);
             LstickRIGHTBtn.TabIndex = 316;
             LstickRIGHTBtn.Text = "🠊";
-            HoverToolTip.SetToolTip(LstickRIGHTBtn, "Keyboard : D");
+            HoverToolTip.SetToolTip(LstickRIGHTBtn, "键盘:D");
             LstickRIGHTBtn.UseVisualStyleBackColor = false;
             LstickRIGHTBtn.MouseDown += LstickRIGHTBtn_MouseDown;
             LstickRIGHTBtn.MouseUp += LstickMouseUp;
@@ -1137,7 +1137,7 @@ namespace ACNHPokerCore
             LstickLEFTBtn.Size = new System.Drawing.Size(20, 20);
             LstickLEFTBtn.TabIndex = 315;
             LstickLEFTBtn.Text = "🠈";
-            HoverToolTip.SetToolTip(LstickLEFTBtn, "Keyboard : A");
+            HoverToolTip.SetToolTip(LstickLEFTBtn, "键盘:A");
             LstickLEFTBtn.UseVisualStyleBackColor = false;
             LstickLEFTBtn.MouseDown += LstickLEFTBtn_MouseDown;
             LstickLEFTBtn.MouseUp += LstickMouseUp;
@@ -1155,7 +1155,7 @@ namespace ACNHPokerCore
             LstickDOWNBtn.Size = new System.Drawing.Size(20, 20);
             LstickDOWNBtn.TabIndex = 314;
             LstickDOWNBtn.Text = "🠋";
-            HoverToolTip.SetToolTip(LstickDOWNBtn, "Keyboard : S");
+            HoverToolTip.SetToolTip(LstickDOWNBtn, "键盘:S");
             LstickDOWNBtn.UseVisualStyleBackColor = false;
             LstickDOWNBtn.MouseDown += LstickDOWNBtn_MouseDown;
             LstickDOWNBtn.MouseUp += LstickMouseUp;
@@ -1173,7 +1173,7 @@ namespace ACNHPokerCore
             LstickUPBtn.Size = new System.Drawing.Size(20, 20);
             LstickUPBtn.TabIndex = 313;
             LstickUPBtn.Text = "🠉";
-            HoverToolTip.SetToolTip(LstickUPBtn, "Keyboard : W");
+            HoverToolTip.SetToolTip(LstickUPBtn, "键盘:W");
             LstickUPBtn.UseVisualStyleBackColor = false;
             LstickUPBtn.MouseDown += LstickUPBtn_MouseDown;
             LstickUPBtn.MouseUp += LstickMouseUp;
@@ -1202,7 +1202,7 @@ namespace ACNHPokerCore
             DodoCodeLabel.Name = "DodoCodeLabel";
             DodoCodeLabel.Size = new System.Drawing.Size(93, 16);
             DodoCodeLabel.TabIndex = 314;
-            DodoCodeLabel.Text = "登机码：";
+            DodoCodeLabel.Text = "登机码:";
             // 
             // onlineLabel
             // 
@@ -1259,7 +1259,7 @@ namespace ACNHPokerCore
             DoneFullTestBtn.Size = new System.Drawing.Size(80, 25);
             DoneFullTestBtn.TabIndex = 309;
             DoneFullTestBtn.Text = "测试";
-            HoverToolTip.SetToolTip(DoneFullTestBtn, "Please ensure you have no other controller connected.");
+            HoverToolTip.SetToolTip(DoneFullTestBtn, "请确保没有连接其他控制器。");
             DoneFullTestBtn.UseVisualStyleBackColor = false;
             DoneFullTestBtn.Click += DoneFullTestBtn_Click;
             // 
@@ -1389,7 +1389,7 @@ namespace ACNHPokerCore
             DoneAnchor4.Name = "DoneAnchor4";
             DoneAnchor4.Size = new System.Drawing.Size(204, 16);
             DoneAnchor4.TabIndex = 301;
-            DoneAnchor4.Text = "锚点4：机场出口锚点";
+            DoneAnchor4.Text = "锚点4:机场出口锚点";
             // 
             // DoneAnchor3
             // 
@@ -1401,7 +1401,7 @@ namespace ACNHPokerCore
             DoneAnchor3.Name = "DoneAnchor3";
             DoneAnchor3.Size = new System.Drawing.Size(205, 16);
             DoneAnchor3.TabIndex = 300;
-            DoneAnchor3.Text = "锚点 3 : Orville对话锚点";
+            DoneAnchor3.Text = "锚点 3 : 奥维尔对话锚点";
             // 
             // DoneAnchor2
             // 
@@ -1413,7 +1413,7 @@ namespace ACNHPokerCore
             DoneAnchor2.Name = "DoneAnchor2";
             DoneAnchor2.Size = new System.Drawing.Size(214, 16);
             DoneAnchor2.TabIndex = 299;
-            DoneAnchor2.Text = "锚点 2：机场入口锚点";
+            DoneAnchor2.Text = "锚点 2:机场入口锚点";
             // 
             // DoneAnchor1
             // 
@@ -1425,7 +1425,7 @@ namespace ACNHPokerCore
             DoneAnchor1.Name = "DoneAnchor1";
             DoneAnchor1.Size = new System.Drawing.Size(222, 16);
             DoneAnchor1.TabIndex = 298;
-            DoneAnchor1.Text = "锚点 1：掉落位置锚点";
+            DoneAnchor1.Text = "锚点 1:掉落位置锚点";
             // 
             // DoneAnchor0
             // 
@@ -1437,7 +1437,7 @@ namespace ACNHPokerCore
             DoneAnchor0.Name = "DoneAnchor0";
             DoneAnchor0.Size = new System.Drawing.Size(212, 16);
             DoneAnchor0.TabIndex = 297;
-            DoneAnchor0.Text = "Anchor 0 : 房屋入口锚点";
+            DoneAnchor0.Text = "锚点0 : 房屋入口锚点";
             // 
             // DoneAnchor0TestBtn
             // 
@@ -1465,7 +1465,7 @@ namespace ACNHPokerCore
             DoneLine1.Name = "DoneLine1";
             DoneLine1.Size = new System.Drawing.Size(233, 16);
             DoneLine1.TabIndex = 290;
-            DoneLine1.Text = "你现在可以测试你的锚了：";
+            DoneLine1.Text = "你现在可以测试你的锚了:";
             // 
             // DonePreviousBtn
             // 
@@ -1510,7 +1510,7 @@ namespace ACNHPokerCore
             DoneLabel.Size = new System.Drawing.Size(127, 16);
             DoneLabel.TabIndex = 288;
             DoneLabel.Text = "恭喜！！！";
-            HoverToolTip.SetToolTip(DoneLabel, "This is a meme. Of course I know how to spell\"Congratulations\".");
+            HoverToolTip.SetToolTip(DoneLabel, "这是一个梗。当然我知道怎么拼写“恭喜”。");
             // 
             // Anchor4Line3
             // 
@@ -1522,7 +1522,7 @@ namespace ACNHPokerCore
             Anchor4Line3.Name = "Anchor4Line3";
             Anchor4Line3.Size = new System.Drawing.Size(334, 16);
             Anchor4Line3.TabIndex = 286;
-            Anchor4Line3.Text = "你现在可以走开并测试你的锚点：\r\n";
+            Anchor4Line3.Text = "你现在可以走开并测试你的锚点:\r\n";
             Anchor4Line3.Visible = false;
             // 
             // Anchor4TestBtn
@@ -1568,7 +1568,7 @@ namespace ACNHPokerCore
             Anchor4Line2.Name = "Anchor4Line2";
             Anchor4Line2.Size = new System.Drawing.Size(298, 16);
             Anchor4Line2.TabIndex = 283;
-            Anchor4Line2.Text = "当你处于正确位置时。按：\r\n";
+            Anchor4Line2.Text = "当你处于正确位置时。按:\r\n";
             // 
             // Anchor4Image3
             // 
@@ -1661,7 +1661,7 @@ namespace ACNHPokerCore
             Anchor3Line3.Name = "Anchor3Line3";
             Anchor3Line3.Size = new System.Drawing.Size(334, 16);
             Anchor3Line3.TabIndex = 275;
-            Anchor3Line3.Text = "你现在可以走开并测试你的锚点：\r\n";
+            Anchor3Line3.Text = "你现在可以走开并测试你的锚点:\r\n";
             Anchor3Line3.Visible = false;
             // 
             // Anchor3TestBtn
@@ -1707,7 +1707,7 @@ namespace ACNHPokerCore
             Anchor3Line2.Name = "Anchor3Line2";
             Anchor3Line2.Size = new System.Drawing.Size(298, 16);
             Anchor3Line2.TabIndex = 272;
-            Anchor3Line2.Text = "一旦你处于正确的位置。按：\r\n";
+            Anchor3Line2.Text = "一旦你处于正确的位置。按:\r\n";
             // 
             // Anchor3Image3
             // 
@@ -1800,7 +1800,7 @@ namespace ACNHPokerCore
             Anchor2Line3.Name = "Anchor2Line3";
             Anchor2Line3.Size = new System.Drawing.Size(334, 16);
             Anchor2Line3.TabIndex = 264;
-            Anchor2Line3.Text = "你现在可以移开并测试你的锚点：\r\n";
+            Anchor2Line3.Text = "你现在可以移动并测试你的锚点:\r\n";
             Anchor2Line3.Visible = false;
             // 
             // Anchor2TestBtn
@@ -1846,7 +1846,7 @@ namespace ACNHPokerCore
             Anchor2Line2.Name = "Anchor2Line2";
             Anchor2Line2.Size = new System.Drawing.Size(298, 16);
             Anchor2Line2.TabIndex = 261;
-            Anchor2Line2.Text = "当你处于正确位置时。按：\r\n";
+            Anchor2Line2.Text = "当你处于正确位置时。按:\r\n";
             // 
             // Anchor2Image3
             // 
@@ -1897,7 +1897,7 @@ namespace ACNHPokerCore
             Anchor2PreviousBtn.Name = "Anchor2PreviousBtn";
             Anchor2PreviousBtn.Size = new System.Drawing.Size(80, 25);
             Anchor2PreviousBtn.TabIndex = 256;
-            Anchor2PreviousBtn.Text = "Previous";
+            Anchor2PreviousBtn.Text = "上一个";
             Anchor2PreviousBtn.UseVisualStyleBackColor = false;
             Anchor2PreviousBtn.Click += Anchor2PreviousBtn_Click;
             // 
@@ -1939,7 +1939,7 @@ namespace ACNHPokerCore
             Anchor1Line3.Name = "Anchor1Line3";
             Anchor1Line3.Size = new System.Drawing.Size(334, 16);
             Anchor1Line3.TabIndex = 253;
-            Anchor1Line3.Text = "你现在可以移开并测试你的锚点：\r\n";
+            Anchor1Line3.Text = "你现在可以移开并测试你的锚点:\r\n";
             Anchor1Line3.Visible = false;
             // 
             // Anchor1TestBtn
@@ -1985,7 +1985,7 @@ namespace ACNHPokerCore
             Anchor1Line2.Name = "Anchor1Line2";
             Anchor1Line2.Size = new System.Drawing.Size(298, 16);
             Anchor1Line2.TabIndex = 250;
-            Anchor1Line2.Text = "当你处于正确位置时。按：\r\n";
+            Anchor1Line2.Text = "当你处于正确位置时。按:\r\n";
             // 
             // Anchor1Image3
             // 
@@ -2078,7 +2078,7 @@ namespace ACNHPokerCore
             Anchor0Line3.Name = "Anchor0Line3";
             Anchor0Line3.Size = new System.Drawing.Size(334, 16);
             Anchor0Line3.TabIndex = 242;
-            Anchor0Line3.Text = "你现在可以移开并测试你的锚点：\r\n";
+            Anchor0Line3.Text = "你现在可以移开并测试你的锚点:\r\n";
             Anchor0Line3.Visible = false;
             // 
             // Anchor0TestBtn
@@ -2124,7 +2124,7 @@ namespace ACNHPokerCore
             Anchor0Line2.Name = "Anchor0Line2";
             Anchor0Line2.Size = new System.Drawing.Size(298, 16);
             Anchor0Line2.TabIndex = 239;
-            Anchor0Line2.Text = "当你处于正确的位置时。按：\r\n";
+            Anchor0Line2.Text = "当你处于正确的位置时。按:\r\n";
             // 
             // Anchor0Image3
             // 
@@ -2301,7 +2301,7 @@ namespace ACNHPokerCore
             sessionBox.Size = new System.Drawing.Size(234, 19);
             sessionBox.TabIndex = 341;
             sessionBox.Text = "时间到后结束会话";
-            HoverToolTip.SetToolTip(sessionBox, "This will end the session and kick everyone off the island.");
+            HoverToolTip.SetToolTip(sessionBox, "这将结束会话并将所有人踢出岛屿。");
             sessionBox.UseVisualStyleBackColor = false;
             sessionBox.CheckedChanged += SessionBox_CheckedChanged;
             // 
@@ -2592,7 +2592,7 @@ namespace ACNHPokerCore
             minutesLabel.Name = "minutesLabel";
             minutesLabel.Size = new System.Drawing.Size(72, 16);
             minutesLabel.TabIndex = 341;
-            minutesLabel.Text = "分钟：";
+            minutesLabel.Text = "分钟:";
             // 
             // timerStartBtn
             // 

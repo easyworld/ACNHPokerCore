@@ -54,7 +54,7 @@
             hwidLabel.Size = new System.Drawing.Size(300, 24);
             hwidLabel.TabIndex = 0;
             hwidLabel.TabStop = false;
-            hwidLabel.Text = "你的硬件ID：";
+            hwidLabel.Text = "你的硬件ID:";
             // 
             // answerBox3
             // 

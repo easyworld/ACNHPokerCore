@@ -355,7 +355,7 @@ namespace ACNHPokerCore
 
             if (Config.AppSettings.Settings["validation"].Value == "true")
             {
-                DialogResult dialogResult = MyMessageBox.Show("验证旨在防止存档文件损坏！\\n请只有在你知道自己在做什么的时候才这样做。\\n\\n你确定要禁用验证吗？", "禁用验证", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                DialogResult dialogResult = MyMessageBox.Show("验证旨在防止存档文件损坏！\n请只有在你知道自己在做什么的时候才这样做。\n\n你确定要禁用验证吗？", "禁用验证", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (dialogResult == DialogResult.Yes)
                 {
                     Validation = false;

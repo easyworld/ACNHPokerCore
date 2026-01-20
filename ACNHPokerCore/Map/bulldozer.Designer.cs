@@ -150,7 +150,7 @@ namespace ACNHPokerCore
             realYLabel.Name = "realYLabel";
             realYLabel.Size = new System.Drawing.Size(25, 16);
             realYLabel.TabIndex = 226;
-            realYLabel.Text = "Y：";
+            realYLabel.Text = "Y:";
             // 
             // realXLabel
             // 
@@ -161,7 +161,7 @@ namespace ACNHPokerCore
             realXLabel.Name = "realXLabel";
             realXLabel.Size = new System.Drawing.Size(24, 16);
             realXLabel.TabIndex = 225;
-            realXLabel.Text = "X：";
+            realXLabel.Text = "X:";
             // 
             // RealYCoordinate
             // 
@@ -202,7 +202,7 @@ namespace ACNHPokerCore
             FieldYLabel.Name = "FieldYLabel";
             FieldYLabel.Size = new System.Drawing.Size(25, 16);
             FieldYLabel.TabIndex = 230;
-            FieldYLabel.Text = "Y :";
+            FieldYLabel.Text = "Y:";
             // 
             // FieldXLabel
             // 
@@ -213,7 +213,7 @@ namespace ACNHPokerCore
             FieldXLabel.Name = "FieldXLabel";
             FieldXLabel.Size = new System.Drawing.Size(24, 16);
             FieldXLabel.TabIndex = 229;
-            FieldXLabel.Text = "X :";
+            FieldXLabel.Text = "X:";
             // 
             // yCoordinate
             // 
@@ -545,7 +545,7 @@ namespace ACNHPokerCore
             BuildingTypeLabel.Name = "BuildingTypeLabel";
             BuildingTypeLabel.Size = new System.Drawing.Size(150, 22);
             BuildingTypeLabel.TabIndex = 39;
-            BuildingTypeLabel.Text = "建筑类型：";
+            BuildingTypeLabel.Text = "建筑类型:";
             // 
             // updateBtn
             // 
@@ -605,7 +605,7 @@ namespace ACNHPokerCore
             LargeXLabel.Name = "LargeXLabel";
             LargeXLabel.Size = new System.Drawing.Size(35, 22);
             LargeXLabel.TabIndex = 32;
-            LargeXLabel.Text = "X：";
+            LargeXLabel.Text = "X:";
             // 
             // XUpDown
             // 
@@ -631,7 +631,7 @@ namespace ACNHPokerCore
             LargeYLabel.Name = "LargeYLabel";
             LargeYLabel.Size = new System.Drawing.Size(35, 22);
             LargeYLabel.TabIndex = 34;
-            LargeYLabel.Text = "Y：";
+            LargeYLabel.Text = "Y:";
             // 
             // YUpDown
             // 
@@ -705,7 +705,7 @@ namespace ACNHPokerCore
             BridgeDiagonalLabel.Name = "BridgeDiagonalLabel";
             BridgeDiagonalLabel.Size = new System.Drawing.Size(76, 16);
             BridgeDiagonalLabel.TabIndex = 249;
-            BridgeDiagonalLabel.Text = "对角线：";
+            BridgeDiagonalLabel.Text = "对角线:";
             // 
             // BridgeLengthLabel
             // 
@@ -746,7 +746,7 @@ namespace ACNHPokerCore
             BridgeAngleLabel.Name = "BridgeAngleLabel";
             BridgeAngleLabel.Size = new System.Drawing.Size(55, 16);
             BridgeAngleLabel.TabIndex = 246;
-            BridgeAngleLabel.Text = "角度：";
+            BridgeAngleLabel.Text = "角度:";
             // 
             // BridgeTypeSelect
             // 
@@ -776,7 +776,7 @@ namespace ACNHPokerCore
             BridgeTypeLabel.Name = "BridgeTypeLabel";
             BridgeTypeLabel.Size = new System.Drawing.Size(47, 16);
             BridgeTypeLabel.TabIndex = 243;
-            BridgeTypeLabel.Text = "类型：";
+            BridgeTypeLabel.Text = "类型:";
             // 
             // inclinePanel
             // 
@@ -837,7 +837,7 @@ namespace ACNHPokerCore
             InclineTypeLabel.Name = "InclineTypeLabel";
             InclineTypeLabel.Size = new System.Drawing.Size(68, 22);
             InclineTypeLabel.TabIndex = 242;
-            InclineTypeLabel.Text = "类型：";
+            InclineTypeLabel.Text = "类型:";
             // 
             // InclineAngleLabel
             // 
@@ -848,7 +848,7 @@ namespace ACNHPokerCore
             InclineAngleLabel.Name = "InclineAngleLabel";
             InclineAngleLabel.Size = new System.Drawing.Size(75, 22);
             InclineAngleLabel.TabIndex = 242;
-            InclineAngleLabel.Text = "角度：";
+            InclineAngleLabel.Text = "角度:";
             // 
             // TUpDown
             // 
@@ -873,7 +873,7 @@ namespace ACNHPokerCore
             typeLabel.Name = "typeLabel";
             typeLabel.Size = new System.Drawing.Size(68, 22);
             typeLabel.TabIndex = 38;
-            typeLabel.Text = "类型：";
+            typeLabel.Text = "类型:";
             // 
             // AUpDown
             // 
@@ -898,7 +898,7 @@ namespace ACNHPokerCore
             angleLabel.Name = "angleLabel";
             angleLabel.Size = new System.Drawing.Size(75, 22);
             angleLabel.TabIndex = 36;
-            angleLabel.Text = "角度：";
+            angleLabel.Text = "角度:";
             // 
             // PreviewBtn
             // 

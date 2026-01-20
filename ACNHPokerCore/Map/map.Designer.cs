@@ -386,7 +386,7 @@ namespace ACNHPokerCore
             ShiftDownToggle.Size = new System.Drawing.Size(40, 16);
             ShiftDownToggle.Style = JCS.ToggleSwitch.ToggleSwitchStyle.Carbon;
             ShiftDownToggle.TabIndex = 238;
-            ToggleTip.SetToolTip(ShiftDownToggle, "Shift DOWN ▼");
+            ToggleTip.SetToolTip(ShiftDownToggle, "向下移动 ▼");
             ShiftDownToggle.UseAnimation = false;
             // 
             // ShiftRightToggle
@@ -398,7 +398,7 @@ namespace ACNHPokerCore
             ShiftRightToggle.Size = new System.Drawing.Size(40, 16);
             ShiftRightToggle.Style = JCS.ToggleSwitch.ToggleSwitchStyle.Carbon;
             ShiftRightToggle.TabIndex = 239;
-            ToggleTip.SetToolTip(ShiftRightToggle, "Shift RIGHT ▶");
+            ToggleTip.SetToolTip(ShiftRightToggle, "向右移动 ▶");
             ShiftRightToggle.UseAnimation = false;
             // 
             // CoreOnlyToggle
@@ -410,7 +410,7 @@ namespace ACNHPokerCore
             CoreOnlyToggle.Size = new System.Drawing.Size(40, 16);
             CoreOnlyToggle.Style = JCS.ToggleSwitch.ToggleSwitchStyle.Carbon;
             CoreOnlyToggle.TabIndex = 240;
-            ToggleTip.SetToolTip(CoreOnlyToggle, "Core Only ◆ (Experimental)");
+            ToggleTip.SetToolTip(CoreOnlyToggle, "仅核心模式 ◆ (实验性)");
             CoreOnlyToggle.UseAnimation = false;
             // 
             // FieldGridView
@@ -1654,7 +1654,7 @@ namespace ACNHPokerCore
             fillRemainBtn.Size = new System.Drawing.Size(138, 28);
             fillRemainBtn.TabIndex = 177;
             fillRemainBtn.Text = "填充剩余";
-            formToolTip.SetToolTip(fillRemainBtn, "Fill the remaining empty spot with the selected item.");
+            formToolTip.SetToolTip(fillRemainBtn, "用选中的物品填充剩余的空位。");
             fillRemainBtn.UseVisualStyleBackColor = false;
             fillRemainBtn.Click += FillRemainBtn_Click;
             // 
@@ -1671,7 +1671,7 @@ namespace ACNHPokerCore
             refreshBtn.Size = new System.Drawing.Size(138, 28);
             refreshBtn.TabIndex = 178;
             refreshBtn.Text = "刷新";
-            formToolTip.SetToolTip(refreshBtn, "Refetch the map data. (Both Layer 1 & 2)");
+            formToolTip.SetToolTip(refreshBtn, "重新获取地图数据。（图层1和图层2）");
             refreshBtn.UseVisualStyleBackColor = false;
             refreshBtn.Click += RefreshBtn_Click;
             // 
@@ -1688,7 +1688,7 @@ namespace ACNHPokerCore
             saveBtn.Size = new System.Drawing.Size(62, 28);
             saveBtn.TabIndex = 179;
             saveBtn.Text = "保存";
-            formToolTip.SetToolTip(saveBtn, "Save the displaying 7×7 grid to a .nhg file.");
+            formToolTip.SetToolTip(saveBtn, "将显示的7×7网格保存到.nhg文件。");
             saveBtn.UseVisualStyleBackColor = false;
             saveBtn.Click += SaveBtn_Click;
             // 
@@ -1705,7 +1705,7 @@ namespace ACNHPokerCore
             loadBtn.Size = new System.Drawing.Size(63, 28);
             loadBtn.TabIndex = 180;
             loadBtn.Text = "加载";
-            formToolTip.SetToolTip(loadBtn, "Load a .nhg/.nhi file to the displaying 7×7 grid.\r\n[WARNING] For .nhg file, this will overwrite everything currently on the floor.");
+            formToolTip.SetToolTip(loadBtn, "加载一个.nhg/.nhi文件到显示的7×7网格中。\r\n[警告] 对于.nhg文件，这将覆盖当前地面上的所有内容。");
             loadBtn.UseVisualStyleBackColor = false;
             loadBtn.Click += LoadNHGNHIBtn_Click;
             // 
@@ -1818,7 +1818,7 @@ namespace ACNHPokerCore
             layer1Btn.TabIndex = 0;
             layer1Btn.TabStop = true;
             layer1Btn.Text = "第1层";
-            formToolTip.SetToolTip(layer1Btn, "Change to the bottom layer. (Usually the floor... or seabed/stream bed)");
+            formToolTip.SetToolTip(layer1Btn, "切换到底层。（通常是地面……或海底/河床）");
             layer1Btn.UseVisualStyleBackColor = false;
             layer1Btn.Click += Layer1Btn_Click;
             // 
@@ -1833,7 +1833,7 @@ namespace ACNHPokerCore
             layer2Btn.Size = new System.Drawing.Size(75, 20);
             layer2Btn.TabIndex = 1;
             layer2Btn.Text = "第2层";
-            formToolTip.SetToolTip(layer2Btn, "Change to the top layer. (On top of furnitures. Like tables)");
+            formToolTip.SetToolTip(layer2Btn, "切换到顶层。（在家具的上方。比如桌子）");
             layer2Btn.UseVisualStyleBackColor = false;
             layer2Btn.Click += Layer2Btn_Click;
             // 
@@ -1850,7 +1850,7 @@ namespace ACNHPokerCore
             bulkSpawnBtn.Size = new System.Drawing.Size(138, 28);
             bulkSpawnBtn.TabIndex = 181;
             bulkSpawnBtn.Text = "移除物品...";
-            formToolTip.SetToolTip(bulkSpawnBtn, "This is the BULK SPAWN button too.\r\nYes, you bulk spawn by selecting \"Remove Items...\"");
+            formToolTip.SetToolTip(bulkSpawnBtn, "这也是批量生成按钮。\r\n是的，你可以通过选择“移除物品...”来批量生成。");
             bulkSpawnBtn.UseVisualStyleBackColor = false;
             bulkSpawnBtn.Click += BulkSpawnBtn_Click;
             // 
@@ -1884,7 +1884,7 @@ namespace ACNHPokerCore
             reAnchorBtn.Size = new System.Drawing.Size(138, 28);
             reAnchorBtn.TabIndex = 223;
             reAnchorBtn.Text = "重新锚定";
-            formToolTip.SetToolTip(reAnchorBtn, "Move the anchor to your current in-game position.");
+            formToolTip.SetToolTip(reAnchorBtn, "将锚点移动到你当前的游戏内位置。");
             reAnchorBtn.UseVisualStyleBackColor = false;
             reAnchorBtn.Visible = false;
             reAnchorBtn.MouseClick += ReAnchorBtn_MouseClick;
@@ -1902,7 +1902,7 @@ namespace ACNHPokerCore
             clearGridBtn.Size = new System.Drawing.Size(138, 28);
             clearGridBtn.TabIndex = 224;
             clearGridBtn.Text = "清空网格";
-            formToolTip.SetToolTip(clearGridBtn, "Remove all items in the displaying 7×7 grid.\r\n\r\n[WARNING]\r\nYou will lose your item obviously... \r\nWhat do you expect? An easter egg to popup?");
+            formToolTip.SetToolTip(clearGridBtn, "移除显示的7×7网格中的所有物品。\r\n\r\n[警告]\r\n你显然会丢失你的物品……\r\n你还期望什么？弹出一个复活节彩蛋吗？");
             clearGridBtn.UseVisualStyleBackColor = false;
             clearGridBtn.Click += ClearGridBtn_Click;
             // 
@@ -1919,7 +1919,7 @@ namespace ACNHPokerCore
             ClearCopiedAreaBtn.Size = new System.Drawing.Size(137, 28);
             ClearCopiedAreaBtn.TabIndex = 232;
             ClearCopiedAreaBtn.Text = "清除复制区域";
-            formToolTip.SetToolTip(ClearCopiedAreaBtn, "Clear the selected area.");
+            formToolTip.SetToolTip(ClearCopiedAreaBtn, "清除所选区域。");
             ClearCopiedAreaBtn.UseVisualStyleBackColor = false;
             ClearCopiedAreaBtn.Visible = false;
             ClearCopiedAreaBtn.Click += ClearCopiedAreaBtn_Click;
@@ -1955,7 +1955,7 @@ namespace ACNHPokerCore
             placeVariationBtn.Size = new System.Drawing.Size(138, 28);
             placeVariationBtn.TabIndex = 225;
             placeVariationBtn.Text = "放置变化";
-            formToolTip.SetToolTip(placeVariationBtn, "Spawn the variations of the selected item.");
+            formToolTip.SetToolTip(placeVariationBtn, "生成所选物品的变体。");
             placeVariationBtn.UseVisualStyleBackColor = false;
             placeVariationBtn.Click += PlaceVariationBtn_Click;
             // 
@@ -1971,7 +1971,7 @@ namespace ACNHPokerCore
             FilterBtn.Size = new System.Drawing.Size(25, 24);
             FilterBtn.TabIndex = 241;
             FilterBtn.Text = "➕";
-            formToolTip.SetToolTip(FilterBtn, "Enable the clothes filters.");
+            formToolTip.SetToolTip(FilterBtn, "启用服装过滤器。");
             FilterBtn.UseVisualStyleBackColor = false;
             FilterBtn.Click += FilterBtn_Click;
             // 
@@ -1987,7 +1987,7 @@ namespace ACNHPokerCore
             AddToListBtn.Size = new System.Drawing.Size(25, 24);
             AddToListBtn.TabIndex = 242;
             AddToListBtn.Text = "➕";
-            formToolTip.SetToolTip(AddToListBtn, "Add the selected item to the bulk selector.");
+            formToolTip.SetToolTip(AddToListBtn, "将选中的物品添加到批量选择器。");
             AddToListBtn.UseVisualStyleBackColor = false;
             AddToListBtn.MouseClick += AddToListBtn_MouseClick;
             // 
@@ -2103,7 +2103,7 @@ namespace ACNHPokerCore
             label4.Name = "label4";
             label4.Size = new System.Drawing.Size(24, 16);
             label4.TabIndex = 221;
-            label4.Text = "X :";
+            label4.Text = "X:";
             // 
             // label5
             // 
@@ -2114,7 +2114,7 @@ namespace ACNHPokerCore
             label5.Name = "label5";
             label5.Size = new System.Drawing.Size(25, 16);
             label5.TabIndex = 222;
-            label5.Text = "Y :";
+            label5.Text = "Y:";
             // 
             // removeItemClick
             // 
@@ -2179,7 +2179,7 @@ namespace ACNHPokerCore
             diysToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             diysToolStripMenuItem.Name = "diysToolStripMenuItem";
             diysToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
-            diysToolStripMenuItem.Text = "DIYs";
+            diysToolStripMenuItem.Text = "DIY制品";
             diysToolStripMenuItem.Click += DiysToolStripMenuItem_Click;
             // 
             // rocksToolStripMenuItem
@@ -2236,7 +2236,7 @@ namespace ACNHPokerCore
             EstimateNextSaveLabel.Name = "EstimateNextSaveLabel";
             EstimateNextSaveLabel.Size = new System.Drawing.Size(116, 16);
             EstimateNextSaveLabel.TabIndex = 225;
-            EstimateNextSaveLabel.Text = "预计下次保存：";
+            EstimateNextSaveLabel.Text = "预计下次保存:";
             EstimateNextSaveLabel.DoubleClick += NextAutoSaveSecond_DoubleClick;
             // 
             // NextSaveTimer
