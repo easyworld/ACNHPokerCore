@@ -8,10 +8,10 @@ using System.IO;
 using System.Linq;
 using System.Net.Sockets;
 using System.Text;
+using System.Text.RegularExpressions.Generated;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 
 namespace ACNHPokerCore
 {
@@ -45,7 +45,6 @@ namespace ACNHPokerCore
         private BulkList bulkList;
         private int counter;
         private int saveTime = -1;
-        private bool drawing;
 
         private DataGridViewRow lastRow;
         private readonly string imagePath;
@@ -94,8 +93,8 @@ namespace ACNHPokerCore
         private byte[] ActivateLayer2;
         private byte[] MapCustomDesgin;
 
-        private bool[,] ActivateTable1;
-        private bool[,] ActivateTable2;
+        public static bool[,] ActivateTable1;
+        public static bool[,] ActivateTable2;
 
         private bool shiftRight;
         private bool shiftDown;
@@ -117,7 +116,6 @@ namespace ACNHPokerCore
         private int BaseMapY = -1;
 
         public event CloseHandler CloseForm;
-        private static readonly Lock lockObject = new();
         private readonly Color[] target =
         [
             Color.FromArgb(252, 3, 3),
@@ -136,6 +134,7 @@ namespace ACNHPokerCore
         private readonly string debugItem = @"item.nhf";
 
         private const int ExtendedMapOffset = (16 * 6 * 16 * 1) * 2; // One extra column of Acre
+        private const int ExtendedMapBuffer = 16;
         #endregion
 
         #region Form Load
@@ -1202,9 +1201,9 @@ namespace ACNHPokerCore
             */
             string activateInfo;
             if (layer1Btn.Checked)
-                activateInfo = DisplayActivate(button.MapX, button.MapY, ActivateTable1);
+                activateInfo = DisplayActivate(button.MapX + ExtendedMapBuffer, button.MapY, ActivateTable1);
             else
-                activateInfo = DisplayActivate(button.MapX, button.MapY, ActivateTable2);
+                activateInfo = DisplayActivate(button.MapX + ExtendedMapBuffer, button.MapY, ActivateTable2);
 
             btnToolTip.SetToolTip(button,
                                     name +
@@ -2331,6 +2330,10 @@ namespace ACNHPokerCore
                     selection.ReceiveID(Utilities.PrecedingZeros(selectedItem.FillItemID(), 4), languageSetting, Utilities.PrecedingZeros(hexValue, 8));
                 }
             }
+            else if (e.KeyCode.ToString() == "F12")
+            {
+
+            }
         }
 
         private void MoveToNextTile()
@@ -2888,7 +2891,7 @@ namespace ACNHPokerCore
 
             if (layer1Btn.Checked)
             {
-                if (IsActivate(selectedButton.MapX, selectedButton.MapY, ActivateTable1))
+                if (IsActivate(selectedButton.MapX + ExtendedMapBuffer, selectedButton.MapY, ActivateTable1))
                 {
                     floorRightClick.Items.Add(DeactivateItem);
                     if (floorRightClick.Items.Contains(ActivateItem))
@@ -2903,7 +2906,7 @@ namespace ACNHPokerCore
             }
             else
             {
-                if (IsActivate(selectedButton.MapX, selectedButton.MapY, ActivateTable2))
+                if (IsActivate(selectedButton.MapX + ExtendedMapBuffer, selectedButton.MapY, ActivateTable2))
                 {
                     floorRightClick.Items.Add(DeactivateItem);
                     if (floorRightClick.Items.Contains(ActivateItem))
@@ -3337,17 +3340,17 @@ namespace ACNHPokerCore
         private void ActivateItemToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (layer1Btn.Checked)
-                SetActivate(selectedButton.MapX, selectedButton.MapY, ref ActivateLayer1, ref ActivateTable1);
+                SetActivate(selectedButton.MapX + ExtendedMapBuffer, selectedButton.MapY, ref ActivateLayer1, ref ActivateTable1);
             else
-                SetActivate(selectedButton.MapX, selectedButton.MapY, ref ActivateLayer2, ref ActivateTable2);
+                SetActivate(selectedButton.MapX + ExtendedMapBuffer, selectedButton.MapY, ref ActivateLayer2, ref ActivateTable2);
         }
 
         private void DeactivateItemToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (layer1Btn.Checked)
-                SetDeactivate(selectedButton.MapX, selectedButton.MapY, ref ActivateLayer1, ref ActivateTable1);
+                SetDeactivate(selectedButton.MapX + ExtendedMapBuffer, selectedButton.MapY, ref ActivateLayer1, ref ActivateTable1);
             else
-                SetDeactivate(selectedButton.MapX, selectedButton.MapY, ref ActivateLayer2, ref ActivateTable2);
+                SetDeactivate(selectedButton.MapX + ExtendedMapBuffer, selectedButton.MapY, ref ActivateLayer2, ref ActivateTable2);
         }
 
         private void CreateExtensionToolStripMenuItem_Click(object sender, EventArgs e)
@@ -7456,8 +7459,11 @@ namespace ACNHPokerCore
                 var left = (ActivateLayer[i] & 0x0F);
                 var right = (ActivateLayer[i] & 0xF0) >> 4;
 
-                CheckActivate(left, i % (width / 4) * 4, i % (width / 4) * 4 + 1, i / (width / 4), ref ActivateTable);
-                CheckActivate(right, i % (width / 4) * 4 + 2, i % (width / 4) * 4 + 3, i / (width / 4), ref ActivateTable);
+                int blockX = i % (width / 4);  // Now equals 36 instead of 28
+                int y = i / (width / 4);       // Now divides by 36 instead of 28
+
+                CheckActivate(left, blockX * 4, blockX * 4 + 1, y, ref ActivateTable);
+                CheckActivate(right, blockX * 4 + 2, blockX * 4 + 3, y, ref ActivateTable);
             }
         }
 
@@ -7516,7 +7522,8 @@ namespace ACNHPokerCore
 
         private void SetActivate(int x, int y, ref byte[] ActivateLayer, ref bool[,] ActivateTable)
         {
-            int offset = (x / 4) + (y * 2 * 28);
+            int bytesPerRow = Utilities.ExtendedMapNumOfColumn / 4;
+            int offset = (x / 4) + (y * 2 * bytesPerRow);
             var b = ActivateLayer[offset];
 
             byte upper = (byte)(b & 0xF0);
@@ -7593,12 +7600,13 @@ namespace ACNHPokerCore
             ActivateTable[x, y * 2] = true;
             ActivateTable[x, y * 2 + 1] = true;
             ActivateLayer[offset] = newValue;
-            ActivateLayer[offset + 0x1C] = newValue;
+            ActivateLayer[offset + bytesPerRow] = newValue;
         }
 
         private void SetDeactivate(int x, int y, ref byte[] ActivateLayer, ref bool[,] ActivateTable)
         {
-            int offset = (x / 4) + (y * 2 * 28);
+            int bytesPerRow = Utilities.ExtendedMapNumOfColumn / 4;
+            int offset = (x / 4) + (y * 2 * bytesPerRow);
             var b = ActivateLayer[offset];
 
             byte upper = (byte)(b & 0xF0);
@@ -7706,7 +7714,7 @@ namespace ACNHPokerCore
             ActivateTable[x, y * 2] = false;
             ActivateTable[x, y * 2 + 1] = false;
             ActivateLayer[offset] = newValue;
-            ActivateLayer[offset + 0x1C] = newValue;
+            ActivateLayer[offset + bytesPerRow] = newValue;
         }
 
         private void ToggleItem(long Address1, long Address2, byte value)
@@ -7752,12 +7760,26 @@ namespace ACNHPokerCore
             UpdateUI(() =>
             {
                 EnableBtn();
+                //_ = UpdateBtn(selectedButton);
             });
 
             if (sound)
                 System.Media.SystemSounds.Asterisk.Play();
 
             HideMapWait();
+        }
+
+        public static bool[] FloorSlotGetActivate(int x, int y, bool[,] ActivateTable)
+        {
+            bool[] result = [false, false];
+
+            if (ActivateTable == null)
+                return result;
+
+            result[0] = ActivateTable[x + ExtendedMapBuffer, y * 2];
+            result[1] = ActivateTable[x + ExtendedMapBuffer, y * 2 + 1];
+
+            return result;
         }
 
         #endregion
