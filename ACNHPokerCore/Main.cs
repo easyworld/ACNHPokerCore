@@ -4,6 +4,7 @@ using Microsoft.Extensions.Hosting;
 using NAudio.Wave;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Configuration;
 using System.Data;
 using System.Diagnostics;
@@ -116,6 +117,8 @@ namespace ACNHPokerCore
         private static readonly Lock villagerLock = new();
 
         private WaveOut waveOut;
+
+        private static readonly int MaxHouseStorage = 9000;
 
         [GeneratedRegex(" ")]
         private static partial Regex Space();
@@ -3972,6 +3975,7 @@ namespace ACNHPokerCore
         #endregion
 
         #region Player Selector
+
         private void PlayerInventorySelector_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (PlayerInventorySelector.SelectedIndex < 0)
@@ -4037,56 +4041,56 @@ namespace ACNHPokerCore
                     break;
                 case 8: // House
                     Utilities.SetAddress(11);
-                    maxPage = 125;
+                    maxPage = MaxHouseStorage / 40;
                     currentPage = 1;
                     ShowPagination();
                     UpdateInventory();
                     break;
                 case 9:
                     Utilities.SetAddress(12);
-                    maxPage = 125;
+                    maxPage = MaxHouseStorage / 40;
                     currentPage = 1;
                     ShowPagination();
                     UpdateInventory();
                     break;
                 case 10:
                     Utilities.SetAddress(13);
-                    maxPage = 125;
+                    maxPage = MaxHouseStorage / 40;
                     currentPage = 1;
                     ShowPagination();
                     UpdateInventory();
                     break;
                 case 11:
                     Utilities.SetAddress(14);
-                    maxPage = 125;
+                    maxPage = MaxHouseStorage / 40;
                     currentPage = 1;
                     ShowPagination();
                     UpdateInventory();
                     break;
                 case 12:
                     Utilities.SetAddress(15);
-                    maxPage = 125;
+                    maxPage = MaxHouseStorage / 40;
                     currentPage = 1;
                     ShowPagination();
                     UpdateInventory();
                     break;
                 case 13:
                     Utilities.SetAddress(16);
-                    maxPage = 125;
+                    maxPage = MaxHouseStorage / 40;
                     currentPage = 1;
                     ShowPagination();
                     UpdateInventory();
                     break;
                 case 14:
                     Utilities.SetAddress(17);
-                    maxPage = 125;
+                    maxPage = MaxHouseStorage / 40;
                     currentPage = 1;
                     ShowPagination();
                     UpdateInventory();
                     break;
                 case 15:
                     Utilities.SetAddress(18);
-                    maxPage = 125;
+                    maxPage = MaxHouseStorage / 40;
                     currentPage = 1;
                     ShowPagination();
                     UpdateInventory();
@@ -4418,7 +4422,7 @@ namespace ACNHPokerCore
         private void LoadReaction(int player = 0)
         {
             byte[] reactionBank = Utilities.GetReaction(socket, usb, player);
-            //Debug.Print(Encoding.ASCII.GetString(reactionBank));
+            Debug.Print(Utilities.ByteToHexString(reactionBank));
 
             byte[] reactions1 = new byte[1];
             byte[] reactions2 = new byte[1];
@@ -4440,17 +4444,17 @@ namespace ACNHPokerCore
             Buffer.BlockCopy(reactionBank, 6, reactions7, 0x0, 0x1);
             Buffer.BlockCopy(reactionBank, 7, reactions8, 0x0, 0x1);
 
-            SetReactionBox(Utilities.ByteToHexString(reactions1), ReactionSlot1);
-            SetReactionBox(Utilities.ByteToHexString(reactions2), ReactionSlot2);
-            SetReactionBox(Utilities.ByteToHexString(reactions3), ReactionSlot3);
-            SetReactionBox(Utilities.ByteToHexString(reactions4), ReactionSlot4);
-            SetReactionBox(Utilities.ByteToHexString(reactions5), ReactionSlot5);
-            SetReactionBox(Utilities.ByteToHexString(reactions6), ReactionSlot6);
-            SetReactionBox(Utilities.ByteToHexString(reactions7), ReactionSlot7);
-            SetReactionBox(Utilities.ByteToHexString(reactions8), ReactionSlot8);
+            SetReactionBox(Utilities.ByteToHexString(reactions1), ReactionSlot1, ReactionSlot1.Items.Count);
+            SetReactionBox(Utilities.ByteToHexString(reactions2), ReactionSlot2, ReactionSlot2.Items.Count);
+            SetReactionBox(Utilities.ByteToHexString(reactions3), ReactionSlot3, ReactionSlot3.Items.Count);
+            SetReactionBox(Utilities.ByteToHexString(reactions4), ReactionSlot4, ReactionSlot4.Items.Count);
+            SetReactionBox(Utilities.ByteToHexString(reactions5), ReactionSlot5, ReactionSlot5.Items.Count);
+            SetReactionBox(Utilities.ByteToHexString(reactions6), ReactionSlot6, ReactionSlot6.Items.Count);
+            SetReactionBox(Utilities.ByteToHexString(reactions7), ReactionSlot7, ReactionSlot7.Items.Count);
+            SetReactionBox(Utilities.ByteToHexString(reactions8), ReactionSlot8, ReactionSlot8.Items.Count);
         }
 
-        private static void SetReactionBox(string reaction, ComboBox box)
+        private static void SetReactionBox(string reaction, ComboBox box, int max)
         {
             if (reaction == "00")
             {
@@ -4459,7 +4463,7 @@ namespace ACNHPokerCore
             }
             string hexValue = reaction;
             int decValue = Convert.ToInt32(hexValue, 16) - 1;
-            if (decValue >= 118)
+            if (decValue >= max)
                 box.SelectedIndex = -1;
             else
                 box.SelectedIndex = decValue;
@@ -10860,7 +10864,7 @@ namespace ACNHPokerCore
             byte[] b = [];
             for (int i = 0; i < 100; i++)
             {
-                b = Utilities.Add(b, Utilities.ReadByteArray(socket, startAddress + i * 8192 , 8192));
+                b = Utilities.Add(b, Utilities.ReadByteArray(socket, startAddress + i * 8192, 8192));
             }
             File.WriteAllBytes("Chaser2.bin", b);
         }
@@ -11244,5 +11248,6 @@ namespace ACNHPokerCore
         }
 
         #endregion
+
     }
 }

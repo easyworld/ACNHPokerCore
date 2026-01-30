@@ -101,6 +101,8 @@ namespace ACNHPokerCore
 
         public const int ExtendedMapTileCount16x16 = ExtendedMapNumOfRow * ExtendedMapNumOfColumn;
 
+        public const int ExtendedMapOffset = (16 * 6 * 16 * 1) * 2; // One extra column of Acre
+
         //=================================================================
 
         public static UInt32 VisitorNameAddress = 0xBACD2ED8;
@@ -3144,6 +3146,41 @@ namespace ACNHPokerCore
                 catch
                 {
                     MessageBox.Show(@"发生错误，请尝试重新启动程序或重新连接到Switch。", @"发送自定义地图");
+                }
+            }
+        }
+
+        public static void SendOldCustomMap(Socket socket, USBBot usb, byte[] CustomMap, ref int counter)
+        {
+            if (isEmulator)
+            {
+                WriteEmulatorMemory(mapCustomDesign + ExtendedMapOffset, CustomMap);
+                WriteEmulatorMemory(mapCustomDesign + ExtendedMapOffset + SaveFileBuffer, CustomMap);
+                return;
+            }
+
+            lock (botLock)
+            {
+                try
+                {
+                    if (usb == null)
+                    {
+                        Debug.Print("[Sys] Poke : OldCustomMap " + TerrainOffset.ToString("X"));
+
+                        SendByteArray(socket, mapCustomDesign + ExtendedMapOffset, CustomMap, CustomMap.Length, ref counter);
+                        SendByteArray(socket, mapCustomDesign + ExtendedMapOffset + SaveFileBuffer, CustomMap, CustomMap.Length, ref counter);
+                    }
+                    else
+                    {
+                        Debug.Print("[Usb] Poke : OldCustomMap " + TerrainOffset.ToString("X"));
+
+                        WriteLargeBytes(usb, mapCustomDesign + ExtendedMapOffset, CustomMap, CustomMap.Length, ref counter);
+                        WriteLargeBytes(usb, mapCustomDesign + ExtendedMapOffset + SaveFileBuffer, CustomMap, CustomMap.Length, ref counter);
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show(@"Exception, try restarting the program or reconnecting to the switch.", @"sendCustomMap");
                 }
             }
         }
